@@ -1,0 +1,15 @@
+format: jb-book
+root: phy303-lecture00-homepage
+chapters:
+- file: phy303-lecture01-introduction
+  title: Lecture 1
+- file: phy303-lecture02-probing
+  title: Lecture 2
+- file: phy303-lecture03-liquiddrop
+  title: Lecture 3
+- file: phy303-lecture04-ldmextensions
+  title: Lecture 4
+- file: phy303-lecture05-shellmodelevidence
+  title: Lecture 5
+- file: phy303-unit1-flashcards
+  title: Unit 1 Flash Cards
