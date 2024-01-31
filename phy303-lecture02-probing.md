@@ -1,35 +1,5 @@
 # Lecture 2 : Nuclear Probes
 
-An interesting facet of nuclei, linked to the Binding Energy, is that the mass of a given nucleus is less that the sum of the masses of the individual nucleons inside. This is because the forces that hold nuclei together contribute additional negative energy, 
-
-```{math}
-:label: nuclearmass
-\begin{equation}
-M(A,Z) < ZM_{p} + NM_{n}.
-\end{equation}
-```
-
-This nuclear mass deficit can be calculated as the difference beteween the nuclear mass, and the sum of individual nucleons.
-
-```{math}
-:label: nuclearmassdeficit
-\begin{equation}
-\Delta M(A,Z) = M(A,Z) - ZM_{p} + NM_{n}.
-\end{equation}
-```
-
-The deficit shown in Eq. {eq}`nuclearmassdeficit` is related to the binding energy, $B$ of nuclei, corresponding to the energy required to split the nucleus apart into free nucleons
-```{math}
-:label: bindingenergyeq
-\begin{equation}
--\Delta M(A,Z) = B
-\end{equation}
-```
-
-Typically the binding energy is referred to as a positive value, but when considering its role in calculating the overall mass of the nucleus the change in mass is negative as shown in Eq. {eq}`bindingenergyeq`. As we discussed in the last lecture, stable nuclei have the highest binding energies.
-
-
-## 2.2 Nuclear Charge and Size
 Nuclei as opposed to atoms, have a net charge, from the sum of the proton charges. Neutrons can be considered essentially neutral, as the name suggests. However, in fact we know both neutrons and protons have an internal structure. Neutrons are composed of 3 quarks, (up, down, down for neutrons) that all have charge. The sum of the charges is zero but the structure does mean that charge-like phenomena exist for neutrons arising from their internal charge distribution. For example the neutron has a non-zero magnetic moment.
 
 Of course Nuclei also have finite size, but it's impressively small when compared to the size of the electron orbitals in an atom. 
@@ -261,6 +231,8 @@ Hofstadter's experiments provided a stong constaint on the scattering cross-sect
 This deviation is now interpreted as telling us about the charge/matter distribution in the nucleus. That not only is the nucleus not point-like as assumed in the Mottt formula but it has a particular density profile and shape which can be further explicitly probed by electron scattering experiments.
 
 
+
+## 2.10 Scattering Example
 
 
 
