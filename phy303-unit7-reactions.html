@@ -421,31 +421,41 @@ document.write(`
 <p><img alt="Alt text" src="_images/image-57.png" /></p>
 <p>At the time, the prevailing model of the atom was the “plum pudding”, in which the mass and positive charge of the atom are distributed over the whole atomic volume, with an appropriate number of electrons embedded in it. With such evenly distributed charge, alpha particles should simply pass through with only very minor deflection, but in fact some particles were deflected at large angles. Rutherford realised that this could be explained if the charge were actually concentrated in a small volume, and derived an expression for the resulting angular distribution.</p>
 <p>Consider an alpha particle incident on a nucleus with an impact parameter b. The particle is seen to be scattered through an angle θ compared to its original direction. Because the scattering is elastic, the initial and final momenta of the particle have the same magnitude mu: only the direction changes. The final momentum is ( mu(cos θ, sin θ) ), and the change in momentum ( Δ\vec{p} ) is ( mu(cos θ - 1, sin θ) ) (since only two vectors are involved, this interaction all takes place in a single plane, so we can neglect the z component except at the very end). The magnitude of ( Δ\vec{p} ) is</p>
-<p>[ Δp = mu\sqrt{2(1 - cos θ)} = 2mu sin(θ/2) ]</p>
+<div class="math notranslate nohighlight">
+\[ Δp = mu\sqrt{2(1 - cos θ)} = 2mu sin(θ/2) \]</div>
 <p><img alt="Alt text" src="_images/image-58.png" /></p>
 <p>The direction of ( Δ\vec{p} ) is, by symmetry, along the line from the nucleus to the point of closest approach, labeled ( r_0 ) in figure 1. The Coulomb force in that direction when the particle is at a distance r from the nucleus is</p>
-<p>[ F = \frac{Zze^2}{4πε_0 r^2} cos α ]</p>
+<div class="math notranslate nohighlight">
+\[ F = \frac{Zze^2}{4πε_0 r^2} cos α \]</div>
 <p>where Ze is the charge on the nucleus, ze is the charge on the projectile, and the angle α is defined in figure 1.</p>
 <p>Therefore, we have</p>
-<p>[ Δp = \int F dt = \frac{Zze^2}{4πε_0} \int_{-\infty}^{+\infty} \frac{cos α}{r^2} dt ]</p>
+<div class="math notranslate nohighlight">
+\[ Δp = \int F dt = \frac{Zze^2}{4πε_0} \int_{-\infty}^{+\infty} \frac{cos α}{r^2} dt \]</div>
 <p>To do the integral we need to find the relationships between the variables α, r and t. To do this, we use the fact that the Coulomb force is a central force (i.e. it is directed along the line joining the two charges), and therefore does not change the angular momentum. The initial angular momentum of the particle is ( mub ).</p>
 <p>At any given time, we can write the instantaneous velocity of the particle as</p>
-<p>[ \vec{v} = \frac{dr}{dt} \hat{r} + r \frac{dα}{dt} \hat{α} ]</p>
+<div class="math notranslate nohighlight">
+\[ \vec{v} = \frac{dr}{dt} \hat{r} + r \frac{dα}{dt} \hat{α} \]</div>
 <p>where ( \hat{r} ) and ( \hat{α} ) are unit vectors in the radial and tangential directions. The angular momentum is then</p>
-<p>[ |m(\vec{v} \times \vec{r})| = mr^2 \frac{dα}{dt} ]</p>
+<div class="math notranslate nohighlight">
+\[ |m(\vec{v} \times \vec{r})| = mr^2 \frac{dα}{dt} \]</div>
 <p>since the component parallel to ( \vec{r} ) drops out in the vector product. This must be equal to ( mub ), so we have</p>
 <p>Certainly! The equation in the image is:</p>
-<p>[ r^2 \frac{d\alpha}{dt} = ub \rightarrow \frac{d\alpha}{dt} = \frac{ub}{r^2} ]</p>
+<div class="math notranslate nohighlight">
+\[ r^2 \frac{d\alpha}{dt} = ub \rightarrow \frac{d\alpha}{dt} = \frac{ub}{r^2} \]</div>
 <p>We can substitute this into the integral to get</p>
-<p>[ \Delta p = \frac{2mu \sin(\frac{\theta}{2})}{\frac{Zze^2}{4\pi\epsilon_0 ub}} \int_{-(\pi-\theta)/2}^{(\pi-\theta)/2} \cos \alpha , d\alpha = \frac{Zze^2}{4\pi\epsilon_0 ub} \left[2\sin\left(\frac{\pi}{2} - \frac{\theta}{2}\right)\right] = \frac{Zze^2}{2\pi\epsilon_0 ub} \cos\left(\frac{\theta}{2}\right). ]</p>
+<div class="math notranslate nohighlight">
+\[ \Delta p = \frac{2mu \sin(\frac{\theta}{2})}{\frac{Zze^2}{4\pi\epsilon_0 ub}} \int_{-(\pi-\theta)/2}^{(\pi-\theta)/2} \cos \alpha \, d\alpha = \frac{Zze^2}{4\pi\epsilon_0 ub} \left[2\sin\left(\frac{\pi}{2} - \frac{\theta}{2}\right)\right] = \frac{Zze^2}{2\pi\epsilon_0 ub} \cos\left(\frac{\theta}{2}\right). \]</div>
 <p>(For the limits, you can see from figure 1 that the total range of the angle α is 𝜋 − 𝜃, and it is negative
 to the left of <span class="math notranslate nohighlight">\(𝑟_{0}\)</span> and positive to the right; therefore it runs from −(𝜋 − 𝜃)/2 to +(𝜋 − 𝜃)/2.)</p>
 <p>Solving this for b gives us</p>
-<p>[ b = \frac{Zze^2}{4\pi\epsilon_0mu^2} \cot\left(\frac{\theta}{2}\right). ]</p>
+<div class="math notranslate nohighlight">
+\[ b = \frac{Zze^2}{4\pi\epsilon_0mu^2} \cot\left(\frac{\theta}{2}\right). \]</div>
 <p>Now, if we have a uniform parallel beam of alpha particles with a flux per unit area Φ, the flux with impact parameter between b and b + db is dΦ = 2πbdbΦ. Differentiating the expression for b gives us</p>
-<p>[ db = \frac{Zze^2}{4\pi\epsilon_0mu^2} \left( -\frac{1}{2} \sin^2\frac{\theta}{2} - \frac{1}{2} \cos^2\frac{\theta}{2} \right) \frac{d\theta}{\sin^2\frac{\theta}{2}} = \frac{Zze^2}{4\pi\epsilon_0mu^2} \frac{-d\theta}{2\sin^2(\theta/2)} ]</p>
+<div class="math notranslate nohighlight">
+\[ db = \frac{Zze^2}{4\pi\epsilon_0mu^2} \left( -\frac{1}{2} \sin^2\frac{\theta}{2} - \frac{1}{2} \cos^2\frac{\theta}{2} \right) \frac{d\theta}{\sin^2\frac{\theta}{2}} = \frac{Zze^2}{4\pi\epsilon_0mu^2} \frac{-d\theta}{2\sin^2(\theta/2)} \]</div>
 <p>We now need to recognise that we are dealing with a three-dimensional experiment. The element of solid angle is dΩ = sinθ dθdφ. For a ring between θ and θ + dθ, we can integrate over φ to get dΩ = 2πsinθ dθ = 4πsin(θ/2)cos(θ/2)dθ. This gives us</p>
-<p>[ df = \left( \frac{Zze^2}{4\pi\epsilon_0} \right)^2 \left( \frac{1}{2K_\alpha} \right)^2 \frac{dΩ}{\sin^4(\theta/2)4\pi} ]</p>
+<div class="math notranslate nohighlight">
+\[ df = \left( \frac{Zze^2}{4\pi\epsilon_0} \right)^2 \left( \frac{1}{2K_\alpha} \right)^2 \frac{dΩ}{\sin^4(\theta/2)4\pi} \]</div>
 <p>where df is the fraction of incoming alpha particles scattered over the angle between θ and θ + dθ and ( K_\alpha = \frac{1}{2}mu^2 ) is the kinetic energy of the incoming alpha particles.</p>
 <p>This assumes a single nucleus. Obviously this is not the case: the number of nuclei per unit area is 𝑛𝑥 where 𝑛 is the number density of the material and 𝑥 is the thickness of the foil.
 From this derivation we expect that the number of alpha particles scattered through an angle θ will be proportional to:</p>
@@ -487,15 +497,15 @@ Typically, we take some reaction A(a,b)B and measure the energy of the ejectile 
 <li><p>We assume non-relativistic velocities, so for any particle ( K = \frac{p^2}{2m} ).</p></li>
 </ul>
 <p>We want to eliminate ( K_B ), because we do not measure it. From energy conservation
-[ K_B = K_a - K_b + Q ].
+$<span class="math notranslate nohighlight">\( K_B = K_a - K_b + Q \)</span><span class="math notranslate nohighlight">\(.
 From momentum conservation
-[ K_B = \frac{p_B^2}{2m_B} = \frac{1}{2m_B} (2m_aK_a + 2m_bK_b - 4 \cos \theta \sqrt{m_aK_am_bK_b}) ].
+\)</span><span class="math notranslate nohighlight">\( K_B = \frac{p_B^2}{2m_B} = \frac{1}{2m_B} (2m_aK_a + 2m_bK_b - 4 \cos \theta \sqrt{m_aK_am_bK_b}) \)</span><span class="math notranslate nohighlight">\(.
 Equating these expressions gives
-[ m_bK_a - m_bK_b + m_bQ = m_aK_a + m_bK_b - 2 \cos \theta \sqrt{m_am_bK_aK_b} ].
+\)</span><span class="math notranslate nohighlight">\( m_bK_a - m_bK_b + m_bQ = m_aK_a + m_bK_b - 2 \cos \theta \sqrt{m_am_bK_aK_b} \)</span><span class="math notranslate nohighlight">\(.
 Collecting terms,
-[ (m_b + m_B)K_b - (2 \cos \theta \sqrt{m_am_bK_a})K_b^{1/2} - ((m_b - m_a)K_a + m_bQ) = 0 ].
-This is a quadratic in the unknown ( K_b ). Applying the usual quadratic formula (and cancelling off a factor of 2),
-[ K_b^{1/2} = \frac{\cos \theta \sqrt{m_am_bK_a} \pm [m_am_bK_a \cos^2 \theta + (m_b + m_B)((m_b - m_a)K_a + m_bQ)]^{1/2}}{m_b + m_B} ].
+\)</span><span class="math notranslate nohighlight">\( (m_b + m_B)K_b - (2 \cos \theta \sqrt{m_am_bK_a})K_b^{1/2} - ((m_b - m_a)K_a + m_bQ) = 0 \)</span><span class="math notranslate nohighlight">\(.
+This is a quadratic in the unknown \( K_b \). Applying the usual quadratic formula (and cancelling off a factor of 2),
+\)</span><span class="math notranslate nohighlight">\( K_b^{1/2} = \frac{\cos \theta \sqrt{m_am_bK_a} \pm [m_am_bK_a \cos^2 \theta + (m_b + m_B)((m_b - m_a)K_a + m_bQ)]^{1/2}}{m_b + m_B} \)</span>$.
 This looks hideous, but the key point is that everything on the right-hand side is known, so what it tells us is that a given angle ( \theta ) almost always corresponds to a specific ejectile kinetic energy ( K_b ), or — perhaps more usefully — that a given combination of ( K_b ) and ( \theta ) corresponds to a specific value of ( Q ). Therefore we can use scattering processes to explore the excited states of the nucleus B, even though we do not observe B itself.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -512,21 +522,21 @@ Mass of proton = 1.00727647 u.</p>
 <p>As the proton mass is ~938 MeV/c², a proton with a kinetic energy of 7.50 MeV is not relativistic, so we can write kinetic energy as ( K = \frac{1}{2} mv^2 = \frac{p^2}{2m} ) where ( p ) is the momentum.</p>
 <p>Notation: initial proton has kinetic energy ( K ) and momentum ( p ). Scattered proton has kinetic energy ( K_p ) and momentum ( p_p ), and recoiling lithium nucleus has kinetic energy ( K_L ) and momentum ( p_L ).</p>
 <p>(i) In an elastic collision both kinetic energy and momentum are conserved. We have ( \vec{p} = \vec{p_p} + \vec{p_L} ). Drawing out the momentum sum (noting that this all takes place in the plane defined by the vectors ( \vec{p_p} ) and ( \vec{p_L} ), so it’s a two-dimensional problem), we see (figure 2) that ( p_L^2 = p^2 + p_p^2 ). Energy conservation gives ( K_p = K - K_L ), which we can write as
-[ \frac{p_p^2}{2m} = \frac{p^2}{2m} - \frac{p_L^2}{2M} ],
+$<span class="math notranslate nohighlight">\( \frac{p_p^2}{2m} = \frac{p^2}{2m} - \frac{p_L^2}{2M} \)</span>$,
 writing ( m ) for the proton mass and ( M ) for the lithium mass.</p>
 <p>Substituting in for ( p_L^2 ) and cancelling the factor of 2,
-[ \frac{p_p^2}{m} = \frac{p^2}{m} - \frac{p^2}{M} - \frac{p_p^2}{M} ].</p>
+$<span class="math notranslate nohighlight">\( \frac{p_p^2}{m} = \frac{p^2}{m} - \frac{p^2}{M} - \frac{p_p^2}{M} \)</span>$.</p>
 <p>Therefore
-[ \frac{m^{-1} - M^{-1}}{m^{-1} + M^{-1}} p^2 = 0.748860p^2 ],
+$<span class="math notranslate nohighlight">\( \frac{m^{-1} - M^{-1}}{m^{-1} + M^{-1}} p^2 = 0.748860p^2 \)</span>$,
 and dividing through by ( 2m ) gives us ( E_p = 0.74886E = 5.62 MeV ).</p>
 <p>(ii) In the second case, momentum is conserved as before, but the energy conservation equation is now
-[ K_p = K - K_L - \Delta E, ]
+$<span class="math notranslate nohighlight">\( K_p = K - K_L - \Delta E, \)</span>$
 where ( \Delta E = 0.477 ) MeV is the excitation energy.</p>
 <p>Therefore we have
-[ \frac{p_p^2}{2m} ( \frac{1}{m} + \frac{1}{M} ) = p^2 ( \frac{1}{m} - \frac{1}{M} ) - 2\Delta E ]
-[ \Rightarrow \frac{p_p^2}{2m} = \frac{p^2}{2m} ( \frac{m^{-1} - M^{-1}}{m^{-1} + M^{-1}} ) - \frac{\Delta E}{1 + (m/M)} . ]</p>
+$<span class="math notranslate nohighlight">\( \frac{p_p^2}{2m} ( \frac{1}{m} + \frac{1}{M} ) = p^2 ( \frac{1}{m} - \frac{1}{M} ) - 2\Delta E \)</span><span class="math notranslate nohighlight">\(
+\)</span><span class="math notranslate nohighlight">\( \Rightarrow \frac{p_p^2}{2m} = \frac{p^2}{2m} ( \frac{m^{-1} - M^{-1}}{m^{-1} + M^{-1}} ) - \frac{\Delta E}{1 + (m/M)} . \)</span>$</p>
 <p>Putting in the numbers gives
-[ E_p = 0.74886E - \frac{\Delta E}{1.1436} = 5.20 MeV. ]</p>
+$<span class="math notranslate nohighlight">\( E_p = 0.74886E - \frac{\Delta E}{1.1436} = 5.20 MeV. \)</span>$</p>
 <p>Notice that in an actual experiment, if we observe protons at 90° to the original direction, we will see a peak at ( E_p = 5.62 ) MeV corresponding to elastic scattering, and a peak at 5.20 MeV corresponding to the first excited state (plus more peaks at lower energies corresponding to higher excited states). We could then work this equation backwards to extract ( \Delta E ) from the known ( E_p ).</p>
 <p>Also note that we could have done this question using the general expression for ( K_b^{1/2} ) that we derived earlier. You should check that this gives you the same answers.</p>
 </section>
@@ -565,10 +575,10 @@ The relevant masses are:
 <p>The Q value is 0.006120 u = 5.701 MeV.</p>
 <p>The maximum neutron energy will occur when θ = 0 (the neutron is emitted in the same direction as the incident α), and the minimum neutron energy will be when θ = π.</p>
 <p>The simplest way to do this is to apply the equation for ( K_{b}^{1/2} ). For cos θ = 1 we have
-[ K_{n,max}^{1/2} = \left[ \frac{m_a m_n K_a \pm (m_a m_n K_a + (m_n + m_c)((m_c - m_a)K_a + m_c Q))}{m_n + m_c} \right]^{1/2} ]
+$<span class="math notranslate nohighlight">\( K_{n,max}^{1/2} = \left[ \frac{m_a m_n K_a \pm (m_a m_n K_a + (m_n + m_c)((m_c - m_a)K_a + m_c Q))}{m_n + m_c} \right]^{1/2} \)</span>$
 Notice that the argument of the square root is always larger than ( m_a m_n K_a ), so only the positive sign is relevant (kinetic energies cannot be negative).</p>
 <p>For cos θ = –1 all that happens is that the first term changes sign, so we have
-[ K_{n,min}^{1/2} = K_{n,max}^{1/2} - \frac{2 \sqrt{m_a m_n K_a}}{m_n + m_c} ]</p>
+$<span class="math notranslate nohighlight">\( K_{n,min}^{1/2} = K_{n,max}^{1/2} - \frac{2 \sqrt{m_a m_n K_a}}{m_n + m_c} \)</span>$</p>
 <p>Putting in the numbers gives:
 (i) ( K_{n,max} = 12.4 MeV; K_{n,min} = 7.3 MeV; )
 (ii) ( K_{n,max} = 6.7 MeV; K_{n,min} = 5.2 MeV. )</p>
