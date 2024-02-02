@@ -31,10 +31,12 @@ One plot that begins to answer some of thes equestions is a comparison of the $Q
 
 
 Notice also how steep the relation is in the Geiger-Nutall plot (its a log scale). An alpha emitter that produces 8 MeV alpha particles is likely to have a half life over 22 orders of magnitude shorter than one which produces alphas of 4 MeV kinetic energy. The Geiger-Nutall relation is a fit to the observed data of the form
+
 $$
 log_{10} t_{1/2} = b_{1} \frac{Z}{Q^{1/2}} + b_{2}
 $$
 where Z is number of protons, Q is energy released, $b_{1}$ and $b_{2}$ are constants. An equivalent form is
+
 $$
 ln\lambda = -a_{1} \frac{Z}{Q^{1/2}} + a_2
 $$
@@ -135,9 +137,6 @@ We now turn to Beta Decay. In this we get emission of an Electron from the nucle
 This is illustrated by the Cloud Chamber image shown below. We see the decay of ^6He into ^6Li and a charged electron. We see two tracks, curving because there is a magnetic field applied. But from analysis of the plot it looks like energy, momentum and even Total Angular Momentum J are not conserved if we assume the interaction:
 
 \( ^6He \rightarrow ^6Li + e^- \)
-
-
-
 
 Of course the reason is that there is a Neutrino emitted as well, but this escapes the detector and we don’t see it. There are actually four big differences between beta decay and alpha decay, not just the neutrino.
 

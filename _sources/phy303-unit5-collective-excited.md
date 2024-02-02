@@ -29,6 +29,7 @@ To better understand the relation between spherical harmonics lets consider the 
 ![Alt text](image-48.png)
 
 We express this algebraically by saying that the surface of our nucleis has a radius at a given angle in spherical co-ordinates as 
+
 $$
 R(\theta, \phi) = R_{av} [Y_{0,0}+\beta Y_{20} (\theta, \phi)]
 $$
@@ -40,9 +41,11 @@ where $Y_{20}$ is a Laplace spherical harmonic representing the distance from or
 Note also that $Y_{0,0}$ is just our spherical shape and has a constant value of $Y_{0,0}=1$ so we've drpped the angular dependence in the equation.  The important thing to notice is that if $\beta$ is equal to zero, then we have only the spherical component, and we arrive at a spherical nuclear shape as in the figure. Exactly what we want in the no deformation case!
 
 If $\beta$ is non-zero however we get slight modifcations of our nuclear shape as a result. The deformation parameter $\beta$ can be expressed in terms of the actual nuclear radius as
+
 $$
 \beta = \frac{4}{3} \sqrt{\frac{\pi}{5}} \frac{\Delta R}{R_{av}}
 $$
+
 where $R_{av} = r_{0}A^{1/3}$. In our simple case $\beta>0$ corresponds to a prolate nucleus as we've stretched out the top, and $\beta< 0$ corresponds to oblate as we've expanded the sides. $\Delta R$ here repesents the difference beteweent he semi-major and semi-minor axes (long and short sides) of the nucleus itself when it is deformed. A typical value for $\Delta R$ is around 0.3 fm.
 
 Note here we are talking of a permanent deformation in shape. Thanks to the charge distribution we thus expeet to get a finite Electric Quadrupole Moment. In addition now however we also see possible rotation states as along certain axes (perpendicular to the axis we squashed our nucleus) the shape is not rotationally symmetric. Based on the nuclear shapes shown above you can imagine being able to rotate the nucleus rotating along two axes, either around the page, or out of the page.
@@ -60,48 +63,48 @@ So, what about the Rotational Energy Levels? In classical mechanics, this comes 
 
 In the classical case, we get the equation for the kinetic energy of a Rigid Rotation as here, based on the picture that shows the angular momentum axis.
 
-\[
+$$
 E_{R} = \frac{R^{2}}{2I}
-\]
+$$
 
 where \(I\) is the effective moment of inertia.
 
 Now, switching to the quantum mechanical case, the energies are given by solving the relevant Schrödinger Equation. We replace the angular momentum \(R\) with an operator acting on the wave function. Then the Eigenvalues and Eigenfunctions are given as follows:
 
-\[
+$$
 \frac{R^{2}}{2I} \psi = E_{J} \psi
-\]
-\[
+$$
+$$
 R^{2} Y_{JM}(\theta,\phi) = J(J+1) \hbar^{2} Y_{JM} (\theta, \phi)
-\]
-\[
+$$
+$$
 E_{J} = \frac{\hbar^{2}}{2I}J(J+1)~~~~~J=0,2,4,\ldots
-\]
+$$
 
 Note that there is some Reflection Symmetry in this solution, so it turns out that there are no odd \(J\) values and the only allowed \(J\) values are 0, 2, 4, etc.
 
 Now substituting the quantized allowed \(J\) values, we can write out the sequence of energy levels as follows:
 
-\[
+$$
 E(0^+) = 0
-\]
-\[
+$$
+$$
 E(2^+) = \frac{\hbar^{2}}{2I} 2(2+1)
-\]
-\[
+$$
+$$
 E(4^{+}) = 20\frac{\hbar^{2}}{2I}
-\]
-\[
+$$
+$$
 E(6^{+}) = 42\frac{\hbar^{2}}{2I}
-\]
+$$
 
 See how we get a neat sequence where the energy levels go as 0, 6, 20, 42, etc., times a constant value based on the nuclear spin. The states are labeled by the \(J\) value as shown, and the Parity, which is always positive here.
 
 A useful trick with this sequence is that if we happened to have measured one of the values, then we can predict the rest, using the sequence. For instance, if we consider the \(E(2^{+})\) level or \(E_{2}\), the first excited state above the ground level, then we can write:
 
-\[
+$$
 E_{J} = \frac{1}{6} J(J+1)E_{2}~~~~~~~~~J=0,2,4,\ldots
-\]
+$$
 
 As an example, say we know the first excited state of Erbium-164, i.e., \(^{164}Er, E(2^{+}) = 91.4 keV\), then using the equation above, we can predict the Rotational Energy States of Erbium for the higher levels \(E(4^+), E(6^+), E(8^+)\), etc.
 
@@ -143,18 +146,18 @@ Notice that for higher states, since only even values of \(J\) are allowed, we e
 An important point to note here is that the basic energy levels at each phonon level are equally spaced, in units of \(1\hbar \omega\). So, unlike the rotation energy levels, where the spacing increases in a sequence \(0, 6, 20, 42, ...\), the basic vibration energy levels are evenly spaced, with each level having finely split sub-levels at each basic level due to the phonon couplings.
 
 The basic vibrational energy levels can be written as follows
+
 $$
-EE_{N} = \hbar \omega_{l} (\frac{2l+1}{2} +N)
+EE_{N} = \hbar \omega_{l} \left(\frac{2l+1}{2} +N \right)
 $$
 
 So here we see that the Quadrupole (\(l=2\)) Ground State (no phonons) has an energy level at
+
 $$
-E_{N} = (N+\frac{5}{2}) \hbar \omega
+E_{N} = \left(N+\frac{5}{2}\right) \hbar \omega
 $$
 
-Of course, a nucleus can show both Rotational and Vibrational energy levels, and these levels can overlap. Note that in general, rotational levels can go up to higher energies than
-
- vibration, the latter reaching typically 1-2 MeV.
+Of course, a nucleus can show both Rotational and Vibrational energy levels, and these levels can overlap. Note that in general, rotational levels can go up to higher energies than vibration, the latter reaching typically 1-2 MeV.
 
 Note that as nuclei move away from having a closed shell, it gets easier to excite rotation and vibration states; they are more distorted as we expect. So these nuclei tend to have lower collective mode excitation states like this.
 

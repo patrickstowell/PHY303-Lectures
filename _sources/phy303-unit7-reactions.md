@@ -105,13 +105,18 @@ Rutherford’s group (specifically, Hans Geiger and Ernest Marsden) conducted a 
 #### 4.1.4 Kinematics
 ##### The Q value
 Nuclear reactions are governed by 𝐸 = 𝑚𝑐􏰀. The Q-value of a reaction is the difference in mass between the initial and final states, expressed as an energy (usually in MeV): for example, the Q-value of the reaction 16O(p,α)13N can be calculated as follows (all numbers from Krane):
-1. The nuclear mass of 16O is 15.994915 (atomic mass of 16O) − 8×0.00054858 = 15.990526 u.
+1. The nuclear mass of 16O is 15.994915 (atomic mass of 16O)
+$$8×0.00054858 = 15.990526 u.$$
 2. The mass of a proton is 1.00727647 u
-3. The nuclear mass of 13N is 13.005739 − 7×0.00054858 = 13.001899 u.
+3. The nuclear mass of 13N is 
+    $$13.005739 − 7×0.00054858 = 13.001899 u.$$
 4. The mass of an α particle is 4.00150618 u.
-5. Therefore the Q value is 16.997802 – 17.003405 = −0.005603 u = −5.219 MeV.
+5. Therefore the Q value is 
+   $$16.997802 – 17.003405 = −0.005603 u = −5.219 MeV.$$
 
 A negative Q-value implies that the reaction will not proceed spontaneously, but will require the initial proton to contribute at least 5.219 MeV of kinetic energy (actually, slightly more than this, because we need to allow for conservation of momentum). The minimum projectile kinetic energy required to make the reaction happen is called the threshold energy.
+
+
 A positive Q-value means that the reaction will generate energy. However, this does not necessarily mean that the reaction has zero threshold in practice. Consider the reaction 13C(α,n)16O. This has Q- value 2.216 MeV (you should check this!). However, a zero-energy α-particle will not initiate the reaction, because Coulomb repulsion will ensure that it does not get close enough to the carbon nucleus to react with it. This imposes an effective threshold energy: it’s difficult to calculate exactly what it is, because quantum tunnelling ensures that the reaction will take place (with a reduced cross section) at energies lower than a classical calculation would suggest. This is what makes power gener- ation by nuclear fusion so difficult: the relevant reactions do of course have positive Q (if they didn’t, they would not generate any energy!), but the kinetic energy required to overcome the Coulomb barrier means that the initial material has to be raised to an extremely high temperature for the fusion cross section to be high enough for useful energy output.
 
 
@@ -172,7 +177,7 @@ In Coulomb scattering of 7.50 MeV protons by a target of $ ^7Li $, what is the e
 First look up and/or calculate the relevant masses.
 
 Atomic mass of $ ^7Li $ is 7.016003 u, so nuclear mass is $ M = 7.016003 - 3(0.00054858) = 7.014357 u $.
-Mass of proton = 1.00727647 u.
+Mass of proton = $1.00727647 u$.
 
 As the proton mass is ~938 MeV/c², a proton with a kinetic energy of 7.50 MeV is not relativistic, so we can write kinetic energy as $ K = \frac{1}{2} mv^2 = \frac{p^2}{2m} $ where $ p $ is the momentum.
 
@@ -236,13 +241,10 @@ Calculate the Q value of the reaction $ p + ^4He \rightarrow ^1H + ^3He $. What 
 **Answer**
 (Note that in this case we couldn’t use the bracket notation for the reaction, because we are asked to look at two different cases, $ ^4He(p,d)^3He $ and $ ^1H(\alpha,d)^3He $.)
 
-
-The text from your image is:
-
 The relevant masses are, from Krane:
-proton 1.00727647 u, α particle 4.00150618 u, deuteron 2.01355321 u, $^3He$ nucleus 3.014932 u.
+proton $1.00727647 u$, α particle $4.00150618 u$, deuteron $2.01355321 u$, $^3He$ nucleus $3.014932 u$.
 
-The Q value is therefore -0.019702 u = -18.353 MeV (rounding everything to 6 decimal places in u so as to match the precision of the mass of $^3He$: Krane only gives atomic masses to 6 decimal places).
+The Q value is therefore $-0.019702 u = -18.353$ MeV (rounding everything to 6 decimal places in u so as to match the precision of the mass of $^3He$: Krane only gives atomic masses to 6 decimal places).
 
 To calculate the threshold energies, we use the equation for $ K_b^{1/2} $ we derived above. This only describes a physically possible reaction if it has a real solution (obviously observed kinetic energies are not complex numbers), and it only has a real solution if the term inside the square root is non-negative. The limiting case is when the argument of the square root is exactly zero,
 
@@ -272,15 +274,11 @@ In the reaction $ ^9Be(\alpha,n)^{12}C $, find the maximum and minimum neutron e
 **Answer**
 The relevant masses are:
 $ ^9Be: 9.012182 - 4(0.00054858) = 9.009988 u $
-α: 4.001506 u
+$α: 4.001506 u$
+$n: 1.008665 u$
+$ ^{12}C $: $12u$ (by definition) – $6(0.00054858) = 11.996709 u$.
 
-
-The text from your image is as follows:
-
-n: 1.008665 u
-$ ^{12}C $: 12 (by definition) – 6(0.00054858) = 11.996709 u.
-
-The Q value is 0.006120 u = 5.701 MeV.
+The $Q$ value is $0.006120 u = 5.701$ MeV.
 
 The maximum neutron energy will occur when θ = 0 (the neutron is emitted in the same direction as the incident α), and the minimum neutron energy will be when θ = π.
 

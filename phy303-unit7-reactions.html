@@ -69,8 +69,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'phy303-unit7-reactions';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Unit 9 : Neutron Physics" href="phy303-unit9-neutronphysics.html" />
-    <link rel="prev" title="Unit 4 : Nuclear Properties" href="phy303-unit4-parity-moments.html" />
+    <link rel="next" title="Unit 8 : Compound/Photon reactions" href="phy303-unit8-compoundreactions.html" />
+    <link rel="prev" title="Unit 6 : Radioactive Decays" href="phy303-unit6-radioactive-decays.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -173,11 +173,17 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="phy303-unit3-shellmodel-and-spin.html">Unit 3. Shell Model</a></li>
 <li class="toctree-l1"><a class="reference internal" href="phy303-unit4-parity-moments.html">Unit 4 : Nuclear Properties</a></li>
 
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit5-collective-excited.html">Unit 5: Collective Models</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit6-radioactive-decays.html">Unit 6. Radioactive Decay</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Unit 7. Reactions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit8-compoundreactions.html">Unit 8. Compound Reactions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="phy303-unit9-neutronphysics.html">Unit 9 : Neutron Physics</a></li>
 
 
 
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit10-fissionandfusion.html">Unit 10. Nuclear Power</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit11-medicalapplications.html">Unit 11. Nuclear Medicine</a></li>
 </ul>
 
     </div>
@@ -486,14 +492,17 @@ Rutherford’s group (specifically, Hans Geiger and Ernest Marsden) conducted a 
 <h3>The Q value<a class="headerlink" href="#the-q-value" title="Permalink to this heading">#</a></h3>
 <p>Nuclear reactions are governed by 𝐸 = 𝑚𝑐􏰀. The Q-value of a reaction is the difference in mass between the initial and final states, expressed as an energy (usually in MeV): for example, the Q-value of the reaction 16O(p,α)13N can be calculated as follows (all numbers from Krane):</p>
 <ol class="arabic simple">
-<li><p>The nuclear mass of 16O is 15.994915 (atomic mass of 16O) − 8×0.00054858 = 15.990526 u.</p></li>
+<li><p>The nuclear mass of 16O is 15.994915 (atomic mass of 16O)
+$<span class="math notranslate nohighlight">\(8×0.00054858 = 15.990526 u.\)</span>$</p></li>
 <li><p>The mass of a proton is 1.00727647 u</p></li>
-<li><p>The nuclear mass of 13N is 13.005739 − 7×0.00054858 = 13.001899 u.</p></li>
+<li><p>The nuclear mass of 13N is
+$<span class="math notranslate nohighlight">\(13.005739 − 7×0.00054858 = 13.001899 u.\)</span>$</p></li>
 <li><p>The mass of an α particle is 4.00150618 u.</p></li>
-<li><p>Therefore the Q value is 16.997802 – 17.003405 = −0.005603 u = −5.219 MeV.</p></li>
+<li><p>Therefore the Q value is
+$<span class="math notranslate nohighlight">\(16.997802 – 17.003405 = −0.005603 u = −5.219 MeV.\)</span>$</p></li>
 </ol>
-<p>A negative Q-value implies that the reaction will not proceed spontaneously, but will require the initial proton to contribute at least 5.219 MeV of kinetic energy (actually, slightly more than this, because we need to allow for conservation of momentum). The minimum projectile kinetic energy required to make the reaction happen is called the threshold energy.
-A positive Q-value means that the reaction will generate energy. However, this does not necessarily mean that the reaction has zero threshold in practice. Consider the reaction 13C(α,n)16O. This has Q- value 2.216 MeV (you should check this!). However, a zero-energy α-particle will not initiate the reaction, because Coulomb repulsion will ensure that it does not get close enough to the carbon nucleus to react with it. This imposes an effective threshold energy: it’s difficult to calculate exactly what it is, because quantum tunnelling ensures that the reaction will take place (with a reduced cross section) at energies lower than a classical calculation would suggest. This is what makes power gener- ation by nuclear fusion so difficult: the relevant reactions do of course have positive Q (if they didn’t, they would not generate any energy!), but the kinetic energy required to overcome the Coulomb barrier means that the initial material has to be raised to an extremely high temperature for the fusion cross section to be high enough for useful energy output.</p>
+<p>A negative Q-value implies that the reaction will not proceed spontaneously, but will require the initial proton to contribute at least 5.219 MeV of kinetic energy (actually, slightly more than this, because we need to allow for conservation of momentum). The minimum projectile kinetic energy required to make the reaction happen is called the threshold energy.</p>
+<p>A positive Q-value means that the reaction will generate energy. However, this does not necessarily mean that the reaction has zero threshold in practice. Consider the reaction 13C(α,n)16O. This has Q- value 2.216 MeV (you should check this!). However, a zero-energy α-particle will not initiate the reaction, because Coulomb repulsion will ensure that it does not get close enough to the carbon nucleus to react with it. This imposes an effective threshold energy: it’s difficult to calculate exactly what it is, because quantum tunnelling ensures that the reaction will take place (with a reduced cross section) at energies lower than a classical calculation would suggest. This is what makes power gener- ation by nuclear fusion so difficult: the relevant reactions do of course have positive Q (if they didn’t, they would not generate any energy!), but the kinetic energy required to overcome the Coulomb barrier means that the initial material has to be raised to an extremely high temperature for the fusion cross section to be high enough for useful energy output.</p>
 <p>Reactions that have positive Q-values and an electrically neutral projectile (i.e. a neutron) will take place at arbitrarily low values of the neutron kinetic energy. In fact, it can be shown (see Krane section 12.4) that at low energies the neutron interaction cross section is proportional to <span class="math notranslate nohighlight">\(1/v\)</span>, where <span class="math notranslate nohighlight">\(v\)</span> is the speed of the neutron (or, equivalently, to <span class="math notranslate nohighlight">\(1/\sqrt{K_n}\)</span>, where <span class="math notranslate nohighlight">\(K_n = \frac{1}{2}m_nv^2\)</span> is the neutron kinetic energy).</p>
 <p>This is why most designs of fission reactors moderate the neutrons produced in uranium fission, i.e. cause them to scatter repeatedly until they reach thermal equilibrium, corresponding to kinetic energies of around 0.025 eV—the cross section for subsequent capture by another <span class="math notranslate nohighlight">\(^{235}U\)</span> nucleus is about 500 times higher at this energy than it is at the <span class="math notranslate nohighlight">\(O(1 MeV)\)</span> energies at which they were originally emitted.</p>
 <p>Elastic scattering, where the final state particles are the same as the initial state, obviously has Q = 0 and zero threshold even for charged particles, since the projectile does not need to make contact with the target (see the derivation for Rutherford scattering above).</p>
@@ -541,7 +550,7 @@ K_B = K_a - K_b + Q.
 <p><strong>Answer</strong>
 First look up and/or calculate the relevant masses.</p>
 <p>Atomic mass of <span class="math notranslate nohighlight">\( ^7Li \)</span> is 7.016003 u, so nuclear mass is <span class="math notranslate nohighlight">\( M = 7.016003 - 3(0.00054858) = 7.014357 u \)</span>.
-Mass of proton = 1.00727647 u.</p>
+Mass of proton = <span class="math notranslate nohighlight">\(1.00727647 u\)</span>.</p>
 <p>As the proton mass is ~938 MeV/c², a proton with a kinetic energy of 7.50 MeV is not relativistic, so we can write kinetic energy as <span class="math notranslate nohighlight">\( K = \frac{1}{2} mv^2 = \frac{p^2}{2m} \)</span> where <span class="math notranslate nohighlight">\( p \)</span> is the momentum.</p>
 <p>Notation: initial proton has kinetic energy <span class="math notranslate nohighlight">\( K \)</span> and momentum <span class="math notranslate nohighlight">\( p \)</span>. Scattered proton has kinetic energy <span class="math notranslate nohighlight">\( K_p \)</span> and momentum <span class="math notranslate nohighlight">\( p_p \)</span>, and recoiling lithium nucleus has kinetic energy <span class="math notranslate nohighlight">\( K_L \)</span> and momentum <span class="math notranslate nohighlight">\( p_L \)</span>.</p>
 <p>(i) In an elastic collision both kinetic energy and momentum are conserved. We have <span class="math notranslate nohighlight">\( \vec{p} = \vec{p_p} + \vec{p_L} \)</span>. Drawing out the momentum sum (noting that this all takes place in the plane defined by the vectors <span class="math notranslate nohighlight">\( \vec{p_p} \)</span> and <span class="math notranslate nohighlight">\( \vec{p_L} \)</span>, so it’s a two-dimensional problem), we see (figure 2) that <span class="math notranslate nohighlight">\( p_L^2 = p^2 + p_p^2 \)</span>. Energy conservation gives <span class="math notranslate nohighlight">\( K_p = K - K_L \)</span>, which we can write as</p>
@@ -589,10 +598,9 @@ E_p = 0.74886E - \frac{\Delta E}{1.1436} = 5.20 MeV.
 <p>Calculate the Q value of the reaction <span class="math notranslate nohighlight">\( p + ^4He \rightarrow ^1H + ^3He \)</span>. What is the threshold energy (i) for protons incident on helium and (ii) for <span class="math notranslate nohighlight">\( \alpha \)</span> particles incident on hydrogen?</p>
 <p><strong>Answer</strong>
 (Note that in this case we couldn’t use the bracket notation for the reaction, because we are asked to look at two different cases, <span class="math notranslate nohighlight">\( ^4He(p,d)^3He \)</span> and <span class="math notranslate nohighlight">\( ^1H(\alpha,d)^3He \)</span>.)</p>
-<p>The text from your image is:</p>
 <p>The relevant masses are, from Krane:
-proton 1.00727647 u, α particle 4.00150618 u, deuteron 2.01355321 u, <span class="math notranslate nohighlight">\(^3He\)</span> nucleus 3.014932 u.</p>
-<p>The Q value is therefore -0.019702 u = -18.353 MeV (rounding everything to 6 decimal places in u so as to match the precision of the mass of <span class="math notranslate nohighlight">\(^3He\)</span>: Krane only gives atomic masses to 6 decimal places).</p>
+proton <span class="math notranslate nohighlight">\(1.00727647 u\)</span>, α particle <span class="math notranslate nohighlight">\(4.00150618 u\)</span>, deuteron <span class="math notranslate nohighlight">\(2.01355321 u\)</span>, <span class="math notranslate nohighlight">\(^3He\)</span> nucleus <span class="math notranslate nohighlight">\(3.014932 u\)</span>.</p>
+<p>The Q value is therefore <span class="math notranslate nohighlight">\(-0.019702 u = -18.353\)</span> MeV (rounding everything to 6 decimal places in u so as to match the precision of the mass of <span class="math notranslate nohighlight">\(^3He\)</span>: Krane only gives atomic masses to 6 decimal places).</p>
 <p>To calculate the threshold energies, we use the equation for <span class="math notranslate nohighlight">\( K_b^{1/2} \)</span> we derived above. This only describes a physically possible reaction if it has a real solution (obviously observed kinetic energies are not complex numbers), and it only has a real solution if the term inside the square root is non-negative. The limiting case is when the argument of the square root is exactly zero,</p>
 <p><span class="math notranslate nohighlight">\( m_a m_b K_a \cos^2 \theta + (m_b + m_B)((m_b - m_a)K_a + m_b Q) = 0 \)</span>.</p>
 <p>Furthermore, for the absolute minimum possible value of <span class="math notranslate nohighlight">\( K_a \)</span> we must have <span class="math notranslate nohighlight">\( \theta = 0 \)</span>: we do not want to waste energy giving the products transverse momentum. Therefore <span class="math notranslate nohighlight">\( \cos \theta = 1 \)</span> and we have</p>
@@ -612,11 +620,10 @@ proton 1.00727647 u, α particle 4.00150618 u, deuteron 2.01355321 u, <span clas
 <p><strong>Answer</strong>
 The relevant masses are:
 <span class="math notranslate nohighlight">\( ^9Be: 9.012182 - 4(0.00054858) = 9.009988 u \)</span>
-α: 4.001506 u</p>
-<p>The text from your image is as follows:</p>
-<p>n: 1.008665 u
-<span class="math notranslate nohighlight">\( ^{12}C \)</span>: 12 (by definition) – 6(0.00054858) = 11.996709 u.</p>
-<p>The Q value is 0.006120 u = 5.701 MeV.</p>
+<span class="math notranslate nohighlight">\(α: 4.001506 u\)</span>
+<span class="math notranslate nohighlight">\(n: 1.008665 u\)</span>
+<span class="math notranslate nohighlight">\( ^{12}C \)</span>: <span class="math notranslate nohighlight">\(12u\)</span> (by definition) – <span class="math notranslate nohighlight">\(6(0.00054858) = 11.996709 u\)</span>.</p>
+<p>The <span class="math notranslate nohighlight">\(Q\)</span> value is <span class="math notranslate nohighlight">\(0.006120 u = 5.701\)</span> MeV.</p>
 <p>The maximum neutron energy will occur when θ = 0 (the neutron is emitted in the same direction as the incident α), and the minimum neutron energy will be when θ = π.</p>
 <p>The simplest way to do this is to apply the equation for <span class="math notranslate nohighlight">\( K_{b}^{1/2} \)</span>. For cos θ = 1 we have</p>
 <div class="math notranslate nohighlight">
@@ -727,20 +734,20 @@ Elastic scattering of a projectile by a target nucleus is analogous to diffracti
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="phy303-unit4-parity-moments.html"
+       href="phy303-unit6-radioactive-decays.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Unit 4 : Nuclear Properties</p>
+        <p class="prev-next-title">Unit 6 : Radioactive Decays</p>
       </div>
     </a>
     <a class="right-next"
-       href="phy303-unit9-neutronphysics.html"
+       href="phy303-unit8-compoundreactions.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Unit 9 : Neutron Physics</p>
+        <p class="prev-next-title">Unit 8 : Compound/Photon reactions</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
