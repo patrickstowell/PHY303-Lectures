@@ -313,7 +313,7 @@ We find: $2, 8, 20, 40, 58, 92...!!$
 
 What we find is that although we get the first few Magic Numbers correct $(2, 8,$ and $20)$, the higher levels are completely wrong. The next two shells suggested by nature are actually at $28$ and $50$. The nuclear potential well used as the basis appears reasonable though. Trying modifications to the potential can help a bit but not enough to makee new shells so low, instead an extra term is needed in our model.
 
-### SPIN ORBIT CORRECTIONS
+### Spin Orbit Corrections
 The answer turns out to be a so-called **Spin orbit Coupling** term. The propoosal of this critical extra term in the Nuclear Potential was made in 1949 by Maria Goeppert Mayer and Johannes Jense, recognised by award of the Nobel Prize in 1963 - together with Eugene Wigner.
 
 The basis is to introduce a further contribution to the internuclear force and hence the potential $V(r)$ that depends on the orientation of the spin $s$ and angular momentum $l$. I.e. it turns out this extra factor causes a re-ording of the energy levels 
