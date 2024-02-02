@@ -14,7 +14,11 @@ Because the reaction takes place in two stages, the angular distribution of the 
 
 
 The independence hypothesis essentially says that the reaction a + A → C* → B + b factorises into two halves: a + A → C* and C* → B + b. Its cross section is therefore given by
-\[ \sigma_{(a,b)}B = \sigma_{a+A→C*} \times BR(C* → B + b), \]
+
+$$
+ \sigma_{(a,b)}B = \sigma_{a+A→C*} \times BR(C* → B + b), 
+ $$
+ 
 where BR(C* → B + b) represents the branching ratio of the excited nucleus C* into the final state B + b. This can be tested by comparing the results of different projectile/target combinations which should produce the same compound nucleus. Results of such tests generally confirm the broad expectations of the independence hypothesis, albeit with some differences in detail (see for example figure 5).
 
 #### 8.2 Resonances
@@ -22,11 +26,15 @@ The probability of a compound-nucleus reaction is greatly enhanced if the centre
 
 ![Alt text](image-60.png)
 
-In a compound-nucleus reaction A(a, b)B, the shape of the resonance corresponding to an excited state with energy \(E_R\) and spin \(J\) is given by the Breit-Wigner distribution
-\[ \sigma_{BW}(E) = \frac{\pi}{(k)^2} \frac{(2J + 1)}{(2I_a + 1)(2I_A + 1)} \frac{\Gamma_a(E)\Gamma_b(E)}{(E - E_R)^2 + \Gamma(E)^2/4}, \]
-where \( \lambda = \frac{h}{p} \) is the de Broglie wavelength of the projectile and \( \Gamma(E) \) is the width of the resonance, which is determined by the Heisenberg uncertainty principle, \( \Gamma = \frac{h}{\tau} \) where \( \tau \) is the lifetime of the state. \( \Gamma_a \) and \( \Gamma_b \) are called partial widths, and are essentially the branching ratio of the compound nucleus into that particular state, \( BR(C* \rightarrow b + B) = \frac{\Gamma_b}{\Gamma} \).
+In a compound-nucleus reaction A(a, b)B, the shape of the resonance corresponding to an excited state with energy $E_R$ and spin $J$ is given by the Breit-Wigner distribution
 
-The shape of the Breit-Wigner distribution is determined mainly by \( (E - E_R)^2 + \Gamma(E)^2/4 \), and is shown in figure 7. The width \( \Gamma \) is the full width of the distribution at half the maximum height (you can verify this from the equation, assuming that all the other factors are roughly constant). Using the uncertainty principle and the typical timescale of compound-nucleus reactions, you can see that \( \Gamma \) should be around 10 eV – 1 keV.
+$$
+ \sigma_{BW}(E) = \frac{\pi}{(k)^2} \frac{(2J + 1)}{(2I_a + 1)(2I_A + 1)} \frac{\Gamma_a(E)\Gamma_b(E)}{(E - E_R)^2 + \Gamma(E)^2/4}, 
+ $$
+ 
+where $ \lambda = \frac{h}{p} $ is the de Broglie wavelength of the projectile and $ \Gamma(E) $ is the width of the resonance, which is determined by the Heisenberg uncertainty principle, $ \Gamma = \frac{h}{\tau} $ where $ \tau $ is the lifetime of the state. $ \Gamma_a $ and $ \Gamma_b $ are called partial widths, and are essentially the branching ratio of the compound nucleus into that particular state, $ BR(C* \rightarrow b + B) = \frac{\Gamma_b}{\Gamma} $.
+
+The shape of the Breit-Wigner distribution is determined mainly by $ (E - E_R)^2 + \Gamma(E)^2/4 $, and is shown in figure 7. The width $ \Gamma $ is the full width of the distribution at half the maximum height (you can verify this from the equation, assuming that all the other factors are roughly constant). Using the uncertainty principle and the typical timescale of compound-nucleus reactions, you can see that $ \Gamma $ should be around 10 eV – 1 keV.
 
 The shapes of the resonances in figure 6 do not look like figure 7: they have a pronounced asymmetry, with a dip in the cross section before the resonant rise. This is caused by interference between the resonance and non-resonant elastic scattering off the nuclear potential. This can be verified by
 
@@ -35,13 +43,13 @@ The shapes of the resonances in figure 6 do not look like figure 7: they have a 
 
 ![Alt text](image-62.png)
 
-As can be seen from the form of the Breit-Wigner, the height of the resonance peak is proportional to \(2J + 1\), and can therefore be used to deduce the spin of the excited state.
+As can be seen from the form of the Breit-Wigner, the height of the resonance peak is proportional to $2J + 1$, and can therefore be used to deduce the spin of the excited state.
 
 #### Summary: direct and compound-nucleus reactions
 To summarise:
 
-1. Direct reactions are fast (\(~10^{-22} s\)) reactions in which the projectile interacts with a small number of nucleons near the surface of the target nucleus. They are characterised by a forward peaked angular distribution of the ejectile(s) and are more likely with high-energy projectiles (\(>10 MeV\) or so). The important observables in direct reactions are the ejectile angular distribution (for optical model calculations) and energy spectrum at fixed angle (to map excited states of the daughter nucleus).
-2. Compound-nucleus reactions are slower (\(~10^{-18} - 10^{-16} s\)) reactions in which the projectile merges with the target nucleus. They are characterised by a fairly isotropic ejectile angular distribution and are more likely with low-energy projectiles. The decay mode of the compound nucleus is expected to be independent of the way it was formed. The important observable for compound-nucleus reactions is the cross section as a function of projectile energy, which should exhibit narrow resonances corresponding to excited states of the compound nucleus.
+1. Direct reactions are fast ($~10^{-22} s$) reactions in which the projectile interacts with a small number of nucleons near the surface of the target nucleus. They are characterised by a forward peaked angular distribution of the ejectile(s) and are more likely with high-energy projectiles ($>10 MeV$ or so). The important observables in direct reactions are the ejectile angular distribution (for optical model calculations) and energy spectrum at fixed angle (to map excited states of the daughter nucleus).
+2. Compound-nucleus reactions are slower ($~10^{-18} - 10^{-16} s$) reactions in which the projectile merges with the target nucleus. They are characterised by a fairly isotropic ejectile angular distribution and are more likely with low-energy projectiles. The decay mode of the compound nucleus is expected to be independent of the way it was formed. The important observable for compound-nucleus reactions is the cross section as a function of projectile energy, which should exhibit narrow resonances corresponding to excited states of the compound nucleus.
 
 3. Photonuclear reactions
 The nuclear reactions considered above all assume nuclear projectiles (typically small objects such as protons, neutrons, deuterons and alpha particles, but heavier ions are also used). It is, however, also possible to use photons as probes of nuclear structure.
@@ -60,7 +68,7 @@ These methods are complementary rather than competitive: bremsstrahlung beams ha
 
 
 #### Photon absorption by a nucleus
-As with compound-nucleus reactions, photon absorption will be much more probable if the centre-of-mass energy matches an excited state of the nucleus (in this case, since the photon does not change the numbers of protons and neutrons, an excited state of the target nucleus). Excited states that can be reached by electric dipole transitions, \( \Delta l = \pm 1 \), are preferred because the photon has spin 1. The photon carries momentum \( p = E_\gamma / c \), and this momentum must be transferred to the target, so the target kinetic energy (assuming \( E_\gamma \ll M_nc^2 \)) is \( E_{rec} = p^2 /2M_n = E^2_\gamma /2M_nc^2 \). This energy is not available to excite the nucleus, so the excitation energy is \( E_\gamma - E_{rec} \).
+As with compound-nucleus reactions, photon absorption will be much more probable if the centre-of-mass energy matches an excited state of the nucleus (in this case, since the photon does not change the numbers of protons and neutrons, an excited state of the target nucleus). Excited states that can be reached by electric dipole transitions, $ \Delta l = \pm 1 $, are preferred because the photon has spin 1. The photon carries momentum $ p = E_\gamma / c $, and this momentum must be transferred to the target, so the target kinetic energy (assuming $ E_\gamma \ll M_nc^2 $) is $ E_{rec} = p^2 /2M_n = E^2_\gamma /2M_nc^2 $. This energy is not available to excite the nucleus, so the excitation energy is $ E_\gamma - E_{rec} $.
 
 For a typical mid-table nucleus with a mass of 50 GeV/c² (≈ 54 u) and a 5 MeV photon, the recoil kinetic energy is 0.25 keV. This is less than the width of most resonances, so in general the de-excitation photon will not be able to re-excite another nucleus to the same excited state.
 
@@ -68,20 +76,20 @@ The final state of a photonuclear reaction depends on whether the photon energy 
 
 #### Nuclear resonance fluorescence
 Nuclear resonance fluorescence is a useful technique for studying excited states of nuclei. Because the incoming photon beam and be polarised, and the polarisation of the outgoing photons can be measured, the spin and parity assignments of excited states can be investigated using the angular distribution of the scattered photons. Zilges et al. (Prog. Nucl. Part. Phys. 122 (2022) 103903) list the properties that can be explored by photonuclear reactions as:
-- γ-ray transition energies \(E_\gamma\)
-- level energies \(E_x\) and placements of γ-ray transitions in the nuclear level scheme
-- multipolarities \(l\)L of γ-ray transitions (i.e. dipole, quadrupole etc.)
-- spin quantum numbers \(J\) of nuclear levels
-- parity quantum numbers \(\pi\) of nuclear levels
-- γ-decay branching ratios \(\Gamma_f/\Gamma_i\)
-- \(K\)-quantum numbers of nuclear levels
-- multipole-mixing ratios \(\delta\) of γ-ray transitions
-- integrated photonuclear resonance cross sections \(\sigma(\theta)\)
-- partial decay widths \(\Gamma_{f, mL}\)
-- total level widths \(\Gamma\)
-- level lifetimes \(\tau\)
-- reduced excitation strengths \(B(ML; g.s. → J^\pi)\)
-- decay transition strengths \(B(IL; J^\pi → J'^\pi)\).
+- γ-ray transition energies $E_\gamma$
+- level energies $E_x$ and placements of γ-ray transitions in the nuclear level scheme
+- multipolarities $l$L of γ-ray transitions (i.e. dipole, quadrupole etc.)
+- spin quantum numbers $J$ of nuclear levels
+- parity quantum numbers $\pi$ of nuclear levels
+- γ-decay branching ratios $\Gamma_f/\Gamma_i$
+- $K$-quantum numbers of nuclear levels
+- multipole-mixing ratios $\delta$ of γ-ray transitions
+- integrated photonuclear resonance cross sections $\sigma(\theta)$
+- partial decay widths $\Gamma_{f, mL}$
+- total level widths $\Gamma$
+- level lifetimes $\tau$
+- reduced excitation strengths $B(ML; g.s. → J^\pi)$
+- decay transition strengths $B(IL; J^\pi → J'^\pi)$.
 
 In addition to this, nuclear resonance fluorescence can be used for non-destructive assaying of materials, because the energies of the emitted γ-rays are characteristic of the particular element. MeV-energy γ-rays are quite penetrating, so this technique has the potential to be used for checking the contents of sealed containers. Suggested applications include scanning for special nuclear materials (by looking for the signatures of uranium and plutonium isotopes) and drugs (by looking at the ratios of C, N and O).
 
@@ -89,18 +97,18 @@ In addition to this, nuclear resonance fluorescence can be used for non-destruct
 ![Alt text](image-64.png)
 
 #### The giant dipole resonance
-The most obvious feature seen in photonuclear reactions above the nucleon separation energy is the giant dipole resonance, which is a broad peak in the cross section at photon energies of ~25 MeV in light nuclei, decreasing to ~13 MeV for heavy nuclei. For mass numbers above 50 or so, the peak energy is reasonably well described by the Migdal model, in which the proton and neutron populations are interpenetrating liquids; this gives \(E_m = 75A^{-1/3}\) for the energy of the resonance maximum.
+The most obvious feature seen in photonuclear reactions above the nucleon separation energy is the giant dipole resonance, which is a broad peak in the cross section at photon energies of ~25 MeV in light nuclei, decreasing to ~13 MeV for heavy nuclei. For mass numbers above 50 or so, the peak energy is reasonably well described by the Migdal model, in which the proton and neutron populations are interpenetrating liquids; this gives \(E_m = 75A^{-1/3}$ for the energy of the resonance maximum.
 
 In the liquid-drop model, the giant dipole resonance can be seen as a collective excitation in which the whole population of protons in the nucleus oscillates with respect to the whole population of neutrons. More detailed calculations involve summing up contributions from dipoles formed by a nucleon excited from a filled shell and the “hole” it leaves behind (similar to the concept of electrons and holes in semiconductors).
 
 An interesting feature of the giant dipole resonance is that if the nucleus is not spherical, the resonance will increase in width and eventually become double-humped, as can be seen for different isotopes of samarium in figure 11. This is understandable in the collective excitation model: if the nucleus has two different characteristic radii, the excitation will have two different resonant frequencies.
 
-(In figure 11, the quadrupole deformation parameter δ is defined as \( (b-a)/(R) \), where the nucleus is assumed to be a spheroid with two axes of length a and one of length b (thus δ is positive for a prolate (rugby-ball) spheroid and negative for an oblate (flattened) one). The mean radius (R) is taken to be 1.2A^(1/3) fm. There are other definitions of quadrupole deformation in the literature—the key point here is that the samarium nucleus becomes steadily less spherical for larger A.)
+(In figure 11, the quadrupole deformation parameter δ is defined as \( (b-a)/(R) $, where the nucleus is assumed to be a spheroid with two axes of length a and one of length b (thus δ is positive for a prolate (rugby-ball) spheroid and negative for an oblate (flattened) one). The mean radius (R) is taken to be 1.2A^(1/3) fm. There are other definitions of quadrupole deformation in the literature—the key point here is that the samarium nucleus becomes steadily less spherical for larger A.)
 
 The giant dipole resonance proved quite difficult to describe theoretically, and doing so drove the development of advanced techniques in nuclear theory. Analogues of the giant dipole resonance have since been studied in other systems, such as atoms, metallic clusters (small bound clusters of metal atoms with a conduction band of nearly-free electrons) and fullerenes, and the theoretical descriptions of these systems make use of the techniques developed in nuclear physics. The giant dipole resonance has therefore been a very fruitful phenomenon in terms of advancing theoretical physics.
 
 #### 3.2.3 Photonuclear reactions in astrophysics
-It is worth briefly mentioning that photonuclear reactions play an important role in astrophysics. Interactions between photons and charged particles in general (both nuclei and electrons) contribute to the pattern of density fluctuations that we see in the anisotropies of the cosmic microwave background and the large-scale distribution of galaxies. Photodisintegration of iron nuclei is a key stage in the collapse of an evolved massive star that gives rise to a core-collapse supernova (and seeds the universe with many different elements, including oxygen. Photonuclear reactions are also probably involved in the production of rare proton-rich isotopes such as \(^{106}Cd\), which cannot be made by the usual stellar/supernova nucleosynthesis pathways that rely on adding neutrons.
+It is worth briefly mentioning that photonuclear reactions play an important role in astrophysics. Interactions between photons and charged particles in general (both nuclei and electrons) contribute to the pattern of density fluctuations that we see in the anisotropies of the cosmic microwave background and the large-scale distribution of galaxies. Photodisintegration of iron nuclei is a key stage in the collapse of an evolved massive star that gives rise to a core-collapse supernova (and seeds the universe with many different elements, including oxygen. Photonuclear reactions are also probably involved in the production of rare proton-rich isotopes such as \(^{106}Cd$, which cannot be made by the usual stellar/supernova nucleosynthesis pathways that rely on adding neutrons.
 
 
 
