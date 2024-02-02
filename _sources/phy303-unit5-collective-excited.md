@@ -164,7 +164,10 @@ So we have seen in this unit again that the nucleus is a complex object. To unde
 
 ### 5.3 Gamma Decay
 
-The shell model predicts excitations when protons or neutrons move up to a higher energy level
+Up until now in our examples we've considered the case where protons and neutrons fill up our shells sequentially. The shell model however also predicts excitations when protons or neutrons are pushed up to a higher energy levels. Remember the nucleus wants to naturally go to the state of lowest energy, so these higher energy states will eventually decay down to the lower state again and emit gamma radiation.
+
+The energy of the emitted gamma radiation is dependent on the energy splittings between the levels that the nucleon has moved between, in exactly the same way as electron orbital transitions. The difference in our case is the more complex spacing of the shells, and the fact that we have two seperate shell structures, one for neutrons and one for protons.
+
 
 Example 130Sn
 50 protons (magic number)

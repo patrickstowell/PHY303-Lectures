@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>&lt;no title&gt; &#8212; PHY303 Nuclear Physics 1</title>
+    <title>Unit 4.1: Nuclear Reactions &#8212; PHY303 Nuclear Physics 1</title>
   
   
   
@@ -69,6 +69,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'phy303-unit7-reactions';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Unit 9 : Neutron Physics" href="phy303-unit9-neutronphysics.html" />
+    <link rel="prev" title="Unit 4 : Nuclear Properties" href="phy303-unit4-parity-moments.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -164,10 +166,18 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="phy303-unit1-introduction-and-structure.html">Unit 1 : Introduction</a></li>
 
 <li class="toctree-l1"><a class="reference internal" href="phy303-unit2-liquiddropmodels.html">Unit 2. Liquid Drop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit3-shellmodel-and-spin.html">Unit 3. Shell Model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit4-parity-moments.html">Unit 4 : Nuclear Properties</a></li>
+
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Unit 7. Reactions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit9-neutronphysics.html">Unit 9 : Neutron Physics</a></li>
+
+
+
 </ul>
 
     </div>
@@ -353,7 +363,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1><no title></h1>
+    <h1>Unit 4.1: Nuclear Reactions</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -362,9 +372,27 @@ document.write(`
                 <h2> Contents </h2>
             </div>
             <nav aria-label="Page">
-                <ul class="simple visible nav section-nav flex-column">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">4.1.1. Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notation">4.1.2 Notation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rutherford-scattering">4.1.3 Rutherford scattering</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kinematics">4.1.4 Kinematics</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-q-value">The Q value</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary</a></li>
 </ul>
-
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-reaction">4.2.1 Types of Reaction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">4.2 Types of Reaction</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#characteristics-of-direct-reactions">4.2.1 Characteristics of direct reactions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-direct-reaction">4.2.2 Types of direct reaction</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#applications-of-direct-reactions">4.2.3 Applications of direct reactions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#direct-reactions-and-excited-states">4.3.4 Direct reactions and excited states</a></li>
+</ul>
+</li>
+</ul>
             </nav>
         </div>
     </div>
@@ -375,17 +403,21 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <p>PHY303 Unit 4: Nuclear Reactions</p>
-<ol class="arabic simple">
-<li><p>Introduction
-So far we have concentrated on the properties of individual nuclei. However, in order to determine those properties, we must make use of nuclear reactions. Indeed, in order to have nuclei to study, and to exist to study them in the first place, we must have nuclear reactions: nuclear reactions build up the elements in stars, and the results of nuclear reactions tell us about nuclear structure.</p></li>
-</ol>
-<p>1.1 Notation
-Particle physicists (and chemists) describe reactions by notation such as A + a → B + b. Nuclear physicists tend to use the more compact notation A(a,b)B, where A is the target nucleus, struck by projectile a, which produces daughter nucleus B and ejectile b. It is usual for A to be more massive than a, but it isn’t obligatory; there do exist facilities, such as GSI in Darmstadt, Germany, which produce beams of heavy ions, and when these are used it is possible for the projectile to be lighter than the target. The defining feature for the notation is that a is moving and A is stationary. In contrast, the products B and b will generally all be moving, owing to momentum transfer, so in this case B will typically be defined as the heaviest product (it’s also the one that is not measured: a typical nuclear experiment will measure the energy and angle of the ejectile(s) b).</p>
+  <section id="unit-4-1-nuclear-reactions">
+<h1>Unit 4.1: Nuclear Reactions<a class="headerlink" href="#unit-4-1-nuclear-reactions" title="Permalink to this heading">#</a></h1>
+<section id="introduction">
+<h2>4.1.1. Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
+<p>So far we have concentrated on the properties of individual nuclei. However, in order to determine those properties, we must make use of nuclear reactions. Indeed, in order to have nuclei to study, and to exist to study them in the first place, we must have nuclear reactions: nuclear reactions build up the elements in stars, and the results of nuclear reactions tell us about nuclear structure.</p>
+</section>
+<section id="notation">
+<h2>4.1.2 Notation<a class="headerlink" href="#notation" title="Permalink to this heading">#</a></h2>
+<p>Particle physicists (and chemists) describe reactions by notation such as A + a → B + b. Nuclear physicists tend to use the more compact notation A(a,b)B, where A is the target nucleus, struck by projectile a, which produces daughter nucleus B and ejectile b. It is usual for A to be more massive than a, but it isn’t obligatory; there do exist facilities, such as GSI in Darmstadt, Germany, which produce beams of heavy ions, and when these are used it is possible for the projectile to be lighter than the target. The defining feature for the notation is that a is moving and A is stationary. In contrast, the products B and b will generally all be moving, owing to momentum transfer, so in this case B will typically be defined as the heaviest product (it’s also the one that is not measured: a typical nuclear experiment will measure the energy and angle of the ejectile(s) b).</p>
 <p>It is possible for b to consist of more than one particle: for example, among the possible reactions listed in the JANIS nuclear database for neutrons striking an iron-56 target are (n,2n), (n,np) and (n,2n+p). The ‘+’ sign may be omitted, e.g. 27Al(p,3pn)22Na.</p>
 <p>There exist reactions for which this notation does not work well, such as fission (if a thermal neutron collides with a nucleus of 235U, the most likely outcome is that the nucleus will undergo fission, but the exact fission products can’t be predicted). There are conventions to handle these: for example, fission induced by a neutron would be described as (n,fission) or (n,f), and spallation reactions, where a fairly energetic projectile, usually a proton, strikes a heavy target and causes it to emit a large but not well-defined number of nucleons, can be described as (p,spall). Both of these reaction types are interesting, fission for obvious reasons and spallation because it is used to produce neutrons for a wide range of research applications (and, in astrophysics, because it is responsible for the production of the light elements beryllium and boron).</p>
-<p>1.2 Rutherford scattering
-Historically, the first use of nuclear reactions was the discovery of the atomic nucleus by Ernest Rutherford’s research group at Manchester University. They used the elastic scattering of alpha particles off metals.</p>
+</section>
+<section id="rutherford-scattering">
+<h2>4.1.3 Rutherford scattering<a class="headerlink" href="#rutherford-scattering" title="Permalink to this heading">#</a></h2>
+<p>Historically, the first use of nuclear reactions was the discovery of the atomic nucleus by Ernest Rutherford’s research group at Manchester University. They used the elastic scattering of alpha particles off metals.</p>
 <p><img alt="Alt text" src="_images/image-57.png" /></p>
 <p>At the time, the prevailing model of the atom was the “plum pudding”, in which the mass and positive charge of the atom are distributed over the whole atomic volume, with an appropriate number of electrons embedded in it. With such evenly distributed charge, alpha particles should simply pass through with only very minor deflection, but in fact some particles were deflected at large angles. Rutherford realised that this could be explained if the charge were actually concentrated in a small volume, and derived an expression for the resulting angular distribution.</p>
 <p>Consider an alpha particle incident on a nucleus with an impact parameter b. The particle is seen to be scattered through an angle θ compared to its original direction. Because the scattering is elastic, the initial and final momenta of the particle have the same magnitude mu: only the direction changes. The final momentum is ( mu(cos θ, sin θ) ), and the change in momentum ( Δ\vec{p} ) is ( mu(cos θ - 1, sin θ) ) (since only two vectors are involved, this interaction all takes place in a single plane, so we can neglect the z component except at the very end). The magnitude of ( Δ\vec{p} ) is</p>
@@ -426,9 +458,12 @@ particles will simply stop within the foil);</p></li>
 Rutherford’s group (specifically, Hans Geiger and Ernest Marsden) conducted a series of experiments in 1913 that verified these predictions. This demonstrated that the atom contained an essentially pointlike nucleus.
 (It is worth noting that you would obtain the same result if it were the negative charge of the atom that were concentrated in a small volume, i.e. if the electrons all clumped together in the midst of the distributed positive charge. Rutherford concluded that the nucleus was positively charged as a result of experiments using gas targets. This was consistent with the fact that the alpha particle was itself positively charged, and had earlier been identified by Rutherford with a fully ionised helium atom.)</p></li>
 </ol>
-<p>1.3 Kinematics
-1.3.1 The Q value
-Nuclear reactions are governed by 𝐸 = 𝑚𝑐􏰀. The Q-value of a reaction is the difference in mass between the initial and final states, expressed as an energy (usually in MeV): for example, the Q-value of the reaction 16O(p,α)13N can be calculated as follows (all numbers from Krane):</p>
+</section>
+<section id="kinematics">
+<h2>4.1.4 Kinematics<a class="headerlink" href="#kinematics" title="Permalink to this heading">#</a></h2>
+<section id="the-q-value">
+<h3>The Q value<a class="headerlink" href="#the-q-value" title="Permalink to this heading">#</a></h3>
+<p>Nuclear reactions are governed by 𝐸 = 𝑚𝑐􏰀. The Q-value of a reaction is the difference in mass between the initial and final states, expressed as an energy (usually in MeV): for example, the Q-value of the reaction 16O(p,α)13N can be calculated as follows (all numbers from Krane):</p>
 <ol class="arabic simple">
 <li><p>The nuclear mass of 16O is 15.994915 (atomic mass of 16O) − 8×0.00054858 = 15.990526 u.</p></li>
 <li><p>The mass of a proton is 1.00727647 u</p></li>
@@ -461,15 +496,19 @@ Collecting terms,
 [ (m_b + m_B)K_b - (2 \cos \theta \sqrt{m_am_bK_a})K_b^{1/2} - ((m_b - m_a)K_a + m_bQ) = 0 ].
 This is a quadratic in the unknown ( K_b ). Applying the usual quadratic formula (and cancelling off a factor of 2),
 [ K_b^{1/2} = \frac{\cos \theta \sqrt{m_am_bK_a} \pm [m_am_bK_a \cos^2 \theta + (m_b + m_B)((m_b - m_a)K_a + m_bQ)]^{1/2}}{m_b + m_B} ].
-This looks hideous, but the key point is that everything on the right-hand side is known, so what it tells us is that a given angle ( \theta ) almost always^3 corresponds to a specific ejectile kinetic energy ( K_b ), or — perhaps more usefully — that a given combination of ( K_b ) and ( \theta ) corresponds to a specific value of ( Q ). Therefore we can use scattering processes to explore the excited states of the nucleus B, even though we do not observe B itself.</p>
-<p>Example 1
-In Coulomb scattering of 7.50 MeV protons by a target of ( ^7Li ), what is the energy of protons at 90° (i) if the scattering is elastic, (ii) if the ( ^7Li ) is left in its first excited state, 0.477 MeV above the ground state?</p>
-<p>Answer
+This looks hideous, but the key point is that everything on the right-hand side is known, so what it tells us is that a given angle ( \theta ) almost always corresponds to a specific ejectile kinetic energy ( K_b ), or — perhaps more usefully — that a given combination of ( K_b ) and ( \theta ) corresponds to a specific value of ( Q ). Therefore we can use scattering processes to explore the excited states of the nucleus B, even though we do not observe B itself.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If ( Q &lt; 0 ), for small ( K_a ) it is possible for the value of ( (m_b + m_B)((m_b - m_a)K_a + m_bQ) ) to be less than zero. In this case there will be two possible values of ( K_b^{1/2} ) corresponding to the two signs of the square root. This is normally relevant only for energies close to threshold—see Krane, figures 11.2(a) and (b).</p>
+</div>
+</section>
+<section id="example-1">
+<h3>Example 1<a class="headerlink" href="#example-1" title="Permalink to this heading">#</a></h3>
+<p>In Coulomb scattering of 7.50 MeV protons by a target of ( ^7Li ), what is the energy of protons at 90° (i) if the scattering is elastic, (ii) if the ( ^7Li ) is left in its first excited state, 0.477 MeV above the ground state?</p>
+<p><strong>Answer</strong>
 First look up and/or calculate the relevant masses.</p>
 <p>Atomic mass of ( ^7Li ) is 7.016003 u, so nuclear mass is ( M = 7.016003 - 3(0.00054858) = 7.014357 u ).
 Mass of proton = 1.00727647 u.</p>
-<hr class="docutils" />
-<p>3 If ( Q &lt; 0 ), for small ( K_a ) it is possible for the value of ( (m_b + m_B)((m_b - m_a)K_a + m_bQ) ) to be less than zero. In this case there will be two possible values of ( K_b^{1/2} ) corresponding to the two signs of the square root. This is normally relevant only for energies close to threshold—see Krane, figures 11.2(a) and (b).</p>
 <p>As the proton mass is ~938 MeV/c², a proton with a kinetic energy of 7.50 MeV is not relativistic, so we can write kinetic energy as ( K = \frac{1}{2} mv^2 = \frac{p^2}{2m} ) where ( p ) is the momentum.</p>
 <p>Notation: initial proton has kinetic energy ( K ) and momentum ( p ). Scattered proton has kinetic energy ( K_p ) and momentum ( p_p ), and recoiling lithium nucleus has kinetic energy ( K_L ) and momentum ( p_L ).</p>
 <p>(i) In an elastic collision both kinetic energy and momentum are conserved. We have ( \vec{p} = \vec{p_p} + \vec{p_L} ). Drawing out the momentum sum (noting that this all takes place in the plane defined by the vectors ( \vec{p_p} ) and ( \vec{p_L} ), so it’s a two-dimensional problem), we see (figure 2) that ( p_L^2 = p^2 + p_p^2 ). Energy conservation gives ( K_p = K - K_L ), which we can write as
@@ -480,8 +519,6 @@ writing ( m ) for the proton mass and ( M ) for the lithium mass.</p>
 <p>Therefore
 [ \frac{m^{-1} - M^{-1}}{m^{-1} + M^{-1}} p^2 = 0.748860p^2 ],
 and dividing through by ( 2m ) gives us ( E_p = 0.74886E = 5.62 MeV ).</p>
-<hr class="docutils" />
-<p>Figure 2: momentum conservation in Example 1.</p>
 <p>(ii) In the second case, momentum is conserved as before, but the energy conservation equation is now
 [ K_p = K - K_L - \Delta E, ]
 where ( \Delta E = 0.477 ) MeV is the excitation energy.</p>
@@ -492,9 +529,11 @@ where ( \Delta E = 0.477 ) MeV is the excitation energy.</p>
 [ E_p = 0.74886E - \frac{\Delta E}{1.1436} = 5.20 MeV. ]</p>
 <p>Notice that in an actual experiment, if we observe protons at 90° to the original direction, we will see a peak at ( E_p = 5.62 ) MeV corresponding to elastic scattering, and a peak at 5.20 MeV corresponding to the first excited state (plus more peaks at lower energies corresponding to higher excited states). We could then work this equation backwards to extract ( \Delta E ) from the known ( E_p ).</p>
 <p>Also note that we could have done this question using the general expression for ( K_b^{1/2} ) that we derived earlier. You should check that this gives you the same answers.</p>
-<p>Example 2
-Calculate the Q value of the reaction ( p + ^4He \rightarrow ^1H + ^3He ). What is the threshold energy (i) for protons incident on helium and (ii) for ( \alpha ) particles incident on hydrogen?</p>
-<p>Answer
+</section>
+<section id="example-2">
+<h3>Example 2<a class="headerlink" href="#example-2" title="Permalink to this heading">#</a></h3>
+<p>Calculate the Q value of the reaction ( p + ^4He \rightarrow ^1H + ^3He ). What is the threshold energy (i) for protons incident on helium and (ii) for ( \alpha ) particles incident on hydrogen?</p>
+<p><strong>Answer</strong>
 (Note that in this case we couldn’t use the bracket notation for the reaction, because we are asked to look at two different cases, ( ^4He(p,d)^3He ) and ( ^1H(\alpha,d)^3He ).)</p>
 <p>The text from your image is:</p>
 <p>The relevant masses are, from Krane:
@@ -512,9 +551,11 @@ proton 1.00727647 u, α particle 4.00150618 u, deuteron 2.01355321 u, (^3He) nuc
 (ii) ( K_a = 18.353 \frac{5.028485}{5.028485 - 4.001506} = 89.863 MeV ).</p>
 <p>The reason that the threshold for the alpha-induced reaction is so much higher is that ( p = \sqrt{2mK} ): for a given energy, the alpha particle has a much higher momentum than the proton, and therefore more of the initial kinetic energy is required for momentum conservation and so is not available to convert into mass. However, the energy per nucleon is very similar for the two cases, 23.0 MeV for (i) and 22.5 MeV for (ii); for this reason, projectile energies are often specified as energy per nucleon, ( K/A_p ), where ( A_p ) is the mass number of the projectile, rather than total energy.</p>
 <p>Notice that 23 MeV ( \ll 938.3 MeV/c^2 ) and 90 MeV ( \ll 1876 MeV/c^2 ), so the assumption that everything is non-relativistic is reasonably safe (though not safe to 5 significant figures—we should really round our answers to 23.0 and 89.9 MeV). This should always be checked: if you end up with a kinetic energy which is not much less than the mass, you need to redo the kinematics using relativistic expressions, as you did in the particle physics course.</p>
-<p>Example 3
-In the reaction ( ^9Be(\alpha,n)^{12}C ), find the maximum and minimum neutron energies when the incident α energy is (i) 7.0 MeV and (ii) 1.0 MeV.</p>
-<p>Answer
+</section>
+<section id="example-3">
+<h3>Example 3<a class="headerlink" href="#example-3" title="Permalink to this heading">#</a></h3>
+<p>In the reaction ( ^9Be(\alpha,n)^{12}C ), find the maximum and minimum neutron energies when the incident α energy is (i) 7.0 MeV and (ii) 1.0 MeV.</p>
+<p><strong>Answer</strong>
 The relevant masses are:
 ( ^9Be: 9.012182 - 4(0.00054858) = 9.009988 u )
 α: 4.001506 u</p>
@@ -532,31 +573,47 @@ Notice that the argument of the square root is always larger than ( m_a m_n K_a 
 (i) ( K_{n,max} = 12.4 MeV; K_{n,min} = 7.3 MeV; )
 (ii) ( K_{n,max} = 6.7 MeV; K_{n,min} = 5.2 MeV. )</p>
 <p>(All answers rounded to the nearest 0.1 MeV, to match input precision; arguably we should round 12.4 to 12, but as the first figure is a 1 it is not unreasonable to keep an extra figure here.)</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>It is worth noting here that the units of the mass cancel out, so provided that all masses are expressed in the same units (don’t put some of them in u and others in MeV/c²…) you do not have to convert them to SI or MeV or anything else.</p>
-<p>Notes</p>
+</div>
+</section>
+<section id="summary">
+<h3>Summary<a class="headerlink" href="#summary" title="Permalink to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>All the above examples assume a two-body final state, i.e. b is one particle. If this is the case, the reaction kinematics can be determined up to one angle, θ, that appears in the equations and one, φ, that is irrelevant (the final state can be rotated through any angle around the direction of the projectile a without affecting the kinematics). If b consists of more than one particle, the kinematics are no longer uniquely determined (cf. the electron energy distribution in beta decay); however, threshold energy and minimum and maximum energies can still be calculated.</p></li>
 <li><p>In the examples, I have used the standard nuclear physics approach of assuming that the speeds involved are non-relativistic. This is OK to about the 1% level. It is, of course, also possible to do all these calculations using relativistic kinematics, as you did in the particle physics course last semester. Relativistic kinematics must be used if the projectile is an electron—MeV energies imply v ≈ c for an electron.</p></li>
-<li><p>Types of Nuclear Reaction
-Besides Coulomb scattering (see section 1.2), in which there is no real contact between the charged projectile and the target nucleus, there are two main types of nuclear reaction:</p></li>
+</ol>
+</section>
+</section>
+<section id="types-of-reaction">
+<h2>4.2.1 Types of Reaction<a class="headerlink" href="#types-of-reaction" title="Permalink to this heading">#</a></h2>
+<p>Besides Coulomb scattering (see section 1.2), in which there is no real contact between the charged projectile and the target nucleus, there are two main types of nuclear reaction:</p>
+<ol class="arabic simple">
 <li><p>direct reactions, in which the projectile interacts with a small number (usually one) of nucleons on the surface of the target nucleus (a peripheral reaction);</p></li>
 <li><p>compound-nucleus reactions, in which the projectile combines with the target to form an excited compound nucleus, which then de-excites to produce the daughter nucleus and ejectile(s).</p></li>
 </ol>
 <p>These types of reaction are not mutually exclusive: for example, an elastic scattering reaction such as (p,p) [the notation (p,p) means that the proton is deflected, but does not lose any energy; in contrast, (p,p’) denotes an inelastic collision where the proton loses energy by exciting the target] could take place by Coulomb scattering (no contact between projectile and target), direct reaction (proton hits a nucleon on the surface of the target and is deflected) or compound-nucleus reaction (proton and target combine, but the resulting compound nucleus happens to de-excite by emitting a proton—this is not very likely, but could happen if the target were already quite proton-rich). In general, direct and compound-nucleus reactions can be distinguished by the angular distribution of the ejectile: in direct reactions, not much of the initial momentum is transferred to the target, and the ejectile(s) tend to travel in the same direction as the incoming projectile, i.e. the angular distribution is forward-peaked (even when transformed to the centre of mass frame). In contrast, the de-excitation of the compound nucleus is a separate process from its initial formation, and therefore the angular distribution of the decay products tends to be fairly isotropic.</p>
-<p>2.2 Direct reactions
-2.2.1 Characteristics of direct reactions
-The fundamental characteristic of direct reactions is that they take place in the time it would take the projectile to traverse the nucleus. There are various ways of estimating this, but they all boil down to a simple calculation: the speed of a few-MeV nucleon is of order 0.1c; the size of a typical target nucleus is a few femtometres; 10^-15/10^7 = 10^-22, so a direct reaction should take place on a timescale of order^4 10^-22 s. The logic of this is that if the reaction is over in the time it would have taken the projectile to cross the nucleus, there has not been time for a compound nucleus to form, so it can’t be a compound-nucleus reaction.</p>
+</section>
+<section id="id1">
+<h2>4.2 Types of Reaction<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
+<section id="characteristics-of-direct-reactions">
+<h3>4.2.1 Characteristics of direct reactions<a class="headerlink" href="#characteristics-of-direct-reactions" title="Permalink to this heading">#</a></h3>
+<p>The fundamental characteristic of direct reactions is that they take place in the time it would take the projectile to traverse the nucleus. There are various ways of estimating this, but they all boil down to a simple calculation: the speed of a few-MeV nucleon is of order 0.1c; the size of a typical target nucleus is a few femtometres; 10^-15/10^7 = 10^-22, so a direct reaction should take place on a timescale of order 10^-22 s. The logic of this is that if the reaction is over in the time it would have taken the projectile to cross the nucleus, there has not been time for a compound nucleus to form, so it can’t be a compound-nucleus reaction.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Note that this is an order-of-magnitude estimate: it doesn’t have to be precise. We will see later that the timescale for compound-nucleus reactions is much longer.
+</pre></div>
+</div>
 <p>Direct reactions tend to involve relatively high-energy projectiles. The reason for this is that a low-energy projectile, such as a thermal neutron with an energy of 0.025 eV, has a de Broglie wavelength which is much larger than an individual nucleon: it will “see” the nucleus as an undifferentiated blob, so it is unlikely to interact with individual nucleons. In contrast, a 100 MeV nucleon would have a de Broglie wavelength of the same order as the diameter of a proton and would be much more likely to undergo a direct reaction.</p>
 <p>As noted earlier, the products of direct reactions are strongly forward-peaked, because not much of the incoming energy is transferred to the target nucleus.</p>
-<p>2.2.2 Types of direct reaction
-Because direct reactions involve only a few nucleons near the surface of the target nucleus, the possible reactions are rather limited—for example, it would not be possible to induce fission by a direct reaction. The principal types are:</p>
+</section>
+<section id="types-of-direct-reaction">
+<h3>4.2.2 Types of direct reaction<a class="headerlink" href="#types-of-direct-reaction" title="Permalink to this heading">#</a></h3>
+<p>Because direct reactions involve only a few nucleons near the surface of the target nucleus, the possible reactions are rather limited—for example, it would not be possible to induce fission by a direct reaction. The principal types are:</p>
 <ul class="simple">
 <li><p>elastic and inelastic scattering—the ejectile is identical to the projectile, with the same kinetic energy (elastic) or reduced kinetic energy (inelastic);</p></li>
 <li><p>charge exchange—as the name indicates, reactions in which charge is exchanged between projectile and target, most obviously (n,p) and (p,n), but also (^3He,^3H) or vice versa;</p></li>
 </ul>
-<p>4 Note that this is an order-of-magnitude estimate: it doesn’t have to be precise. We will see later that the timescale for compound-nucleus reactions is much longer.</p>
 <p><img alt="Alt text" src="_images/image-56.png" /></p>
-<p>The text from the image is provided below:</p>
 <p>transfer reactions—a nucleon (occasionally more than one) is transferred from projectile to target:</p>
 <ul class="simple">
 <li><p>stripping reaction—transfer is from projectile to target, e.g. (d,p) or (d,n);</p></li>
@@ -564,15 +621,22 @@ Because direct reactions involve only a few nucleons near the surface of the tar
 knock-out reactions—a nucleon or light cluster (e.g. a particle) is knocked out of the target but not attached to the projectile, e.g. (n,2n).</p></li>
 </ul>
 <p>All of these can also take place via the compound-nucleus route. The direct reaction will dominate at high projectile energies and in the forward direction. Because direct reactions, despite the use of high-energy projectiles, only involve small energy transfers, they tend to populate low-level excited states, whereas compound-nucleus reactions typically involve higher levels of excitation (for a given projectile energy). Consequently, it is usually possible to disentangle the direct reaction contribution from the compound-nucleus route without too much ambiguity.</p>
-<p>2.2.3 Applications of direct reactions
-A key feature of direct reactions is that they tend to be very simple, since only a few nucleons are involved. This makes them easy to analyse theoretically, so they are extremely useful in understanding nuclear structure.</p>
+</section>
+<section id="applications-of-direct-reactions">
+<h3>4.2.3 Applications of direct reactions<a class="headerlink" href="#applications-of-direct-reactions" title="Permalink to this heading">#</a></h3>
+<p>A key feature of direct reactions is that they tend to be very simple, since only a few nucleons are involved. This makes them easy to analyse theoretically, so they are extremely useful in understanding nuclear structure.</p>
 <p>Since only a small fraction of the incident projectile energy is transferred in direct reactions, the cross section as a function of incident particle energy is smooth. The interesting observables are the energy and angular distributions of the ejected particle(s).</p>
 <p>Elastic scattering and the optical model
 Elastic scattering of a projectile by a target nucleus is analogous to diffraction of light around an obstacle, and similar diffraction patterns are observed. These are described using the optical model, which essentially treats the projectile as moving in a potential generated by the nucleons in the nucleus. The nucleus is not opaque to projectiles, so the diffraction minima do not go down to zero (this is sometimes referred to as the “cloudy crystal ball model”).</p>
 <p>The potential used in the optical model takes into account the nuclear potential, the Coulomb potential (for charged projectiles), spin-orbit interactions, potentially non-spherical shapes, etc. It is in general complex: the imaginary part is there to account for projectiles that do not scatter elastically. The description of the data can be extremely good (see figure 3); it is usually better for simple projectiles such as protons and neutrons than for more complicated objects.</p>
 <p>Fitting optical model parameters gives nuclear physicists information about the size, shape and spin of the target nucleus, which means that direct nuclear reactions are an important probe of overall nuclear properties.</p>
-<p>Direct reactions and excited states
-In compound-nucleus reactions, as we will see later, excited states of the compound nucleus can be observed as resonances in the cross section: it is more likely that the projectile will merge with the target nucleus if the total centre-of-mass energy corresponds to an excited state. This does not happen in direct reactions, because the projectile does not transfer all its energy to the target. However, as we saw in section 1.3.2, if the final state contains only a single ejectile, the Q-value of the reaction can be deduced from the energy and angle of the ejectile, and hence excited states will cause peaks in the ejectile energy spectrum as measured at a specific scattering angle. The heights of the peaks can be used to deduce information about the spin of the state. The (d,p) stripping reaction and its inverse, the (p,d) pickup reaction, have historically been extremely important in such studies. Figure 4 shows results from a recent (d,p) experiment on molybdenum and ruthenium isotopes.</p>
+</section>
+<section id="direct-reactions-and-excited-states">
+<h3>4.3.4 Direct reactions and excited states<a class="headerlink" href="#direct-reactions-and-excited-states" title="Permalink to this heading">#</a></h3>
+<p>In compound-nucleus reactions, as we will see later, excited states of the compound nucleus can be observed as resonances in the cross section: it is more likely that the projectile will merge with the target nucleus if the total centre-of-mass energy corresponds to an excited state. This does not happen in direct reactions, because the projectile does not transfer all its energy to the target. However, as we saw in section 1.3.2, if the final state contains only a single ejectile, the Q-value of the reaction can be deduced from the energy and angle of the ejectile, and hence excited states will cause peaks in the ejectile energy spectrum as measured at a specific scattering angle. The heights of the peaks can be used to deduce information about the spin of the state. The (d,p) stripping reaction and its inverse, the (p,d) pickup reaction, have historically been extremely important in such studies. Figure 4 shows results from a recent (d,p) experiment on molybdenum and ruthenium isotopes.</p>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -604,6 +668,24 @@ In compound-nucleus reactions, as we will see later, excited states of the compo
                 <footer class="prev-next-footer">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="phy303-unit4-parity-moments.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Unit 4 : Nuclear Properties</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="phy303-unit9-neutronphysics.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Unit 9 : Neutron Physics</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
@@ -618,9 +700,27 @@ In compound-nucleus reactions, as we will see later, excited states of the compo
     <i class="fa-solid fa-list"></i> Contents
   </div>
   <nav class="bd-toc-nav page-toc">
-    <ul class="simple visible nav section-nav flex-column">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">4.1.1. Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notation">4.1.2 Notation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rutherford-scattering">4.1.3 Rutherford scattering</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kinematics">4.1.4 Kinematics</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-q-value">The Q value</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary</a></li>
 </ul>
-
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-reaction">4.2.1 Types of Reaction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">4.2 Types of Reaction</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#characteristics-of-direct-reactions">4.2.1 Characteristics of direct reactions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-direct-reaction">4.2.2 Types of direct reaction</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#applications-of-direct-reactions">4.2.3 Applications of direct reactions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#direct-reactions-and-excited-states">4.3.4 Direct reactions and excited states</a></li>
+</ul>
+</li>
+</ul>
   </nav></div>
 
 </div></div>

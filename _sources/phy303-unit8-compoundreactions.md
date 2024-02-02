@@ -15,23 +15,12 @@ Because the reaction takes place in two stages, the angular distribution of the 
 
 The independence hypothesis essentially says that the reaction a + A → C* → B + b factorises into two halves: a + A → C* and C* → B + b. Its cross section is therefore given by
 \[ \sigma_{(a,b)}B = \sigma_{a+A→C*} \times BR(C* → B + b), \]
-where BR(C* → B + b) represents the branching ratio of the excited nucleus C* into the final state B + b. This can be tested by comparing the results of different projectile/target combinations which
-
-12
-
-should produce the same compound nucleus. Results of such tests generally confirm the broad expectations of the independence hypothesis, albeit with some differences in detail (see for example figure 5).
+where BR(C* → B + b) represents the branching ratio of the excited nucleus C* into the final state B + b. This can be tested by comparing the results of different projectile/target combinations which should produce the same compound nucleus. Results of such tests generally confirm the broad expectations of the independence hypothesis, albeit with some differences in detail (see for example figure 5).
 
 #### 8.2 Resonances
 The probability of a compound-nucleus reaction is greatly enhanced if the centre-of-mass energy of the projectile-plus-target system coincides with an excited state of the compound nucleus. This produces a spike in the cross section known as a resonance (see figure 6).
 
-
-
 ![Alt text](image-60.png)
-
-
-
-
-The text from your image is:
 
 In a compound-nucleus reaction A(a, b)B, the shape of the resonance corresponding to an excited state with energy \(E_R\) and spin \(J\) is given by the Breit-Wigner distribution
 \[ \sigma_{BW}(E) = \frac{\pi}{(k)^2} \frac{(2J + 1)}{(2I_a + 1)(2I_A + 1)} \frac{\Gamma_a(E)\Gamma_b(E)}{(E - E_R)^2 + \Gamma(E)^2/4}, \]
@@ -41,24 +30,10 @@ The shape of the Breit-Wigner distribution is determined mainly by \( (E - E_R)^
 
 The shapes of the resonances in figure 6 do not look like figure 7: they have a pronounced asymmetry, with a dip in the cross section before the resonant rise. This is caused by interference between the resonance and non-resonant elastic scattering off the nuclear potential. This can be verified by
 
-13
-
-Figure 7: the Breit-Wigner distribution.
-
-
 
 ![Alt text](image-61.png)
 
-
-
-
-
-
-
 ![Alt text](image-62.png)
-
-
-The text from your image is:
 
 As can be seen from the form of the Breit-Wigner, the height of the resonance peak is proportional to \(2J + 1\), and can therefore be used to deduce the spin of the excited state.
 
@@ -74,7 +49,8 @@ The nuclear reactions considered above all assume nuclear projectiles (typically
 
 The problem with using photons is that they are much more likely to interact with the electrons in the target, or with the electric field of the nucleus, than with the nucleus itself. By far the dominant contributions to the cross section for photon absorption in solid targets are the photoelectric effect (i.e. liberation of electrons) below 1 MeV photon energy and pair-production in the electric field of the nucleus above 1 MeV. However, high-intensity sources of MeV-energy photons are available (see below), so photonuclear reactions can be studied and do have some practical applications.
 
-3.1 Photon sources
+
+#### Photon sources
 Very high-energy photons are produced using electron beams. There are two main methods, shown schematically in figure 9.
 
 
@@ -82,18 +58,15 @@ Very high-energy photons are produced using electron beams. There are two main m
 These methods are complementary rather than competitive: bremsstrahlung beams have a wide ener- gy range and can therefore be used to study the energy dependence of the reaction (especially in “tagged” beams where the momentum of the scattered electron is measured by inserting a strong magnetic field immediately after the radiator), while laser backscattered beams can be tuned to a particular energy to investigate a specific excited state.
 ![Alt text](image-63.png)
 
-3.2 Photon absorption by a nucleus
+
+#### Photon absorption by a nucleus
 As with compound-nucleus reactions, photon absorption will be much more probable if the centre-of-mass energy matches an excited state of the nucleus (in this case, since the photon does not change the numbers of protons and neutrons, an excited state of the target nucleus). Excited states that can be reached by electric dipole transitions, \( \Delta l = \pm 1 \), are preferred because the photon has spin 1. The photon carries momentum \( p = E_\gamma / c \), and this momentum must be transferred to the target, so the target kinetic energy (assuming \( E_\gamma \ll M_nc^2 \)) is \( E_{rec} = p^2 /2M_n = E^2_\gamma /2M_nc^2 \). This energy is not available to excite the nucleus, so the excitation energy is \( E_\gamma - E_{rec} \).
-
-
-
-The text from the image is as follows:
 
 For a typical mid-table nucleus with a mass of 50 GeV/c² (≈ 54 u) and a 5 MeV photon, the recoil kinetic energy is 0.25 keV. This is less than the width of most resonances, so in general the de-excitation photon will not be able to re-excite another nucleus to the same excited state.
 
 The final state of a photonuclear reaction depends on whether the photon energy is above or below the separation energy, i.e. the energy required to remove a proton or a neutron from the target nucleus (typically this is of order 8 MeV) as shown in figure 10. If the photon energy is below the separation energy, the result of the interaction will be an excited state of the target, which will de-excite by emitting one or more photons (depending on whether it returns directly to the ground state or cascades down through intermediate states): this is known as nuclear resonance fluorescence. If the photon energy is above the separation energy, it can knock out one or more nucleons, a process known as photodisintegration (Zilges et al. call it photodissociation, which is probably a better name, but less commonly used).
 
-3.2.1 Nuclear resonance fluorescence
+#### Nuclear resonance fluorescence
 Nuclear resonance fluorescence is a useful technique for studying excited states of nuclei. Because the incoming photon beam and be polarised, and the polarisation of the outgoing photons can be measured, the spin and parity assignments of excited states can be investigated using the angular distribution of the scattered photons. Zilges et al. (Prog. Nucl. Part. Phys. 122 (2022) 103903) list the properties that can be explored by photonuclear reactions as:
 - γ-ray transition energies \(E_\gamma\)
 - level energies \(E_x\) and placements of γ-ray transitions in the nuclear level scheme
@@ -115,11 +88,7 @@ In addition to this, nuclear resonance fluorescence can be used for non-destruct
 
 ![Alt text](image-64.png)
 
-
-
-The text from your image is:
-
-3.2.2 The giant dipole resonance
+#### The giant dipole resonance
 The most obvious feature seen in photonuclear reactions above the nucleon separation energy is the giant dipole resonance, which is a broad peak in the cross section at photon energies of ~25 MeV in light nuclei, decreasing to ~13 MeV for heavy nuclei. For mass numbers above 50 or so, the peak energy is reasonably well described by the Migdal model, in which the proton and neutron populations are interpenetrating liquids; this gives \(E_m = 75A^{-1/3}\) for the energy of the resonance maximum.
 
 In the liquid-drop model, the giant dipole resonance can be seen as a collective excitation in which the whole population of protons in the nucleus oscillates with respect to the whole population of neutrons. More detailed calculations involve summing up contributions from dipoles formed by a nucleon excited from a filled shell and the “hole” it leaves behind (similar to the concept of electrons and holes in semiconductors).
@@ -130,7 +99,7 @@ An interesting feature of the giant dipole resonance is that if the nucleus is n
 
 The giant dipole resonance proved quite difficult to describe theoretically, and doing so drove the development of advanced techniques in nuclear theory. Analogues of the giant dipole resonance have since been studied in other systems, such as atoms, metallic clusters (small bound clusters of metal atoms with a conduction band of nearly-free electrons) and fullerenes, and the theoretical descriptions of these systems make use of the techniques developed in nuclear physics. The giant dipole resonance has therefore been a very fruitful phenomenon in terms of advancing theoretical physics.
 
-3.2.3 Photonuclear reactions in astrophysics
+#### 3.2.3 Photonuclear reactions in astrophysics
 It is worth briefly mentioning that photonuclear reactions play an important role in astrophysics. Interactions between photons and charged particles in general (both nuclei and electrons) contribute to the pattern of density fluctuations that we see in the anisotropies of the cosmic microwave background and the large-scale distribution of galaxies. Photodisintegration of iron nuclei is a key stage in the collapse of an evolved massive star that gives rise to a core-collapse supernova (and seeds the universe with many different elements, including oxygen. Photonuclear reactions are also probably involved in the production of rare proton-rich isotopes such as \(^{106}Cd\), which cannot be made by the usual stellar/supernova nucleosynthesis pathways that rely on adding neutrons.
 
 
