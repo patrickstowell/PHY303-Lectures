@@ -160,7 +160,7 @@ Note that as nuclei move away from having a closed shell, it gets easier to exci
 
 At half-filled shells, we get the extreme, with more likely permanently deformed states, strong rotation states, and large electric quadrupole moments. In extreme cases, like U-236, we get lots of levels indicating a very deformed nucleus. It is not surprising we end up seeing spontaneous fission as that below.
 
-So we have seen in this unit again that the nucleus is a complex object. To understand all the energy levels and behaviors, we need a Collective Model that combines the Shell Model with the bulk behavior of nuclear fluid. In the next few lectures, we'll probe further into the behavior of excited states of the nucleus and how this can lead to different forms of spontaneous radioactive decay.
+So we have seen in this unit again that the nucleus is a complex object. To understand all the energy levels and behaviors, we need a Collective Model that combines the Shell Model with the bulk behavior of nuclear fluid. 
 
 ### 5.3 Gamma Decay
 
@@ -168,71 +168,72 @@ Up until now in our examples we've considered the case where protons and neutron
 
 The energy of the emitted gamma radiation is dependent on the energy splittings between the levels that the nucleon has moved between, in exactly the same way as electron orbital transitions. The difference in our case is the more complex spacing of the shells, and the fact that we have two seperate shell structures, one for neutrons and one for protons.
 
+ Let's explore how the shell model helps explain gamma radiation and the conditions for gamma-ray decay:
 
-Example 130Sn
-50 protons (magic number)
-80 neutron (magic number -2)
-Lower excitation corresponding to neutron across the latest occupied shell
+1. **Excitations in the Shell Model:**
+   Up until now, we have considered scenarios where protons and neutrons fill up nuclear energy shells sequentially. However, the shell model predicts that excitation can occur when a nucleon is pushed to a higher energy level. These higher energy states are not stable, as the nucleus naturally tends to reach its lowest energy state.
 
-![Alt text](image-52.png)
+2. **Gamma Radiation Emission:**
+   When a nucleon in a higher energy state decays to a lower energy state, it emits gamma radiation. Gamma radiation consists of high-energy photons. The energy of the emitted gamma radiation depends on the energy difference between the levels that the nucleon has moved between, much like electron orbital transitions in atomic physics.
 
-Low energy levels of 130Sn
-
-Moving one neutron from 3s1/2 to 1h11/2 leaves two neutrons unpaired
-Combine J=1/2 with J=11/2 we get states with 11/2+1/2 and 11/2-1/2
-Similarly a neutron can be promoted from the 2d3/2 level
-With states 11/2+3/2 to 11/2-3/2
-
-Another alternative is to break a pair of two neutrons in the 1h11/2 shell
-
-All these create energy level around the 2 MeV line
-
-A state at 1.2 MeV is observed
-2+ state
+3. **Complex Shell Spacing:**
+   Unlike electrons in atoms, nucleons in nuclei experience a more complex spacing of energy shells. Additionally, there are two separate shell structures, one for neutrons and one for protons, due to their different properties. This complexity leads to a variety of possible energy transitions in nuclear systems.
 
 
+There are some considerations we need to make when trying to assess whether a gamma ray decay actually takes place.
 
-![Alt text](image-53.png)
+**Angular Momentum and Radiation Types:**
+When the nucleon undergoes an energy transition, it emits a photon (gamma ray) to return to the ground state. The photon carries a total angular momentum, including its own spin. The minimum value of angular momentum (L) for gamma radiation is 1 therefore the transition also needs to induce a change in angular momentum of the nucleus of at least 1.
 
-![Alt text](image-54.png)
+- If $J_i$ (initial spin) is equal to $J_f$ (final spin), the transition is forbidden. This means that gamma-ray transitions typically involve changes in angular momentum. Lower values of $L$ make the transition more probable, with $L=1% transitions being the most common.
 
-![Alt text](image-55.png)
+- Depending on the value of L, different types of radiation are possible:
+  - L=1 corresponds to dipole radiation.
+  - L=2 corresponds to quadrupole radiation.
+  - L=3 corresponds to octupole radiation, and so on.
+
+**Parity Conservation:**
+ In gamma-ray transitions, parity is conserved. Electric multipole radiation has parity $(-1)^l$, while magnetic multipole radiation has parity $(-1)^{(L+1)}$. Any transition has to make sure that parity is also conserved between the states, this means we if we know the parity of the starting and final nucleon state we can estimate the form of the radiation.
 
 
-In Unit 3 we saw how nuclei can be in excited states
-Protons and/or neutrons in higher energy level in the shell model
-Collective models, vibration and rotation states
+ 
+![Alt text](image-51.png)
 
-Similar to atomic physics, a nuclear excitation releases a photon to go back to the ground state
-Excited states have a lifetime of <1012 s
-Photons have energy of 1 - 10 MeV. Gamma rays 
-![Alt text](image-49.png)
+ Above are some possible transitions based no values of $J_{f}$ and $J_{i}$ and whteher these are likely to be due to electromagnetic or magnetic multipole radiations. The most likely transitions are described below.
+ - **Electric Dipole (E1) Transitions:** These transitions involve ΔL = 1 and result in a parity change of π = $(-1)^1$ = -1 (parity-changing). Electric dipole transitions are more common than other multipole transitions and have relatively higher probabilities. They often correspond to the emission of gamma rays.
+
+ - **Magnetic Dipole (M1) Transitions:** These transitions involve ΔL = 0 and result in a parity change of π = $(-1)^{1+1}$ = 1 (parity-preserving). Magnetic dipole transitions are less common than E1 transitions but still occur in certain nuclear decays.
+
+ - **Quadrupole (E2) Transitions:** Quadrupole transitions involve ΔL = 2 and result in a parity change of π = $(-1)^2$ = 1 (parity-preserving). Quadrupole transitions are less probable than E1 and M1 transitions and are associated with higher-order nuclear excitations.
+
+
+
+
+
+#### Example: Cobalt-60 Decay
+As an example for gamma ray decays lets consider Co-60 a very common radio-isotope used in nuclear labs to calibrate detector response as placing it in a gamma spectrometer results in two two very clear gamma ray peaks at 1.1732 MeV and 1.3325 MeV next to one another that can be used to assess detector resolution. Co-60 itself however is primarily a $\beta$ emitter as we see in the figure below. What actually happens during a radioactive decay of $\beta$ is the 99\% of the time it converts into an excited state of Nickel which subsequently emits gamma radiation.
 
 ![Alt text](image-50.png)
 
-The photon emitted will carry a total angular momentum L
-This includes also the spin of the photon
-Hence the minimum value of L is 1
+Certainly! Let's explore the electromagnetic transitions in the decay of Cobalt-60 (Co-60) to its final Nickel isotopes, considering the changes in parity and angular momentum and determining whether the radiation is electric or magnetic dipole or quadrupole.
+
+Cobalt-60 (Co-60) undergoes beta decay, resulting in the formation of Nickel-60 (Ni-60). During this decay, several electromagnetic transitions can occur, and we will focus on the relevant details:
+
+1. **Beta Decay of Co-60 to Ni-60:**
+   Co-60 decays primarily through beta-minus (β-) decay. In this process, a neutron in the Co-60 nucleus is transformed into a proton, emitting an electron (beta-minus particle) and an antineutrino. This transformation leads to the formation of Ni-60:
+
+   Co-60 (Z=27, N=33) → Ni-60 (Z=28, N=32) + β- + ν̅ᵢ
+
+   The decay process itself does not directly involve electromagnetic transitions. However, the resulting Ni-60 nucleus may exist in an excited state, and subsequent gamma-ray transitions can occur as Ni-60 de-excites to its ground state.
+
+2. **Gamma-Ray Transitions in Ni-60:**
+   When Ni-60 is formed it is in an excited state, it can emit gamma rays (high-energy photons) as it undergoes de-excitation to reach its ground state. These gamma-ray transitions involve changes in angular momentum (L) and parity (π) of the nucleus as we see it jump betwen the $4^+$, $2^+$, and $0^{+}$ states.B ecause $L=4$ transitions have a lower probability, the nucleus also tends to avoid jumping straight from the $4+$ state to $0+$, and instead emits to gamma rays as it moves down the energy levels. The short decay times of these two states results in two gamma rays being emitted in a very short time period corresponding to the two energy differences between these levels and showing up as two co-incident peaks in gamma ray detectors.
+   <br>
+
+   Note that because of the larger energy jump the $4+$ state is far more likely to decay into the lower $2+$ state than the higher one resulting in 1.1732 MeV being one of the dominant gamma rays emitted. Both of these emissions are E2 transitions. 
 
 
-If we indicate with Ji and Jf the initial and final spin
-Ji = Jf+L
-Quantum mechanics implies that
-￼
-L=1, dipole radiation
-L=2, quadrupole radiation
-L=3, octupole radiation,   etc…
 
-The lower the value of L, the more probable the transition
+In the next few lectures, we'll probe further into the behavior of excited states of the nucleus and how this can lead to different forms of spontaneous radioactive decay. Before we do that however lets understand what else ouor simple shell model can say about one form of radiation, 
 
-NOTE: If Ji=Jf=0. The transition is forbidden
-
-Parity is conserved since these are electromagnetic transitions
-Electric multipole radiation has parity (-1)L
-Magnetic multipole radiation has parity (–1)L+1
-
-![Alt text](image-51.png)
-OOf the three decays we discussed in 
-
-**Filled shells have a total angular momentum, J, equal to zero. The next added nucleon (a valence nucleon) determines the J of the new ground state. When nucleons (singly or in pairs) are excited out of the ground state they change the angular momentum of the nucleus as well as its parity and isospin projection quantum numbers. The shell model describes how much energy is required to move nucleons from one orbit to another and how the quantum numbers change. Figure 6-2 shows an energy diagram of the two filled shells of the ground state of 12C. Promotion of a nucleon or a pair of nucleons to an unfilled shell puts the nucleus into one of the excited states shown in Fig. 6-1.**
 
