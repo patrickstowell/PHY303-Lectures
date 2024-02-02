@@ -32,7 +32,7 @@ Throughout this course the short hand form of $^{A}{\bf S}$ or $\textnormal{S-A}
 Radioactive decay of nuclei can transmute one isotope into another with the emission of some form of radiation. The most common forms of radioactive decay for nuclei are spontaneous alpha emission, or beta-decay where a neutron decays into a proton releasing a gamma ray. As shown in the figure below we can represent one nucleus decaying into another by considering where each nucleus lies on a chart of $N$ versus $Z$.The most common forms of decay, alpha and beta decay, have their own characteristic steps through this $Z-N$ space.
 
 :::{figure-md} transitiondiagram
-<img src='figures/FiguresSlides.001.png' width="100%" alt="Transitions of N and Z for alpha and beta decays between nuclei">
+<img src='image-66.png' width="100%" alt="Transitions of N and Z for alpha and beta decays between nuclei">
 
 Example how to interpret a decay chain transition diagram. Nuclei are plotted as a function of $N$ and $Z$. Different types of nuclear decays move around the chart in a characteristic way like chess pieces on a board.
 :::
