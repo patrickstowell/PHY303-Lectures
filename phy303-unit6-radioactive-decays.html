@@ -1,0 +1,622 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Unit 6 : Radioactive Decays &#8212; PHY303 Nuclear Physics 1</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'phy303-unit6-radioactive-decays';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="phy303-homepage.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">PHY303 Nuclear Physics 1</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="phy303-homepage.html">
+                    <no title>
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit1-introduction-and-structure.html">Unit 1 : Introduction</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit2-liquiddropmodels.html">Unit 2. Liquid Drop</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fphy303-unit6-radioactive-decays.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/phy303-unit6-radioactive-decays.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Unit 6 : Radioactive Decays</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#alpha-decay">6.1 Alpha Decay</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section id="unit-6-radioactive-decays">
+<h1>Unit 6 : Radioactive Decays<a class="headerlink" href="#unit-6-radioactive-decays" title="Permalink to this heading">#</a></h1>
+<p>As we saw in the previous unit nuclei in excited states can emit radiation in the form of gamma rays when nucleons move between the different shell levels. This explains one of our three dominant sources of radiationo, what about the others, <span class="math notranslate nohighlight">\(\beta\)</span> and <span class="math notranslate nohighlight">\(\apha\)</span> decay?</p>
+<p>These become a bit tricker to solve as both decays lead to fundamental change in the nucleon content inside the nucleus itself. As a reminder in all cases of radioative decay we characterise the process in terms of three important numberes</p>
+<ul class="simple">
+<li><p>The probability of decay per unit time <span class="math notranslate nohighlight">\(\rightarrow \lambda\)</span></p></li>
+<li><p>The average time a nucleus lasts before decay <span class="math notranslate nohighlight">\(\rightarrow \tau = 1/\lambda\)</span></p></li>
+<li><p>The time for half the sample to decay (half-life) <span class="math notranslate nohighlight">\(\rightarrow T = \tau \textnormal{ln}(2) = 0.693\tau\)</span></p></li>
+</ul>
+<p>Radioactive decay itself is a stochastic process. That is why we define it in terms of the average times it takes bulk samples of material to decay. The main thing that governs the rate of this decay in a nucleus is actually whether the porocess is energetically favourable or not. A nucleus is likely to be unstable and decay if the net energy of the final products <span class="math notranslate nohighlight">\(E_{f}\)</span> is less than that of the starting nucleus <span class="math notranslate nohighlight">\(E_{i}\)</span>. This energy deficit is defined as
+$<span class="math notranslate nohighlight">\(
+Q=M(A,Z)^{2}c^{2} - [M(A-X,Z-Y)c^{2} + M(X,Y)c^{2}] &gt; 0 
+\)</span>$</p>
+<p>Decay is possible only if the <span class="math notranslate nohighlight">\(Q\)</span> value is positive and the decay is not disallowed by any oother selection rule or conservation law. The energy released in the decay will come oout in the Kinetic Energy of the fragments or in nuclear excitation followed by relaxatioon and <span class="math notranslate nohighlight">\(\gamma\)</span> ray emission.</p>
+<section id="alpha-decay">
+<h2>6.1 Alpha Decay<a class="headerlink" href="#alpha-decay" title="Permalink to this heading">#</a></h2>
+<p>First lets start to use our new found understand of nuclear structure to try to understand alpha decay. There are some impoortant questionos we need to ask for this process:</p>
+<ul class="simple">
+<li><p>Why are the <span class="math notranslate nohighlight">\(\alpha\)</span> particles emitted and not some other combinatino of nucleons?</p></li>
+<li><p>Why is there such a range of lifetimes and energies - what is the relationoship between the two?</p></li>
+<li><p>What determines the frequency of <span class="math notranslate nohighlight">\(\alpha\)</span> decay?</p></li>
+<li><p>Hoow are the <span class="math notranslate nohighlight">\(\alpha\)</span> particles foormed in the nucleus and emitted?</p></li>
+<li><p>Do alphas carry information on nuclear strucure?</p></li>
+</ul>
+<p>One plot that begins to answer some of thes equestions is a comparison of the <span class="math notranslate nohighlight">\(Q\)</span> energy for different alpha emitting particles seperated by different radioactive decay series. This is called the Geiger-Nuttall relation and it demonstrats that actualy for many different series there is a strong correlation between the radioactive half-life and the energy of the emitted alpha.</p>
+<p>Notice also how steep the relation is in the Geiger-Nutall plot (its a log scale). An alpha emitter that produces 8MeV alpha particles is likely to have a half life over 22 orders of magnitude shorter than one which produces alphas of 4 MeV kinetic energy.</p>
+<p>Explaining Geiger-Nuttall is Key
+Notice how steep this relation is, an alpha emitted with slightly higher energy has a much higher half-life. It turns out that trying to understand why this is so leads us to a QM treatment of Alpha Decay. The key is the form of this observed relation, a fit to the data. This can written as:
+Geiger-Nuttall relation has form:
+log_10 t_1/2 = a Z / Q^1/2 + b
+where Z is number of protons, Q is energy released, a and b are constants. Equivalent is
+ln λ = -a’ Z / Q^1/2 + a_2</p>
+<p>To explain the relation it turns out we need to consider that the alpha forms inside the nucleus and then escapes by QM Barrier Penetration. The alpha is envisaged as a free-particle wavefunction subject to the Nuclear Potential.</p>
+<p>Alpha Decay Probability
+Of course in a classical model, if the Potential Barrier is too high the alpha never escapes. In QM we allow Tunnelling with a small probability that the alpha can penetrate the barrier, calculating the ratio of the wavefunctions inside and outside and squaring gives the probability.
+We can do a simple calculation of this by considering the diagramme of the potential below. We assume the alpha is pre-formed in the nucleus, oscillates around, repeatedly hitting the edge inside the nucleus until at some point it escapes by Barrier Penetration.</p>
+<p>Alpha Decay Barrier Penetration
+Notice how the Potential Barrier drops as 1/r. Rather than try to solve this we can make a simple approximation that the barrier has a fixed height U_0 and fixed length L, and that the alpha has energy E, as illustrated below. Also, the potential seen by the alpha particle is spherically symmetric and so the quantum mechanical problem can be approached by first separating the variables as we did before:
+As a particle approaches the barrier, it is described by a Free Particle Wavefunction. When it reaches the barrier, it must satisfy the simplified Schrodinger Equation in the form:</p>
+<p>-ħ^2 / 2m (d^2ψ(r_Rn))/dr^2 = [E - U_0]ψ(r_Rn)</p>
+<p>ψ = ψ(r_Rn)</p>
+<p>Solving this QM equation of simple Barrier Penetration is beyond our scope here. What is important is the result. It gives us a value for X probability of barrier penetration as:</p>
+<p>X = Ae^-αL</p>
+<p>α = √(2m(U_0 - E))/ħ^2 this term is called the Gamow Factor</p>
+<p>this is a constant we can call = 1 for now.</p>
+<p>But remember we also have: λ = √X and T_1/2 = ln2 / λ</p>
+<p>So, if we know the frequency that the alpha hits the barrier, which will be determined by its velocity and the size of the nucleus, and we know the height of the barrier U_0 and the width L and the energy of the alpha E then we can find the half-life T_1/2. We can then see if this agrees with the Geiger-Nuttall observation form data.</p>
+<p>Alpha Decay Barrier Penetration
+Notice how the Potential Barrier drops as 1/r. Rather than try to solve this we can make a simple approximation that the barrier has a fixed height U_0 and fixed length L, and that the alpha has energy E, as illustrated below. Also, the potential seen by the alpha particle is spherically symmetric and so the quantum mechanical problem can be approached by first separating the variables as we did before:
+As a particle approaches the barrier, it is described by a Free Particle Wavefunction. When it reaches the barrier, it must satisfy the simplified Schrodinger Equation in the form:</p>
+<p>-ħ^2 / 2m (d^2ψ(r_Rn))/dr^2 = [E - U_0]ψ(r_Rn)</p>
+<p>ψ = ψ(r_Rn)</p>
+<p>Solving this QM equation of simple Barrier Penetration is beyond our scope here. What is important is the result. It gives us a value for X probability of barrier penetration as:</p>
+<p>X = Ae^-αL</p>
+<p>α = √(2m(U_0 - E))/ħ^2 this term is called the Gamow Factor</p>
+<p>this is a constant we can call = 1 for now.</p>
+<p>But remember we also have: λ = √X and T_1/2 = ln2 / λ</p>
+<p>So, if we know the frequency that the alpha hits the barrier, which will be determined by its velocity and the size of the nucleus, and we know the height of the barrier U_0 and the width L and the energy of the alpha E then we can find the half-life T_1/2. We can then see if this agrees with the Geiger-Nuttall observation form data.</p>
+<p>Worked Example - 212Po</p>
+<p>The way to proceed is illustrated below where we attempt to find the half-life of 212Po which emits a 8.78 MeV alpha. First we need to find the width of the barrier, for this we need to know the Nuclear Separation N, i.e., the distance between the centre of the nucleus and centre of the alpha, just as it detaches itself form the nucleus. Be careful that at this point the nucleus we are talking about is not A=212, but A=208, because we have removed the alpha.</p>
+<p>Nuclear separation = 1.2(A)^1/3 + 1.2(208)^1/3 = 9.01 fm
+so N = 9.01 fm</p>
+<p>We now find the height of the barrier by applying Coulomb’s Law at the nuclear separation as illustrated here:</p>
+<p>V
+U_0
+Coulomb part
+26.21 MeV</p>
+<p>(2*(Z - 2)e^2)/r = (2(82-2)1.44 MeV·fm)/9.01 fm = 26.21 MeV
+8.78 MeV</p>
+<p>r</p>
+<p>k = 1/(4πε_0) = 8.987552 x 10^9 N m^2/C^2 = Coulomb’s constant</p>
+<p>Now the distance at which the Coulomb Potential drops to the level of energy of the observed alpha is:</p>
+<p>So the barrier width L is:</p>
+<p>8.78 MeV = (2(82)1.44 MeV·fm)/r; r = 26.9 fm</p>
+<p>26.90 fm - 9.01 fm = 17.9 fm</p>
+<p>Worked Example - 212Po</p>
+<p>For a given alpha, the combined Tunnelling Probability per second for emission is the product:</p>
+<p>( (2.47 \times 10^{-15})(1.14 \times 10^{21} s^{-1}) = 2.82 \times 10^6 s^{-1} )</p>
+<p>( \lambda = \sqrt{X} )</p>
+<p>( T_{1/2} = \frac{\ln 2}{\lambda} = \frac{0.693}{2.82 \times 10^6 s^{-1}} = 2.5 \times 10^{-7} s = 0.25 \mu s ) ANSWER</p>
+<p>The result is quite good. But note we could do better by modelling the potential as a series of decreasing barriers as:</p>
+<p>( V(r) \propto \frac{1}{r} )</p>
+<p>( X = X_1 \times X_2 \times X_3 \times … \times X_n = Ae^{2\int_{R_1}^{R_2}\alpha dr} )</p>
+<p>In the limit as n goes to ∞, turns into an integral</p>
+<p>Total transmission is the product of all elemental transmission factors</p>
+<p>( X = e^{-2\int_{R_1}^{R_2}\alpha dr} )</p>
+<p>Summary of Alpha Decay</p>
+<p>So this basic Alpha Tunnelling Model allows us to predict the relationship between alpha energy and half-life of the decay, and it nicely fits with the Geiger-Nuttall relation. We had to make some assumptions, like the nucleus being spherical etc. (which is dangerous as we have seen). Here is an example plot:</p>
+<p>( \ln \lambda = -a’\frac{Z}{Q^{1/2}} + a_2 )</p>
+<p>Beta Decay</p>
+<p>We now turn to Beta Decay. In this we get emission of an Electron from the nucleus or possibly a Positron. In the early years of Beta Decay studies the process observed was highly mysterious, very different to Alpha Decay.</p>
+<p>This is illustrated by the Cloud Chamber image shown below. We see the decay of ^6He into ^6Li and a charged electron. We see two tracks, curving because there is a magnetic field applied. But from analysis of the plot it looks like energy, momentum and even Total Angular Momentum J are not conserved!!!</p>
+<p>( ^6He \rightarrow ^6Li + e^- )</p>
+<p>Of course the reason is that there is a Neutrino emitted as well, but this escapes the detector and we don’t see it.</p>
+<p>Beta Decay vs. Alpha Decay</p>
+<ul class="simple">
+<li><p>This starts to tell us just how different Beta Decay is to Alpha Decay. In fact we note four big differences:
+(1) Beta Decay is a Three-body Process, unlike alpha decay (two body). We have to account for the energies and behaviour of 3 objects - the nucleus, the beta and neutrino.
+(2) The electron (positron) and neutrino produced do not exist before the decay, we need to account for their formation.
+(3) The electron and neutrino are relativistic, unlike the alpha in alpha decay. This makes calculations of the energies and kinematics of the decay more complicated.
+(4) The energy of the beta emitted by the nucleus in question is not the same in every decay. We get a continuum of energies put to a maximum. In alpha decay we get one “Monoenergetic” value every time.</p></li>
+<li><p>Any theory of Beta Decay obviously must account for these.</p></li>
+</ul>
+<p>An example to illustrate this behaviour is:
+( _{83}^{210}Bi \rightarrow _{84}^{210}Po + e^- + \bar{\nu}_e )
+Note how with an electron emitted we get an Anti-neutrino (this is Lepton Number conservation in particle physics)</p>
+<p>Energetics of Beta Decay</p>
+<ul class="simple">
+<li><p>It’s important to realise that there are actually 3 types of beta decay: (1) Electron Emission, (2) Positron Emission and (3) Electron Capture or EC. The energetics are vitally important in physics. We start with electron emission.
+Electron emission n → p + e^- + (\bar{\nu}_e)
+( Q = [M(A,Z) - M(A,Z+1) - m_e]c^2 )
+so ( Q = [M(A,Z) - M(A,Z+1)]c^2 )</p></li>
+<li><p>Note we have to be careful in Beta Decay to consider the mass of everything including the Atomic Electrons, not just the nucleons. Hence the mass used are atomic masses, not the nuclear masses. We were less careful earlier when dealing with Binding Energy calculations and the SEMF.</p></li>
+</ul>
+<p>Energetics of Beta Decay</p>
+<ul class="simple">
+<li><p>The third beta decay is called Electron Capture (EC). Here the nucleus captures one of the atomic electrons. It’s a bit like positron beta decay but instead of p → n + e^+ + (\nu_e) we have
+Electron capture (K or L capture)
+p + e^- → n + (\nu_e)</p></li>
+<li><p>The process proceeds (Q &gt; 0) if ( M(A,Z)c^2 ) is greater than ( M(A,Z-1)c^2 ). It strongly competes with e^+ decay and is the only decay available to nuclei with a Proton Excess if the mass difference between the atoms is less than 1 MeV/c^2.</p></li>
+</ul>
+<p>Beta Decay Applied Physics</p>
+<ul class="simple">
+<li><p>As described earlier there are many applications of beta decay. Notable is Positron Emission Tomography.
+Patients are injected with a positron emitting isotope. The positron finds an electron and Annihilates to produce two back to back gammas that can be detected and hence used to find the location of the decay, and hence image, say, the brain.
+PET is an example application
+( _{9}^{18}F \rightarrow _{8}^{18}O + e^+ + (\nu_e) )</p></li>
+<li><p>Often the Decay Sequence is depicted as an Energy Level Diagramme as in this example:</p></li>
+</ul>
+<p>Fermi Theory</p>
+<ul class="simple">
+<li><p>Fermi Theory results in an equation for dn/dE given as:
+( \frac{dn}{dE} = \frac{16\pi^2 \nu^2}{h^6 c^3} (T_{max} - T_e)^2 p_e d_p_e )</p></li>
+<li><p>Here we have V as the volume of the nucleus and ( T_e (p_e) ) is the energy (momentum) of the electron. ( T_{max} ) is the maximum energy that the electron can have. Note that at this energy the neutrino must have zero energy and that ( T_{max} ) is equivalent to the Q of the reaction.</p></li>
+<li><p>Putting this into the equation for ( W_{fi} ) and just noting that ( P(p_e) ) is equivalent to the number rate of events or intensity ( N(P_e) ) we see most things are constants and we can say:
+( P(p_e) = N(p_e) \propto \frac{(T_{max} - T_e)^2}{p_e^2} )</p></li>
+<li><p>Note here how the function vanishes at the point when ( T_e = T_{max} ). This is called the Beta Decay Endpoint.</p></li>
+<li><p>This Endpoint is the subject of much research in physics because everything we have stated so far assumes the neutrino has no mass. If this is not the case then the Endpoint will shift slightly.</p></li>
+<li><p>A better way to study this Endpoint has been developed, called the Fermi-Kurie Plot. This simply rearranges the equation noting that:
+( (T_{max} - T_e)^{0.5} \propto \sqrt{\frac{N(p_e)}{p_e^2}} ) y-axis</p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#alpha-decay">6.1 Alpha Decay</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Patrick Stowell, Susan Cartwright
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
