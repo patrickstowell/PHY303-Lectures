@@ -69,6 +69,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'phy303-unit4-parity-moments';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Unit 3 : Shell Model" href="phy303-unit3-shellmodel-and-spin.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -164,10 +165,13 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="phy303-unit1-introduction-and-structure.html">Unit 1 : Introduction</a></li>
 
 <li class="toctree-l1"><a class="reference internal" href="phy303-unit2-liquiddropmodels.html">Unit 2. Liquid Drop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit3-shellmodel-and-spin.html">Unit 3. Shell Model</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Unit 4 : Nuclear Properties</a></li>
+
 </ul>
 
     </div>
@@ -392,121 +396,120 @@ document.write(`
                   
   <section id="unit-4-nuclear-properties">
 <h1>Unit 4 : Nuclear Properties<a class="headerlink" href="#unit-4-nuclear-properties" title="Permalink to this heading">#</a></h1>
-<p>Now we have our shell model that describes our oberved magic numbers, we can start making predictions for other nuclear properties such as the Nuclear Spin, <span class="math notranslate nohighlight">\(I\)</span>. This quantity comes from the principle of summing up all the individual Total Angular Momentum numbers <span class="math notranslate nohighlight">\(j\)</span> of all the nucleon, doing this seperatetly for neutrons and protons.</p>
-<p>However we can simplifiy things hugely because the <span class="math notranslate nohighlight">\(j\)</span> values are half-integer and in any filled shell all the nucleons there will
-pair up as positive negative pairs and so contribute nothing to the overall total. So we really only neeed to worry about the nucleons in the outer shell. If this shell is full then again the total contribution will be zero, and we have <span class="math notranslate nohighlight">\(I=0\)</span>. In fact in general if we have even N and even Z then <span class="math notranslate nohighlight">\(I=0\)</span> as all nucleons will form spin up-down combinations.</p>
-<p>The more interesting case is when we have one un-paired nucleon in the outer shell. Consider the case of a nucleus with the proton energy levels filled up exactly, but where tthe neutrons in the outer Shell have just one neutron. <strong>The nuclear spin takes on the <span class="math notranslate nohighlight">\(j\)</span> value assigned to that nucleon</strong>.</p>
-<p>That is, if we fill up the levels with nucleons but have a left over nucleon, alone in an unfilled shell, the level spin assignment appropriate to that nucleon will be the same as the Nuclear Spin itself.</p>
-<p>Similarly, consider a case where all the levels are filled perfectly for one class of nucleons (say the protons) but for the othere (say neutrons) we are just one nucleon short of filling the last level (like having a nucleon “hole” in that shell). In this case the Nuclear Spin just takes on the level spin assignment appropriate to that missing nucleon.</p>
+<p>Now that we have our shell model, which describes our observed magic numbers, we can start making predictions for other nuclear properties such as the Nuclear Spin, <span class="math notranslate nohighlight">\(I\)</span>. This quantity comes from the principle of summing up all the individual Total Angular Momentum numbers <span class="math notranslate nohighlight">\(j\)</span> of all the nucleons, doing this separately for neutrons and protons.</p>
+<p>However, we can simplify things hugely because the <span class="math notranslate nohighlight">\(j\)</span> values are half-integer and in any filled shell, all the nucleons there will pair up as positive-negative pairs and so contribute nothing to the overall total. So, we really only need to worry about the nucleons in the outer shell. If this shell is full, then again the total contribution will be zero, and we have <span class="math notranslate nohighlight">\(I=0\)</span>. In fact, in general, if we have even N and even Z, then <span class="math notranslate nohighlight">\(I=0\)</span> as all nucleons will form spin up-down combinations.</p>
+<p>The more interesting case is when we have one unpaired nucleon in the outer shell. Consider the case of a nucleus with the proton energy levels filled up exactly, but where the neutrons in the outer Shell have just one neutron. <strong>The nuclear spin takes on the <span class="math notranslate nohighlight">\(j\)</span> value assigned to that nucleon</strong>.</p>
+<p>That is, if we fill up the levels with nucleons but have a leftover nucleon, alone in an unfilled shell, the level spin assignment appropriate to that nucleon will be the same as the Nuclear Spin itself.</p>
+<p>Similarly, consider a case where all the levels are filled perfectly for one class of nucleons (say the protons) but for the other (say neutrons), we are just one nucleon short of filling the last level (like having a nucleon “hole” in that shell). In this case, the Nuclear Spin just takes on the level spin assignment appropriate to that missing nucleon.</p>
 <section id="nuclear-spin-example">
 <h2>Nuclear Spin Example<a class="headerlink" href="#nuclear-spin-example" title="Permalink to this heading">#</a></h2>
 <p>Here is an example for <span class="math notranslate nohighlight">\(^{15}_{8}\textnormal{O}\)</span>.</p>
-<p><img alt="Alt text" src="_images/image-35.png" /></p>
-<p>From the level diagram above we predict that the nuclear spin of O-15 is <span class="math notranslate nohighlight">\(I=1/2\)</span> due to the unpaired neutron in the outer <span class="math notranslate nohighlight">\(1\textnormal{p}_{1/2}\)</span> level have a <span class="math notranslate nohighlight">\(j=1/2\)</span>. This is indeed what is measured in reality.</p>
-<p>Things get harder if instead we only have a partially filled outer shell but an odd number of nucleons. We can assign <span class="math notranslate nohighlight">\(I=j\)</span> of the unpaired nucleon again, but this does not work for all nuclei and in some cases we would need to try to sum up the entire shell structure to get a valid result.</p>
+<p><img alt="Alt text" src="_images/image-35.png" />
+From the level diagram above, we predict that the nuclear spin of O-15 is <span class="math notranslate nohighlight">\(I=1/2\)</span> due to the unpaired neutron in the outer <span class="math notranslate nohighlight">\(1\textnormal{p}_{1/2}\)</span> level having a <span class="math notranslate nohighlight">\(j=1/2\)</span>. This is indeed what is measured in reality.</p>
+<p>Things get harder if instead we only have a partially filled outer shell but an odd number of nucleons. We can assign <span class="math notranslate nohighlight">\(I=j\)</span> of the unpaired nucleon again, but this does not work for all nuclei, and in some cases, we would need to try to sum up the entire shell structure to get a valid result.</p>
 <p>The main points here are that:</p>
 <ul class="simple">
-<li><p>even-even nuclei have spin zero due to always having the spins of individual nucleons pairing up and cancelling out.</p></li>
-<li><p>Odd-even nuclei typically have half integer spins which can range 3/2, 5/2, 1/2. In simple cases the spin of the missing nucleon can give <span class="math notranslate nohighlight">\(I\)</span>.</p></li>
-<li><p>Odd-odd nuclei can achieve spin states much higher such a 1 or 3 but are more complex and typically require a full evaluation of the expectation values of the possible spin states.</p></li>
+<li><p>even-even nuclei have spin zero due to always having the spins of individual nucleons pairing up and canceling out.</p></li>
+<li><p>Odd-even nuclei typically have half-integer spins which can range from 3/2, 5/2, 1/2. In simple cases, the spin of the missing nucleon can give <span class="math notranslate nohighlight">\(I\)</span>.</p></li>
+<li><p>Odd-odd nuclei can achieve spin states much higher such as 1 or 3 but are more complex and typically require a full evaluation of the expectation values of the possible spin states.</p></li>
 </ul>
 </section>
 <section id="nuclear-parity">
 <h2>Nuclear Parity<a class="headerlink" href="#nuclear-parity" title="Permalink to this heading">#</a></h2>
-<p>The next thing we can do with our shell model is predict the parity of the nucleus. Parity is a transformation whereby the sign of the coordinate system is changed, as below. The parity transformation changes a Right handed Coordinate system into a Left Handed Coordinate or vice-versa.</p>
+<p>The next thing we can do with our shell model is predict the parity of the nucleus. Parity is a transformation whereby the sign of the coordinate system is changed, as below. The parity transformation changes a right-handed coordinate system into a left-handed coordinate system or vice-versa.</p>
 <p><img alt="Alt text" src="_images/image-36.png" /></p>
-<p>As shown the wave function of a nucleon in the stationary state can have either odd or even Parity depending on what happens under the transformation. It’s conveenient to think of a Parity Operator <span class="math notranslate nohighlight">\(P\)</span> with effect <span class="math notranslate nohighlight">\(P\Psi(r) = \Psi(-r)\)</span>. If <span class="math notranslate nohighlight">\(\Psi\)</span> has a unique parity, then <span class="math notranslate nohighlight">\(P\psi(r) = \pm \Psi(r)\)</span>, and parity <span class="math notranslate nohighlight">\(\pm1\)</span> are the eigenvalues of <span class="math notranslate nohighlight">\(P\)</span>. Parity is often called <span class="math notranslate nohighlight">\(\pi\)</span>, so <span class="math notranslate nohighlight">\(\pi=\pm 1\)</span>.</p>
-<p>It is simple to find the Parity of a Nucleon, its just <span class="math notranslate nohighlight">\(\pi=(-1)^{l}\)</span> where <span class="math notranslate nohighlight">\(l\)</span> is the Orbital Angular Momenttum again remember from our notation the letter corresponds to the value of <span class="math notranslate nohighlight">\(l\)</span> (0-s, 1-p, 2-d, 3-f).  Parity is a multiplicattive quantity. The parity assignment of a nucleus therefore comes from the product of the parity of all the nucleons</p>
+<p>As shown, the wave function of a nucleon in a stationary state can have either odd or even parity depending on what happens under the transformation. It’s convenient to think of a Parity Operator <span class="math notranslate nohighlight">\(P\)</span> with effect <span class="math notranslate nohighlight">\(P\Psi(r) = \Psi(-r)\)</span>. If <span class="math notranslate nohighlight">\(\Psi\)</span> has a unique parity, then <span class="math notranslate nohighlight">\(P\psi(r) = \pm \Psi(r)\)</span>, and parity <span class="math notranslate nohighlight">\(\pm1\)</span> are the eigenvalues of <span class="math notranslate nohighlight">\(P\)</span>. Parity is often denoted as <span class="math notranslate nohighlight">\(\pi\)</span>, so <span class="math notranslate nohighlight">\(\pi=\pm 1\)</span>.</p>
+<p>It is simple to find the parity of a nucleon; it’s just <span class="math notranslate nohighlight">\(\pi=(-1)^{l}\)</span> where <span class="math notranslate nohighlight">\(l\)</span> is the Orbital Angular Momentum. Again, remember from our notation the letter corresponds to the value of <span class="math notranslate nohighlight">\(l\)</span> (0-s, 1-p, 2-d, 3-f). Parity is a multiplicative quantity. The parity assignment of a nucleus, therefore, comes from the product of the parity of all the nucleons</p>
 <div class="math notranslate nohighlight">
 \[
 \pi_{total}=\pi_{1}\pi_{2}\pi_{3}\pi_{4} = \prod_{A}(-1)^{l} = + (\textnormal{even})~~\textnormal{or}~~-(\textnormal{odd})
 \]</div>
-<p>When considering parity alongside the Nuclear Spin the nomenclature is to write it as : <span class="math notranslate nohighlight">\(I^{\pi}\)</span>. For example the state  <span class="math notranslate nohighlight">\(0^{+}\)</span> has zero nuclear spin and even parity.</p>
-<p>When trying to estimate parity we can simplify things in the same way as we did for nuclear spin. If the nucleons all pair up then we end up with even parity. If we are left with an Unpaired Nucleon then the parity comes from the <span class="math notranslate nohighlight">\(l\)</span> value appropriate to the level in which that nucleon sits. So for instnace, returning to our example of O-15 above, the unpaired nucleon sits in the p-level, <span class="math notranslate nohighlight">\(l=1\)</span>, so the parity of the nucleis us <span class="math notranslate nohighlight">\((-1)^{l}=-1\)</span>. This means it has odd parity and we would write both its spin and parity state as: <span class="math notranslate nohighlight">\(I^{\pi}=\frac{1}{2}^{-}\)</span>.</p>
+<p>When considering parity alongside the Nuclear Spin, the nomenclature is to write it as: <span class="math notranslate nohighlight">\(I^{\pi}\)</span>. For example, the state <span class="math notranslate nohighlight">\(0^{+}\)</span> has zero nuclear spin and even parity.</p>
+<p>When trying to estimate parity, we can simplify things in the same way as we did for nuclear spin. If the nucleons all pair up, then we end up with even parity. If we are left with an unpaired nucleon, then the parity comes from the <span class="math notranslate nohighlight">\(l\)</span> value appropriate to the level in which that nucleon sits. So, for instance, returning to our example of O-15 above, the unpaired nucleon sits in the p-level, <span class="math notranslate nohighlight">\(l=1\)</span>, so the parity of the nucleus is <span class="math notranslate nohighlight">\((-1)^{l}=-1\)</span>. This means it has odd parity, and we would write both its spin and parity state as: <span class="math notranslate nohighlight">\(I^{\pi}=\frac{1}{2}^{-}\)</span>.</p>
 </section>
 <section id="shell-challenges">
 <h2>Shell Challenges<a class="headerlink" href="#shell-challenges" title="Permalink to this heading">#</a></h2>
-<p>So the shell model gives us a pretty good description of nuclei based on QM principles. It gives us a good basis for understanding the Magic Numbers, Nuclear Spin, and Parity of Nuclei. However, it’s worth noting a few remaining issues that can cause problems. This leads to several corrections usually being applied to the potential to better fit observed  data.</p>
-<p>Most importantly there are two correctinos for protons:</p>
+<p>So, the shell model gives us a pretty good description of nuclei based on QM principles. It provides a solid basis for understanding the Magic Numbers, Nuclear Spin, and Parity of Nuclei. However, it’s worth noting a few remaining issues that can cause problems. This leads to several corrections usually being applied to the potential to better fit observed data.</p>
+<p>Most importantly, there are two corrections for protons:</p>
 <ul class="simple">
-<li><p>It turns out that the shell ordering changes a bit as <span class="math notranslate nohighlight">\(A\)</span> increases due to residual interactinos between nucleons but this is not big enough to affect the Magic Numbers.</p></li>
-<li><p>The effective potential well shape, and hence the energy levels, are actually slightly different for the protons and the neutrons as we should account for the additional proton-proton Coulomb interaction. Neverthelesss, the top energy levels containing neutrons will be at nearly the same energy as the top energy levels containing protons for the purposes of most calculations.</p></li>
+<li><p>It turns out that the shell ordering changes a bit as <span class="math notranslate nohighlight">\(A\)</span> increases due to residual interactions between nucleons, but this is not big enough to affect the Magic Numbers.</p></li>
+<li><p>The effective potential well shape, and hence the energy levels, are actually slightly different for protons and neutrons as we should account for the additional proton-proton Coulomb interaction. Nevertheless, the top energy levels containing neutrons will be at nearly the same energy as the top energy levels containing protons for the purposes of most calculations.</p></li>
 <li><p>The effective potential well shape should also be modified for protons to account for their influence of atomic electrons.</p></li>
 </ul>
-<p>This Electrostatic Repulsion Energy between protons implies a decrease in the depth of the potential for protons, due to their interactiton with all the other protons, as here:</p>
-<p><img alt="Alt text" src="_images/image-37.png" /></p>
-<p>If all these final tweaks are taken into account the shell model is a powerful complement to the LDM and SEMF models based on the idea that the total angular momentum of each single nucleon is the vector sum of its spin and obrital angular momentum.</p>
+<p>This electrostatic repulsion energy between protons implies a decrease in the depth of the potential for protons, due to their interaction with all the other protons, as here:</p>
+<p><img alt="Alt text" src="_images/image-37.png" />
+If all these final tweaks are taken into account, the shell model becomes a powerful complement to the LDM (Liquid Drop Model) and SEMF (Semi-Empirical Mass Formula) models, based on the idea that the total angular momentum of each single nucleon is the vector sum of its spin and orbital angular momentum.</p>
 </section>
 <section id="shell-model-summary">
 <h2>Shell Model Summary<a class="headerlink" href="#shell-model-summary" title="Permalink to this heading">#</a></h2>
-<p>Taking the Shell Model nucleons toogether leads to nuclear levels. Any level (specified by n, l, j) which is fully occupied (i.e. has 2j+1 occupants) contributes nothing to the total spin as the total angular moomenta <span class="math notranslate nohighlight">\(j\)</span> of the occupants sums to zero. (j+1) is an even number for all single particle levels i.e. in a model ehrtr dinhlr pstyivlr orbits in pottential of all others. Thus in nuclei where protons and neutrons sperately fully occupy shells (even-even), nuclear spin should be zero, it is.</p>
-<p>Also if two neutrons (or protons) occupy a level with the same <span class="math notranslate nohighlight">\(j\)</span> and <span class="math notranslate nohighlight">\(l\)</span>, then the total angular momenta couple to give zero contribution.</p>
-<p>Now if we add one nucleon to a final filled shell this should leeave the nucleus with the total angular momentum <span class="math notranslate nohighlight">\(j\)</span> <span class="math notranslate nohighlight">\((=l)\)</span> of that nucleon alone. The preediction of ground spin sttate and parity is a great success of the shell model. It predicts that all even-even nuclei will have zero anguar momentum and an odd A nucleus will have the angular momentum of the odd nucleon.</p>
+<p>Taking the Shell Model nucleons together leads to nuclear levels. Any level (specified by n, l, j) which is fully occupied (i.e., has 2j+1 occupants) contributes nothing to the total spin as the total angular momenta <span class="math notranslate nohighlight">\(j\)</span> of the occupants sums to zero. (j+1) is an even number for all single particle levels, i.e., in a model where single particles orbit in the potential of all others. Thus, in nuclei where protons and neutrons separately fully occupy shells (even-even), nuclear spin should be zero, and it is.</p>
+<p>Also, if two neutrons (or protons) occupy a level with the same <span class="math notranslate nohighlight">\(j\)</span> and <span class="math notranslate nohighlight">\(l\)</span>, then their total angular momenta couple to give zero contribution.</p>
+<p>Now, if we add one nucleon to a fully filled shell, this should leave the nucleus with the total angular momentum <span class="math notranslate nohighlight">\(j\)</span> <span class="math notranslate nohighlight">\((=l)\)</span> of that nucleon alone. The prediction of the ground spin state and parity is a great success of the shell model. It predicts that all even-even nuclei will have zero angular momentum and an odd A nucleus will have the angular momentum of the odd nucleon.</p>
 <p>Here is a table showing a few of the successful predictions.</p>
-<p><img alt="Alt text" src="_images/image-38.png" /></p>
-<p>This is all good but thare are also failings, notably:</p>
-<p>In the next section we will go further to look at “Collective Models” that can go some wway to solving these issues.</p>
+<p><img alt="Alt text" src="_images/image-38.png" />
+In the next section, we will go further to look at “Collective Models” that can go some way to solving these issues.</p>
 </section>
 <section id="towards-collective-nuclear-models">
 <h2>Towards Collective Nuclear Models<a class="headerlink" href="#towards-collective-nuclear-models" title="Permalink to this heading">#</a></h2>
 <p>It is now worth exploring the Shell Model a bit more, to see how far we can push predictions with it, to see how and when things break down and how this forces us towards a Collective Model. A first property to examine is the Magnetic Moments of Nuclei.</p>
-<p>We know that nuclei posess Nuclear Spin <span class="math notranslate nohighlight">\(I\)</span>, that can be predicted by the Shell Model. Associated with each Nuclear Spin is the possibility of a Magnetic Dipole Moment - a nuclear magnetic moment, which can produce magnetic intteractions within the environment. In the case of our nuclei it is the flow of charge (a current) around the nucleus that produces a magnetic moment.</p>
-<p>More precisely the term Magnetic Moment <span class="math notranslate nohighlight">\((\mu)\)</span> refers to the Torque arising when something is placed in a magnetic field as can happen when we have more tradiational electric currents. So for nucleons in nuclei we require net motion of charge, e.g. a finite amount of spin <span class="math notranslate nohighlight">\(s\)</span> and/or angular momentum <span class="math notranslate nohighlight">\(l\)</span>. In the shell model this is encompassed in the total Nuclear Spin <span class="math notranslate nohighlight">\(I\)</span>. Because of this we expect that predictions can be made of <span class="math notranslate nohighlight">\(\mu\)</span> based on <span class="math notranslate nohighlight">\(I\)</span>.</p>
-<p>Now both protons and neutrons also have their own Intrinsic Magnetic Moments. They both have spin motion and although the neutron is nominally neutral, it has an Internal Charge Structure due to the Quarks inside, so there is an effective charge motion inside it like the proton itself. The magnetic moment of nucleus can therefore be determined through a combination of the individual magnetic moments of the nucleons and the total associated spin of the nucleus.</p>
+<p>We know that nuclei possess Nuclear Spin <span class="math notranslate nohighlight">\(I\)</span>, that can be predicted by the Shell Model. Associated with each Nuclear Spin is the possibility of a Magnetic Dipole Moment - a nuclear magnetic moment, which can produce magnetic interactions within the environment. In the case of our nuclei, it is the flow of charge (a current) around the nucleus that produces a magnetic moment.</p>
+<p>More precisely, the term Magnetic Moment <span class="math notranslate nohighlight">\((\mu)\)</span> refers to the Torque arising when something is placed in a magnetic field, as can happen with more traditional electric currents. So, for nucleons in nuclei, we require net motion of charge, e.g., a finite amount of spin <span class="math notranslate nohighlight">\(s\)</span> and/or angular momentum <span class="math notranslate nohighlight">\(l\)</span>. In the shell model, this is encompassed in the total Nuclear Spin <span class="math notranslate nohighlight">\(I\)</span>. Because of this, we expect that predictions can be made of <span class="math notranslate nohighlight">\(\mu\)</span> based on <span class="math notranslate nohighlight">\(I\)</span>.</p>
+<p>Now both protons and neutrons also have their own Intrinsic Magnetic Moments. They both have spin motion, and although the neutron is nominally neutral, it has an Internal Charge Structure due to the Quarks inside, so there is an effective charge motion inside it, like the proton itself. The magnetic moment of a nucleus can therefore be determined through a combination of the individual magnetic moments of the nucleons and the total associated spin of the nucleus.</p>
 <div class="math notranslate nohighlight">
 \[
 \mu = g_{I} \frac{e\hbar}{2m_{p}} I = g_{I} I \mu_{N}
 \]</div>
-<p>where <span class="math notranslate nohighlight">\(g_{I}\)</span> is a nuclear <span class="math notranslate nohighlight">\(g\)</span> factor which accounts for differences of the relative magnetic moments of nucleons, <span class="math notranslate nohighlight">\(e\)</span> is the charge of one electron (quantized charge), and <span class="math notranslate nohighlight">\(m_{p}\)</span> is the mass of the proton, and <span class="math notranslate nohighlight">\(\mu_{N}\)</span> is the nuclear magneton. The nuclear magneton is a constant used to express magnetic moments, and is equal too
+<p>where <span class="math notranslate nohighlight">\(g_{I}\)</span> is a nuclear <span class="math notranslate nohighlight">\(g\)</span> factor which accounts for differences in the relative magnetic moments of nucleons, <span class="math notranslate nohighlight">\(e\)</span> is the charge of one electron (quantized charge), <span class="math notranslate nohighlight">\(m_{p}\)</span> is the mass of the proton, and <span class="math notranslate nohighlight">\(\mu_{N}\)</span> is the nuclear magneton. The nuclear magneton is a constant used to express magnetic moments, and is equal to
 $<span class="math notranslate nohighlight">\(
-\mu = \frac{e\hbar}{2m_{p}} = 5.05\times 10^{-27}\textnormal{J/T} = 3.25 \times 10^{-8} \textnormal{eV/T}
+\mu_{N} = \frac{e\hbar}{2m_{p}} = 5.05\times 10^{-27}\textnormal{J/T} = 3.25 \times 10^{-8} \textnormal{eV/T}
 \)</span>$</p>
-<p>For the case of unpaired nucleons we can apply the same rules we considered previously to calculate the nuclear magnetic moment. This is simply the nuclear magneton multiplied by the <span class="math notranslate nohighlight">\(j\)</span> value of the unpaired nucleon.
+<p>For the case of unpaired nucleons, we can apply the same rules we considered previously to calculate the nuclear magnetic moment. This is simply the nuclear magneton multiplied by the <span class="math notranslate nohighlight">\(j\)</span> value of the unpaired nucleon.
 $<span class="math notranslate nohighlight">\(
 \mu = g_{j}~j~\mu_{N}
 \)</span><span class="math notranslate nohighlight">\(
-Note here that the \)</span>g<span class="math notranslate nohighlight">\( factor has now changed to \)</span>g_{j}<span class="math notranslate nohighlight">\( as it depends on the gamma factor needed for the state of the nucleus being considered. For protons and neutrons the gamma factors are given by \)</span>g_{p}=2.793<span class="math notranslate nohighlight">\( and \)</span>g_{n}=-1.913$ respectively, however for a nucleus it is more complex for us to calculate.</p>
-<p>Note that the <span class="math notranslate nohighlight">\(\mu_N\)</span> Nuclear Mangeteon yields the energy <span class="math notranslate nohighlight">\(U\)</span> of the Nuclear Magnetic Dipole in a B-field as <span class="math notranslate nohighlight">\(E=\mu_N B\)</span>. The Nuclear Magneton is analogous to the Bohr Magneton in atomic physics but with the electron mass replaced by the proton mas. It is much smaller than the Bohr Magneton.</p>
-<p>In practice ethe Observed Magnetic Moment in an external B-field comes from the z-component. That is when the nucleus is put in a magnetic field it is the veector <span class="math notranslate nohighlight">\(j\)</span> that starts to preecess with fixed values along the z axis. In a full QM treatment (beyond our scope here) the observed Magnetic Mooment of the nucleus turns out to be
+Note here that the \)</span>g<span class="math notranslate nohighlight">\( factor has now changed to \)</span>g_{j}<span class="math notranslate nohighlight">\( as it depends on the gyromagnetic ratio needed for the state of the nucleus being considered. For protons and neutrons, the gyromagnetic ratios are given by \)</span>g_{p}=2.793<span class="math notranslate nohighlight">\( and \)</span>g_{n}=-1.913$ respectively, however for a nucleus, it is more complex for us to calculate.</p>
+<p>Note that the <span class="math notranslate nohighlight">\(\mu_N\)</span>, Nuclear Magnetron, yields the energy <span class="math notranslate nohighlight">\(U\)</span> of the Nuclear Magnetic Dipole in a B-field as <span class="math notranslate nohighlight">\(E=\mu_N B\)</span>. The Nuclear Magnetron is analogous to the Bohr Magnetron in atomic physics but with the electron mass replaced by the proton mass. It is much smaller than the Bohr Magnetron.</p>
+<p>In practice, the Observed Magnetic Moment in an external B-field comes from the z-component. That is when the nucleus is put in a magnetic field, it is the vector <span class="math notranslate nohighlight">\(j\)</span> that starts to precess with fixed values along the z-axis. In a full QM treatment (beyond our scope here), the observed Magnetic Moment of the nucleus turns out to be
 $<span class="math notranslate nohighlight">\(
 \mu_{obs} = g_j j_z \mu_N
 \)</span>$</p>
-<p>and we evaluate the magnetic moment from the expectation value of the magnetic moment operator in the state with maximum possible z projection of the angular mmentum.</p>
-<p>Based on the equations above we can see that if the nuclear spin, <span class="math notranslate nohighlight">\(I\)</span>, or <span class="math notranslate nohighlight">\(j\)</span> value of an unpaired nucleon is equal to zero, then <span class="math notranslate nohighlight">\(\mu=0\)</span>. So the first basic shell model prediction is simply that all Even-Even <span class="math notranslate nohighlight">\(I=0\)</span> states have no magnetic moment.</p>
-<p>For other combinations of protons and neutrons it gets more complicated and we need to account for the gamma factor in the equation. The gamma factor is referred to as the <strong>gyromagnetic ratio</strong>, a dimenionless quantity that characterises the magneteic moment, just a proportionality conostant that relates the magnetic moment to the total angular momentum or nuclear spin quantum number.</p>
-<p>There are two components to <span class="math notranslate nohighlight">\(g\)</span>, govering the angular momentum <span class="math notranslate nohighlight">\(g_l\)</span> and spin <span class="math notranslate nohighlight">\(g_s\)</span>, with different values for the proton and neutron. The total <span class="math notranslate nohighlight">\(g\)</span> is calculated according to the coupling of <span class="math notranslate nohighlight">\(l\)</span> and $<span class="math notranslate nohighlight">\( and the relation to \)</span>j$.</p>
-<p>The result, just given here is :</p>
+<p>and we evaluate the magnetic moment from the expectation value of the magnetic moment operator in the state with the maximum possible z projection of the angular momentum.</p>
+<p>Based on the equations above, we can see that if the nuclear spin, <span class="math notranslate nohighlight">\(I\)</span>, or <span class="math notranslate nohighlight">\(j\)</span> value of an unpaired nucleon is equal to zero, then <span class="math notranslate nohighlight">\(\mu=0\)</span>. So, the first basic shell model prediction is simply that all Even-Even <span class="math notranslate nohighlight">\(I=0\)</span> states have no magnetic moment.</p>
+<p>For other combinations of protons and neutrons, it gets more complicated, and we need to account for the gyromagnetic ratio in the equation. The gyromagnetic ratio is referred to as the <strong>gyromagnetic ratio</strong>, a dimensionless quantity that characterizes the magnetic moment, just a proportionality constant that relates the magnetic moment to the total angular momentum or</p>
+<p>nuclear spin quantum number.</p>
+<p>There are two components to <span class="math notranslate nohighlight">\(g\)</span>, governing the angular momentum <span class="math notranslate nohighlight">\(g_l\)</span> and spin <span class="math notranslate nohighlight">\(g_s\)</span>, with different values for the proton and neutron. The total <span class="math notranslate nohighlight">\(g\)</span> is calculated according to the coupling of <span class="math notranslate nohighlight">\(l\)</span> and <span class="math notranslate nohighlight">\(s\)</span> and the relation to <span class="math notranslate nohighlight">\(j\)</span>.</p>
+<p>The result, just given here is:</p>
 <div class="math notranslate nohighlight">
 \[
-g = g_{l} \frac{j(j+1)+l(l+1)-s(s+1)}{2j(j+1)} + g_s \frac{j(j+1)+ss(s+1)-l(l+1)}{2j(j+1)}
+g = g_{l} \frac{j(j+1)+l(l+1)-s(s+1)}{2j(j+1)} + g_s \frac{j(j+1)+s(s+1)-l(l+1)}{2j(j+1)}
 \]</div>
-<p>However if we take into account the possible values of each quantum number, that <span class="math notranslate nohighlight">\(s=1/2\)</span> or <span class="math notranslate nohighlight">\(-1/2\)</span> and that <span class="math notranslate nohighlight">\(s\)</span> and <span class="math notranslate nohighlight">\(l\)</span> can combine to give <span class="math notranslate nohighlight">\(j\)</span> by <span class="math notranslate nohighlight">\(l=j+1/2\)</span> (“Stretched”) to <span class="math notranslate nohighlight">\(l=j-1/2\)</span> ( “Jacknife”), then we arrive at only two possible scnearios for <span class="math notranslate nohighlight">\(g\)</span>:</p>
+<p>However, if we take into account the possible values of each quantum number, that <span class="math notranslate nohighlight">\(s=1/2\)</span> or <span class="math notranslate nohighlight">\(-1/2\)</span> and that <span class="math notranslate nohighlight">\(s\)</span> and <span class="math notranslate nohighlight">\(l\)</span> can combine to give <span class="math notranslate nohighlight">\(j\)</span> by <span class="math notranslate nohighlight">\(l=j+1/2\)</span> (“Stretched”) to <span class="math notranslate nohighlight">\(l=j-1/2\)</span> (“Jackknife”), then we arrive at only two possible scenarios for <span class="math notranslate nohighlight">\(g\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[
 \frac{\mu}{\mu_N} = (j-\frac{1}{2})g_l + \frac{1}{2}g_s \rightarrow (stretched)
 \]</div>
 <div class="math notranslate nohighlight">
 \[
-\frac{\mu}{\mu_N} = ((j+\frac{3}{2}g_l - \frac{1}{2}g_s))\frac{j}{j+1} \rightarrow (jacknife)
+\frac{\mu}{\mu_N} = ((j+\frac{3}{2})g_l - \frac{1}{2}g_s))\frac{j}{j+1} \rightarrow (jackknife)
 \]</div>
-<p>These are called the Scmidt Lines for nuclear magnetic moments where the <span class="math notranslate nohighlight">\(g\)</span> values here are given by:
+<p>These are called the Schmidt Lines for nuclear magnetic moments where the <span class="math notranslate nohighlight">\(g\)</span> values here are given by:
 $<span class="math notranslate nohighlight">\(
 g_l = 1~~\textnormal{(proton)} ~~~g_l = 0 ~~\textnormal{(neutron)}\\
-g_{s} = 5.85 ~~\textnormal{(proton)} ~~~g_{s} = -3.826\textnormal{(neutron)}
+g_{s} = 5.85 ~~\textnormal{(proton)} ~~~g_{s} = -3.826 \textnormal{(neutron)}
 \)</span>$</p>
-<p>As seen here the neutron has zero value for <span class="math notranslate nohighlight">\(g_l\)</span> but a finite value for <span class="math notranslate nohighlight">\(g_s\)</span>. Interestingly the value of <span class="math notranslate nohighlight">\(g_s\)</span> for the proton is much greater than would be expected. This again is indicative of an internal structure, i.e. the quark content.</p>
-<p>So based on this QM treatment and the Shell Model we can make predictionss of the Nuclear Mangeetic Moments of nuclei, simply from working out the Nuclear Spin <span class="math notranslate nohighlight">\(I\)</span> and finding <span class="math notranslate nohighlight">\(j\)</span>. The easiest case is as usual when we have a single nucleon in an otherwise unfilled shell.</p>
-<p>Consider <span class="math notranslate nohighlight">\(^{17}O\)</span> : this has a neutrton in the <span class="math notranslate nohighlight">\(1\textnormal{d}_{j=5/2}\)</span> level. Using the <span class="math notranslate nohighlight">\(g\)</span> values above we get <span class="math notranslate nohighlight">\(\mu = -1.91NM\)</span>. The meaesured value is <span class="math notranslate nohighlight">\(-1.89NM\)</span>.</p>
-<p>Unfortunately, as we can see in the figures below in general the calculated values lie within the appropriate maximum range of the Schmidt Lines set by the Odd nucleon but do not sit on the limits. The method can therefore be used to estimate the minimum and maximum magnetic moments for different nuclei, but cannot necessarily predict their properties exactly.  For instance if instead we take K-39 which has an odd proton in <span class="math notranslate nohighlight">\(d_{3/2}\)</span>. The calculation gives 0.09NM compared to a measured value is 0.39NM.</p>
-<p>The fact that the majority of nuclei lie between these two lines is indiciative of a more complex mixing of states, for instance such might be caused if the Shell model assumption that nuclei are in a spherically symmetric potential well are not always true.</p>
-<p>Magnetic moments of odd-Z evne-N nuclei in terms of nulcear magnetons. Tthee lines are calculated and the points are experimental determinatinos.</p>
+<p>As seen here, the neutron has zero value for <span class="math notranslate nohighlight">\(g_l\)</span> but a finite value for <span class="math notranslate nohighlight">\(g_s\)</span>. Interestingly, the value of <span class="math notranslate nohighlight">\(g_s\)</span> for the proton is much greater than would be expected. This again is indicative of an internal structure, i.e., the quark content.</p>
+<p>So, based on this QM treatment and the Shell Model, we can make predictions of the Nuclear Magnetic Moments of nuclei, simply from working out the Nuclear Spin <span class="math notranslate nohighlight">\(I\)</span> and finding <span class="math notranslate nohighlight">\(j\)</span>. The easiest case is, as usual, when we have a single nucleon in an otherwise unfilled shell.</p>
+<p>Consider <span class="math notranslate nohighlight">\(^{17}O\)</span>: this has a neutron in the <span class="math notranslate nohighlight">\(1\textnormal{d}_{j=5/2}\)</span> level. Using the <span class="math notranslate nohighlight">\(g\)</span> values above, we get <span class="math notranslate nohighlight">\(\mu = -1.91\mu_N\)</span>. The measured value is <span class="math notranslate nohighlight">\(-1.89\mu_N\)</span>.</p>
+<p>Unfortunately, as we can see in the figures below, in general, the calculated values lie within the appropriate maximum range of the Schmidt Lines set by the Odd nucleon but do not sit on the limits. The method can therefore be used to estimate the minimum and maximum magnetic moments for different nuclei but cannot necessarily predict their properties exactly. For instance, if instead, we take K-39, which has an odd proton in <span class="math notranslate nohighlight">\(d_{3/2}\)</span>. The calculation gives 0.09<span class="math notranslate nohighlight">\(\mu_N\)</span> compared to a measured value of 0.39<span class="math notranslate nohighlight">\(\mu_N\)</span>.</p>
+<p>The fact that the majority of nuclei lie between these two lines is indicative of a more complex mixing of states, for instance, such might be caused if the Shell model assumption that nuclei are in a spherically symmetric potential well is not always true.</p>
+<p>Magnetic moments of odd-Z even-N nuclei in terms of nuclear magnetons. The lines are calculated, and the points are experimental determinations.</p>
 <p><img alt="Alt text" src="_images/image-39.png" /></p>
-<p>Magnetic momnts of even-Z odd-N nuclei in terms of Nuclear Magnetons. the linese are clauclateed and the poinst are experimental determinations.</p>
+<p>Magnetic moments of even-Z odd-N nuclei in terms of Nuclear Magnetons. The lines are calculated and the points are experimental determinations.</p>
 </section>
 <section id="electric-quadrupole-moments">
 <h2>Electric Quadrupole Moments<a class="headerlink" href="#electric-quadrupole-moments" title="Permalink to this heading">#</a></h2>
-<p>We now consideer the static distribution of charge, rather than currents, in the nucleus. This leads us to the idae of the nuclear Electric Quadrupole Momeent, a parameter which describes the shape of the nuclear charge distribution.</p>
-<p>If we consider the shape of nuclei in the the shell model the simplest case would be when the first shell is full and that we assume a spherical shape. Hencee we would expect a zero Electric Quadrupole Moment (EQM). If we, say, add one extra nucleon in the outer shell, then we would expeect a non-spherical charge distribution to form and hence a finite EQM to appear. This is indeed the case, as seen in the plot here previously discusseed.</p>
+<p>We now consider the static distribution of charge, rather than currents, in the nucleus. This leads us to the idea of the nuclear Electric Quadrupole Moment, a parameter which describes the shape of the nuclear charge distribution.</p>
+<p>If we consider the shape of nuclei in the shell model, the simplest case would be when the first shell is full, and we assume a spherical shape. Hence, we would expect a zero Electric Quadrupole Moment (EQM). If we, say, add one extra nucleon in the outer shell, then we would expect a non-spherical charge distribution to form and hence a finite EQM to appear. This is indeed the case, as seen in the plot here previously discussed.</p>
 <p><img alt="Alt text" src="_images/image-40.png" /></p>
 <p>So how can we quantify this, firstly note that there are different types of electric momoent. We could have an eletric dipole moment, however as we only have psitive chargese of proton this does not exist in nuclei as there is no opposite charge in the nucleus that could sit on the other end of the dipole. This means only higher order types Quadrupole, Octupole, etc, are allowed.</p>
 <p>We can think of a quadrupole moment as the sum of two dipoles set antiparallel from one another.</p>
@@ -540,43 +543,43 @@ In this case charge is more concentrated on the <span class="math notranslate no
 </section>
 <section id="odd-neutrons">
 <h3>Odd Neutrons<a class="headerlink" href="#odd-neutrons" title="Permalink to this heading">#</a></h3>
-<p>For neutrons things start to get a bit stranger. The neutron is neutral so we might expect that an odd neutron in the outer shell outside the core would make no difference to <span class="math notranslate nohighlight">\(Q\)</span>. However, due to the nuclear force, the neutron will attract protons in the core and form a <em>ridge</em>, or <em>tide</em> of nuclear material. In this case we we expect a small negative <span class="math notranslate nohighlight">\(Q\)</span>, as if we had an odd unpaired proton.</p>
-<p>Working through the numbers we find typical values for the EQM with odd neutrons in the range <span class="math notranslate nohighlight">\(0.06-0.6 eb\)</span>, where that is in electron barns.</p>
-<p>But what if we have several nucleons in a partially filled outer shell? As with other predictions in the Shell Model in general it is harder to calculate this explicitly because all the nucleons can contribute but a basic derivation (just given here) yields:</p>
+<p>For neutrons, things start to get a bit stranger. Although the neutron is neutral, one might expect that an odd neutron in the outer shell outside the core would make no difference to <span class="math notranslate nohighlight">\(Q\)</span>. However, due to the nuclear force, the neutron will attract protons in the core and form a <em>ridge</em> or <em>tide</em> of nuclear material. In this case, we expect a small negative <span class="math notranslate nohighlight">\(Q\)</span>, similar to if we had an odd unpaired proton.</p>
+<p>Working through the numbers, we find typical values for the Electric Quadrupole Moment (EQM) with odd neutrons in the range of <span class="math notranslate nohighlight">\(0.06-0.6 eb\)</span> (electron barns).</p>
+<p>But what if we have several nucleons in a partially filled outer shell? As with other predictions in the Shell Model, in general, it is harder to calculate this explicitly because all the nucleons can contribute. However, a basic derivation yields:</p>
 <div class="math notranslate nohighlight">
 \[
 &lt; Q &gt; = &lt; Q_{sp} &gt; \left [ 1-2\frac{n-1}{j-1} \right ]
 \]</div>
-<p>where <span class="math notranslate nohighlight">\(Q_{sp}\)</span> is the Single Particle Value as above and <span class="math notranslate nohighlight">\(n\)</span> is the number of nuclenos in the part filled shell. Here <span class="math notranslate nohighlight">\(n\)</span> can range from <span class="math notranslate nohighlight">\(1\)</span> to <span class="math notranslate nohighlight">\(2j\)</span>. So when <span class="math notranslate nohighlight">\(n=2j\)</span>, a shell that is only one nucleon from being filled, we get <span class="math notranslate nohighlight">\(Q=-Q_{sp}\)</span>.</p>
+<p>where <span class="math notranslate nohighlight">\(Q_{sp}\)</span> is the Single Particle Value as mentioned above, and <span class="math notranslate nohighlight">\(n\)</span> is the number of nucleons in the partially filled shell. Here, <span class="math notranslate nohighlight">\(n\)</span> can range from <span class="math notranslate nohighlight">\(1\)</span> to <span class="math notranslate nohighlight">\(2j\)</span>. So, when <span class="math notranslate nohighlight">\(n=2j\)</span>, a shell that is only one nucleon from being filled, we get <span class="math notranslate nohighlight">\(Q=-Q_{sp}\)</span>.</p>
 </section>
 </section>
 </section>
 <section id="eqm-predictions">
 <h1>EQM Predictions<a class="headerlink" href="#eqm-predictions" title="Permalink to this heading">#</a></h1>
-<p>Using the results above with <span class="math notranslate nohighlight">\(r=r_{0}A^{1/3}\)</span> etc, we can calculate the <span class="math notranslate nohighlight">\(Q\)</span> values for different nuclei above and compare with the measured values. Some results are shown in the table below. In general at least the correect sign is found but often the real value ar larger than expected.</p>
+<p>Using the results above with <span class="math notranslate nohighlight">\(r=r_{0}A^{1/3}\)</span> etc., we can calculate the <span class="math notranslate nohighlight">\(Q\)</span> values for different nuclei and compare them with the measured values. Some results are shown in the table below. Generally, at least the correct sign is found, but often the real value is larger than expected.</p>
 <p><img alt="Alt text" src="_images/image-42.png" /></p>
 <p>Things work best when we consider nuclei close to the magic numbers in most cases. In the plot below we see how the EQM varies as a function nucleons and how some predictions of the EQM line up with observations.</p>
 <p><img alt="Alt text" src="_images/image-43.png" /></p>
-<p>We see good agreeement for Double Magic Number nuclei plus or minus one proton but poor agreemenet when odd neutron’s are considered in O-17 and terrible agreement with a big nucleus with a partly filled outer shell ssuch as Lu-175. In general nuclei with atomic mass numbers in the range <span class="math notranslate nohighlight">\(150&lt;A&lt;190\)</span> and <span class="math notranslate nohighlight">\(A&gt;200\)</span> have very large Quadrupole moments (the break here is due to a magic number).</p>
+<p>We see good agreeement for Double Magic Number nuclei plus or minus one proton but poor agreemenet when odd neutron’s are considered in O-17 and terrible agreement with a big nucleus with a partly filled outer shell such as Lu-175. In general nuclei with atomic mass numbers in the range <span class="math notranslate nohighlight">\(150&lt;A&lt;190\)</span> and <span class="math notranslate nohighlight">\(A&gt;200\)</span> have very large Quadrupole moments (the break here is due to a magic number).</p>
 <p><img alt="Alt text" src="_images/image-44.png" /></p>
-<p>Before moving on let’s summarise the shell model conclusions. The hell modl is a powerful, if incomplete complement to the LDM and SEMF that can:</p>
+<p>Before moving on, let’s summarize the shell model conclusions. The shell model is a powerful, albeit incomplete, complement to the Liquid Drop Model (LDM) and the Semi-Empirical Mass Formula (SEMF) that can:</p>
 <ol class="arabic simple">
-<li><p>account verey welel for ground state spins and parities.</p></li>
-<li><p>explain why even-evne nuclei have zero Nuclear Spin.</p></li>
-<li><p>account for some excited state spin and parities and why the spin of odd-A nuclei is that of the Unpairede Nucleon.</p></li>
-<li><p>shows how if two neutrons (protons) occupy level with the samee <span class="math notranslate nohighlight">\(j\)</span> and <span class="math notranslate nohighlight">\(I\)</span>, then Total ngular Momentum couplee to give zer contribution to nucleeaer spin.</p></li>
-<li><p>Accounts for selectede Magnetid Dipole Mmenets - thses nar closed shells agree with Schmidy Lines.</p></li>
-<li><p>Account for some observed Quadrupole Moments - at least correct sign for closed shells + 1 nuclei.</p></li>
+<li><p>Accurately account for ground state spins and parities.</p></li>
+<li><p>Explain why even-even nuclei have zero Nuclear Spin.</p></li>
+<li><p>Account for some excited state spins and parities and explain why the spin of odd-A nuclei is that of the Unpaired Nucleon.</p></li>
+<li><p>Show that if two neutrons (or protons) occupy a level with the same <span class="math notranslate nohighlight">\(j\)</span> and <span class="math notranslate nohighlight">\(I\)</span>, then the Total Angular Momentum couples to give zero contribution to nuclear spin.</p></li>
+<li><p>Account for selected Magnetic Dipole Moments - these near closed shells agree with Schmidt Lines.</p></li>
+<li><p>Account for some observed Quadrupole Moments - at least the correct sign for closed shells + 1 nuclei.</p></li>
 </ol>
-<p>However unfortunately the model has some failings:</p>
+<p>However, unfortunately, the model has some shortcomings:</p>
 <ol class="arabic simple">
 <li><p>The model still makes no robust predictions for Odd-Odd nuclei.</p></li>
 <li><p>Predictions fail for Excited Nuclei above ~2MeV, as large excitations in the core can complicate the energy levels picture.</p></li>
-<li><p>The Shell Model can make predeictions of the Nuclear Magnetic Moments, the Electric Quadrupole Moments, but for large nuclei and nuclei away from filled shells these predictions poorly match the data.</p></li>
+<li><p>The Shell Model can make predictions of the Nuclear Magnetic Moments and the Electric Quadrupole Moments, but for large nuclei and nuclei away from filled shells, these predictions poorly match the data.</p></li>
 <li><p>It is observed that nuclei have Excitation Levels and states far from what can be explained by the Shell Model. It turns out that these are associated with bulk motions of the nuclear material, notably rotation and vibration states.</p></li>
 </ol>
-<p>This failings particularly in the magnetic moment and EQM data are indicative of a large deviation away from spherical charge distributions, suggesting that in some cases the nucleus can be grossly distorted in shape. For the EQM we have to conclude that some nuclei are much further from spherical than the shell model can allow.</p>
-<p>In reality what we find is that many nuclei appear to have Permanent Distortions away from simple spheres. A poossible explanation is that interactions occur between the outer nucleons and the closed shells which leads us into the idea of Collective Models, where we need to examine what new energy state might arise from bulk nuclear matter distrortions in our model.</p>
+<p>These failings, particularly in the magnetic moment and EQM data, indicate a large deviation away from spherical charge distributions, suggesting that in some cases, the nucleus can be grossly distorted in shape. For the EQM, we have to conclude that some nuclei are much further from spherical than the shell model can allow.</p>
+<p>In reality, many nuclei appear to have permanent distortions away from simple spheres. A possible explanation is that interactions occur between the outer nucleons and the closed shells, which leads us into the idea of Collective Models. Here, we need to examine what new energy state might arise from bulk nuclear matter distortions in our model.</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -609,6 +612,15 @@ In this case charge is more concentrated on the <span class="math notranslate no
                 <footer class="prev-next-footer">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="phy303-unit3-shellmodel-and-spin.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Unit 3 : Shell Model</p>
+      </div>
+    </a>
 </div>
                 </footer>
               
