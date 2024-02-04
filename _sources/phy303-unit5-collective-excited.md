@@ -18,7 +18,7 @@ Allowing a nuclear core to be deformed in our model changes the possible Shell E
 
 Let's consider the rotational states first. We can start by describing the shape as a revolution around some central point, with Cylindrical Symmetry, and two extreme cases as shown below, following the prolate and oblate structures we saw previously when considering the electric quadrupole moment of nuclei.
 
-If we modify our model to remove the requirement that nuclei are spherical, what we find in the full derivation of the Schrödinger's Equation is that wave functions based on nuclei occupying physical spaces based on Laplace spherical harmonics are also valid solutions. Since a linear combination of any two equations that satisfy Schrödinger's Equation are also valid solutions, we could consider particle wavefunctions that are arbitrary combinations of spherical harmonics. However, what we actually find is that when considering the possible discrete energy levels of the nucleus, different harmonics correspond to different states. Laplace Spherical Harmonics are described in general form as $Y_{l,m}$ and are shown in their base form in the image below. You'll see that $Y_{0}^{0}$ corresponds to our simple case of a plain sphere.
+If we modify our model to remove the requirement that nuclei are spherical, what we find in the full derivation of the Schrödinger's Equation is that wave functions based on nuclei occupying physical spaces based on Laplace spherical harmonics are also valid solutions. Since a linear combination of any two equations that satisfy Schrödinger's Equation are also valid solutions, we could consider particle wave functions that are arbitrary combinations of spherical harmonics. However, what we actually find is that when considering the possible discrete energy levels of the nucleus, different harmonics correspond to different states. Laplace Spherical Harmonics are described in general form as $Y_{l,m}$ and are shown in their base form in the image below. You'll see that $Y_{0}^{0}$ corresponds to our simple case of a plain sphere.
 
 ![Alt text](image-46.png)
 
@@ -28,27 +28,27 @@ To better understand the relation between spherical harmonics lets consider the 
 
 ![Alt text](image-48.png)
 
-We express this algebraically by saying that the surface of our nucleis has a radius at a given angle in spherical co-ordinates as 
+We express this algebraically by saying that the surface of our nucleus has a radius at a given angle in spherical co-ordinates as 
 
 $$
 R(\theta, \phi) = R_{av} [Y_{0,0}+\beta Y_{20} (\theta, \phi)]
 $$
 
-where $Y_{20}$ is a Laplace spherical harmonic representing the distance from origin to the surface of the shape, $R_{av}$ is the average nuclear radius, and $\beta$ is a deformation parameter. As shown in the pictture below we expact that as we increase $\beta$ the shape of our nucleus slowly transitions between $Y_{00}$ and $Y_{20}$ states. In reality our deformed nuclei may be somewhere in between.
+where $Y_{20}$ is a Laplace spherical harmonic representing the distance from origin to the surface of the shape, $R_{av}$ is the average nuclear radius, and $\beta$ is a deformation parameter. As shown in the picture below we expect that as we increase $\beta$ the shape of our nucleus slowly transitions between $Y_{00}$ and $Y_{20}$ states. In reality our deformed nuclei may be somewhere in between.
 
 
 
-Note also that $Y_{0,0}$ is just our spherical shape and has a constant value of $Y_{0,0}=1$ so we've drpped the angular dependence in the equation.  The important thing to notice is that if $\beta$ is equal to zero, then we have only the spherical component, and we arrive at a spherical nuclear shape as in the figure. Exactly what we want in the no deformation case!
+Note also that $Y_{0,0}$ is just our spherical shape and has a constant value of $Y_{0,0}=1$ so we've dropped the angular dependence in the equation.  The important thing to notice is that if $\beta$ is equal to zero, then we have only the spherical component, and we arrive at a spherical nuclear shape as in the figure. Exactly what we want in the no deformation case!
 
-If $\beta$ is non-zero however we get slight modifcations of our nuclear shape as a result. The deformation parameter $\beta$ can be expressed in terms of the actual nuclear radius as
+If $\beta$ is non-zero however we get slight modifications of our nuclear shape as a result. The deformation parameter $\beta$ can be expressed in terms of the actual nuclear radius as
 
 $$
 \beta = \frac{4}{3} \sqrt{\frac{\pi}{5}} \frac{\Delta R}{R_{av}}
 $$
 
-where $R_{av} = r_{0}A^{1/3}$. In our simple case $\beta>0$ corresponds to a prolate nucleus as we've stretched out the top, and $\beta< 0$ corresponds to oblate as we've expanded the sides. $\Delta R$ here repesents the difference beteweent he semi-major and semi-minor axes (long and short sides) of the nucleus itself when it is deformed. A typical value for $\Delta R$ is around 0.3 fm.
+where $R_{av} = r_{0}A^{1/3}$. In our simple case $\beta>0$ corresponds to a prolate nucleus as we've stretched out the top, and $\beta< 0$ corresponds to oblate as we've expanded the sides. $\Delta R$ here represents the difference between the semi-major and semi-minor axes (long and short sides) of the nucleus itself when it is deformed. A typical value for $\Delta R$ is around 0.3 fm.
 
-Note here we are talking of a permanent deformation in shape. Thanks to the charge distribution we thus expeet to get a finite Electric Quadrupole Moment. In addition now however we also see possible rotation states as along certain axes (perpendicular to the axis we squashed our nucleus) the shape is not rotationally symmetric. Based on the nuclear shapes shown above you can imagine being able to rotate the nucleus rotating along two axes, either around the page, or out of the page.
+Note here we are talking of a permanent deformation in shape. Thanks to the charge distribution we thus expert to get a finite Electric Quadrupole Moment. In addition now however we also see possible rotation states as along certain axes (perpendicular to the axis we squashed our nucleus) the shape is not rotationally symmetric. Based on the nuclear shapes shown above you can imagine being able to rotate the nucleus rotating along two axes, either around the page, or out of the page.
 
 It turns out the Electric Quadrupole Moment of a deformed nucleus is directly related to the deformation of the nucleus itself. It  is given by:
 
@@ -59,7 +59,7 @@ $$
 This is the intrinsic electric quadrupole moment for a deformed nucleus at rest. Note how it depends on a surface area $R_{av}^{2}$, the number of protons $Z$ and the deformation parameter. You can see how $Q$ becomes zero for the spherical case, i.e. when $\beta$ = 0.
 
 
-So, what about the Rotational Energy Levels? In classical mechanics, this comes from considering the kinetic energy of a rigid rotating body with angular momentum \(\mathbf{R}\) (note this is a different symbol than the radius used above).
+So, what about the Rotational Energy Levels? In classical mechanics, this comes from considering the kinetic energy of a rigid rotating body with angular momentum $\mathbf{R}$ (note this is a different symbol than the radius used above).
 
 In the classical case, we get the equation for the kinetic energy of a Rigid Rotation as here, based on the picture that shows the angular momentum axis.
 
@@ -67,9 +67,9 @@ $$
 E_{R} = \frac{R^{2}}{2I}
 $$
 
-where \(I\) is the effective moment of inertia.
+where $I$ is the effective moment of inertia.
 
-Now, switching to the quantum mechanical case, the energies are given by solving the relevant Schrödinger Equation. We replace the angular momentum \(R\) with an operator acting on the wave function. Then the Eigenvalues and Eigenfunctions are given as follows:
+Now, switching to the quantum mechanical case, the energies are given by solving the relevant Schrödinger Equation. We replace the angular momentum $R$ with an operator acting on the wave function. Then the Eigenvalues and Eigenfunctions are given as follows:
 
 $$
 \frac{R^{2}}{2I} \psi = E_{J} \psi
@@ -81,9 +81,9 @@ $$
 E_{J} = \frac{\hbar^{2}}{2I}J(J+1)~~~~~J=0,2,4,\ldots
 $$
 
-Note that there is some Reflection Symmetry in this solution, so it turns out that there are no odd \(J\) values and the only allowed \(J\) values are 0, 2, 4, etc.
+Note that there is some Reflection Symmetry in this solution, so it turns out that there are no odd $J$ values and the only allowed $J$ values are 0, 2, 4, etc.
 
-Now substituting the quantized allowed \(J\) values, we can write out the sequence of energy levels as follows:
+Now substituting the quantized allowed $J$ values, we can write out the sequence of energy levels as follows:
 
 $$
 E(0^+) = 0
@@ -98,15 +98,15 @@ $$
 E(6^{+}) = 42\frac{\hbar^{2}}{2I}
 $$
 
-See how we get a neat sequence where the energy levels go as 0, 6, 20, 42, etc., times a constant value based on the nuclear spin. The states are labeled by the \(J\) value as shown, and the Parity, which is always positive here.
+See how we get a neat sequence where the energy levels go as 0, 6, 20, 42, etc., times a constant value based on the nuclear spin. The states are labeled by the $J$ value as shown, and the Parity, which is always positive here.
 
-A useful trick with this sequence is that if we happened to have measured one of the values, then we can predict the rest, using the sequence. For instance, if we consider the \(E(2^{+})\) level or \(E_{2}\), the first excited state above the ground level, then we can write:
+A useful trick with this sequence is that if we happened to have measured one of the values, then we can predict the rest, using the sequence. For instance, if we consider the $E(2^{+})$ level or $E_{2}$, the first excited state above the ground level, then we can write:
 
 $$
 E_{J} = \frac{1}{6} J(J+1)E_{2}~~~~~~~~~J=0,2,4,\ldots
 $$
 
-As an example, say we know the first excited state of Erbium-164, i.e., \(^{164}Er, E(2^{+}) = 91.4 keV\), then using the equation above, we can predict the Rotational Energy States of Erbium for the higher levels \(E(4^+), E(6^+), E(8^+)\), etc.
+As an example, say we know the first excited state of Erbium-164, i.e., $^{164}Er, E(2^{+}) = 91.4 keV$, then using the equation above, we can predict the Rotational Energy States of Erbium for the higher levels $E(4^+), E(6^+), E(8^+)$, etc.
 
 #### Vibrational States
 We've discussed rotation states as mentioned above, where the deformation is permanent, and we get energy levels associated with quantized allowed rotations. But in large nuclei, we can also get vibration states in which the nuclear fluid undergoes continuous shape changing or shape oscillations while maintaining constant density. These are the vibration energy states.
@@ -124,26 +124,26 @@ $$
 R(t, \theta,\phi) = R_{av} + \sum_{\lambda>1}^{\lambda=\infty} \sum_{\mu=-\lambda}^{\mu=+\lambda}  \alpha_{\lambda \mu}(t) Y_{\lambda \mu} (\theta, \phi)
 $$
 
-Note how this time we include all possible spherical harmonics \(Y\) that may contribute, and each possible shape has its own amplitude \(\alpha\).
+Note how this time we include all possible spherical harmonics $Y$ that may contribute, and each possible shape has its own amplitude $\alpha$.
 
-The basic modes of vibration are determined by the \(\lambda\) factor here as:
-- \(\lambda=0\) Monopole - forbidden
-- \(\lambda=1\) Dipole - Not considered
-- \(\lambda=2\) Quadrupole
-- \(\lambda=3\) Octupole
+The basic modes of vibration are determined by the $\lambda$ factor here as:
+- $\lambda=0$ Monopole - forbidden
+- $\lambda=1$ Dipole - Not considered
+- $\lambda=2$ Quadrupole
+- $\lambda=3$ Octupole
 
-The first state is forbidden because the oscillations over time only modify the radial component (\(Y_{0,0} = 1\)). If \(\alpha_{0,0}\) had any time variability, this would result in fluctuations in the density of the nucleus, which is forbidden in our incompressible model.
+The first state is forbidden because the oscillations over time only modify the radial component ($Y_{0,0} = 1$). If $\alpha_{0,0}$ had any time variability, this would result in fluctuations in the density of the nucleus, which is forbidden in our incompressible model.
 
 The second state is not considered because the dipole form produces net shifts in the center of mass (all neutrons and protons moving up and down together). This cannot result from internal forces, only external ones, so it is not worth considering in our nucleus-centric model.
 
 The first important vibrational model is therefore the Quadrupole.
-The various allowed vibrational states in nuclei are very complicated, but we can get a feel for their behavior. For the simplest even-even nuclei, the Ground Vibration State is designated \(0^{+}\). If we add a unit of Quantized Vibration (a phonon) \(1\hbar \omega\), we get to the first quadrupole state designated \(2^{+}\).
+The various allowed vibrational states in nuclei are very complicated, but we can get a feel for their behavior. For the simplest even-even nuclei, the Ground Vibration State is designated $0^{+}$. If we add a unit of Quantized Vibration (a phonon) $1\hbar \omega$, we get to the first quadrupole state designated $2^{+}$.
 
-The quantized unit of vibration is called a Phonon. The first level can be thought of as the First Harmonic of vibration. We can think of \(\lambda\) as a unit of angular momentum, \(l\), so the parity of this state \((-1)^{2}\), i.e., positive. If we add another phonon, we start to see higher harmonics. These are labeled by the \(\mu\) in the equation, ranging from \(\mu=-\lambda\) to \(\mu=+\lambda\), i.e., a total of \(2\lambda +1\), that is \(5\) for \(\lambda=2\). As we have two phonons, there is a lot of symmetry, so we end up with \(3\) possible substates, labeled \(0^{+}\), \(2^+\), and \(4^+\). This is summarized below in the example of \(^{114}Cd\).
+The quantized unit of vibration is called a Phonon. The first level can be thought of as the First Harmonic of vibration. We can think of $\lambda$ as a unit of angular momentum, $l$, so the parity of this state $(-1)^{2}$, i.e., positive. If we add another phonon, we start to see higher harmonics. These are labeled by the $\mu$ in the equation, ranging from $\mu=-\lambda$ to $\mu=+\lambda$, i.e., a total of $2\lambda +1$, that is $5$ for $\lambda=2$. As we have two phonons, there is a lot of symmetry, so we end up with $3$ possible substates, labeled $0^{+}$, $2^+$, and $4^+$. This is summarized below in the example of $^{114}Cd$.
 
-Notice that for higher states, since only even values of \(J\) are allowed, we end up with all the higher states of our even-even nuclei also having positive parity.
+Notice that for higher states, since only even values of $J$ are allowed, we end up with all the higher states of our even-even nuclei also having positive parity.
 
-An important point to note here is that the basic energy levels at each phonon level are equally spaced, in units of \(1\hbar \omega\). So, unlike the rotation energy levels, where the spacing increases in a sequence \(0, 6, 20, 42, ...\), the basic vibration energy levels are evenly spaced, with each level having finely split sub-levels at each basic level due to the phonon couplings.
+An important point to note here is that the basic energy levels at each phonon level are equally spaced, in units of $1\hbar \omega$. So, unlike the rotation energy levels, where the spacing increases in a sequence $0, 6, 20, 42, ...$, the basic vibration energy levels are evenly spaced, with each level having finely split sub-levels at each basic level due to the phonon couplings.
 
 The basic vibrational energy levels can be written as follows
 
@@ -151,7 +151,7 @@ $$
 EE_{N} = \hbar \omega_{l} \left(\frac{2l+1}{2} +N \right)
 $$
 
-So here we see that the Quadrupole (\(l=2\)) Ground State (no phonons) has an energy level at
+So here we see that the Quadrupole ($l=2$) Ground State (no phonons) has an energy level at
 
 $$
 E_{N} = \left(N+\frac{5}{2}\right) \hbar \omega
@@ -216,7 +216,7 @@ When the nucleon undergoes an energy transition, it emits a photon (gamma ray) t
 #### Example: Cobalt-60 Decay
 As an example for gamma ray decays lets consider Co-60 a very common radio-isotope used in nuclear labs to calibrate detector response as placing it in a gamma spectrometer results in two two very clear gamma ray peaks at 1.1732 MeV and 1.3325 MeV next to one another that can be used to assess detector resolution. Co-60 itself however is primarily a $\beta$ emitter as we see in the figure below. What actually happens during a radioactive decay of $\beta$ is the 99\% of the time it converts into an excited state of Nickel which subsequently emits gamma radiation.
 
-![Alt text](image-50.png)
+![Alt text](image-100.png)
 
 Certainly! Let's explore the electromagnetic transitions in the decay of Cobalt-60 (Co-60) to its final Nickel isotopes, considering the changes in parity and angular momentum and determining whether the radiation is electric or magnetic dipole or quadrupole.
 
@@ -235,8 +235,9 @@ Cobalt-60 (Co-60) undergoes beta decay, resulting in the formation of Nickel-60 
 
    Note that because of the larger energy jump the $4+$ state is far more likely to decay into the lower $2+$ state than the higher one resulting in 1.1732 MeV being one of the dominant gamma rays emitted. Both of these emissions are E2 transitions. 
 
+![Alt text](image-114.png)
 
 
-In the next few lectures, we'll probe further into the behavior of excited states of the nucleus and how this can lead to different forms of spontaneous radioactive decay. Before we do that however lets understand what else ouor simple shell model can say about one form of radiation, 
+In the next few lectures, we'll probe further into the behavior of excited states of the nucleus and how this can lead to different forms of spontaneous radioactive decay. Before we do that however lets understand what else our simple shell model can say about one form of radiation, 
 
 

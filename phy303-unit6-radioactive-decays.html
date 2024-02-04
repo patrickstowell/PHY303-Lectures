@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Unit 6 : Radioactive Decays &#8212; PHY303 Nuclear Physics 1</title>
+    <title>Unit 6: Radioactive Decays &#8212; PHY303 Nuclear Physics 1</title>
   
   
   
@@ -36,6 +36,7 @@
     <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="_static/myfile.css" />
     <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -64,7 +65,7 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script>window.MathJax = {"HTML-CSS": {"matchFontHeight": true, "scale": 80}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'phy303-unit6-radioactive-decays';</script>
     <link rel="index" title="Index" href="genindex.html" />
@@ -167,18 +168,18 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="phy303-unit1-introduction-and-structure.html">Unit 1 : Introduction</a></li>
-
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit1-introduction-and-structure.html">Unit 1. Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="phy303-unit2-liquiddropmodels.html">Unit 2. Liquid Drop</a></li>
 <li class="toctree-l1"><a class="reference internal" href="phy303-unit3-shellmodel-and-spin.html">Unit 3. Shell Model</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phy303-unit4-parity-moments.html">Unit 4 : Nuclear Properties</a></li>
-
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit4-parity-moments.html">Unit 4. Nuclear Spin Moments</a></li>
 <li class="toctree-l1"><a class="reference internal" href="phy303-unit5-collective-excited.html">Unit 5: Collective Models</a></li>
 
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Unit 6. Radioactive Decay</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Unit 6: Radioactive Decays</a></li>
+
 <li class="toctree-l1"><a class="reference internal" href="phy303-unit7-reactions.html">Unit 7. Reactions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="phy303-unit8-compoundreactions.html">Unit 8. Compound Reactions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="phy303-unit9-neutronphysics.html">Unit 9 : Neutron Physics</a></li>
+
 
 
 
@@ -369,7 +370,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Unit 6 : Radioactive Decays</h1>
+    <h1>Unit 6: Radioactive Decays</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -379,9 +380,21 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Unit 6: Radioactive Decays</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#alpha-decay">6.1 Alpha Decay</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#beta-decay">Beta Decay</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#beta-decay">Beta Decay</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#electron-emission-n-p-e-bar-nu-e">Electron emission n → p + e^- + <span class="math notranslate nohighlight">\(\bar{\nu}_e\)</span></a></li>
 </ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#applied-beta-physics">Applied Beta Physics</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fermi-theory">Fermi Theory</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary</a></li>
+</ul>
+</li>
+</ul>
+
             </nav>
         </div>
     </div>
@@ -393,61 +406,66 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section id="unit-6-radioactive-decays">
-<h1>Unit 6 : Radioactive Decays<a class="headerlink" href="#unit-6-radioactive-decays" title="Permalink to this heading">#</a></h1>
-<p>As we saw in the previous unit nuclei in excited states can emit radiation in the form of gamma rays when nucleons move between the different shell levels. This explains one of our three dominant sources of radiation, what about the others, <span class="math notranslate nohighlight">\(\beta\)</span> and <span class="math notranslate nohighlight">\(\alpha\)</span> decay?</p>
-<p>These become a bit tricker to solve as both decays lead to fundamental change in the nucleon content inside the nucleus itself. As a reminder in all cases of radioative decay we characterise the process in terms of three important numberes</p>
+<h1>Unit 6: Radioactive Decays<a class="headerlink" href="#unit-6-radioactive-decays" title="Permalink to this heading">#</a></h1>
+<p>As we saw in the previous unit, nuclei in excited states can emit radiation in the form of gamma rays when nucleons move between different shell levels. This explains one of our three dominant sources of radiation. What about the others, <span class="math notranslate nohighlight">\(\beta\)</span> and <span class="math notranslate nohighlight">\(\alpha\)</span> decay?</p>
+<p>These become a bit trickier to solve, as both decays lead to a fundamental change in the nucleon content inside the nucleus itself. As a reminder, in all cases of radioactive decay, we characterize the process in terms of three important numbers:</p>
 <ul class="simple">
 <li><p>The probability of decay per unit time <span class="math notranslate nohighlight">\(\rightarrow \lambda\)</span></p></li>
 <li><p>The average time a nucleus lasts before decay <span class="math notranslate nohighlight">\(\rightarrow \tau = 1/\lambda\)</span></p></li>
 <li><p>The time for half the sample to decay (half-life) <span class="math notranslate nohighlight">\(\rightarrow T = \tau \textnormal{ln}(2) = 0.693\tau\)</span></p></li>
 </ul>
-<p>Radioactive decay itself is a stochastic process. That is why we define it in terms of the average times it takes bulk samples of material to decay. The main thing that governs the rate of this decay in a nucleus is actually whether the porocess is energetically favourable or not. A nucleus is likely to be unstable and decay if the net energy of the final products <span class="math notranslate nohighlight">\(E_{f}\)</span> is less than that of the starting nucleus <span class="math notranslate nohighlight">\(E_{i}\)</span>. This energy deficit is defined as
+<p>Radioactive decay itself is a stochastic process. That is why we define it in terms of the average times it takes bulk samples of material to decay. The main thing that governs the rate of this decay in a nucleus is actually whether the process is energetically favorable or not. A nucleus is likely to be unstable and decay if the net energy of the final products <span class="math notranslate nohighlight">\(E_{f}\)</span> is less than that of the starting nucleus <span class="math notranslate nohighlight">\(E_{i}\)</span>. This energy deficit is defined as:
 $<span class="math notranslate nohighlight">\(
-Q=M(A,Z)^{2}c^{2} - [M(A-X,Z-Y)c^{2} + M(X,Y)c^{2}] &gt; 0 
+Q = M(A,Z)^{2}c^{2} - [M(A-X,Z-Y)c^{2} + M(X,Y)c^{2}] &gt; 0 
 \)</span>$</p>
-<p>Decay is possible only if the <span class="math notranslate nohighlight">\(Q\)</span> value is positive and the decay is not disallowed by any oother selection rule or conservation law. The energy released in the decay will come oout in the Kinetic Energy of the fragments or in nuclear excitation followed by relaxatioon and <span class="math notranslate nohighlight">\(\gamma\)</span> ray emission.</p>
+<p>Decay is possible only if the <span class="math notranslate nohighlight">\(Q\)</span> value is positive, and the decay is not disallowed by any other selection rule or conservation law. The energy released in the decay will come out in the kinetic energy of the fragments or in nuclear excitation followed by relaxation and <span class="math notranslate nohighlight">\(\gamma\)</span> ray emission.</p>
 <section id="alpha-decay">
 <h2>6.1 Alpha Decay<a class="headerlink" href="#alpha-decay" title="Permalink to this heading">#</a></h2>
-<p>First lets start to use our new found understand of nuclear structure to try to understand alpha decay. There are some important questionos we need to ask for this process:</p>
+<p>First, let’s start to use our newfound understanding of nuclear structure to try to understand alpha decay. There are some important questions we need to ask for this process:</p>
 <ul class="simple">
-<li><p>Why are the <span class="math notranslate nohighlight">\(\alpha\)</span> particles emitted and not some other combinatino of nucleons?</p></li>
-<li><p>Why is there such a range of lifetimes and energies - what is the relationoship between the two?</p></li>
+<li><p>Why are the <span class="math notranslate nohighlight">\(\alpha\)</span> particles emitted and not some other combination of nucleons?</p></li>
+<li><p>Why is there such a range of lifetimes and energies? What is the relationship between the two?</p></li>
 <li><p>What determines the frequency of <span class="math notranslate nohighlight">\(\alpha\)</span> decay?</p></li>
-<li><p>Hoow are the <span class="math notranslate nohighlight">\(\alpha\)</span> particles foormed in the nucleus and emitted?</p></li>
-<li><p>Do alphas carry information on nuclear strucure?</p></li>
+<li><p>How are the <span class="math notranslate nohighlight">\(\alpha\)</span> particles formed in the nucleus and emitted?</p></li>
+<li><p>Do alphas carry information on nuclear structure?</p></li>
 </ul>
-<p>One plot that begins to answer some of thes equestions is a comparison of the <span class="math notranslate nohighlight">\(Q\)</span> energy for different alpha emitting particles seperated by different radioactive decay series. This is called the Geiger-Nuttall relation and it demonstrates that actualy for many different series there is a strong correlation between the radioactive half-life and the energy of the emitted alpha.</p>
-<p>Notice also how steep the relation is in the Geiger-Nutall plot (its a log scale). An alpha emitter that produces 8 MeV alpha particles is likely to have a half life over 22 orders of magnitude shorter than one which produces alphas of 4 MeV kinetic energy. The Geiger-Nutall relation is a fit to the observed data of the form</p>
+<p>One plot that begins to answer some of these questions is a comparison of the <span class="math notranslate nohighlight">\(Q\)</span> energy for different alpha-emitting particles separated by different radioactive decay series. This is called the Geiger-Nuttall relation, and it demonstrates that actually for many different series, there is a strong correlation between the radioactive half-life and the energy of the emitted alpha.</p>
+<p><img alt="Alt text" src="_images/image-103.png" /></p>
+<p>Notice also how steep the relation is in the Geiger-Nuttall plot (it’s a log scale). An alpha emitter that produces 8 MeV alpha particles is likely to have a half-life over 22 orders of magnitude shorter than one which produces alphas of 4 MeV kinetic energy. The Geiger-Nuttall relation is a fit to the observed data of the form:</p>
 <div class="math notranslate nohighlight">
 \[
-log_{10} t_{1/2} = b_{1} \frac{Z}{Q^{1/2}} + b_{2}
+\log_{10} t_{1/2} = b_{1} \frac{Z}{Q^{1/2}} + b_{2}
 \]</div>
-<p>where Z is number of protons, Q is energy released, <span class="math notranslate nohighlight">\(b_{1}\)</span> and <span class="math notranslate nohighlight">\(b_{2}\)</span> are constants. An equivalent form is</p>
+<p>where Z is the number of protons, Q is the energy released, <span class="math notranslate nohighlight">\(b_{1}\)</span> and <span class="math notranslate nohighlight">\(b_{2}\)</span> are constants. An equivalent form is:</p>
 <div class="math notranslate nohighlight">
 \[
-ln\lambda = -a_{1} \frac{Z}{Q^{1/2}} + a_2
+\ln\lambda = -a_{1} \frac{Z}{Q^{1/2}} + a_2
 \]</div>
-<p>It turns out that trying to understand why the data follows this shape leads us once again needing to consider a QM treatment of Alpha Decay. The key is the form of this observed relation, a fit to the data.  To explain the relation it turns out we need to consider that the alpha forms inside the nucleus and then escapes by QM Barrier Penetration. The alpha is envisaged as a free-particle wavefunction subject to the Nuclear Potential.</p>
-<p>Of course in a classical model, if the Potential Barrier is too high the alpha never escapes. In QM we allow Tunnelling with a small probability that the alpha can penetrate the barrier, calculating the ratio of the wavefunctions inside and outside and squaring gives the probability. We can do a simple calculation of this by considering the diagramm of the potential below. We assume the alpha is pre-formed in the nucleus, oscillates around, repeatedly hitting the edge inside the nucleus until at some point it escapes by Barrier Penetration.</p>
-<p>Notice how the Potential Barrier drops as <span class="math notranslate nohighlight">\(1/r\)</span>. Rather than try to solve this we can make a simple approximation that the barrier has a fixed height <span class="math notranslate nohighlight">\(U_0\)</span> and fixed length <span class="math notranslate nohighlight">\(L\)</span>, and that the alpha has energy <span class="math notranslate nohighlight">\(E\)</span>, as illustrated below. Also, the potential seen by the alpha particle is spherically symmetric and so the quantum mechanical problem can be approached by first separating the variables into just a radial component.</p>
-<p>As a particle approaches the barrier, it is described by a Free Particle Wavefunction. When it reaches the barrier, it must satisfy the simplified Schrodinger Equation in the form:</p>
+<p>It turns out that trying to understand why the data follows this shape leads us once again to the need for a quantum mechanical treatment of Alpha Decay. The key is the form of this observed relation, a fit to the data. To explain the relation, it turns out we need to consider that the alpha forms inside the nucleus and then escapes by Quantum Mechanical Barrier Penetration. The alpha is envisioned as a free-particle wavefunction subject to the Nuclear Potential.</p>
+<p><img alt="Alt text" src="_images/image-104.png" /></p>
+<p>Of course, in a classical model, if the Potential Barrier is too high, the alpha never escapes. In Quantum Mechanics, we allow Tunneling with a small probability that the alpha can penetrate the barrier. Calculating the ratio of the wavefunctions inside and outside and squaring gives the probability. We can do a simple calculation of this by considering the diagram of the potential below. We assume the alpha is pre-formed in the nucleus, oscillates around, repeatedly hitting the edge inside the nucleus until at some point it escapes by Barrier Penetration.</p>
+<p>Notice how the Potential Barrier drops as <span class="math notranslate nohighlight">\(1/r\)</span>. Rather than try to solve this, we can make a simple approximation that the barrier has a fixed height <span class="math notranslate nohighlight">\(U_0\)</span> and fixed length <span class="math notranslate nohighlight">\(L\)</span>, and that the alpha has energy <span class="math notranslate nohighlight">\(E\)</span>, as illustrated below. Also, the potential seen by the alpha particle is spherically symmetric, and so the quantum mechanical problem can be approached by first separating the variables into just a radial component.</p>
+<p><img alt="Alt text" src="_images/image-105.png" /></p>
+<p>As a particle approaches the barrier, it is described by a Free Particle Wavefunction. When it reaches the barrier, it must satisfy the simplified Schrödinger Equation in the form:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
--ħ^2 / 2m (d^2ψ(r_Rn))/dr^2 = [E - U_0]ψ(r_Rn) \\
-ψ = ψ(r_Rn)
+-\hbar^2 / 2m (d^2\psi(r_Rn))/dr^2 = [E - U_0]\psi(r_Rn) \\
+\psi = \psi(r_Rn)
 \end{split}\]</div>
-<p>Solving this QM equation of simple Barrier Penetration is beyond our scope here. What is important is the result. It gives us a value for <span class="math notranslate nohighlight">\(X\)</span> the probability of barrier penetration as:
-$<span class="math notranslate nohighlight">\(
+<p>Solving this QM equation of simple Barrier Penetration is beyond our scope here. What is important is the result. It gives us a value for <span class="math notranslate nohighlight">\(X\)</span>, the probability of barrier penetration as:</p>
+<div class="math notranslate nohighlight">
+\[
 X = Ae^{-αL}
-\)</span><span class="math notranslate nohighlight">\( 
-where \)</span>α = \sqrt{(2m(U_0 - E))/ħ^2}<span class="math notranslate nohighlight">\( is called the Gamow Factor. This is a constant we can call \)</span>\alpha = 1$ for now to make the derivation simpler.</p>
-<p>Now if we assume the alpha makes contact with the barrier once every second. Then the average probability that the alpha leaves (a decay takes place) and the half-life is just related to the tunneling probability by
-$<span class="math notranslate nohighlight">\(
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(α = \sqrt{(2m(U_0 - E))/\hbar^2}\)</span> is called the Gamow Factor. This is a constant we can call <span class="math notranslate nohighlight">\(\alpha = 1\)</span> for now to make the derivation simpler.</p>
+<p>Now, if we assume the alpha makes contact with the barrier once every second, then the average probability that the alpha leaves (a decay takes place) and the half-life is just related to the tunneling probability by:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
 \lambda = \sqrt{X} \\
-T_{1/2} = ln(2)/\lambda = ln(2)/\sqrt{X}
-\)</span>$</p>
-<p>If the alpha hits the barrier fast than 1Hz, then we expect the probability that it leaves the nucleus to scale upwards as well. If we can work out the frequency that the alpha hits the barrier, which will be determined by its velocity and the size of the nucleus, and we know the height of the barrier <span class="math notranslate nohighlight">\(U_0\)</span> and the width <span class="math notranslate nohighlight">\(L\)</span> and the energy of the alpha <span class="math notranslate nohighlight">\(E\)</span> then we can find the half-life T_1/2. We can then see if this agrees with the Geiger-Nuttall observation form data.</p>
-<p>The way to proceed is illustrated below where we attempt to find the half-life of 212Po which emits a 8.78 MeV alpha. First we need to find the width of the barrier, for this we need to know the Nuclear Separation <span class="math notranslate nohighlight">\(N\)</span>, i.e., the distance between the centre of the nucleus and centre of the alpha, just as it detaches itself form the nucleus. Be careful that at this point the nucleus we are talking about is not A=212, but A=208, because we have removed the alpha.</p>
+T_{1/2} = \ln(2)/\lambda = \ln(2)/\sqrt{X}
+\end{split}\]</div>
+<p>If the alpha hits the barrier faster than 1 Hz, then we expect the probability that it leaves the nucleus to scale upwards as well. If we can work out the frequency that the alpha hits the barrier, which will be determined by its velocity and the size of the nucleus, and we know the height of the barrier <span class="math notranslate nohighlight">\(U_0\)</span> and the width <span class="math notranslate nohighlight">\(L\)</span> and the energy of the alpha <span class="math notranslate nohighlight">\(E\)</span>, then we can find the half-life <span class="math notranslate nohighlight">\(T_{1/2}\)</span>. We can then see if this agrees with the Geiger-Nuttall observation from data.</p>
+<p>The way to proceed is illustrated below, where we attempt to find the half-life of 212Po, which emits an 8.78 MeV alpha. First, we need to find the width of the barrier. For this, we need to know the Nuclear Separation <span class="math notranslate nohighlight">\(N\)</span>, i.e., the distance between the center of the nucleus and the center of the alpha, just as it detaches itself from the nucleus. Be careful that at this point the nucleus we are talking about is not A=212, but A=208, because we have removed the alpha.</p>
 <p>Nuclear separation = 1.2(A)^1/3 + 1.2(208)^1/3 = 9.01 fm so N = 9.01 fm</p>
 <p>We now find the height of the barrier by applying Coulomb’s Law at the nuclear separation as illustrated here:</p>
 <p>V
@@ -462,71 +480,104 @@ Coulomb part
 <p>So the barrier width L is:</p>
 <p>8.78 MeV = (2(82)1.44 MeV·fm)/r; r = 26.9 fm</p>
 <p>26.90 fm - 9.01 fm = 17.9 fm</p>
-<p>Worked Example - 212Po</p>
 <p>For a given alpha, the combined Tunnelling Probability per second for emission is the product:</p>
-<p>( (2.47 \times 10^{-15})(1.14 \times 10^{21} s^{-1}) = 2.82 \times 10^6 s^{-1} )</p>
-<p>( \lambda = \sqrt{X} )</p>
-<p>( T_{1/2} = \frac{\ln 2}{\lambda} = \frac{0.693}{2.82 \times 10^6 s^{-1}} = 2.5 \times 10^{-7} s = 0.25 \mu s ) ANSWER</p>
-<p>The result is quite good. But note we could do better by modelling the potential as a series of decreasing barriers as:</p>
-<p>( V(r) \propto \frac{1}{r} )</p>
-<p>( X = X_1 \times X_2 \times X_3 \times … \times X_n = Ae^{2\int_{R_1}^{R_2}\alpha dr} )</p>
+<p><span class="math notranslate nohighlight">\( (2.47 \times 10^{-15})(1.14 \times 10^{21} s^{-1}) = 2.82 \times 10^6 s^{-1} \)</span></p>
+<p><span class="math notranslate nohighlight">\( \lambda = \sqrt{X} \)</span></p>
+<p><span class="math notranslate nohighlight">\( T_{1/2} = \frac{\ln 2}{\lambda} = \frac{0.693}{2.82 \times 10^6 s^{-1}} = 2.5 \times 10^{-7} s = 0.25 \mu s \)</span></p>
+<p><img alt="Alt text" src="_images/image-106.png" />
+The result is quite good. But note we could do better by modelling the potential as a series of decreasing barriers as:</p>
+<p><span class="math notranslate nohighlight">\( V(r) \propto \frac{1}{r} \)</span></p>
+<p><span class="math notranslate nohighlight">\( X = X_1 \times X_2 \times X_3 \times ... \times X_n = Ae^{2\int_{R_1}^{R_2}\alpha dr} \)</span></p>
 <p>In the limit as n goes to ∞, turns into an integral</p>
 <p>Total transmission is the product of all elemental transmission factors</p>
-<p>( X = e^{-2\int_{R_1}^{R_2}\alpha dr} )</p>
+<p><span class="math notranslate nohighlight">\( X = e^{-2\int_{R_1}^{R_2}\alpha dr} \)</span></p>
+<p><img alt="Alt text" src="_images/image-107.png" /></p>
 <p>So this basic Alpha Tunnelling Model allows us to predict the relationship between alpha energy and half-life of the decay, and it nicely fits with the Geiger-Nuttall relation. We had to make some assumptions, like the nucleus being spherical etc. (which is dangerous as we have seen) but it can get us very close to the data. Here is an example plot:</p>
-<p>( \ln \lambda = -a’\frac{Z}{Q^{1/2}} + a_2 )</p>
+<p><span class="math notranslate nohighlight">\( \ln \lambda = -a'\frac{Z}{Q^{1/2}} + a_2 \)</span></p>
+<p><img alt="Alt text" src="_images/image-108.png" /></p>
 </section>
 <section id="beta-decay">
 <h2>Beta Decay<a class="headerlink" href="#beta-decay" title="Permalink to this heading">#</a></h2>
 <p>We now turn to Beta Decay. In this we get emission of an Electron from the nucleus or possibly a Positron. In the early years of Beta Decay studies the process observed was highly mysterious, very different to Alpha Decay.</p>
 <p>This is illustrated by the Cloud Chamber image shown below. We see the decay of ^6He into ^6Li and a charged electron. We see two tracks, curving because there is a magnetic field applied. But from analysis of the plot it looks like energy, momentum and even Total Angular Momentum J are not conserved if we assume the interaction:</p>
-<p>( ^6He \rightarrow ^6Li + e^- )</p>
+<p><span class="math notranslate nohighlight">\( ^6He \rightarrow ^6Li + e^- \)</span></p>
 <p>Of course the reason is that there is a Neutrino emitted as well, but this escapes the detector and we don’t see it. There are actually four big differences between beta decay and alpha decay, not just the neutrino.</p>
-<p>(1) Beta Decay is a Three-body Process, unlike alpha decay (two body). We have to account for the energies and behaviour of 3 objects - the nucleus, the beta and neutrino.
-(2) The electron (positron) and neutrino produced do not exist before the decay, we need to account for their formation.
-(3) The electron and neutrino are relativistic, unlike the alpha in alpha decay. This makes calculations of the energies and kinematics of the decay more complicated.
-(4) The energy of the beta emitted by the nucleus in question is not the same in every decay. We get a continuum of energies put to a maximum. In alpha decay we get one “Monoenergetic” value every time.</p>
-<p>An example to illustrate this behaviour is:
-( _{83}^{210}Bi \rightarrow _{84}^{210}Po + e^- + \bar{\nu}_e )</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
+<ol class="arabic simple">
+<li><p>Beta Decay is a Three-body Process, unlike alpha decay (two body). We have to account for the energies and behaviour of 3 objects - the nucleus, the beta and neutrino.</p></li>
+<li><p>The electron (positron) and neutrino produced do not exist before the decay, we need to account for their formation.</p></li>
+<li><p>The electron and neutrino are relativistic, unlike the alpha in alpha decay. This makes calculations of the energies and kinematics of the decay more complicated.</p></li>
+<li><p>The energy of the beta emitted by the nucleus in question is not the same in every decay. We get a continuum of energies put to a maximum. In alpha decay we get one “Monoenergetic” value every time.</p></li>
+</ol>
+<p><img alt="Alt text" src="_images/image-109.png" /></p>
+<p>An example to illustrate this behaviour is:</p>
+<div class="math notranslate nohighlight">
+\[
+\bf
+ _{83}^{210}Bi \rightarrow _{84}^{210}Po + e^- + \bar{\nu}_e 
+\]</div>
 <p>Note how with an electron emitted in beta decay we get an Anti-neutrino (this is Lepton Number conservation in particle physics)</p>
-</div>
-<p>Energetics of Beta Decay</p>
 <ul class="simple">
-<li><p>It’s important to realise that there are actually 3 types of beta decay: (1) Electron Emission, (2) Positron Emission and (3) Electron Capture or EC. The energetics are vitally important in physics. We start with electron emission.
-Electron emission n → p + e^- + (\bar{\nu}_e)
-( Q = [M(A,Z) - M(A,Z+1) - m_e]c^2 )
-so ( Q = [M(A,Z) - M(A,Z+1)]c^2 )</p></li>
-<li><p>Note we have to be careful in Beta Decay to consider the mass of everything including the Atomic Electrons, not just the nucleons. Hence the mass used are atomic masses, not the nuclear masses. We were less careful earlier when dealing with Binding Energy calculations and the SEMF.</p></li>
+<li><p>It’s important to realise that there are actually 3 types of beta decay: (1) Electron Emission, (2) Positron Emission and (3) Electron Capture or EC.</p></li>
 </ul>
-<p>Energetics of Beta Decay</p>
+<p>The energetics are vitally important in physics.</p>
+<p><img alt="Alt text" src="_images/image-110.png" /></p>
+<section id="electron-emission-n-p-e-bar-nu-e">
+<h3>Electron emission n → p + e^- + <span class="math notranslate nohighlight">\(\bar{\nu}_e\)</span><a class="headerlink" href="#electron-emission-n-p-e-bar-nu-e" title="Permalink to this heading">#</a></h3>
+<p><span class="math notranslate nohighlight">\( Q = [M(A,Z) - M(A,Z+1) - m_e]c^2 \)</span>
+so <span class="math notranslate nohighlight">\( Q = [M(A,Z) - M(A,Z+1)]c^2 \)</span></p>
+<p>Note we have to be careful in Beta Decay to consider the mass of everything including the Atomic Electrons, not just the nucleons. Hence the mass used are atomic masses, not the nuclear masses. We were less careful earlier when dealing with Binding Energy calculations and the SEMF.</p>
+<p>The third beta decay is called Electron Capture (EC). Here the nucleus captures one of the atomic electrons. It’s a bit like positron beta decay but instead of p → n + e^+ + <span class="math notranslate nohighlight">\(\nu_e\)</span> we have</p>
+<p>Electron capture (K or L capture)
+p + e^- → n + <span class="math notranslate nohighlight">\(\nu_e\)</span></p>
 <ul class="simple">
-<li><p>The third beta decay is called Electron Capture (EC). Here the nucleus captures one of the atomic electrons. It’s a bit like positron beta decay but instead of p → n + e^+ + (\nu_e) we have
-Electron capture (K or L capture)
-p + e^- → n + (\nu_e)</p></li>
-<li><p>The process proceeds (Q &gt; 0) if ( M(A,Z)c^2 ) is greater than ( M(A,Z-1)c^2 ). It strongly competes with e^+ decay and is the only decay available to nuclei with a Proton Excess if the mass difference between the atoms is less than 1 MeV/c^2.</p></li>
+<li><p>The process proceeds (Q &gt; 0) if <span class="math notranslate nohighlight">\( M(A,Z)c^2 \)</span> is greater than <span class="math notranslate nohighlight">\( M(A,Z-1)c^2 \)</span>. It strongly competes with e^+ decay and is the only decay available to nuclei with a Proton Excess if the mass difference between the atoms is less than 1 MeV/c^2.</p></li>
 </ul>
-<p>Beta Decay Applied Physics</p>
+<p><img alt="Alt text" src="_images/image-111.png" /></p>
+</section>
+</section>
+</section>
+<section id="applied-beta-physics">
+<h1>Applied Beta Physics<a class="headerlink" href="#applied-beta-physics" title="Permalink to this heading">#</a></h1>
 <ul class="simple">
 <li><p>As described earlier there are many applications of beta decay. Notable is Positron Emission Tomography.
 Patients are injected with a positron emitting isotope. The positron finds an electron and Annihilates to produce two back to back gammas that can be detected and hence used to find the location of the decay, and hence image, say, the brain.
 PET is an example application
-( _{9}^{18}F \rightarrow _{8}^{18}O + e^+ + (\nu_e) )</p></li>
+<span class="math notranslate nohighlight">\( _{9}^{18}F \rightarrow _{8}^{18}O + e^+ + \)</span>\nu_e<span class="math notranslate nohighlight">\( \)</span></p></li>
 <li><p>Often the Decay Sequence is depicted as an Energy Level Diagramme as in this example:</p></li>
 </ul>
-<p>Fermi Theory</p>
+<p>For beta decay we should have a diagram showing how the shell orbitals can change.</p>
+<p><img alt="Alt text" src="_images/image-112.png" /></p>
+<section id="fermi-theory">
+<h2>Fermi Theory<a class="headerlink" href="#fermi-theory" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
-<li><p>Fermi Theory results in an equation for dn/dE given as:
-( \frac{dn}{dE} = \frac{16\pi^2 \nu^2}{h^6 c^3} (T_{max} - T_e)^2 p_e d_p_e )</p></li>
-<li><p>Here we have V as the volume of the nucleus and ( T_e (p_e) ) is the energy (momentum) of the electron. ( T_{max} ) is the maximum energy that the electron can have. Note that at this energy the neutrino must have zero energy and that ( T_{max} ) is equivalent to the Q of the reaction.</p></li>
-<li><p>Putting this into the equation for ( W_{fi} ) and just noting that ( P(p_e) ) is equivalent to the number rate of events or intensity ( N(P_e) ) we see most things are constants and we can say:
-( P(p_e) = N(p_e) \propto \frac{(T_{max} - T_e)^2}{p_e^2} )</p></li>
-<li><p>Note here how the function vanishes at the point when ( T_e = T_{max} ). This is called the Beta Decay Endpoint.</p></li>
-<li><p>This Endpoint is the subject of much research in physics because everything we have stated so far assumes the neutrino has no mass. If this is not the case then the Endpoint will shift slightly.</p></li>
-<li><p>A better way to study this Endpoint has been developed, called the Fermi-Kurie Plot. This simply rearranges the equation noting that:
-( (T_{max} - T_e)^{0.5} \propto \sqrt{\frac{N(p_e)}{p_e^2}} ) y-axis</p></li>
+<li><p>Fermi Theory results in an equation for dn/dE given as:</p></li>
 </ul>
+<div class="math notranslate nohighlight">
+\[
+\frac{dn}{dE} = \frac{16 \pi^2 \nu^2 }{h^6 c^3} (T_{max} - T_e)^2 p_e dp_e 
+\]</div>
+<ul class="simple">
+<li><p>Here we have V as the volume of the nucleus and <span class="math notranslate nohighlight">\( T_e (p_e) \)</span> is the energy (momentum) of the electron. <span class="math notranslate nohighlight">\( T_{max} \)</span> is the maximum energy that the electron can have. Note that at this energy the neutrino must have zero energy and that <span class="math notranslate nohighlight">\( T_{max} \)</span> is equivalent to the Q of the reaction.</p></li>
+<li><p>Putting this into the equation for <span class="math notranslate nohighlight">\( W_{fi} \)</span> and just noting that <span class="math notranslate nohighlight">\( P(p_e) \)</span> is equivalent to the number rate of events or intensity <span class="math notranslate nohighlight">\( N(P_e) \)</span> we see most things are constants and we can say:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+ P(p_e) = N(p_e) \propto \frac{(T_{max} - T_e)^2}{p_e^2} 
+\]</div>
+<ul class="simple">
+<li><p>Note here how the function vanishes at the point when <span class="math notranslate nohighlight">\( T_e = T_{max} \)</span>. This is called the Beta Decay Endpoint. This Endpoint is the subject of much research in physics because everything we have stated so far assumes the neutrino has no mass. If this is not the case then the Endpoint will shift slightly.</p></li>
+</ul>
+<p>A better way to study this Endpoint has been developed, called the Fermi-Kurie Plot. This simply rearranges the equation noting that:</p>
+<div class="math notranslate nohighlight">
+\[
+ (T_{max} - T_e)^{0.5} \propto \sqrt{\frac{N(p_e)}{p_e^2}} 
+ \]</div>
+<p><img alt="Alt text" src="_images/image-113.png" /></p>
+</section>
+<section id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this heading">#</a></h2>
+<p>In this unit we’ve discussed the final dominant radioactive decay channels and the effect these can have on the nucleon content of a nucleus, and the various factors that need to be considered when trying to calculate their probability and daughter product kinetic energies.</p>
+<p>In the next half of this course we’ll start to look at different possible reactions with nuclei in more detail before looking at how knowledge of nuclear structure and decays can be used in applied physics.</p>
 </section>
 </section>
 
@@ -593,9 +644,21 @@ PET is an example application
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Unit 6: Radioactive Decays</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#alpha-decay">6.1 Alpha Decay</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#beta-decay">Beta Decay</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#beta-decay">Beta Decay</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#electron-emission-n-p-e-bar-nu-e">Electron emission n → p + e^- + <span class="math notranslate nohighlight">\(\bar{\nu}_e\)</span></a></li>
 </ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#applied-beta-physics">Applied Beta Physics</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fermi-theory">Fermi Theory</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary</a></li>
+</ul>
+</li>
+</ul>
+
   </nav></div>
 
 </div></div>

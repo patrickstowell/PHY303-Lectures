@@ -4,7 +4,7 @@
 So far we have concentrated on the properties of individual nuclei. However, in order to determine those properties, we must make use of nuclear reactions. Indeed, in order to have nuclei to study, and to exist to study them in the first place, we must have nuclear reactions: nuclear reactions build up the elements in stars, and the results of nuclear reactions tell us about nuclear structure.
 
 #### 4.1.2 Notation
-Particle physicists (and chemists) describe reactions by notation such as A + a → B + b. Nuclear physicists tend to use the more compact notation A(a,b)B, where A is the target nucleus, struck by projectile a, which produces daughter nucleus B and ejectile b. It is usual for A to be more massive than a, but it isn’t obligatory; there do exist facilities, such as GSI in Darmstadt, Germany, which produce beams of heavy ions, and when these are used it is possible for the projectile to be lighter than the target. The defining feature for the notation is that a is moving and A is stationary. In contrast, the products B and b will generally all be moving, owing to momentum transfer, so in this case B will typically be defined as the heaviest product (it’s also the one that is not measured: a typical nuclear experiment will measure the energy and angle of the ejectile(s) b).
+Particle physicists (and chemists) describe reactions by notation such as $A + a \rightarrow B + b$. Nuclear physicists tend to use the more compact notation A(a,b)B, where A is the target nucleus, struck by projectile a, which produces daughter nucleus B and ejectile b. It is usual for A to be more massive than a, but it isn’t obligatory; there do exist facilities, such as GSI in Darmstadt, Germany, which produce beams of heavy ions, and when these are used it is possible for the projectile to be lighter than the target. The defining feature for the notation is that a is moving and A is stationary. In contrast, the products B and b will generally all be moving, owing to momentum transfer, so in this case B will typically be defined as the heaviest product (it’s also the one that is not measured: a typical nuclear experiment will measure the energy and angle of the ejectile(s) b).
 
 It is possible for b to consist of more than one particle: for example, among the possible reactions listed in the JANIS nuclear database for neutrons striking an iron-56 target are (n,2n), (n,np) and (n,2n+p). The ‘+’ sign may be omitted, e.g. 27Al(p,3pn)22Na.
 
@@ -98,21 +98,36 @@ From this derivation we expect that the number of alpha particles scattered thro
 3. the thickness of the foil (provided that the foil is thin—when it gets too thick all the alpha
 particles will simply stop within the foil);
 4. the inverse square of the alpha particle kinetic energy.
-Rutherford’s group (specifically, Hans Geiger and Ernest Marsden) conducted a series of experiments in 1913 that verified these predictions. This demonstrated that the atom contained an essentially pointlike nucleus.
-(It is worth noting that you would obtain the same result if it were the negative charge of the atom that were concentrated in a small volume, i.e. if the electrons all clumped together in the midst of the distributed positive charge. Rutherford concluded that the nucleus was positively charged as a result of experiments using gas targets. This was consistent with the fact that the alpha particle was itself positively charged, and had earlier been identified by Rutherford with a fully ionised helium atom.)
+
+Rutherford’s group (specifically, Hans Geiger and Ernest Marsden) conducted a series of experiments in 1913 that verified these predictions. This demonstrated that the atom contained an essentially pointlike nucleus. 
+
+```{note}
+It is worth noting that you would obtain the same result if it were the negative charge of the atom that were concentrated in a small volume, i.e. if the electrons all clumped together in the midst of the distributed positive charge. Rutherford concluded that the nucleus was positively charged as a result of experiments using gas targets. This was consistent with the fact that the alpha particle was itself positively charged, and had earlier been identified by Rutherford with a fully ionised helium atom.
+```
 
 
 #### 4.1.4 Kinematics
 ##### The Q value
-Nuclear reactions are governed by 𝐸 = 𝑚𝑐􏰀. The Q-value of a reaction is the difference in mass between the initial and final states, expressed as an energy (usually in MeV): for example, the Q-value of the reaction 16O(p,α)13N can be calculated as follows (all numbers from Krane):
+Nuclear reactions are governed by $E=mc^{2}$. The Q-value of a reaction is the difference in mass between the initial and final states, expressed as an energy (usually in MeV): for example, the Q-value of the reaction 16O(p,α)13N can be calculated as follows (all numbers from Krane):
 1. The nuclear mass of 16O is 15.994915 (atomic mass of 16O)
-$$8×0.00054858 = 15.990526 u.$$
-2. The mass of a proton is 1.00727647 u
-3. The nuclear mass of 13N is 
-    $$13.005739 − 7×0.00054858 = 13.001899 u.$$
-4. The mass of an α particle is 4.00150618 u.
-5. Therefore the Q value is 
-   $$16.997802 – 17.003405 = −0.005603 u = −5.219 MeV.$$
+
+$$
+8×0.00054858 = 15.990526 u.
+$$
+
+1. The mass of a proton is $1.00727647 u$
+2. The nuclear mass of 13N is 
+   
+$$
+    13.005739 − 7×0.00054858 = 13.001899 u.
+$$
+
+1. The mass of an α particle is $4.00150618 u$.
+2. Therefore the Q value is 
+   
+   $$
+   16.997802 – 17.003405 = −0.005603 u = −5.219 MeV.
+   $$
 
 A negative Q-value implies that the reaction will not proceed spontaneously, but will require the initial proton to contribute at least 5.219 MeV of kinetic energy (actually, slightly more than this, because we need to allow for conservation of momentum). The minimum projectile kinetic energy required to make the reaction happen is called the threshold energy.
 
@@ -322,8 +337,8 @@ These types of reaction are not mutually exclusive: for example, an elastic scat
 ##### 4.2.1 Characteristics of direct reactions
 The fundamental characteristic of direct reactions is that they take place in the time it would take the projectile to traverse the nucleus. There are various ways of estimating this, but they all boil down to a simple calculation: the speed of a few-MeV nucleon is of order 0.1c; the size of a typical target nucleus is a few femtometres; 10^-15/10^7 = 10^-22, so a direct reaction should take place on a timescale of order 10^-22 s. The logic of this is that if the reaction is over in the time it would have taken the projectile to cross the nucleus, there has not been time for a compound nucleus to form, so it can’t be a compound-nucleus reaction.
 
-```
-Note that this is an order-of-magnitude estimate: it doesn’t have to be precise. We will see later that the timescale for compound-nucleus reactions is much longer.
+```{note}
+This is an order-of-magnitude estimate: it doesn’t have to be precise. We will see later that the timescale for compound-nucleus reactions is much longer.
 ```
 
 Direct reactions tend to involve relatively high-energy projectiles. The reason for this is that a low-energy projectile, such as a thermal neutron with an energy of 0.025 eV, has a de Broglie wavelength which is much larger than an individual nucleon: it will “see” the nucleus as an undifferentiated blob, so it is unlikely to interact with individual nucleons. In contrast, a 100 MeV nucleon would have a de Broglie wavelength of the same order as the diameter of a proton and would be much more likely to undergo a direct reaction.
@@ -334,15 +349,14 @@ As noted earlier, the products of direct reactions are strongly forward-peaked, 
 Because direct reactions involve only a few nucleons near the surface of the target nucleus, the possible reactions are rather limited—for example, it would not be possible to induce fission by a direct reaction. The principal types are:
 - elastic and inelastic scattering—the ejectile is identical to the projectile, with the same kinetic energy (elastic) or reduced kinetic energy (inelastic);
 - charge exchange—as the name indicates, reactions in which charge is exchanged between projectile and target, most obviously (n,p) and (p,n), but also $^3He,^3H$ or vice versa;
-
-![Alt text](image-56.png)
-
-transfer reactions—a nucleon (occasionally more than one) is transferred from projectile to target:
+- transfer reactions—a nucleon (occasionally more than one) is transferred from projectile to target:
 - stripping reaction—transfer is from projectile to target, e.g. (d,p) or (d,n);
 - pick-up reaction—transfer is from target to projectile, e.g. (p,d);
 knock-out reactions—a nucleon or light cluster (e.g. a particle) is knocked out of the target but not attached to the projectile, e.g. (n,2n).
 
 All of these can also take place via the compound-nucleus route. The direct reaction will dominate at high projectile energies and in the forward direction. Because direct reactions, despite the use of high-energy projectiles, only involve small energy transfers, they tend to populate low-level excited states, whereas compound-nucleus reactions typically involve higher levels of excitation (for a given projectile energy). Consequently, it is usually possible to disentangle the direct reaction contribution from the compound-nucleus route without too much ambiguity.
+
+![Alt text](image-56.png)
 
 ##### 4.2.3 Applications of direct reactions
 A key feature of direct reactions is that they tend to be very simple, since only a few nucleons are involved. This makes them easy to analyse theoretically, so they are extremely useful in understanding nuclear structure.

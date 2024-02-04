@@ -36,6 +36,7 @@
     <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="_static/myfile.css" />
     <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -64,10 +65,13 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"HTML-CSS": {"matchFontHeight": true, "scale": 80}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'phy303-unit9-neutronphysics';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Unit 4.1: Nuclear Reactions" href="phy303-unit7-reactions.html" />
+    <link rel="next" title="Unit 10 : Nuclear Power" href="phy303-unit10-fissionandfusion.html" />
+    <link rel="prev" title="Unit 8 : Compound/Photon reactions" href="phy303-unit8-compoundreactions.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -164,17 +168,23 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="phy303-unit1-introduction-and-structure.html">Unit 1 : Introduction</a></li>
-
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit1-introduction-and-structure.html">Unit 1. Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="phy303-unit2-liquiddropmodels.html">Unit 2. Liquid Drop</a></li>
 <li class="toctree-l1"><a class="reference internal" href="phy303-unit3-shellmodel-and-spin.html">Unit 3. Shell Model</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phy303-unit4-parity-moments.html">Unit 4 : Nuclear Properties</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit4-parity-moments.html">Unit 4. Nuclear Spin Moments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit5-collective-excited.html">Unit 5: Collective Models</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit6-radioactive-decays.html">Unit 6: Radioactive Decays</a></li>
 
 <li class="toctree-l1"><a class="reference internal" href="phy303-unit7-reactions.html">Unit 7. Reactions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit8-compoundreactions.html">Unit 8. Compound Reactions</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Unit 9 : Neutron Physics</a></li>
 
 
 
+
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit10-fissionandfusion.html">Unit 10. Nuclear Power</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit11-medicalapplications.html">Unit 11. Nuclear Medicine</a></li>
 </ul>
 
     </div>
@@ -371,29 +381,29 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Unit 9 : Neutron Physics</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#discovery-and-properties">1.1 Discovery and properties</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classification-of-neutrons">1.2 Classification of neutrons</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#neutron-properties">9.1 Neutron Properties</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#discovery">9.1.1 Discovery</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classification-of-neutrons">9.1.2 Classification of neutrons</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#neutron-sources">2. Neutron sources</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#radioactive-sources">2.1 Radioactive sources</a><ul class="nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#neutron-sources">9.2. Neutron sources</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#radioactive-sources">9.2.1 Radioactive sources</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#neutron-sources-ambe">α-neutron sources: AmBe</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#photoneutron-sources">Photoneutron sources</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#spontaneous-fission-sources">Spontaneous fission sources</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#neutron-generators">2.2 Neutron generators</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#neutron-generators">9.2.2 Neutron generators</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#large-scale-facilities">2.3 Large-scale facilities</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#large-scale-facilities">9.2.3 Large-scale facilities</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reactors">Reactors</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spallation-neutron-sources">Spallation neutron sources</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#figure-1-layout-of-the-target-stations-at-isis-from-https-www-isis-stfc-ac-uk-pages-instruments-aspx-target-station-1-has-four-moderators-two-are-room-temperature-water-to-provide-thermal-neutrons-and-the-other-two-are-liquid-methane-at-100-k-and-liquid-hydrogen-at-20-k-for-cold-neutrons-target-station-2-produces-cold-neutrons-at-26-k-using-lower-proton-power-than-ts1-but-more-sophisticated-target-designs-one-solid-methane-one-liquid-hydrogen-solid-methane">Figure 1: layout of the target stations at ISIS, from https://www.isis.stfc.ac.uk/Pages/Instruments.aspx.Target Station 1 has four moderators: two are room-temperature water to provide thermal neutrons, and the other two are liquid methane at 100 K and liquid hydrogen at 20 K, for cold neutrons.  Target Station 2 produces cold neutrons at 26 K, using lower proton power than TS1 but more sophisticated target designs (one solid methane, one liquid hydrogen/solid methane).</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#moderation">2.4 Moderation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#moderation">9.2.4 Moderation</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#neutron-interactions">3. Neutron Interactions</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#neutron-detection">3.1 Neutron detection</a><ul class="nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#neutron-interactions">9.3. Neutron Interactions</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#neutron-detection">9.3.1 Neutron detection</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gas-proportional-counters">Gas proportional counters</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scintillators">Scintillators</a></li>
 </ul>
@@ -402,7 +412,9 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#other-techniques">Other techniques</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#figure-4-neutron-activation-analysis-of-a-sample-of-lunar-regolith-returned-by-the-chinese-change-5-mission-the-sample-was-irradiated-for-300-s-in-a-27-kw-research-reactor-with-a-neutron-fluence-of-9-0-1011-cm2s1-and-was-counted-after-a-decay-time-of-17-25-minutes-from-yao-et-al-j-am-chem-soc-144-2022-54785484">Figure 4: neutron activation analysis of a sample of lunar regolith returned by the Chinese Chang’E-5 mission.  The sample was irradiated for 300 s in a 27 kW research reactor with a neutron fluence of 9.0 × 1011 cm–2·s–1, and was counted after a decay time of 17.25 minutes.From Yao et al., J. Am. Chem. Soc. 144 (2022) 5478–5484.</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#neutron-activation-analysis">9.3.2 Neutron activation analysis</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">4. Summary</a></li>
 </ul>
 </li>
@@ -421,20 +433,23 @@ document.write(`
   <section id="unit-9-neutron-physics">
 <h1>Unit 9 : Neutron Physics<a class="headerlink" href="#unit-9-neutron-physics" title="Permalink to this heading">#</a></h1>
 <p>Neutrons are particularly important in nuclear physics because, being uncharged, they see no Coulomb barrier and can be captured by nuclei even at very low energies.  Reactions involving neutrons have many practical applications, most obviously in inducing fission of uranium and plutonium but also in mapping excited states of nuclei, non-destructive assay of materials and production of radionuclides for medical physics and industry.  (These applications are why this section is in Applications of Nuclear Physics, rather than Nuclear Reactions.)</p>
-<section id="discovery-and-properties">
-<h2>1.1 Discovery and properties<a class="headerlink" href="#discovery-and-properties" title="Permalink to this heading">#</a></h2>
-<p>It was clear from the initial discovery of the atomic nucleus that the mass of most nuclei was approximately double that of Z protons.  The initial model for this was that the nucleus contained A protons and A – Z “nuclear electrons”, but this model has a number of problems:</p>
+<section id="neutron-properties">
+<h2>9.1 Neutron Properties<a class="headerlink" href="#neutron-properties" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="discovery">
+<h2>9.1.1 Discovery<a class="headerlink" href="#discovery" title="Permalink to this heading">#</a></h2>
+<p>It was clear from the initial discovery of the atomic nucleus that the mass of most nuclei was approximately double that of <span class="math notranslate nohighlight">\(Z\)</span> protons.  The initial model for this was that the nucleus contained <span class="math notranslate nohighlight">\(A\)</span> protons and <span class="math notranslate nohighlight">\(A – Z\)</span> “nuclear electrons”, but this model has a number of problems:</p>
 <ul class="simple">
-<li><p>The Heisenberg uncertainty principle, predicts that an electron confined within a nucleus of diameter ~10 fm should have a momentum of order 5×10−21 kg m s−1, which implies an energy of about 40 MeV.  This is much higher than the observed energies of electrons emitted in β decay.</p></li>
-<li><p>The spin of the nucleus did not appear to be consistent with the presence of A – Z spin-½ electrons in addition to A spin-½ protons: for example, 14N, which according to this prescription should contain 21 spin-½ particles and thus have half-integer spin, was actually found to have spin 1.</p></li>
+<li><p>The Heisenberg uncertainty principle, <span class="math notranslate nohighlight">\(\Delta x \Delta p \geq \hbar/2, \)</span> predicts that an electron confined within a nucleus of diameter <span class="math notranslate nohighlight">\(\sim 10~\textnormal{fm}\)</span> should have a momentum of order <span class="math notranslate nohighlight">\(5\times 10^{−21}\)</span> kg m s−1, which implies an energy of about <span class="math notranslate nohighlight">\(40~\textnormal{MeV}\)</span>.  This is much higher than the observed energies of electrons emitted in <span class="math notranslate nohighlight">\(β\)</span> decay.</p></li>
+<li><p>The spin of the nucleus did not appear to be consistent with the presence of <span class="math notranslate nohighlight">\(A – Z\)</span> spin-½ electrons in addition to A spin-½ protons: for example, 14N, which according to this prescription should contain 21 spin-½ particles and thus have half-integer spin, was actually found to have spin 1.</p></li>
 <li><p>Detailed studies of hyperfine structure in atomic spectra failed to display the effects that should have been caused by the magnetic moment of the nuclear electrons.</p></li>
 </ul>
 <p>However, with only the proton and electron known to exist at the time, there was no clear alternative model available, so the options for improving the situation were very limited.</p>
 <p>With hindsight, the first observation of the neutron was by Bothe and Becker in 1930.  They irradiated light elements with energetic α particles from polonium decay, and observed the emission of penetrating but non-ionising (thus neutral) radiation, but interpreted this (understandably) as γ radiation.  However, Irène Curie (daughter of Marie) and her husband Frédéric Joliot then observed that this radiation, when impinging on paraffin wax, caused the emission of 5.3 MeV protons.  This requires an unreasonably high γ-ray energy (52 MeV), leading to the suspicion that the “radiation” must actually be heavy particles.  In 1932, James Chadwick (a member of Rutherford’s research group at Cambridge) carried out careful experiments which demonstrated that the radiation consisted of neutral particles with a mass very similar to the proton, i.e. neutrons.  (Chadwick was awarded the 1935 Nobel Prize in Physics for this discovery.  Curie and Joliot got the Chemistry prize.)</p>
-<p>In the context of modern particle physics, we now understand the neutron as a neutral baryon with quark content  (cf.  for the proton) and a mass of 1.674 927 5×10−27 kg = 1.008 664 916 u = 939.56542 MeV/c2.  Because the mass of the neutron is greater than the combined mass of a proton and an electron, the free neutron decays via  with a mean lifetime of 878.4±0.5 s.  (There is some mild disagreement about this number, with different methods tending to get results which differ by significantly more than their quoted errors.  This value is the one quoted by the Particle Data Group, and is based on an average of measurements with trapped ultracold neutrons.)</p>
+<p>In the context of modern particle physics, we now understand the neutron as a neutral baryon with quark content  (cf.  for the proton) and a mass of <span class="math notranslate nohighlight">\(1.674 927 5\times 10^{−27}\)</span> kg = <span class="math notranslate nohighlight">\(1.008 664 916 u\)</span> = <span class="math notranslate nohighlight">\(939.56542\)</span> MeV/c2.  Because the mass of the neutron is greater than the combined mass of a proton and an electron, the free neutron decays via  with a mean lifetime of <span class="math notranslate nohighlight">\(878.4±0.5\)</span> s.  (There is some mild disagreement about this number, with different methods tending to get results which differ by significantly more than their quoted errors.  This value is the one quoted by the Particle Data Group, and is based on an average of measurements with trapped ultracold neutrons.)</p>
 </section>
 <section id="classification-of-neutrons">
-<h2>1.2 Classification of neutrons<a class="headerlink" href="#classification-of-neutrons" title="Permalink to this heading">#</a></h2>
+<h2>9.1.2 Classification of neutrons<a class="headerlink" href="#classification-of-neutrons" title="Permalink to this heading">#</a></h2>
 <p>Neutrons used in experiments are generally classified according to their energies.  Note that it is not generally possible to make a genuinely monoenergetic neutron source, so these represent typical energies rather than exact values.</p>
 <ul class="simple">
 <li><p><strong>Ultracold neutrons (E &lt; 300 neV, T &lt; 4 mK, 𝑣 &lt; 8 m/s, λ &gt; 50 nm)</strong>	These are produced from thermal neutrons in a variety of ways, either by further moderating the neutrons using a very cold target (e.g. solid deuterium) or selecting the very low velocity tail of the thermal Maxwellian distribution.  The main advantage of ultracold neutrons is that their energies are low enough that they reflect off the nuclear potential of nuclei, and can therefore be trapped in a container.  They are primarily used for measuring the properties of neutrons, e.g. lifetime, electric dipole moment.
@@ -447,10 +462,10 @@ cold neutrons (E &lt; 5 meV, T &lt; 60 K)	These are produced by thermalizing neu
 </section>
 </section>
 <section id="neutron-sources">
-<h1>2. Neutron sources<a class="headerlink" href="#neutron-sources" title="Permalink to this heading">#</a></h1>
+<h1>9.2. Neutron sources<a class="headerlink" href="#neutron-sources" title="Permalink to this heading">#</a></h1>
 <p>Since free neutrons decay with a mean lifetime of around 15 minutes, neutrons cannot be stored and must be produced where they will be used (or used where they are produced, for large non-portable sources such as reactors).</p>
 <section id="radioactive-sources">
-<h2>2.1 Radioactive sources<a class="headerlink" href="#radioactive-sources" title="Permalink to this heading">#</a></h2>
+<h2>9.2.1 Radioactive sources<a class="headerlink" href="#radioactive-sources" title="Permalink to this heading">#</a></h2>
 <p>Direct radioactive decay via neutron emission is very rare, but neutrons can be produced either by secondary interactions or as a by-product of spontaneous fission.</p>
 <section id="neutron-sources-ambe">
 <h3>α-neutron sources: AmBe<a class="headerlink" href="#neutron-sources-ambe" title="Permalink to this heading">#</a></h3>
@@ -469,13 +484,13 @@ cold neutrons (E &lt; 5 meV, T &lt; 60 K)	These are produced by thermalizing neu
 </section>
 </section>
 <section id="neutron-generators">
-<h2>2.2 Neutron generators<a class="headerlink" href="#neutron-generators" title="Permalink to this heading">#</a></h2>
+<h2>9.2.2 Neutron generators<a class="headerlink" href="#neutron-generators" title="Permalink to this heading">#</a></h2>
 <p>Neutron generators produce neutrons using the reactions 2H(d,n)3He (d-d generator) and 3H(d,n)4He (d-t generator), yielding neutrons of energy 2.5 and 14 MeV respectively.  The generator consists of a very low-power accelerator (typically 90 keV) accelerating deuterium ions which then collide with a metal-hydride target.  The output neutron spectrum is not quite monoenergetic, because of kinematic effects and because the neutrons will scatter before exiting the generator, but is quite sharply peaked at the nominal energy.  The neutrons are emitted fairly isotropically, though the yield and energy spec-trum do depend on the angle to some extent.</p>
 <p>Neutron generators are small, portable devices available from a number of commercial suppliers.  Typical neutron yields are 108 – 109 per second, though there are a few models with higher outputs.  One major advantage of neutron generators is that they can be switched off, so transporting them for use in the field, e.g. for well logging, is much safer than transporting an AmBe or 252Cf source.  Some models have built-in moderator so that they produce thermal neutrons directly, but most produce the neutrons at 2.5 or 14 MeV and leave the user to moderate them if desired.</p>
 </section>
 </section>
 <section id="large-scale-facilities">
-<h1>2.3 Large-scale facilities<a class="headerlink" href="#large-scale-facilities" title="Permalink to this heading">#</a></h1>
+<h1>9.2.3 Large-scale facilities<a class="headerlink" href="#large-scale-facilities" title="Permalink to this heading">#</a></h1>
 <p>Radioactive sources and neutron generators are small-scale, portable sources that are commercially available and can be acquired by individual laboratories or companies.  For really high neutron intensities, it is necessary to make use of large-scale static facilities, typically government-run, and take the experiment to the neutrons rather than vice versa.</p>
 <section id="reactors">
 <h2>Reactors<a class="headerlink" href="#reactors" title="Permalink to this heading">#</a></h2>
@@ -491,13 +506,16 @@ Evaporation stage: when the initial energy is fully redistributed, the nucleus i
 </ul>
 <p>The total neutron yield is around 20 neutrons per incident proton, so spallation sources have very high intensities.  About 90% of the neutrons come from the transition and evaporation stages.  The high-energy neutrons and protons emitted in the cascade stage may collide with other nuclei in the target and produce secondary spallation reactions: for this reason, the neutron yield and energy spectrum depend on the size and thickness of the target, not just the material of which it is made.  Because the initiating proton beam comes from an accelerator, spallation neutron sources produce discrete pulses of neutrons.</p>
 <p>Usually, the relatively fast neutrons produced by spallation are moderated down to lower energies for the experiments.  Spallation facilities provide a range of instruments to suit different applications: figure 1 shows the instruments installed at the ISIS spallation neutron and muon source at the Rutherford Laboratory.</p>
-</section>
-<section id="figure-1-layout-of-the-target-stations-at-isis-from-https-www-isis-stfc-ac-uk-pages-instruments-aspx-target-station-1-has-four-moderators-two-are-room-temperature-water-to-provide-thermal-neutrons-and-the-other-two-are-liquid-methane-at-100-k-and-liquid-hydrogen-at-20-k-for-cold-neutrons-target-station-2-produces-cold-neutrons-at-26-k-using-lower-proton-power-than-ts1-but-more-sophisticated-target-designs-one-solid-methane-one-liquid-hydrogen-solid-methane">
-<h2>Figure 1: layout of the target stations at ISIS, from https://www.isis.stfc.ac.uk/Pages/Instruments.aspx.Target Station 1 has four moderators: two are room-temperature water to provide thermal neutrons, and the other two are liquid methane at 100 K and liquid hydrogen at 20 K, for cold neutrons.  Target Station 2 produces cold neutrons at 26 K, using lower proton power than TS1 but more sophisticated target designs (one solid methane, one liquid hydrogen/solid methane).<a class="headerlink" href="#figure-1-layout-of-the-target-stations-at-isis-from-https-www-isis-stfc-ac-uk-pages-instruments-aspx-target-station-1-has-four-moderators-two-are-room-temperature-water-to-provide-thermal-neutrons-and-the-other-two-are-liquid-methane-at-100-k-and-liquid-hydrogen-at-20-k-for-cold-neutrons-target-station-2-produces-cold-neutrons-at-26-k-using-lower-proton-power-than-ts1-but-more-sophisticated-target-designs-one-solid-methane-one-liquid-hydrogen-solid-methane" title="Permalink to this heading">#</a></h2>
+<figure class="align-default" id="isis-stations">
+<a class="reference internal image-reference" href="_images/image-122.png"><img alt="Diagram of a gas proportional chamber showing how charged particles produce a signal." src="_images/image-122.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 21 </span><span class="caption-text">layout of the target stations at ISIS, from https://www.isis.stfc.ac.uk/Pages/Instruments.aspx. Target Station 1 has four moderators: two are room-temperature water to provide thermal neutrons, and the other two are liquid methane at 100 K and liquid hydrogen at 20 K, for cold neutrons. Target Station 2 produces cold neutrons at 26 K, using lower proton power than TS1 but more sophisticated target designs (one solid methane, one liquid hydrogen/solid methane)</span><a class="headerlink" href="#isis-stations" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <p>The ISIS instruments fall into two broad categories: diffractometers, which make use of elastic scattering to study structures, and spectrometers, which use inelastic (n,n’) reactions to look at excitation and dynamics.  Within these two categories, different instruments are optimised for specific purposes: for example, there are different diffractometers for crystallography, for larger, more extended structures and for disordered (i.e. non-crystalline) materials.</p>
 </section>
 <section id="moderation">
-<h2>2.4 Moderation<a class="headerlink" href="#moderation" title="Permalink to this heading">#</a></h2>
+<h2>9.2.4 Moderation<a class="headerlink" href="#moderation" title="Permalink to this heading">#</a></h2>
 <p>Most sources produce fast neutrons, but many applications prefer thermal neutrons, either because their de Broglie wavelengths are appropriate for the structures being studied or simply because the cross sections are higher.  Therefore, we need a means to slow the neutrons down with minimal loss of flux.  Materials which do this are called moderators.
 The plan is that the neutrons scatter elastically off the moderator nuclei until they reach thermal equilibrium.  To obtain thermal neutrons, the moderator is at room temperature; cold neutrons are produced by using a cryogenic moderator.  The choice of moderator is governed by two criteria:</p>
 <ul class="simple">
@@ -508,15 +526,22 @@ The most appropriate elements are hydrogen (best for efficient thermalization) a
 </section>
 </section>
 <section id="neutron-interactions">
-<h1>3. Neutron Interactions<a class="headerlink" href="#neutron-interactions" title="Permalink to this heading">#</a></h1>
+<h1>9.3. Neutron Interactions<a class="headerlink" href="#neutron-interactions" title="Permalink to this heading">#</a></h1>
 <p>Neutron interactions come in all the categories we discussed in Unit 4.  For applications, the most important are elastic and inelastic scattering, (n,n) and (n,n’), which can be used for diffraction and spectroscopy as discussed above; various reactions with charged products which can be used for neutron detection; neutron capture, (n,γ), which is the basis of neutron activation analysis (see below) and is also important in the production of medical radioisotopes; and neutron-induced fission, (n,f), which is the basis of nuclear reactors (see Unit 5B).  Generally, neutron interactions are initiated by low-energy neutrons and are therefore compound-nucleus reactions.</p>
 <section id="neutron-detection">
-<h2>3.1 Neutron detection<a class="headerlink" href="#neutron-detection" title="Permalink to this heading">#</a></h2>
+<h2>9.3.1 Neutron detection<a class="headerlink" href="#neutron-detection" title="Permalink to this heading">#</a></h2>
 <p>Being uncharged makes neutrons difficult to detect directly: they do not interact much with atomic electrons, so they do not ionise or cause scintillation.  Consequently, neutron detectors tend to make use of interactions in which the neutron is absorbed and a charged particle is emitted.  Commonly used reactions are 3He(n,p)3H, 6Li(n,t)4He and 10B(n, α)7Li.  All of these have a common problem: the isotope involved is not the most abundant one (6Li makes up 7.5% of natural lithium, 10B 20% of natural boron; 3He is very rare indeed).</p>
 <p>The prompt charged particles produced by these reactions can be detected in a number of ways.</p>
 <section id="gas-proportional-counters">
 <h3>Gas proportional counters<a class="headerlink" href="#gas-proportional-counters" title="Permalink to this heading">#</a></h3>
-<p><strong>Figure 2: schematic of a gas proportional counter for neutron detection.  From Tavernier, Experimental Techniques in Nuclear and Particle Physics pp 209–224 (Springer, 2009).The target material is gaseous and is used to fill a container. The charged product of the neutron interaction creates ionisation, which is then directed on to a sense wire by an electric field (in figure 2, the electric field is radial and the electrons end up on the wire strung along the centre of the cylindrical tube).  These detectors are primarily sensitive to thermal neutrons, because the neutron capture cross section is higher for these than for faster particles; because the Q value of the reaction is much higher than the neutron energy, they are sensitive to the number of neutrons but not to their energy (hence “counter”).  The main background is γ rays, which can be rejected because they typically produce less ionisation than neutrons (the slow protons and α particles produced in the neutron capture reactions are very highly ionising).</strong></p>
+<p>The target material is gaseous and is used to fill a container. The charged product of the neutron interaction creates ionisation, which is then directed on to a sense wire by an electric field (in figure 2, the electric field is radial and the electrons end up on the wire strung along the centre of the cylindrical tube).  These detectors are primarily sensitive to thermal neutrons, because the neutron capture cross section is higher for these than for faster particles; because the Q value of the reaction is much higher than the neutron energy, they are sensitive to the number of neutrons but not to their energy (hence “counter”).  The main background is γ rays, which can be rejected because they typically produce less ionisation than neutrons (the slow protons and α particles produced in the neutron capture reactions are very highly ionising).</p>
+<figure class="align-default" id="gaschamber">
+<a class="reference internal image-reference" href="_images/image-121.png"><img alt="Diagram of a gas proportional chamber showing how charged particles produce a signal." src="_images/image-121.png" style="width: 50%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 22 </span><span class="caption-text">Schematic of a gas proportional counter for neutron detection.
+From Tavernier, Experimental Techniques in Nuclear and Particle Physics pp 209–224 (Springer, 2009)</span><a class="headerlink" href="#gaschamber" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <p>The gases used in gas proportional counters are 3He and 10BF3.  10BF3 is easier to obtain, and the high Q value of the neutron capture reaction makes gamma rejection easier, but boron trifluoride is toxic and corrosive and not a very good working gas for proportional counters.  3He (with about 5% of a heavier “quenching” gas to reduce secondary ionisation) is a good working gas, but 3He is increasingly difficult to get hold of (its abundance in natural helium, itself rare, is only 0.00014%, and it was historically produced as a by-product of nuclear weapon maintenance, a source which has—fortunately—declined as a result of nuclear weapons limitation treaties).</p>
 <p>Gas proportional counters can also be made sensitive to neutrons by lining the inner wall with a suitable solid material—usually boron.  Boron-lined proportional counters are, however, much less efficient than BF3-filled counters, because the boron lining has to be very thin to allow the α particles to escape into the counting gas.</p>
 </section>
@@ -528,26 +553,38 @@ The most appropriate elements are hydrogen (best for efficient thermalization) a
 <section id="semiconductor-detectors">
 <h2>Semiconductor detectors<a class="headerlink" href="#semiconductor-detectors" title="Permalink to this heading">#</a></h2>
 <p>Figure 3: basic design of a microstructured semiconductor neutron detector (MSND).Figure by Douglas McGregor, CC-BY-SA 4.0.Solid-state detectors based on semiconductors are very common in particle physics (e.g. the ATLAS inner tracker).  They can be made neutron-sensitive by coating with a neutron-sensitive material, typically 10B or 6LiF.  Their efficiency is maximised by designing the device so as to maximise the surface area in contact with the sensitive material, as shown in figure 3.  The products of the neutron capture escape into the semiconductor, where they create electron-hole pairs, which are then read out.  The main disadvantage of these devices is cost.</p>
+<figure class="align-default" id="sdarray">
+<a class="reference internal image-reference" href="_images/image-120.png"><img alt="Diagram of a semiconductor detector array" src="_images/image-120.png" style="width: 50%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 23 </span><span class="caption-text">Basic design of a microstructured semiconductor neutron detector (MSND). Figure by Douglas McGregor, CC-BY-SA 4.0.</span><a class="headerlink" href="#sdarray" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <section id="other-techniques">
 <h3>Other techniques<a class="headerlink" href="#other-techniques" title="Permalink to this heading">#</a></h3>
 <p>Neutron activation, i.e. (n,γ) reactions, can in principle be used for neutron detection but is more often used for materials assay, i.e. identifying the target nucleus by measuring the γ ray energy spectrum—see next section.
 The above detectors are all optimised for thermal neutron detection.  Fast neutrons are usually detected by moderating them down to thermal energies.  A very common detector of this type, widely used for neutron dosimetry, is the Bonner sphere, which consists of a small thermal-neutron detector surrounded by a sphere of hydrogen-rich material (usually paraffin or polyethylene) as a moderator.  Fast neutrons can also be detected directly by detecting the recoil of a light nucleus caused by elastic scattering of the neutron.  The materials of choice for this type of detector are hydrogen, deuterium or carbon, for exactly the same reasons that these are the materials of choice for moderators.</p>
-<p>###3.2 Neutron activation analysis
-Neutron activation analysis involves bombarding a sample with neutrons (usually thermal neutrons, but epithermal and even fast neutrons can be used) and looking at the spectrum of the de-excitation γ rays from (n, γ) neutron capture reactions.  Since these map to the excited states of the compound nucleus, this can be used to identify the target nuclei present in the sample, and the relative intensities of the lines can be used to make a quantitative measurement of the sample composition.  To quote the US Geological Survey, “The major advantages of NAA are that: it is a multi-element technique capable of simultaneously determining up to about 70 elements in many materials; it is non-destructive and, therefore, does not suffer from the errors associated with yield determinations; it has very high sensitivities for most of the elements that can be determined by NAA—detection limits range from 0.03 ng to 4 μg; it is highly precise and accurate—overall errors of 2–5% relative standard deviation can be achieved for many elements;
+</section>
+</section>
+</section>
+<section id="neutron-activation-analysis">
+<h1>9.3.2 Neutron activation analysis<a class="headerlink" href="#neutron-activation-analysis" title="Permalink to this heading">#</a></h1>
+<p>Neutron activation analysis involves bombarding a sample with neutrons (usually thermal neutrons, but epithermal and even fast neutrons can be used) and looking at the spectrum of the de-excitation γ rays from (n, γ) neutron capture reactions.  Since these map to the excited states of the compound nucleus, this can be used to identify the target nuclei present in the sample, and the relative intensities of the lines can be used to make a quantitative measurement of the sample composition.  To quote the US Geological Survey, “The major advantages of NAA are that: it is a multi-element technique capable of simultaneously determining up to about 70 elements in many materials; it is non-destructive and, therefore, does not suffer from the errors associated with yield determinations; it has very high sensitivities for most of the elements that can be determined by NAA—detection limits range from 0.03 ng to 4 μg; it is highly precise and accurate—overall errors of 2–5% relative standard deviation can be achieved for many elements;
 samples as small as a few micrograms can be analysed by NAA.”</p>
 <p>Neutron activation analysis can use prompt γ-rays produced by immediate de-excitation of very short-lived excited states, but it is more common to expose the sample first (usually by irradiating it in a research reactor) and observe the γ rays a short time later (where “short” can range from minutes to days).</p>
 <p>Among the many applications of neutron activation analysis are well logging in geology (investigating the chemical composition of the strata through which a drill hole has penetrated), trace element analysis for archaeological artefacts (for example, to identify the source of a particular mineral), real-time analysis of coal supplied to power plants (blending coal with different elemental composition can improve efficiency), assaying the 235U content of reactor fuel rods, and identifying heavy-element contamination of foodstuffs or in the environment.  An example of a typical spectrum is shown in Figure 4.</p>
-</section>
-</section>
-<section id="figure-4-neutron-activation-analysis-of-a-sample-of-lunar-regolith-returned-by-the-chinese-change-5-mission-the-sample-was-irradiated-for-300-s-in-a-27-kw-research-reactor-with-a-neutron-fluence-of-9-0-1011-cm2s1-and-was-counted-after-a-decay-time-of-17-25-minutes-from-yao-et-al-j-am-chem-soc-144-2022-54785484">
-<h2>Figure 4: neutron activation analysis of a sample of lunar regolith returned by the Chinese Chang’E-5 mission.  The sample was irradiated for 300 s in a 27 kW research reactor with a neutron fluence of 9.0 × 1011 cm–2·s–1, and was counted after a decay time of 17.25 minutes.From Yao et al., J. Am. Chem. Soc. 144 (2022) 5478–5484.<a class="headerlink" href="#figure-4-neutron-activation-analysis-of-a-sample-of-lunar-regolith-returned-by-the-chinese-change-5-mission-the-sample-was-irradiated-for-300-s-in-a-27-kw-research-reactor-with-a-neutron-fluence-of-9-0-1011-cm2s1-and-was-counted-after-a-decay-time-of-17-25-minutes-from-yao-et-al-j-am-chem-soc-144-2022-54785484" title="Permalink to this heading">#</a></h2>
-</section>
+<figure class="align-default" id="regolith">
+<a class="reference internal image-reference" href="_images/image-119.png"><img alt="Diagram of a lunar regolith NAA data" src="_images/image-119.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 24 </span><span class="caption-text">Neutron activation analysis of a sample of lunar regolith returned by the Chinese Chang’E-5 mission. The sample was irradiated for 300 s in a 27 kW research reactor with a neutron fluence of 9.0 × 1011 cm–2·s–1, and was counted after a decay time of 17.25 minutes.
+From Yao et al., J. Am. Chem. Soc. 144 (2022) 5478–5484.</span><a class="headerlink" href="#regolith" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <section id="summary">
 <h2>4. Summary<a class="headerlink" href="#summary" title="Permalink to this heading">#</a></h2>
 <p>In this unit we discussed the physics of neutrons, which are disproportionately important in nuclear physics because they are exceptionally useful as probes of nuclear structure (since they are not affected by Coulomb repulsion) and because neutron interactions have important practical applications.</p>
 <ul class="simple">
 <li><p>The neutron was discovered by Chadwick in 1932, building on slightly earlier work by Curie and Joliot and by Bother and Becker.  The key insight was that a particle produced by bombarding various light nuclei with α particles produced something that was not electrically charged, but which carried momentum appropriate to a massive particle rather than a photon.  We now understand the neutron as a spin ½ baryon with quark content udd, mass 939.6 MeV/c2 and a mean lifetime of just under 15 minutes.</p></li>
-<li><p>Neutrons are generally classified according to their (kinetic) energy, which can be equated to an effective temperature by  (technically this should be , since a free neutron has three degrees of freedom, but the 3/2 is conventionally omitted).  The classifications are therefore usually framed in terms of relative temperature: in order of increasing energy, ultracold, cold, thermal, epithermal and fast.</p></li>
+<li><p>Neutrons are generally classified according to their (kinetic) energy, which can be equated to an effective temperature by <span class="math notranslate nohighlight">\(E\sim k_{B}T\)</span> (technically this should be <span class="math notranslate nohighlight">\(\frac{3}{2}k_{B}T\)</span>, since a free neutron has three degrees of freedom, but the 3/2 is conventionally omitted).  The classifications are therefore usually framed in terms of relative temperature: in order of increasing energy, ultracold, cold, thermal, epithermal and fast.</p></li>
 <li><p>Because free neutrons are unstable, they must be produced where they will be used, or conversely used where they are produced.  Small, relatively portable neutron sources can be divided into two categories, radioactive sources and neutron generators; there are also two classes of large, static, high-intensity sources, namely reactors and spallation sources.</p></li>
 <li><p>The most commonly used radioactive sources are AmBe, in which the α-emitter 241Am is mixed with 9Be, producing neutrons via 9Be(α,n)12C, and 252Cf, which produces neutrons through its decay by spontaneous fission, which has a branching ratio of 3% and produces two or three neutrons per fission.</p></li>
 <li><p>Neutron generators produce neutrons via the fusion reactions 2H(d,n)3He and 3H(d,n)4He.  We will meet both of these again in Unit 5B when we consider fusion power, but in this case the desired output is neutrons rather than energy.  The neutrons are roughly monoenergetic with energies of 2.5 and 14 MeV respectively.</p></li>
@@ -591,13 +628,22 @@ samples as small as a few micrograms can be analysed by NAA.”</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="phy303-unit7-reactions.html"
+       href="phy303-unit8-compoundreactions.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Unit 4.1: Nuclear Reactions</p>
+        <p class="prev-next-title">Unit 8 : Compound/Photon reactions</p>
       </div>
+    </a>
+    <a class="right-next"
+       href="phy303-unit10-fissionandfusion.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Unit 10 : Nuclear Power</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -615,29 +661,29 @@ samples as small as a few micrograms can be analysed by NAA.”</p>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Unit 9 : Neutron Physics</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#discovery-and-properties">1.1 Discovery and properties</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classification-of-neutrons">1.2 Classification of neutrons</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#neutron-properties">9.1 Neutron Properties</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#discovery">9.1.1 Discovery</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classification-of-neutrons">9.1.2 Classification of neutrons</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#neutron-sources">2. Neutron sources</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#radioactive-sources">2.1 Radioactive sources</a><ul class="nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#neutron-sources">9.2. Neutron sources</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#radioactive-sources">9.2.1 Radioactive sources</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#neutron-sources-ambe">α-neutron sources: AmBe</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#photoneutron-sources">Photoneutron sources</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#spontaneous-fission-sources">Spontaneous fission sources</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#neutron-generators">2.2 Neutron generators</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#neutron-generators">9.2.2 Neutron generators</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#large-scale-facilities">2.3 Large-scale facilities</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#large-scale-facilities">9.2.3 Large-scale facilities</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reactors">Reactors</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spallation-neutron-sources">Spallation neutron sources</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#figure-1-layout-of-the-target-stations-at-isis-from-https-www-isis-stfc-ac-uk-pages-instruments-aspx-target-station-1-has-four-moderators-two-are-room-temperature-water-to-provide-thermal-neutrons-and-the-other-two-are-liquid-methane-at-100-k-and-liquid-hydrogen-at-20-k-for-cold-neutrons-target-station-2-produces-cold-neutrons-at-26-k-using-lower-proton-power-than-ts1-but-more-sophisticated-target-designs-one-solid-methane-one-liquid-hydrogen-solid-methane">Figure 1: layout of the target stations at ISIS, from https://www.isis.stfc.ac.uk/Pages/Instruments.aspx.Target Station 1 has four moderators: two are room-temperature water to provide thermal neutrons, and the other two are liquid methane at 100 K and liquid hydrogen at 20 K, for cold neutrons.  Target Station 2 produces cold neutrons at 26 K, using lower proton power than TS1 but more sophisticated target designs (one solid methane, one liquid hydrogen/solid methane).</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#moderation">2.4 Moderation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#moderation">9.2.4 Moderation</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#neutron-interactions">3. Neutron Interactions</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#neutron-detection">3.1 Neutron detection</a><ul class="nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#neutron-interactions">9.3. Neutron Interactions</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#neutron-detection">9.3.1 Neutron detection</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gas-proportional-counters">Gas proportional counters</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scintillators">Scintillators</a></li>
 </ul>
@@ -646,7 +692,9 @@ samples as small as a few micrograms can be analysed by NAA.”</p>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#other-techniques">Other techniques</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#figure-4-neutron-activation-analysis-of-a-sample-of-lunar-regolith-returned-by-the-chinese-change-5-mission-the-sample-was-irradiated-for-300-s-in-a-27-kw-research-reactor-with-a-neutron-fluence-of-9-0-1011-cm2s1-and-was-counted-after-a-decay-time-of-17-25-minutes-from-yao-et-al-j-am-chem-soc-144-2022-54785484">Figure 4: neutron activation analysis of a sample of lunar regolith returned by the Chinese Chang’E-5 mission.  The sample was irradiated for 300 s in a 27 kW research reactor with a neutron fluence of 9.0 × 1011 cm–2·s–1, and was counted after a decay time of 17.25 minutes.From Yao et al., J. Am. Chem. Soc. 144 (2022) 5478–5484.</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#neutron-activation-analysis">9.3.2 Neutron activation analysis</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">4. Summary</a></li>
 </ul>
 </li>

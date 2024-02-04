@@ -36,6 +36,7 @@
     <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="_static/myfile.css" />
     <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -64,13 +65,13 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script>window.MathJax = {"HTML-CSS": {"matchFontHeight": true, "scale": 80}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'phy303-unit7-reactions';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Unit 8 : Compound/Photon reactions" href="phy303-unit8-compoundreactions.html" />
-    <link rel="prev" title="Unit 6 : Radioactive Decays" href="phy303-unit6-radioactive-decays.html" />
+    <link rel="prev" title="Unit 6: Radioactive Decays" href="phy303-unit6-radioactive-decays.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -167,18 +168,18 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="phy303-unit1-introduction-and-structure.html">Unit 1 : Introduction</a></li>
-
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit1-introduction-and-structure.html">Unit 1. Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="phy303-unit2-liquiddropmodels.html">Unit 2. Liquid Drop</a></li>
 <li class="toctree-l1"><a class="reference internal" href="phy303-unit3-shellmodel-and-spin.html">Unit 3. Shell Model</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phy303-unit4-parity-moments.html">Unit 4 : Nuclear Properties</a></li>
-
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit4-parity-moments.html">Unit 4. Nuclear Spin Moments</a></li>
 <li class="toctree-l1"><a class="reference internal" href="phy303-unit5-collective-excited.html">Unit 5: Collective Models</a></li>
 
-<li class="toctree-l1"><a class="reference internal" href="phy303-unit6-radioactive-decays.html">Unit 6. Radioactive Decay</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit6-radioactive-decays.html">Unit 6: Radioactive Decays</a></li>
+
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Unit 7. Reactions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="phy303-unit8-compoundreactions.html">Unit 8. Compound Reactions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="phy303-unit9-neutronphysics.html">Unit 9 : Neutron Physics</a></li>
+
 
 
 
@@ -418,7 +419,7 @@ document.write(`
 </section>
 <section id="notation">
 <h2>4.1.2 Notation<a class="headerlink" href="#notation" title="Permalink to this heading">#</a></h2>
-<p>Particle physicists (and chemists) describe reactions by notation such as A + a → B + b. Nuclear physicists tend to use the more compact notation A(a,b)B, where A is the target nucleus, struck by projectile a, which produces daughter nucleus B and ejectile b. It is usual for A to be more massive than a, but it isn’t obligatory; there do exist facilities, such as GSI in Darmstadt, Germany, which produce beams of heavy ions, and when these are used it is possible for the projectile to be lighter than the target. The defining feature for the notation is that a is moving and A is stationary. In contrast, the products B and b will generally all be moving, owing to momentum transfer, so in this case B will typically be defined as the heaviest product (it’s also the one that is not measured: a typical nuclear experiment will measure the energy and angle of the ejectile(s) b).</p>
+<p>Particle physicists (and chemists) describe reactions by notation such as <span class="math notranslate nohighlight">\(A + a \rightarrow B + b\)</span>. Nuclear physicists tend to use the more compact notation A(a,b)B, where A is the target nucleus, struck by projectile a, which produces daughter nucleus B and ejectile b. It is usual for A to be more massive than a, but it isn’t obligatory; there do exist facilities, such as GSI in Darmstadt, Germany, which produce beams of heavy ions, and when these are used it is possible for the projectile to be lighter than the target. The defining feature for the notation is that a is moving and A is stationary. In contrast, the products B and b will generally all be moving, owing to momentum transfer, so in this case B will typically be defined as the heaviest product (it’s also the one that is not measured: a typical nuclear experiment will measure the energy and angle of the ejectile(s) b).</p>
 <p>It is possible for b to consist of more than one particle: for example, among the possible reactions listed in the JANIS nuclear database for neutrons striking an iron-56 target are (n,2n), (n,np) and (n,2n+p). The ‘+’ sign may be omitted, e.g. 27Al(p,3pn)22Na.</p>
 <p>There exist reactions for which this notation does not work well, such as fission (if a thermal neutron collides with a nucleus of 235U, the most likely outcome is that the nucleus will undergo fission, but the exact fission products can’t be predicted). There are conventions to handle these: for example, fission induced by a neutron would be described as (n,fission) or (n,f), and spallation reactions, where a fairly energetic projectile, usually a proton, strikes a heavy target and causes it to emit a large but not well-defined number of nucleons, can be described as (p,spall). Both of these reaction types are interesting, fission for obvious reasons and spallation because it is used to produce neutrons for a wide range of research applications (and, in astrophysics, because it is responsible for the production of the light elements beryllium and boron).</p>
 </section>
@@ -481,25 +482,42 @@ From this derivation we expect that the number of alpha particles scattered thro
 <li><p>the inverse fourth power of sin(𝜃/2);</p></li>
 <li><p>the thickness of the foil (provided that the foil is thin—when it gets too thick all the alpha
 particles will simply stop within the foil);</p></li>
-<li><p>the inverse square of the alpha particle kinetic energy.
-Rutherford’s group (specifically, Hans Geiger and Ernest Marsden) conducted a series of experiments in 1913 that verified these predictions. This demonstrated that the atom contained an essentially pointlike nucleus.
-(It is worth noting that you would obtain the same result if it were the negative charge of the atom that were concentrated in a small volume, i.e. if the electrons all clumped together in the midst of the distributed positive charge. Rutherford concluded that the nucleus was positively charged as a result of experiments using gas targets. This was consistent with the fact that the alpha particle was itself positively charged, and had earlier been identified by Rutherford with a fully ionised helium atom.)</p></li>
+<li><p>the inverse square of the alpha particle kinetic energy.</p></li>
 </ol>
+<p>Rutherford’s group (specifically, Hans Geiger and Ernest Marsden) conducted a series of experiments in 1913 that verified these predictions. This demonstrated that the atom contained an essentially pointlike nucleus.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It is worth noting that you would obtain the same result if it were the negative charge of the atom that were concentrated in a small volume, i.e. if the electrons all clumped together in the midst of the distributed positive charge. Rutherford concluded that the nucleus was positively charged as a result of experiments using gas targets. This was consistent with the fact that the alpha particle was itself positively charged, and had earlier been identified by Rutherford with a fully ionised helium atom.</p>
+</div>
 </section>
 <section id="kinematics">
 <h2>4.1.4 Kinematics<a class="headerlink" href="#kinematics" title="Permalink to this heading">#</a></h2>
 <section id="the-q-value">
 <h3>The Q value<a class="headerlink" href="#the-q-value" title="Permalink to this heading">#</a></h3>
-<p>Nuclear reactions are governed by 𝐸 = 𝑚𝑐􏰀. The Q-value of a reaction is the difference in mass between the initial and final states, expressed as an energy (usually in MeV): for example, the Q-value of the reaction 16O(p,α)13N can be calculated as follows (all numbers from Krane):</p>
+<p>Nuclear reactions are governed by <span class="math notranslate nohighlight">\(E=mc^{2}\)</span>. The Q-value of a reaction is the difference in mass between the initial and final states, expressed as an energy (usually in MeV): for example, the Q-value of the reaction 16O(p,α)13N can be calculated as follows (all numbers from Krane):</p>
 <ol class="arabic simple">
-<li><p>The nuclear mass of 16O is 15.994915 (atomic mass of 16O)
-$<span class="math notranslate nohighlight">\(8×0.00054858 = 15.990526 u.\)</span>$</p></li>
-<li><p>The mass of a proton is 1.00727647 u</p></li>
-<li><p>The nuclear mass of 13N is
-$<span class="math notranslate nohighlight">\(13.005739 − 7×0.00054858 = 13.001899 u.\)</span>$</p></li>
-<li><p>The mass of an α particle is 4.00150618 u.</p></li>
-<li><p>Therefore the Q value is
-$<span class="math notranslate nohighlight">\(16.997802 – 17.003405 = −0.005603 u = −5.219 MeV.\)</span>$</p></li>
+<li><p>The nuclear mass of 16O is 15.994915 (atomic mass of 16O)</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+8×0.00054858 = 15.990526 u.
+\]</div>
+<ol class="arabic simple">
+<li><p>The mass of a proton is <span class="math notranslate nohighlight">\(1.00727647 u\)</span></p></li>
+<li><p>The nuclear mass of 13N is</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+    13.005739 − 7×0.00054858 = 13.001899 u.
+\]</div>
+<ol class="arabic">
+<li><p>The mass of an α particle is <span class="math notranslate nohighlight">\(4.00150618 u\)</span>.</p></li>
+<li><p>Therefore the Q value is</p>
+<div class="math notranslate nohighlight">
+\[
+   16.997802 – 17.003405 = −0.005603 u = −5.219 MeV.
+   \]</div>
+</li>
 </ol>
 <p>A negative Q-value implies that the reaction will not proceed spontaneously, but will require the initial proton to contribute at least 5.219 MeV of kinetic energy (actually, slightly more than this, because we need to allow for conservation of momentum). The minimum projectile kinetic energy required to make the reaction happen is called the threshold energy.</p>
 <p>A positive Q-value means that the reaction will generate energy. However, this does not necessarily mean that the reaction has zero threshold in practice. Consider the reaction 13C(α,n)16O. This has Q- value 2.216 MeV (you should check this!). However, a zero-energy α-particle will not initiate the reaction, because Coulomb repulsion will ensure that it does not get close enough to the carbon nucleus to react with it. This imposes an effective threshold energy: it’s difficult to calculate exactly what it is, because quantum tunnelling ensures that the reaction will take place (with a reduced cross section) at energies lower than a classical calculation would suggest. This is what makes power gener- ation by nuclear fusion so difficult: the relevant reactions do of course have positive Q (if they didn’t, they would not generate any energy!), but the kinetic energy required to overcome the Coulomb barrier means that the initial material has to be raised to an extremely high temperature for the fusion cross section to be high enough for useful energy output.</p>
@@ -665,8 +683,9 @@ The relevant masses are:
 <section id="characteristics-of-direct-reactions">
 <h3>4.2.1 Characteristics of direct reactions<a class="headerlink" href="#characteristics-of-direct-reactions" title="Permalink to this heading">#</a></h3>
 <p>The fundamental characteristic of direct reactions is that they take place in the time it would take the projectile to traverse the nucleus. There are various ways of estimating this, but they all boil down to a simple calculation: the speed of a few-MeV nucleon is of order 0.1c; the size of a typical target nucleus is a few femtometres; 10^-15/10^7 = 10^-22, so a direct reaction should take place on a timescale of order 10^-22 s. The logic of this is that if the reaction is over in the time it would have taken the projectile to cross the nucleus, there has not been time for a compound nucleus to form, so it can’t be a compound-nucleus reaction.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Note that this is an order-of-magnitude estimate: it doesn’t have to be precise. We will see later that the timescale for compound-nucleus reactions is much longer.
-</pre></div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is an order-of-magnitude estimate: it doesn’t have to be precise. We will see later that the timescale for compound-nucleus reactions is much longer.</p>
 </div>
 <p>Direct reactions tend to involve relatively high-energy projectiles. The reason for this is that a low-energy projectile, such as a thermal neutron with an energy of 0.025 eV, has a de Broglie wavelength which is much larger than an individual nucleon: it will “see” the nucleus as an undifferentiated blob, so it is unlikely to interact with individual nucleons. In contrast, a 100 MeV nucleon would have a de Broglie wavelength of the same order as the diameter of a proton and would be much more likely to undergo a direct reaction.</p>
 <p>As noted earlier, the products of direct reactions are strongly forward-peaked, because not much of the incoming energy is transferred to the target nucleus.</p>
@@ -677,15 +696,13 @@ The relevant masses are:
 <ul class="simple">
 <li><p>elastic and inelastic scattering—the ejectile is identical to the projectile, with the same kinetic energy (elastic) or reduced kinetic energy (inelastic);</p></li>
 <li><p>charge exchange—as the name indicates, reactions in which charge is exchanged between projectile and target, most obviously (n,p) and (p,n), but also <span class="math notranslate nohighlight">\(^3He,^3H\)</span> or vice versa;</p></li>
-</ul>
-<p><img alt="Alt text" src="_images/image-56.png" /></p>
-<p>transfer reactions—a nucleon (occasionally more than one) is transferred from projectile to target:</p>
-<ul class="simple">
+<li><p>transfer reactions—a nucleon (occasionally more than one) is transferred from projectile to target:</p></li>
 <li><p>stripping reaction—transfer is from projectile to target, e.g. (d,p) or (d,n);</p></li>
 <li><p>pick-up reaction—transfer is from target to projectile, e.g. (p,d);
 knock-out reactions—a nucleon or light cluster (e.g. a particle) is knocked out of the target but not attached to the projectile, e.g. (n,2n).</p></li>
 </ul>
 <p>All of these can also take place via the compound-nucleus route. The direct reaction will dominate at high projectile energies and in the forward direction. Because direct reactions, despite the use of high-energy projectiles, only involve small energy transfers, they tend to populate low-level excited states, whereas compound-nucleus reactions typically involve higher levels of excitation (for a given projectile energy). Consequently, it is usually possible to disentangle the direct reaction contribution from the compound-nucleus route without too much ambiguity.</p>
+<p><img alt="Alt text" src="_images/image-56.png" /></p>
 </section>
 <section id="applications-of-direct-reactions">
 <h3>4.2.3 Applications of direct reactions<a class="headerlink" href="#applications-of-direct-reactions" title="Permalink to this heading">#</a></h3>
@@ -739,7 +756,7 @@ Elastic scattering of a projectile by a target nucleus is analogous to diffracti
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Unit 6 : Radioactive Decays</p>
+        <p class="prev-next-title">Unit 6: Radioactive Decays</p>
       </div>
     </a>
     <a class="right-next"
