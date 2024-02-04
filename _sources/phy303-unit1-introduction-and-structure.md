@@ -1,5 +1,4 @@
-
-## Unit 1 : Introduction
+## Introduction
 
 The modern field of nuclear physics really began with the first detection of radioactivity by Becquerel, who observed that photographic plates fogged up in proximity to uranium ore. Eventually this was determined to be due to spontaneous decay of nuclei in the ore. Rutherford went on and categorized emissions of radioactive substances, working to understand the properties of alpha, beta, and gamma ray particles. 
 
@@ -12,7 +11,7 @@ One of the major figures in nuclear physics after this was Marie Curie. She and 
 
 In this course we will learn about the fascinating field of nuclear physics, covering the structure of individual nuclei, predicting the properties of different radioactive decays, and both the practical applications and dangers of nuclear radiation. 
 
-### 1.1 Nuclear Isotopes
+### Nuclear Isotopes
 
 To begin let's go over some fundamental nonmeclature. **Isotopes** are nuclei of a given element with a specific number of nucleons. They are commonly referred to by their atomic mass number, $A$, atomic number $Z$, and elemental symbol, $\bf S$. For example:
 - $\bf ^{238}_{92}U~$is an isotope of uranium with $A=238$ nucleons 
@@ -28,12 +27,12 @@ $$
 \textnormal{U238}~=~{\bf _{92}^{238}U}~=~{\bf ^{238}U}~=~\textnormal{U-238}~=~\textnormal{Uranium-238}.
 $$  
 
-Similarly we don't need to specify the number of neutrons, $N$, explicitly each time as this can be determined from $A=Z+N$. Throughout this course the short hand form of $^{A}{\bf S}$ or $\textnormal{S-A}$ will be used to refer to nuclei so you should familiarise yourself with it.
+Similarly we don't need to specify the number of neutrons, $N$, explicitly each time as this can be determined from $A=Z+N$. Throughout this course the short hand form of $^{A}{\bf S}$ or $\textnormal{S-A}$ will be used to refer to nuclei so you should familiarize yourself with it.
 
 <p style="page-break-after:always;"></p>
 <p><p>
 
-### 1.2 Radium, Radon, and the U-238 Chain
+### Radium, Radon, and the U-238 Chain
 
 Radioactive decay of nuclei can transmute one isotope into another with the emission of some form of radiation. The most common forms of radioactive decay for nuclei are spontaneous alpha emission, or beta-decay where a neutron decays into a proton releasing a gamma ray. As shown in the [Fig. 1](transitiondiagram) below we can represent one nucleus decaying into another by considering where each nucleus lies on a chart of $N$ versus $Z$. The most common forms of decay, alpha and beta decay, have their own characteristic steps through this $Z-N$ space.
 
@@ -62,7 +61,7 @@ The decay rate of radioactive nuclei is dependent on the isotope and as shown in
 Radon gas typically emits alpha particles. Outside the body these cannot do much damage as they are not penetrating. Howevere when inhaled alpha particles can cause major damage to cells in the lungs.
 :::
 
-### 1.3 Radiation Hazards
+### Radiation Hazards
 
 Radiation in general is quantified in various units. For experimental physics the source activity in **Becquerels** is often considered. For health the most important is the **Gray and Sievert**. 
 
@@ -87,11 +86,11 @@ You'll notice that there is no current SI unit for intensity anymore. This is be
 ```
 
 
-### 1.4 Basic Properties of Nuclei
+### Basic Properties of Nuclei
 
-Now our challenge over the course of this module is to understand the structure of individiual nuclei and the impact this has on observables such as different types of radioactive decays. 
+Now our challenge over the course of this module is to understand the structure of individual nuclei and the impact this has on observables such as different types of radioactive decays. 
 
-To do this we need to review what properties of nuclei and their behaviour we can directly observe. We'll start with some basic nomenclature and properties of Nuclei. As we mentioned before nuclei can be described in terms of:
+To do this we need to review what properties of nuclei and their behavior we can directly observe. We'll start with some basic nomenclature and properties of Nuclei. As we mentioned before nuclei can be described in terms of:
 - Number of protons (atomic number): $Z$
 - Number of neutrons : $N$
 - Number of nucleons (atomic weight) : $A=Z+N$
@@ -124,7 +123,7 @@ Remember : Unstable nuclei want to head towards more stable states - **towards**
 The international atomic energy agency (IAEA) has gone to great lengths to catalogue information on nuclear physics and radioactive decays. They provide a full library of the properties each known nuclei in this plot. A link to the IAEA's interactive nuclei viewer can be found [HERE](https://www-nds.iaea.org/relnsd/vcharthtml/VChartHTML.html).
 
 
-### 1.5 Nuclear Decay 
+### Nuclear Decay 
 As we mentioned earlier, nuclei sometimes decay in chains until a more stable state is reached. The N and Z values for these stable states usually lie somewhere along the Line of Stability. Whilst we've discussed the dominant decays in the U-238 chain, there are actually six types of nuclear decay we need to remember.
 1. **Alpha Decay** - Spontaneous emission of an $\alpha$ particle,
 $\Delta Z=-2, \Delta N=-2$
@@ -151,12 +150,12 @@ Possible decay steps in a chart of nuclides. Different decay channels correspond
 
 
 
-### 1.6 Mass Calculations
+### Mass Calculations
 Differences in mass between different nuclei plays a major role in their relative stabilities. Obviously every nucleus carries mass, but this turns out to be more complicated than you might think and we cannot simply add up the masses of the nucleons inside to get the total of the bound state. 
 
 Once collections of nucleons are together inside a nuclei they generally want to stay together (at least for the most stable nuclei!). It takes additional energy to pull a nucleus apart - this is called the Binding Energy, and it is why we cannot simply add the mass of the nucleons together when determining the nuclear mass.
 
-It is also important to understand if we are considering **Nuclear Mass** or **Atomic Mass**. A nucleus is the part of an atom that is made only of protons and neutrons (nucleons). If electrons are included, then we have an atom (neutral or ionised depending on the number of electrons). The mass of an atom is dominated by the nucleons so in many cases in nuclear physics it is a reasonable assumption to assume the atomic mass is the same as the nuclear mass. However, this is not always true, for instance in some beta decay calculations, we need to account for this as we will see later. Remember that in nuclear physics we tend to deal with energies (masses) in the MeV range. Whereas for electrons in orbitals (Atomic Physics) we consider eV and keV scales. 
+It is also important to understand if we are considering **Nuclear Mass** or **Atomic Mass**. A nucleus is the part of an atom that is made only of protons and neutrons (nucleons). If electrons are included, then we have an atom (neutral or ionized depending on the number of electrons). The mass of an atom is dominated by the nucleons so in many cases in nuclear physics it is a reasonable assumption to assume the atomic mass is the same as the nuclear mass. However, this is not always true, for instance in some beta decay calculations, we need to account for this as we will see later. Remember that in nuclear physics we tend to deal with energies (masses) in the MeV range. Whereas for electrons in orbitals (Atomic Physics) we consider eV and keV scales. 
 
 To make our lives easier when carrying around a lot of $\textnormal{MeV}$ terms in nuclear physics it is helpful to define a standard mass close to the nucleon mass. This is the **Unified Mass Constant ($u$)**. Nuclear masses are typically expressed in terms of unified mass constant ($u$). The mass of a C-12 atom is defined to be exactly $12u$, so that
 ```{math}
@@ -183,7 +182,7 @@ M(A,Z) < Zm_{p} + Nm_{n}.
 \end{equation}
 ```
 
-This nuclear mass deficit can be calculated as the difference beteween the nuclear mass, and the sum of individual nucleons.
+This nuclear mass deficit can be calculated as the difference between the nuclear mass, and the sum of individual nucleons.
 
 ```{math}
 :label: nuclearmassdeficit
@@ -202,7 +201,7 @@ The deficit shown in Eq. {eq}`nuclearmassdeficit` is related to the binding ener
 
 Typically the binding energy is referred to as a positive value, but when considering its role in calculating the overall mass of the nucleus the change in mass is actually negative as shown in Eq. {eq}`bindingenergyeq`. As we discussed in the last lecture, stable nuclei have the highest binding energies - it takes more to pull them apart.
 
-Since the neutrons and protons have different masses and properties, we expect that the binding energy for neutrons or protons to be very slightly different. These individual binding energies are commonly referred to as **Seperation energies**. For example, the neutron seperation energy for a Carbon-12 atom is calculated by taking the difference in binding energies between Carbon-12, and Carbon-11 (one less neutron). Similarly the proton seperation energy for C-12 is calculated from the difference between C-12 and N-12.
+Since the neutrons and protons have different masses and properties, we expect that the binding energy for neutrons or protons to be very slightly different. These individual binding energies are commonly referred to as **Separation energies**. For example, the neutron separation energy for a Carbon-12 atom is calculated by taking the difference in binding energies between Carbon-12, and Carbon-11 (one less neutron). Similarly the proton separation energy for C-12 is calculated from the difference between C-12 and N-12.
 
 
 Below in [Fig. 6](binding-energy) is the second most important plot in nuclear physics. It is a plot of the Average Binding Energy per total number of nucleons ($A=Z+N$) for all nuclei. 
@@ -221,7 +220,7 @@ There are some very important features here already that we should consider:
 
 You may have seen this plot already in second year nuclear physics, and may even understand the implications of these features, but in this course we are going to delve a bit deeper into actually where these features and look at how we construct models that can accurately describe this plot, and explain each of the decay phenomena we have discussed in this lecture in more detail.
 
-### 1.7 Probing the Nucleus
+### Probing the Nucleus
 
 Nuclei as opposed to atoms, have a net charge, from the sum of the proton charges. Neutrons can be considered essentially neutral, as the name suggests. However, in fact we know both neutrons and protons have an internal structure. Neutrons are composed of 3 quarks, (up, down, down for neutrons) that all have charge. The sum of the charges is zero but the structure does mean that charge-like phenomena exist for neutrons arising from their internal charge distribution. For example the neutron has a non-zero magnetic moment.
 
@@ -258,7 +257,7 @@ Given that Nuclei have mass and charge then there is obviously going to be a den
 where $m_{n}$ is mass of neutron, and $e$ is the charge of an electron. 
 
 
-### 1.8 Measuring Nuclear Size
+### Measuring Nuclear Size
 To get a better idea of the actual size, charge, and matter distribution, physicists use **Scattering Experiments**. The typical approach is to fire beams of particles at a fixed target and see what has happened to the particles on the other side.
 
 Typical experiments are : (i) electron scattering, (ii) alpha particle scattering, (iii) proton scattering, and (iv) neutron scattering and absorption.
@@ -341,7 +340,7 @@ We can see from Eq. {eq}`nthick` that given accurate prior knowledge of our star
 
 
 
-### 1.9 Partial and Differential Cross Sections
+### Partial and Differential Cross Sections
 
 So far the Cross Section we have considered has really been the Total Cross Section, $\sigma_{T}$, referring  to the sum of all possible interactions involving the beam and target particles. In practice, there may be different types of interaction, or **Interaction Channels**, that happen each with their own seperate probability. The sum of all the cross-sections for each possible channel gives the total cross-section for the target. We introduce the term **Partial Cross Section** to distinguish these from the total cross-section, for instance $\sigma_{e}$.
 
@@ -374,7 +373,7 @@ Here we have considered a differential cross-section in terms of a solid angle, 
 
 
 
-### 1.10 Rutherford and Mott Scattering
+### Rutherford and Mott Scattering
 
 The first nuclear scattering experiments, famously started by Rutherford, were performed using alpha particles. These experiments used a collimated polonium sample to create a beam of alpha particles which could be directed at a thin gold foil. A fluorescent screen was used to determine the scattering angle of the particles after the interaction. The cross-section measured in these interactions can then be used to determine the nuclear radius. Below is a sketch of Rutherfords original experiment using a gold thin foil as a target.
 
@@ -394,7 +393,7 @@ Rutherford and others went further after these ground breaking experiments, to d
 :::{figure-md} hyperbolic
 <img src='figures/FiguresSlides.006.png' width="80%" alt="Beam Direction">
 
-Hyperbolic Trajectory of scattering in Rutherfrd scattering assuming charged deflection of the beam particles.
+Hyperbolic Trajectory of scattering in Rutherford scattering assuming charged deflection of the beam particles.
 :::
 
 
@@ -418,7 +417,7 @@ $
 $
 ```
 
-Figure {img}`rutherfordform` predicts a form the cross section vs scattering as shown opposite.
+The Figure [below](rutherfordform) predicts a form the cross section vs scattering as shown opposite.
 
 :::{figure-md} rutherfordform
 <img src='figures/rutherford_form.png' width="70%" alt="Rutherford Form">
@@ -442,10 +441,10 @@ Hofstadter set up electron scattering experiments on nuclei to investigate the M
 :::{figure-md} Hofstadter
 <img src='figures/FiguresSlides.008.png' width="100%" alt="Rutherford Form">
 
-Hofstadter Experiment. 
+Diagram of the Hofstadter Experiment.
 :::
 
 
-Hofstadter's experiments provided a stong constaint on the scattering cross-section of nuclei over a broad range of angles. Unfortunately however they showed that that the data still deviates even from the Mott prediction and more is needed to fully describe the nucleus. 
+Hofstadter's experiments provided a strong constraint on the scattering cross-section of nuclei over a broad range of angles. Unfortunately however they showed that that the data still deviates even from the Mott prediction and more is needed to fully describe the nucleus. 
 
-This deviation is now interpreted as telling us about the charge/matter distribution in the nucleus. That not only is the nucleus not point-like as assumed in the Mottt formula but it has a particular density profile and shape which can be further explicitly probed by electron scattering experiments.
+This deviation is now interpreted as telling us about the charge/matter distribution in the nucleus. That not only is the nucleus not point-like as assumed in the Mott formula but it has a particular density profile and shape which can be further explicitly probed by electron scattering experiments.

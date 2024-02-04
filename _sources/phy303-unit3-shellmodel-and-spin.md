@@ -1,5 +1,5 @@
-## Unit 3 : Shell Model
-### 3. Introduction
+## Shell Model
+### Introduction
 
 We've seen how study of the binding energy curve for nuclei and basic features like the chart of stability has led to an empirical formula for the binding energy and the mass of nuclei through the semi empirical mass formula.
 
@@ -31,7 +31,8 @@ But first notice how off the idea is. In atomic physics the well that binds the 
 This looks like big step to take away from our SEMF so first let's start by looking at what real evidence we have for a shell-like structure anyway. In fact we can list 8 things starting with a few charts we have already covered.
 
 
-#### 3.1 Shell Model Evidence
+### Evidence for Shells
+
 ##### Binding Energy Shape
 The SEMF does a good job on the basic shape, but a closer look reveals certain nuclei have much higher, or lower B/A than predicted even after our asymmetry and pairing terms are included. These are most obvious at low A where peaks appear in multiples of 4 nucleons (e.g. 12C, 18O).
 
@@ -131,7 +132,7 @@ Finally, there are several decay chain sequences in nature, particularly that st
 
 
 
-#### 5.3 Shell Model Challenge
+### Shell Model Challenge
 
 All these observations strongly point to a shell like arrangement of nucleons in the nucleus, whereby we envisage Energy Levels in which the nucleons sit, separated by gaps corresponding to the Magic Numbers for both $Z$ and $N$ given by:
 
@@ -186,12 +187,7 @@ $$
 We will avoid fully deriving this for now as the focus on this course is the implications that a full QM approach has on the behavior of our nucleons.
 
 
-##### 5.4 Shell Model Quantum Mechanics
-
-
 A Major point is to realise that although Nuclei are composed of Nucleons they largely act as an isolated single entity. In particular they have a well defined Total Angular Momentum called Nuclear Spin, $I$. Nucleons themsleves also have Angular Momentum ($l$) and Intrinsic Spin ($s$). The vital point in our QM shell model is that the $l$ and $s$ of all the nucleons together determines the Total Nuclear Spin $I$ of a nucleus.
-
-
 
 The result of treating the nucleus in this way we will see is the ability to now predict
 - Nuclear Magic Numbers
@@ -206,7 +202,7 @@ And quite good, but not prefect, predictions of
 The key to this is to work out the Shell Energy Levels and then determine how many nucleons are allowed to occupy each level as determined by QM and the Exclusion Principle.
 
 
-#### 5.4 Shell Model Quantum Mechanics
+### Shell Model Quantum Mechanics
 
 We start by considering the QM behavior of an individual nucleon (p or n) in the Central Potential Well of the nucleus. When we invoke QM, by applying the Schrödinger equation to solve the three dimensional system we end up with an Angular Momentum Quantum Number, $l$, that tells us about the spatial behavior of wave function of each nucleon and defines the energy levels oof the nucleons as a result. In our simple central potential model all nucleons with the same $l$ have the same energy but we will see that it is a new quantum number $j$ that defines the actual number of states at a specific energy.
 
@@ -258,7 +254,7 @@ A summary of what we expect for each number is below.
 - $j$ - from orbital angular momentum number and spin *[Half-Integer]*
 
 
-#### 5.5 Simple Potential Example
+#### Simple Potential Example
 Let's consider a simple case below by calculating the number of states in the $l=0$ and $l=1$ case to see if it makes sense based on the Magic Number shell information we are aware off. 
 
 In the case of the ground shell we just have $l=0$, this means $m_{z}$ can only be $0$, and $m_{s}$ can only be $\pm \frac{1}{2}$. The result is we have two allowed states for the $j=\frac{1}{2}$ case as shown in the figure below.

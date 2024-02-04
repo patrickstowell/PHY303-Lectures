@@ -1,4 +1,4 @@
-## Unit 10 : Nuclear Power
+## Nuclear Power
 
 ### 10.1 Introduction: basic energetics of nuclear power
 If we plot the binding energy per nucleon against the mass number (Figure 1), we find a broad maximum around iron.  This implies that, in principle, it is energetically favourable for elements lighter than iron to fuse and for elements heavier than iron to split into smaller nuclei (by fission or, for nuclei not much heavier than iron, by $α$ decay).  If the elements formed in thermodynamic equilibrium, we would expect the elements around iron to be most abundant, but in nature the temperatures needed for this only occur in the interior of supernova explosions (producing a pronounced “iron peak” in the elemental abundances, see right panel of Figure 1).  

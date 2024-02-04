@@ -1,4 +1,4 @@
-### Unit 9 : Neutron Physics
+### Neutron Physics
 Neutrons are particularly important in nuclear physics because, being uncharged, they see no Coulomb barrier and can be captured by nuclei even at very low energies.  Reactions involving neutrons have many practical applications, most obviously in inducing fission of uranium and plutonium but also in mapping excited states of nuclei, non-destructive assay of materials and production of radionuclides for medical physics and industry.  (These applications are why this section is in Applications of Nuclear Physics, rather than Nuclear Reactions.)
 
 #### 9.1 Neutron Properties
@@ -49,7 +49,7 @@ A small number of heavy even-even isotopes decay by spontaneous fission.  Becaus
 Neutron generators produce neutrons using the reactions 2H(d,n)3He (d-d generator) and 3H(d,n)4He (d-t generator), yielding neutrons of energy 2.5 and 14 MeV respectively.  The generator consists of a very low-power accelerator (typically 90 keV) accelerating deuterium ions which then collide with a metal-hydride target.  The output neutron spectrum is not quite monoenergetic, because of kinematic effects and because the neutrons will scatter before exiting the generator, but is quite sharply peaked at the nominal energy.  The neutrons are emitted fairly isotropically, though the yield and energy spec-trum do depend on the angle to some extent.
 
 Neutron generators are small, portable devices available from a number of commercial suppliers.  Typical neutron yields are 108 – 109 per second, though there are a few models with higher outputs.  One major advantage of neutron generators is that they can be switched off, so transporting them for use in the field, e.g. for well logging, is much safer than transporting an AmBe or 252Cf source.  Some models have built-in moderator so that they produce thermal neutrons directly, but most produce the neutrons at 2.5 or 14 MeV and leave the user to moderate them if desired.
-### 9.2.3 Large-scale facilities
+#### 9.2.3 Large-scale facilities
 Radioactive sources and neutron generators are small-scale, portable sources that are commercially available and can be acquired by individual laboratories or companies.  For really high neutron intensities, it is necessary to make use of large-scale static facilities, typically government-run, and take the experiment to the neutrons rather than vice versa.
 ##### Reactors
 The classic neutron source is the nuclear reactor.  Commercial power reactors are, of course, very carefully shielded to prevent neutrons from escaping, but research reactors used as neutron sources have ports in the shielding to permit neutrons to escape into experimental areas or to allow samples to be inserted into the reactor core for irradiation.  Research reactors can provide neutron fluences of 1012 – 1015 neutrons cm−2 s−1.  The energy spectrum depends on the reactor type: “thermal” reactor types as used for power generation (see Unit 5B) use a moderator to produce a spectrum consisting mainly of thermal neutrons, with a high-energy tail of epithermal and fast neutrons, whereas “fast” reactors do not incorporate moderators and produce fast neutrons with energies around 2 MeV.
@@ -109,7 +109,7 @@ Gas proportional counters can also be made sensitive to neutrons by lining the i
 ##### Scintillators
 Solid neutron-sensitive materials can also be incorporated into scintillators, i.e. materials which respond to the passage of a charged particle by emitting UV or visible light, which is then picked up by photomultiplier tubes.  An example of such a scintillator is europium-doped crystalline LiI (this is very similar to one of the most commonly used scintillating crystals, thallium-doped NaI).  Scintillators are very fast detectors, so particularly useful if a good time resolution is needed for some reason.  Plastic scintillators, which are cheaper but less efficient than crystalline scintillators, can be made neutron-sensitive by doping with boron.
 
-#### Semiconductor detectors
+##### Semiconductor detectors
 Figure 3: basic design of a microstructured semiconductor neutron detector (MSND).Figure by Douglas McGregor, CC-BY-SA 4.0.Solid-state detectors based on semiconductors are very common in particle physics (e.g. the ATLAS inner tracker).  They can be made neutron-sensitive by coating with a neutron-sensitive material, typically 10B or 6LiF.  Their efficiency is maximised by designing the device so as to maximise the surface area in contact with the sensitive material, as shown in figure 3.  The products of the neutron capture escape into the semiconductor, where they create electron-hole pairs, which are then read out.  The main disadvantage of these devices is cost.
 
 :::{figure-md} sdarray
