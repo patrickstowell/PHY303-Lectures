@@ -1,5 +1,4 @@
-
-### Unit 4 : Nuclear Properties
+### Nuclear Properties
 Now that we have our shell model, which describes our observed magic numbers, we can start making predictions for other nuclear properties such as the Nuclear Spin, $I$. This quantity comes from the principle of summing up all the individual Total Angular Momentum numbers $j$ of all the nucleons, doing this separately for neutrons and protons.
 
 However, we can simplify things hugely because the $j$ values are half-integer and in any filled shell, all the nucleons there will pair up as positive-negative pairs and so contribute nothing to the overall total. So, we really only need to worry about the nucleons in the outer shell. If this shell is full, then again the total contribution will be zero, and we have $I=0$. In fact, in general, if we have even N and even Z, then $I=0$ as all nucleons will form spin up-down combinations.
@@ -44,7 +43,7 @@ When considering parity alongside the Nuclear Spin, the nomenclature is to write
 
 When trying to estimate parity, we can simplify things in the same way as we did for nuclear spin. If the nucleons all pair up, then we end up with even parity. If we are left with an unpaired nucleon, then the parity comes from the $l$ value appropriate to the level in which that nucleon sits. So, for instance, returning to our example of O-15 above, the unpaired nucleon sits in the p-level, $l=1$, so the parity of the nucleus is $(-1)^{l}=-1$. This means it has odd parity, and we would write both its spin and parity state as: $I^{\pi}=\frac{1}{2}^{-}$.
 
-#### Shell Challenges
+####  Shell Challenges
 
 So, the shell model gives us a pretty good description of nuclei based on QM principles. It provides a solid basis for understanding the Magic Numbers, Nuclear Spin, and Parity of Nuclei. However, it's worth noting a few remaining issues that can cause problems. This leads to several corrections usually being applied to the potential to better fit observed data.
 

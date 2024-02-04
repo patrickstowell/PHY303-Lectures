@@ -1,5 +1,6 @@
-### Unit 5: Collective Models
+## Collective Models
 
+### 5.1 Introduction
 We saw in the previous unit that while the simple spherical shell model is capable of describing basic properties of nuclei like magic numbers, it fails to capture all features observed in the chart of all nuclei.
 
 The way to deal with this is to use a combination of concepts often referred to as Collective Models. The idea of a collective model is to merge concepts where the behavior of individual nucleons is used, as in the Shell Model, with aspects where the behavior of the nucleus as a coherent single entity is considered.
@@ -14,7 +15,7 @@ The combination of the single-particle and liquid drop models presents very diff
 
 Allowing a nuclear core to be deformed in our model changes the possible Shell Energy Levels, because the Nuclear Potential Well shape is changed for deformed nuclei. This introduces two new types of Collective Modes of Excitation and with them associated energy levels due to (a) Vibration states and (b) rotation (Rotational States). We expect that the allowed energy levels for both of these modes will also be quantized in some way, depending on the shape of the nucleus.
 
-#### Rotational States
+### 5.2 Rotational States
 
 Let's consider the rotational states first. We can start by describing the shape as a revolution around some central point, with Cylindrical Symmetry, and two extreme cases as shown below, following the prolate and oblate structures we saw previously when considering the electric quadrupole moment of nuclei.
 
@@ -108,7 +109,7 @@ $$
 
 As an example, say we know the first excited state of Erbium-164, i.e., $^{164}Er, E(2^{+}) = 91.4 keV$, then using the equation above, we can predict the Rotational Energy States of Erbium for the higher levels $E(4^+), E(6^+), E(8^+)$, etc.
 
-#### Vibrational States
+### 5.3 Vibrational States
 We've discussed rotation states as mentioned above, where the deformation is permanent, and we get energy levels associated with quantized allowed rotations. But in large nuclei, we can also get vibration states in which the nuclear fluid undergoes continuous shape changing or shape oscillations while maintaining constant density. These are the vibration energy states.
 
 ```{note}
@@ -165,7 +166,7 @@ At half-filled shells, we get the extreme, with more likely permanently deformed
 
 So we have seen in this unit again that the nucleus is a complex object. To understand all the energy levels and behaviors, we need a Collective Model that combines the Shell Model with the bulk behavior of nuclear fluid. 
 
-### 5.3 Gamma Decay
+### 5.4 Gamma Decay
 
 Up until now in our examples we've considered the case where protons and neutrons fill up our shells sequentially. The shell model however also predicts excitations when protons or neutrons are pushed up to a higher energy levels. Remember the nucleus wants to naturally go to the state of lowest energy, so these higher energy states will eventually decay down to the lower state again and emit gamma radiation.
 
@@ -213,7 +214,7 @@ When the nucleon undergoes an energy transition, it emits a photon (gamma ray) t
 
 
 
-#### Example: Cobalt-60 Decay
+### 5.5 Example: Cobalt-60 Decay
 As an example for gamma ray decays lets consider Co-60 a very common radio-isotope used in nuclear labs to calibrate detector response as placing it in a gamma spectrometer results in two two very clear gamma ray peaks at 1.1732 MeV and 1.3325 MeV next to one another that can be used to assess detector resolution. Co-60 itself however is primarily a $\beta$ emitter as we see in the figure below. What actually happens during a radioactive decay of $\beta$ is the 99\% of the time it converts into an excited state of Nickel which subsequently emits gamma radiation.
 
 ![Alt text](image-100.png)
