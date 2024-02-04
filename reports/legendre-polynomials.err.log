@@ -1,0 +1,91 @@
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/jupyter_cache/executors/utils.py", line 58, in single_nb_execution
+    executenb(
+  File "/usr/local/lib/python3.11/site-packages/nbclient/client.py", line 1305, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jupyter_core/utils/__init__.py", line 168, in wrapped
+    return loop.run_until_complete(inner)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.11/3.11.7_1/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/nbclient/client.py", line 705, in async_execute
+    await self.async_execute_cell(
+  File "/usr/local/lib/python3.11/site-packages/nbclient/client.py", line 1058, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/usr/local/lib/python3.11/site-packages/nbclient/client.py", line 914, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.special import sph_harm
+import mpl_toolkits.mplot3d.axes3d as axes3d
+import matplotlib.colors as mcolors
+import pandas as pd
+
+l=1
+m=0
+
+thetas = np.linspace(0, np.pi, 40)
+phis = np.linspace(0, 2*np.pi, 40)
+
+(Theta,Phi)=np.meshgrid(thetas,phis) 
+s_harm=sph_harm(m, l, Phi, Theta)
+   
+R = abs(s_harm)
+X = R * np.sin(Theta) * np.cos(Phi)
+Y = R * np.sin(Theta) * np.sin(Phi)
+Z = R * np.cos(Theta)
+
+cmap = plt.get_cmap('jet')
+norm = mcolors.Normalize(vmin=Z.min(), vmax=Z.max())
+
+data = {
+    "x": X.flatten(),
+    "y": Y.flatten(),
+    "z": Z.flatten(),
+    "c": 1.0,
+    "l": l,
+    "m": m
+}
+df = pd.DataFrame(data)
+df["R"] = df.x*df.x + df.y*df.y + df.z * df.z
+
+fig = px.scatter_3d(df, x='x', y='y', z='z',
+              color='R', size_max=5)
+fig.show()
+
+
+
+# fig = plt.figure(figsize=(8,8))
+# ax = fig.add_subplot(1,1,1, projection='3d')
+# ax.plot_surface(X, Y, Z, rstride=1, cstride=1, cmap=plt.get_cmap('jet'),facecolors=cmap(norm(R)),
+#     linewidth=0, antialiased=False, alpha=0.5)
+# plt.title(r'Spherical Harmonics, $Y_l^m(\theta,\phi)$'+r', $l=$'+str(l)+r', $m=$'+str(m))
+# plt.xlabel(r'$x$')
+# plt.ylabel(r'$y$')
+# plt.ylabel(r'$z$')
+
+# plt.show()
+------------------
+
+
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mNameError[0m                                 Traceback (most recent call last)
+Cell [0;32mIn[1], line 36[0m
+[1;32m     33[0m df [38;5;241m=[39m pd[38;5;241m.[39mDataFrame(data)
+[1;32m     34[0m df[[38;5;124m"[39m[38;5;124mR[39m[38;5;124m"[39m] [38;5;241m=[39m df[38;5;241m.[39mx[38;5;241m*[39mdf[38;5;241m.[39mx [38;5;241m+[39m df[38;5;241m.[39my[38;5;241m*[39mdf[38;5;241m.[39my [38;5;241m+[39m df[38;5;241m.[39mz [38;5;241m*[39m df[38;5;241m.[39mz
+[0;32m---> 36[0m fig [38;5;241m=[39m [43mpx[49m[38;5;241m.[39mscatter_3d(df, x[38;5;241m=[39m[38;5;124m'[39m[38;5;124mx[39m[38;5;124m'[39m, y[38;5;241m=[39m[38;5;124m'[39m[38;5;124my[39m[38;5;124m'[39m, z[38;5;241m=[39m[38;5;124m'[39m[38;5;124mz[39m[38;5;124m'[39m,
+[1;32m     37[0m               color[38;5;241m=[39m[38;5;124m'[39m[38;5;124mR[39m[38;5;124m'[39m, size_max[38;5;241m=[39m[38;5;241m5[39m)
+[1;32m     38[0m fig[38;5;241m.[39mshow()
+[1;32m     42[0m [38;5;66;03m# fig = plt.figure(figsize=(8,8))[39;00m
+[1;32m     43[0m [38;5;66;03m# ax = fig.add_subplot(1,1,1, projection='3d')[39;00m
+[1;32m     44[0m [38;5;66;03m# ax.plot_surface(X, Y, Z, rstride=1, cstride=1, cmap=plt.get_cmap('jet'),facecolors=cmap(norm(R)),[39;00m
+[0;32m   (...)[0m
+[1;32m     50[0m 
+[1;32m     51[0m [38;5;66;03m# plt.show()[39;00m
+
+[0;31mNameError[0m: name 'px' is not defined
+
