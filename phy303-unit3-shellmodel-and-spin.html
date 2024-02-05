@@ -426,15 +426,14 @@ document.write(`
 <h2><span class="section-number">3.1. </span>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
 <p>We’ve seen how study of the binding energy curve for nuclei and basic features like the chart of stability has led to an empirical formula for the binding energy and the mass of nuclei through the semi empirical mass formula.</p>
 <p>However notice how this derivation was only possible by merging two different concepts for nuclei. Firstly, regarding the nucleus as a single drop of Nuclear Material which acts as a Collective Body.  Secondly a concept that starts at to look at the quantum behavior of individual nucleons and that they somehow lie in specific (and restricted) Energy Levels. So we have two sorts of model, a Collective Body Model, and an Individual particle Model coming together. They Asymmetry Term and Pairing Term in the SEMF can only be explained assuming this second concept.</p>
-<p>We find evidence not only that we need to account for the preference for pairing and balance between neutrons and protons, but also that specific numerical N and Z combinations have very different properties.</p>
-<p>This results in the observation of Magic Number Nuclei,</p>
+<p>We find evidence not only that we need to account for the preference for pairing and balance between neutrons and protons, but also that specific numerical N and Z combinations have very different properties. This results in the observation of Magic Number Nuclei,</p>
 <div class="math notranslate nohighlight">
 \[
 \bf \textnormal{Magic Nuclei -}~ Z~\textnormal{or}~N=2, 8, 20, 28, 50, 82, 126...
 \]</div>
 <p>These nuclei have particularly stable properties, and mark a transition point for nuclei such that those with <span class="math notranslate nohighlight">\(Z\)</span> or <span class="math notranslate nohighlight">\(N\)</span> below a given Magic Number have very different behavior to those above. This leads to the idea that nucleons in nuclei somehow lie in <strong>Concentric Shells</strong>, analogous (but very different) to the way electrons lie in shells in atoms and similarly that a “filled” outer shell produces a more stable configuration</p>
 <p>This shell model idea is of course tied up with introducing Quantum Mechanics to our nucleus. The basis of QM here as seen before, is that we introduce a nuclear potential well. It is the QM treatment of this Well that will determine (1) the energy levels (shells) that nucleons are allowed to occupy, and (2) how many nucleons can occupy each level.</p>
-<p>As an example the simplest model for the Nuclear Well might be that associated with a Harmonic Oscillator, resulting in equally spaced energy levels throughout the well as shown in <span class="xref myst">Fig. 7</span></p>
+<p>As an example the simplest model for the Nuclear Well might be that associated with a Harmonic Oscillator, resulting in equally spaced energy levels throughout the well as shown in <code class="xref std std-numref docutils literal notranslate"><span class="pre">harmonics</span></code>.</p>
 <figure class="align-default" id="harmonics">
 <a class="reference internal image-reference" href="_images/image-19.png"><img alt="Harmonic oscillator diagram" src="_images/image-19.png" style="width: 70%;" /></a>
 <figcaption>
@@ -442,18 +441,18 @@ document.write(`
 </figcaption>
 </figure>
 <p>But first notice how off the idea is. In atomic physics the well that binds the electrons is the positively charged nucleus. But in this case, the nucleons are somehow orbiting in a potential of their own making. Can this really work? The nucleons are tightly bound in the nucleus with a radius much smaller than the case for electron orbitals. Why don’t they collide if they are orbiting in shells?</p>
-<p>This looks like big step to take away from our SEMF so first let’s start by looking at what real evidence we have for a shell-like structure anyway. In fact we can list 8 things starting with a few charts we have already covered.</p>
+<p>This looks like big step to take away from our SEMF so first let’s start by looking at what real evidence we have for a shell-like structure anyway. In fact we can list a range of observations starting with a few charts we have already covered.</p>
 </section>
 <section id="evidence-for-shells">
 <h2><span class="section-number">3.2. </span>Evidence for Shells<a class="headerlink" href="#evidence-for-shells" title="Permalink to this heading">#</a></h2>
 <section id="binding-energy-shape">
 <h3><span class="section-number">3.2.1. </span>Binding Energy Shape<a class="headerlink" href="#binding-energy-shape" title="Permalink to this heading">#</a></h3>
-<p>The SEMF does a good job on the basic shape, but a closer look reveals certain nuclei have much higher, or lower B/A than predicted even after our asymmetry and pairing terms are included. These are most obvious at low A where peaks appear in multiples of 4 nucleons (e.g. 12C, 18O).</p>
-<p>In general nuclei with Magic Number N and/or Z have a higher B/A indicating they are more tightly bound.</p>
+<p>The SEMF does a good job on the basic shape, but a closer look reveals certain nuclei have much higher, or lower B/A than predicted even after our asymmetry and pairing terms are included. These are most obvious at low A where peaks appear in multiples of four nucleons (e.g. 12C, 18O).</p>
+<p>In general we see nuclei with Magic Number N and/or Z have a higher B/A indicating they are more tightly bound.</p>
 <figure class="align-default" id="id1">
 <a class="reference internal image-reference" href="_images/semf_goodness_withpairing_ratio.png"><img alt="SEMF Model comparison to data as a ratio" src="_images/semf_goodness_withpairing_ratio.png" style="width: 70%;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 3.2 </span><span class="caption-text">Ratio of the predictions of the liquid drop model against observations as a function of atomic mass number. We see large deviations at low <span class="math notranslate nohighlight">\(A\)</span> with an almost saw tooth pattern appear at higher <span class="math notranslate nohighlight">\(A\)</span>.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 3.2 </span><span class="caption-text">Ratio of the predictions of the liquid drop model against observations as a function of atomic mass number. We see large deviations at low <span class="math notranslate nohighlight">\(A\)</span> with an almost saw tooth pattern appears at higher <span class="math notranslate nohighlight">\(A\)</span>.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -466,25 +465,27 @@ document.write(`
 \[
 M(A,Z) = aA + bZ + cZ^{2}
 \]</div>
-<p>where <span class="math notranslate nohighlight">\(a\)</span>, <span class="math notranslate nohighlight">\(b\)</span>, and <span class="math notranslate nohighlight">\(c\)</span> are free parameters that are nuclei dependent. We can determine the minima by finding the case where
-$<span class="math notranslate nohighlight">\(
+<p>where <span class="math notranslate nohighlight">\(a\)</span>, <span class="math notranslate nohighlight">\(b\)</span>, and <span class="math notranslate nohighlight">\(c\)</span> are free parameters that are nuclei dependent. We can determine the minima by finding the case where</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
 \frac{dM(A,Z)}{dZ} \rightarrow 0\\
-\)</span>$</p>
-<p>Whatever the nearest integer value of Z is at the minimum will be the isotope we are after. Notice hw the curves are symmetric about the minimum. This leads to the concept of <strong>Mirror Nuclei</strong>. This refers to a pair of nuclei that have the same <span class="math notranslate nohighlight">\(A\)</span> but where the <span class="math notranslate nohighlight">\(N\)</span> and <span class="math notranslate nohighlight">\(Z\)</span> values are reversed. An example is nitrogen-15 (7 protons and 8 neutrons) and oxygen-15 (8 protons and 7 neutrons).</p>
+\end{split}\]</div>
+<p>Whatever the nearest integer value of Z is at the minimum will be the isotope we are after. Notice how the curves are symmetric about the minimum. This leads to the concept of <strong>Mirror Nuclei</strong>. This refers to a pair of nuclei that have the same <span class="math notranslate nohighlight">\(A\)</span> but where the <span class="math notranslate nohighlight">\(N\)</span> and <span class="math notranslate nohighlight">\(Z\)</span> values are reversed. An example is nitrogen-15 (7 protons and 8 neutrons) and oxygen-15 (8 protons and 7 neutrons).</p>
 <p>The nuclear properties of a given Mirror Nuclei pair like this are similar. The chemical properties of the associated neutral atoms (dictated by the electrons determined by the number of protons only) will be very different of course.</p>
 </section>
 <section id="the-relative-abundance-of-nuclei-in-nature">
 <h3><span class="section-number">3.2.3. </span>The Relative Abundance of Nuclei in Nature<a class="headerlink" href="#the-relative-abundance-of-nuclei-in-nature" title="Permalink to this heading">#</a></h3>
-<p>A very important piece of evidence for the Shell Model comes from a plot of the Relative Abundance of nuclei in nature vs A. Again we see peaks of high abundance for nuclei with Magic Number values of N, Z, or both. There are a larger number of isotopes and isotopes at particular values of Z, N.</p>
-<p><strong>The Magic Numbers</strong>
-$<span class="math notranslate nohighlight">\(
+<p>Another strong piece of evidence for the Shell Model comes from a plot of the Relative Abundance of nuclei in nature vs A. Again we see peaks of high abundance for nuclei with Magic Number values of N, Z, or both. There are a larger number of isotopes and isotones at particular values of Z, N.</p>
+<p><strong>The Magic Numbers</strong></p>
+<div class="math notranslate nohighlight">
+\[
 \bf 2, 8, (14), 20, 28, 50, 82, 126
-\)</span>$</p>
+\]</div>
 <p><img alt="Alt text" src="_images/image-78.png" /></p>
 </section>
 <section id="the-neutron-binding-energy">
 <h3><span class="section-number">3.2.4. </span>The Neutron Binding Energy<a class="headerlink" href="#the-neutron-binding-energy" title="Permalink to this heading">#</a></h3>
-<p>Apart from the basic binding energy curve, we can look at for instance, the energy required to remove a single neutron from the nucleus vs the neutron number. The plot below shows by how much this differs from the SEMF prediction in MeV. What we see are  discontinuities up to 2 MeV at the Magic Numbers. This dependence of the energy to remove the outer neutron is strong evidence for a shell structure. A neutron just above a closed shell looks to be less tightly bound, reminiscent of the alkali metals in the chemical shell structure. This behavior is  believed to be due to Shell Closures - it is harder to remove a neutron from a closed shell.</p>
+<p>Apart from the basic binding energy curve, we can look at for instance, the energy required to remove a single neutron from the nucleus vs the neutron number. The plot below shows by how much this differs from the SEMF prediction in MeV. What we see are  discontinuities up to 2 MeV at the Magic Numbers. This dependence of the energy to remove the outer neutron is strong evidence for a shell structure. A neutron just above a closed shell looks to be less tightly bound, reminiscent of the alkali metals in the chemical shell structure. This behavior is  believed to be due to <strong>Shell Closures</strong> - it is harder to remove a neutron from a closed shell.</p>
 <p><img alt="Alt text" src="_images/image-79.png" /></p>
 </section>
 <section id="neutron-capture-energy">
@@ -498,8 +499,8 @@ $<span class="math notranslate nohighlight">\(
 </section>
 <section id="electric-quadrupole-moments">
 <h3><span class="section-number">3.2.6. </span>Electric Quadrupole Moments<a class="headerlink" href="#electric-quadrupole-moments" title="Permalink to this heading">#</a></h3>
-<p>As nuclei are charged then if this charge is not spherically distributed we might expect to measure a non-zero Electric Quadrupole Moment (we cover EQM later). For a shell model those nuclei with closed shells should be spherically symmetric and have no EQM. For nuclei that do not have a closed shell we indeed see large EQM.</p>
-<p>In the plot below the EQM have been normalized to the size and charge of each nucleus and these so called Reduced Quadrupole Moments are plotted agains the number of protons or neutrons - depending upon which is odd. Some EQM are very large, suggesting shapes which are strongly non-spherical.</p>
+<p>As nuclei are charged then if this charge is not spherically distributed we might expect to measure a non-zero Electric Quadrupole Moment (we cover EQM later). For a shell model those nuclei with closed shells should be spherically symmetric and have no EQM. For nuclei that do not have a closed shell we indeed see large EQMs.</p>
+<p>In the plot below the EQM have been normalized to the size and charge of each nucleus and these so called Reduced Quadrupole Moments are plotted against the number of protons or neutrons - depending upon which is odd. Some EQM are very large, suggesting shapes which are strongly non-spherical.</p>
 <p><img alt="Alt text" src="_images/image-81.png" /></p>
 </section>
 <section id="nuclear-excitation-energy">
@@ -537,7 +538,7 @@ $<span class="math notranslate nohighlight">\(
 \[
 \frac{-\hbar^{2}}{2m} \nabla^{2} \psi(r,\theta,\phi) + V(r,\theta,\phi) \psi(r,\theta,\phi) = E \psi(r,\theta,\phi)
 \]</div>
-<p>For a given nucleon, the forces acting on it by all the other nucleons in thee nucleus can be presented to first approximation by an average potential <span class="math notranslate nohighlight">\(V(r)\)</span> which only depends on distance from the core. We call this the Shell Theory Potential.</p>
+<p>For a given nucleon, the forces acting on it by all the other nucleons in the nucleus can be presented to first approximation by an average potential <span class="math notranslate nohighlight">\(V(r)\)</span> which only depends on distance from the core. We call this the <strong>Shell Theory Potential</strong>.</p>
 <p>The origin of this potential <span class="math notranslate nohighlight">\(V(r)\)</span> is in the force that holds individual nucleons together, the Nuclear Force or N-N potential. So it is reasonable to assume that the form and depth of <span class="math notranslate nohighlight">\(V(r)\)</span> should reflect the overall density distribution of the nucleons in the nucleus.</p>
 <p>Right now we take the mass distribution given previously from the Saxon Woods</p>
 <div class="math notranslate nohighlight">
@@ -550,14 +551,14 @@ $<span class="math notranslate nohighlight">\(
 V(r) = \frac{-V_{0}}{1+\textnormal{exp}(\frac{r-b}{a})}
 \]</div>
 <p><img alt="Alt text" src="_images/image-31.png" /></p>
-<p>The basis of this nuclear potential shape, for instance its spatial radius, is the force between nucleons, the Nuclear Force, that keeps nucleons bound together. The “average” potential has a radius of the nucleus (<span class="math notranslate nohighlight">\(A^{1/3}\)</span>), which is much bigger in general than the range of the Nuclear Force, about <span class="math notranslate nohighlight">\(1.4~\textnormal{fm}\)</span>. Anyway for now we will just start to describe the QM result, the Shell Model in more detail, and how this helps explain many of the observed properties of Nuclei. This gives us our <strong>Average Potential</strong> with radius of the nucleus (<span class="math notranslate nohighlight">\(A^{1/3}\)</span>), much bigger than the range of the Nuclear Force (about 1.4 or so).</p>
-<p>In the shell model now since we are assuming spherical symmetry in our potential and the nucleus, we can simplify the spherical coordinates, splitting <span class="math notranslate nohighlight">\(\psi(r,\theta,\phi) = \Psi(r)\Theta(\theta)\Phi(\phi)\)</span>, means we can consider different possible spherical harmonics.</p>
+<p>The basis of this nuclear potential shape, for instance its spatial radius, is the force between nucleons, the Nuclear Force, that keeps nucleons bound together. This gives us our <strong>Average Potential</strong> with radius of the nucleus (<span class="math notranslate nohighlight">\(A^{1/3}\)</span>), much bigger than the range of the Nuclear Force (about 1.4 or so).  Anyway for now we will just start to describe the QM result, the Shell Model in more detail, and how this helps explain many of the observed properties of Nuclei.</p>
+<p>In the shell model now since we are assuming spherical symmetry in our potential and the nucleus, we can simplify the spherical coordinates, splitting <span class="math notranslate nohighlight">\(\psi(r,\theta,\phi) = \Psi(r)\Theta(\theta)\Phi(\phi)\)</span>.</p>
 <div class="math notranslate nohighlight">
 \[
 \frac{-\hbar^{2}}{2m} \frac{d^{2}\Psi(r)}{dr^{2}} + V(r) \Psi(r) = E \Psi(r)
 \]</div>
 <p>We will avoid fully deriving this for now as the focus on this course is the implications that a full QM approach has on the behavior of our nucleons.</p>
-<p>A Major point is to realise that although Nuclei are composed of Nucleons they largely act as an isolated single entity. In particular they have a well defined Total Angular Momentum called Nuclear Spin, <span class="math notranslate nohighlight">\(I\)</span>. Nucleons themsleves also have Angular Momentum (<span class="math notranslate nohighlight">\(l\)</span>) and Intrinsic Spin (<span class="math notranslate nohighlight">\(s\)</span>). The vital point in our QM shell model is that the <span class="math notranslate nohighlight">\(l\)</span> and <span class="math notranslate nohighlight">\(s\)</span> of all the nucleons together determines the Total Nuclear Spin <span class="math notranslate nohighlight">\(I\)</span> of a nucleus.</p>
+<p>A major point is to realise that although nuclei are composed of nucleons they largely act as an isolated single entity. In particular they have a well defined Total Angular Momentum called Nuclear Spin, <span class="math notranslate nohighlight">\(I\)</span>. Nucleons themselves also have Angular Momentum (<span class="math notranslate nohighlight">\(l\)</span>) and Intrinsic Spin (<span class="math notranslate nohighlight">\(s\)</span>). The vital point in our QM shell model is that the <span class="math notranslate nohighlight">\(l\)</span> and <span class="math notranslate nohighlight">\(s\)</span> of all the nucleons together determines the Total Nuclear Spin <span class="math notranslate nohighlight">\(I\)</span> of a nucleus.</p>
 <p>The result of treating the nucleus in this way we will see is the ability to now predict</p>
 <ul class="simple">
 <li><p>Nuclear Magic Numbers</p></li>
@@ -575,10 +576,11 @@ V(r) = \frac{-V_{0}}{1+\textnormal{exp}(\frac{r-b}{a})}
 <section id="shell-model-quantum-mechanics">
 <h2><span class="section-number">3.4. </span>Shell Model Quantum Mechanics<a class="headerlink" href="#shell-model-quantum-mechanics" title="Permalink to this heading">#</a></h2>
 <p>We start by considering the QM behavior of an individual nucleon (p or n) in the Central Potential Well of the nucleus. When we invoke QM, by applying the Schrödinger equation to solve the three dimensional system we end up with an Angular Momentum Quantum Number, <span class="math notranslate nohighlight">\(l\)</span>, that tells us about the spatial behavior of wave function of each nucleon and defines the energy levels oof the nucleons as a result. In our simple central potential model all nucleons with the same <span class="math notranslate nohighlight">\(l\)</span> have the same energy but we will see that it is a new quantum number <span class="math notranslate nohighlight">\(j\)</span> that defines the actual number of states at a specific energy.</p>
-<p>The magnitude of <span class="math notranslate nohighlight">\(l\)</span> is given by
-$<span class="math notranslate nohighlight">\(
+<p>The magnitude of <span class="math notranslate nohighlight">\(l\)</span> is given by</p>
+<div class="math notranslate nohighlight">
+\[
 \langle l^{2} \rangle  = \hbar^{2}(l+1)
-\)</span>$</p>
+\]</div>
 <p>The angular motion is a constant of the motion and the uncertainty principle gives us certain allowed “substates” of <span class="math notranslate nohighlight">\(l\)</span> which we will label <span class="math notranslate nohighlight">\(m_{z}\)</span>.</p>
 <div class="math notranslate nohighlight">
 \[
@@ -609,13 +611,26 @@ $<span class="math notranslate nohighlight">\(
 <section id="simple-potential-example">
 <h3><span class="section-number">3.4.1. </span>Simple Potential Example<a class="headerlink" href="#simple-potential-example" title="Permalink to this heading">#</a></h3>
 <p>Let’s consider a simple case below by calculating the number of states in the <span class="math notranslate nohighlight">\(l=0\)</span> and <span class="math notranslate nohighlight">\(l=1\)</span> case to see if it makes sense based on the Magic Number shell information we are aware off.</p>
-<p>In the case of the ground shell we just have <span class="math notranslate nohighlight">\(l=0\)</span>, this means <span class="math notranslate nohighlight">\(m_{z}\)</span> can only be <span class="math notranslate nohighlight">\(0\)</span>, and <span class="math notranslate nohighlight">\(m_{s}\)</span> can only be <span class="math notranslate nohighlight">\(\pm \frac{1}{2}\)</span>. The result is we have two allowed states for the <span class="math notranslate nohighlight">\(j=\frac{1}{2}\)</span> case as shown in the figure below.</p>
-<p>Now as we increase the possible <span class="math notranslate nohighlight">\(l\)</span> state it is the <span class="math notranslate nohighlight">\(j\)</span> value for a specific shell that is going to tell us how to fill up the Shell Energy Levels.  For instance, in the new example shown below we choose level <span class="math notranslate nohighlight">\(l=1\)</span> and we find we are allowed total <span class="math notranslate nohighlight">\(j\)</span> values = <span class="math notranslate nohighlight">\(\pm\frac{1}{2}\)</span> and <span class="math notranslate nohighlight">\(\pm\frac{3}{2}\)</span>. This is because in our new shell we have the two similar <span class="math notranslate nohighlight">\(m_{z}=0\)</span> cases as before (states 5 and 6), but also four new ones, corresponding to the case where <span class="math notranslate nohighlight">\(m_{z}=1\)</span>.</p>
-<p>Each nucleon must have its own allowed state of <span class="math notranslate nohighlight">\(m_z\)</span> and <span class="math notranslate nohighlight">\(m_s\)</span> when considering possible values of <span class="math notranslate nohighlight">\(j\)</span>. As shown in the figure  this results in six possible states <span class="math notranslate nohighlight">\(3/2, 1/2, -1/2, -3/2\)</span> for <span class="math notranslate nohighlight">\(j=3/2\)</span>, and <span class="math notranslate nohighlight">\(1/2, -1/2\)</span> for <span class="math notranslate nohighlight">\(j=1/2\)</span>. he cases where the angular momentum is parallel or anti-parallel are sometimes referred to as <em>stretched</em> and <em>jacknife</em> states respectively.</p>
-<p>Similarly if we repeated the same process for <span class="math notranslate nohighlight">\(l=2\)</span>, we would have possible <span class="math notranslate nohighlight">\(j\)</span> values of <span class="math notranslate nohighlight">\(\frac{5}{2},~\frac{3}{2},~\frac{1}{2}\)</span> implying a total of 10 nucleon states allowed. The sequence for our simple model can be expressed as
-$<span class="math notranslate nohighlight">\(
+<p>In the case of the ground shell we just have <span class="math notranslate nohighlight">\(l=0\)</span>, this means <span class="math notranslate nohighlight">\(m_{z}\)</span> can only be <span class="math notranslate nohighlight">\(0\)</span>, and <span class="math notranslate nohighlight">\(m_{s}\)</span> can only be <span class="math notranslate nohighlight">\(\pm \frac{1}{2}\)</span>. The result is we have two allowed states for the <span class="math notranslate nohighlight">\(j=\frac{1}{2}\)</span> case as shown in <code class="xref std std-numref docutils literal notranslate"><span class="pre">shellfillinga</span></code></p>
+<figure class="align-default" id="shellfillinga">
+<a class="reference internal image-reference" href="_images/image-88.png"><img alt="Rutherford Form" src="_images/image-88.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 3.3 </span><span class="caption-text">Diagram shell filling in a simple spherical model for the lowest energy shell.</span><a class="headerlink" href="#shellfillinga" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Now as we increase the possible <span class="math notranslate nohighlight">\(l\)</span> state it is the <span class="math notranslate nohighlight">\(j\)</span> value for a specific shell that is going to tell us how to fill up the Shell Energy Levels.  For instance, in the new example shown below we choose level <span class="math notranslate nohighlight">\(l=1\)</span> as shown in <code class="xref std std-numref docutils literal notranslate"><span class="pre">shellfillingb</span></code> we find we are allowed total <span class="math notranslate nohighlight">\(j\)</span> values = <span class="math notranslate nohighlight">\(\pm\frac{1}{2}\)</span> and <span class="math notranslate nohighlight">\(\pm\frac{3}{2}\)</span>. This is because in our new shell we have the two similar <span class="math notranslate nohighlight">\(m_{z}=0\)</span> cases as before (states 5 and 6), but also four new ones, corresponding to the case where <span class="math notranslate nohighlight">\(m_{z}=1\)</span>.</p>
+<figure class="align-default" id="id2">
+<a class="reference internal image-reference" href="_images/image-89.png"><img alt="Rutherford Form" src="_images/image-89.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 3.4 </span><span class="caption-text">Diagram shell filling in a simple spherical model for the lowest energy shell.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Each nucleon must have its own allowed state of <span class="math notranslate nohighlight">\(m_z\)</span> and <span class="math notranslate nohighlight">\(m_s\)</span> when considering possible values of <span class="math notranslate nohighlight">\(j\)</span>. As shown in the figure  this results in six possible states <span class="math notranslate nohighlight">\(3/2, 1/2, -1/2, -3/2\)</span> for <span class="math notranslate nohighlight">\(j=3/2\)</span>, and <span class="math notranslate nohighlight">\(1/2, -1/2\)</span> for <span class="math notranslate nohighlight">\(j=1/2\)</span>. The cases where the angular momentum is parallel or anti-parallel are sometimes referred to as <em>stretched</em> and <em>jacknife</em> states respectively.</p>
+<p>Similarly if we repeated the same process for <span class="math notranslate nohighlight">\(l=2\)</span>, we would have possible <span class="math notranslate nohighlight">\(j\)</span> values of <span class="math notranslate nohighlight">\(\frac{5}{2},~\frac{3}{2},~\frac{1}{2}\)</span> implying a total of 10 nucleon states allowed. The sequence for our simple model can be expressed as</p>
+<div class="math notranslate nohighlight">
+\[
 n_{\textnormal{states}} = 2(2l+1)
-\)</span>$</p>
+\]</div>
 <p>It is importtant to remember when calculating these state that protons and neutrons are counted seperately here. So for intance the <span class="math notranslate nohighlight">\(l=2\)</span> level can have up to 10 protons <strong>AND</strong> 10 neutrons inside the shell.</p>
 </section>
 </section>
@@ -633,7 +648,6 @@ n_{\textnormal{states}} = 2(2l+1)
 <li><p>For <span class="math notranslate nohighlight">\(l=1\)</span> we expect <span class="math notranslate nohighlight">\(2(2\times 3 + 1)=10\)</span> states.</p></li>
 </ul>
 <p>We expect to fill up our shells in terms of increasing energy. So based on this very simple model we would expect the first shell to close after 2 nucleons, and the second after 8. It gets a little bit more complex after that as the energy gaps of the principal quantum states <span class="math notranslate nohighlight">\(n\)</span> start to overlap with the angular momentum splittings.</p>
-<p><img alt="Alt text" src="_images/image-92.png" /></p>
 <p>We find as our shell closures:</p>
 <div class="math notranslate nohighlight">
 \[

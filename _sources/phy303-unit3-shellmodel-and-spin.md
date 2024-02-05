@@ -5,9 +5,7 @@ We've seen how study of the binding energy curve for nuclei and basic features l
 
 However notice how this derivation was only possible by merging two different concepts for nuclei. Firstly, regarding the nucleus as a single drop of Nuclear Material which acts as a Collective Body.  Secondly a concept that starts at to look at the quantum behavior of individual nucleons and that they somehow lie in specific (and restricted) Energy Levels. So we have two sorts of model, a Collective Body Model, and an Individual particle Model coming together. They Asymmetry Term and Pairing Term in the SEMF can only be explained assuming this second concept.
 
-We find evidence not only that we need to account for the preference for pairing and balance between neutrons and protons, but also that specific numerical N and Z combinations have very different properties.
-
-This results in the observation of Magic Number Nuclei, 
+We find evidence not only that we need to account for the preference for pairing and balance between neutrons and protons, but also that specific numerical N and Z combinations have very different properties. This results in the observation of Magic Number Nuclei, 
 
 $$
 \bf \textnormal{Magic Nuclei -}~ Z~\textnormal{or}~N=2, 8, 20, 28, 50, 82, 126...
@@ -17,7 +15,7 @@ These nuclei have particularly stable properties, and mark a transition point fo
 
 This shell model idea is of course tied up with introducing Quantum Mechanics to our nucleus. The basis of QM here as seen before, is that we introduce a nuclear potential well. It is the QM treatment of this Well that will determine (1) the energy levels (shells) that nucleons are allowed to occupy, and (2) how many nucleons can occupy each level.
 
-As an example the simplest model for the Nuclear Well might be that associated with a Harmonic Oscillator, resulting in equally spaced energy levels throughout the well as shown in [Fig. 7](harmonics)
+As an example the simplest model for the Nuclear Well might be that associated with a Harmonic Oscillator, resulting in equally spaced energy levels throughout the well as shown in {numref}`harmonics`.
 
 :::{figure-md} harmonics
 <img src='image-19.png' width="70%" alt="Harmonic oscillator diagram">
@@ -28,20 +26,20 @@ Reminder of harmonic oscillator definition. A potential well results in only dis
 
 But first notice how off the idea is. In atomic physics the well that binds the electrons is the positively charged nucleus. But in this case, the nucleons are somehow orbiting in a potential of their own making. Can this really work? The nucleons are tightly bound in the nucleus with a radius much smaller than the case for electron orbitals. Why don't they collide if they are orbiting in shells? 
 
-This looks like big step to take away from our SEMF so first let's start by looking at what real evidence we have for a shell-like structure anyway. In fact we can list 8 things starting with a few charts we have already covered.
+This looks like big step to take away from our SEMF so first let's start by looking at what real evidence we have for a shell-like structure anyway. In fact we can list a range of observations starting with a few charts we have already covered.
 
 
 ### Evidence for Shells
 
 ##### Binding Energy Shape
-The SEMF does a good job on the basic shape, but a closer look reveals certain nuclei have much higher, or lower B/A than predicted even after our asymmetry and pairing terms are included. These are most obvious at low A where peaks appear in multiples of 4 nucleons (e.g. 12C, 18O).
+The SEMF does a good job on the basic shape, but a closer look reveals certain nuclei have much higher, or lower B/A than predicted even after our asymmetry and pairing terms are included. These are most obvious at low A where peaks appear in multiples of four nucleons (e.g. 12C, 18O).
 
-In general nuclei with Magic Number N and/or Z have a higher B/A indicating they are more tightly bound.
+In general we see nuclei with Magic Number N and/or Z have a higher B/A indicating they are more tightly bound.
 
 :::{figure-md} harmonics
 <img src='figures/semf_goodness_withpairing_ratio.png' width="70%" alt="SEMF Model comparison to data as a ratio">
 
-Ratio of the predictions of the liquid drop model against observations as a function of atomic mass number. We see large deviations at low $A$ with an almost saw tooth pattern appear at higher $A$.
+Ratio of the predictions of the liquid drop model against observations as a function of atomic mass number. We see large deviations at low $A$ with an almost saw tooth pattern appears at higher $A$.
 :::
 
 
@@ -55,21 +53,24 @@ Based on this we can make a prediction of which isotope of the given A is most s
 $$
 M(A,Z) = aA + bZ + cZ^{2}
 $$
+
 where $a$, $b$, and $c$ are free parameters that are nuclei dependent. We can determine the minima by finding the case where
+
 $$
 \frac{dM(A,Z)}{dZ} \rightarrow 0\\
 $$
 
-Whatever the nearest integer value of Z is at the minimum will be the isotope we are after. Notice hw the curves are symmetric about the minimum. This leads to the concept of **Mirror Nuclei**. This refers to a pair of nuclei that have the same $A$ but where the $N$ and $Z$ values are reversed. An example is nitrogen-15 (7 protons and 8 neutrons) and oxygen-15 (8 protons and 7 neutrons).
+Whatever the nearest integer value of Z is at the minimum will be the isotope we are after. Notice how the curves are symmetric about the minimum. This leads to the concept of **Mirror Nuclei**. This refers to a pair of nuclei that have the same $A$ but where the $N$ and $Z$ values are reversed. An example is nitrogen-15 (7 protons and 8 neutrons) and oxygen-15 (8 protons and 7 neutrons).
 
 The nuclear properties of a given Mirror Nuclei pair like this are similar. The chemical properties of the associated neutral atoms (dictated by the electrons determined by the number of protons only) will be very different of course.
 
 
 ##### The Relative Abundance of Nuclei in Nature
 
-A very important piece of evidence for the Shell Model comes from a plot of the Relative Abundance of nuclei in nature vs A. Again we see peaks of high abundance for nuclei with Magic Number values of N, Z, or both. There are a larger number of isotopes and isotopes at particular values of Z, N.
+Another strong piece of evidence for the Shell Model comes from a plot of the Relative Abundance of nuclei in nature vs A. Again we see peaks of high abundance for nuclei with Magic Number values of N, Z, or both. There are a larger number of isotopes and isotones at particular values of Z, N.
 
 **The Magic Numbers**
+
 $$
 \bf 2, 8, (14), 20, 28, 50, 82, 126
 $$
@@ -78,7 +79,7 @@ $$
 
 ##### The Neutron Binding Energy
 
-Apart from the basic binding energy curve, we can look at for instance, the energy required to remove a single neutron from the nucleus vs the neutron number. The plot below shows by how much this differs from the SEMF prediction in MeV. What we see are  discontinuities up to 2 MeV at the Magic Numbers. This dependence of the energy to remove the outer neutron is strong evidence for a shell structure. A neutron just above a closed shell looks to be less tightly bound, reminiscent of the alkali metals in the chemical shell structure. This behavior is  believed to be due to Shell Closures - it is harder to remove a neutron from a closed shell.
+Apart from the basic binding energy curve, we can look at for instance, the energy required to remove a single neutron from the nucleus vs the neutron number. The plot below shows by how much this differs from the SEMF prediction in MeV. What we see are  discontinuities up to 2 MeV at the Magic Numbers. This dependence of the energy to remove the outer neutron is strong evidence for a shell structure. A neutron just above a closed shell looks to be less tightly bound, reminiscent of the alkali metals in the chemical shell structure. This behavior is  believed to be due to **Shell Closures** - it is harder to remove a neutron from a closed shell.
 
 ![Alt text](image-79.png)
 
@@ -95,9 +96,9 @@ Note how the cross section is highest for nuclei well away from the Magic Number
 
 ##### Electric Quadrupole Moments
 
-As nuclei are charged then if this charge is not spherically distributed we might expect to measure a non-zero Electric Quadrupole Moment (we cover EQM later). For a shell model those nuclei with closed shells should be spherically symmetric and have no EQM. For nuclei that do not have a closed shell we indeed see large EQM.
+As nuclei are charged then if this charge is not spherically distributed we might expect to measure a non-zero Electric Quadrupole Moment (we cover EQM later). For a shell model those nuclei with closed shells should be spherically symmetric and have no EQM. For nuclei that do not have a closed shell we indeed see large EQMs.
 
-In the plot below the EQM have been normalized to the size and charge of each nucleus and these so called Reduced Quadrupole Moments are plotted agains the number of protons or neutrons - depending upon which is odd. Some EQM are very large, suggesting shapes which are strongly non-spherical.
+In the plot below the EQM have been normalized to the size and charge of each nucleus and these so called Reduced Quadrupole Moments are plotted against the number of protons or neutrons - depending upon which is odd. Some EQM are very large, suggesting shapes which are strongly non-spherical.
 
 
 
@@ -153,7 +154,7 @@ $$
 \frac{-\hbar^{2}}{2m} \nabla^{2} \psi(r,\theta,\phi) + V(r,\theta,\phi) \psi(r,\theta,\phi) = E \psi(r,\theta,\phi)
 $$
 
-For a given nucleon, the forces acting on it by all the other nucleons in thee nucleus can be presented to first approximation by an average potential $V(r)$ which only depends on distance from the core. We call this the Shell Theory Potential.
+For a given nucleon, the forces acting on it by all the other nucleons in the nucleus can be presented to first approximation by an average potential $V(r)$ which only depends on distance from the core. We call this the **Shell Theory Potential**.
 
 
 The origin of this potential $V(r)$ is in the force that holds individual nucleons together, the Nuclear Force or N-N potential. So it is reasonable to assume that the form and depth of $V(r)$ should reflect the overall density distribution of the nucleons in the nucleus.
@@ -176,9 +177,9 @@ $$
 ![Alt text](image-31.png)
 
 
-The basis of this nuclear potential shape, for instance its spatial radius, is the force between nucleons, the Nuclear Force, that keeps nucleons bound together. The "average" potential has a radius of the nucleus ($A^{1/3}$), which is much bigger in general than the range of the Nuclear Force, about $1.4~\textnormal{fm}$. Anyway for now we will just start to describe the QM result, the Shell Model in more detail, and how this helps explain many of the observed properties of Nuclei. This gives us our **Average Potential** with radius of the nucleus ($A^{1/3}$), much bigger than the range of the Nuclear Force (about 1.4 or so). 
+The basis of this nuclear potential shape, for instance its spatial radius, is the force between nucleons, the Nuclear Force, that keeps nucleons bound together. This gives us our **Average Potential** with radius of the nucleus ($A^{1/3}$), much bigger than the range of the Nuclear Force (about 1.4 or so).  Anyway for now we will just start to describe the QM result, the Shell Model in more detail, and how this helps explain many of the observed properties of Nuclei. 
 
-In the shell model now since we are assuming spherical symmetry in our potential and the nucleus, we can simplify the spherical coordinates, splitting $\psi(r,\theta,\phi) = \Psi(r)\Theta(\theta)\Phi(\phi)$, means we can consider different possible spherical harmonics.
+In the shell model now since we are assuming spherical symmetry in our potential and the nucleus, we can simplify the spherical coordinates, splitting $\psi(r,\theta,\phi) = \Psi(r)\Theta(\theta)\Phi(\phi)$.
 
 $$
 \frac{-\hbar^{2}}{2m} \frac{d^{2}\Psi(r)}{dr^{2}} + V(r) \Psi(r) = E \Psi(r)
@@ -187,7 +188,7 @@ $$
 We will avoid fully deriving this for now as the focus on this course is the implications that a full QM approach has on the behavior of our nucleons.
 
 
-A Major point is to realise that although Nuclei are composed of Nucleons they largely act as an isolated single entity. In particular they have a well defined Total Angular Momentum called Nuclear Spin, $I$. Nucleons themsleves also have Angular Momentum ($l$) and Intrinsic Spin ($s$). The vital point in our QM shell model is that the $l$ and $s$ of all the nucleons together determines the Total Nuclear Spin $I$ of a nucleus.
+A major point is to realise that although nuclei are composed of nucleons they largely act as an isolated single entity. In particular they have a well defined Total Angular Momentum called Nuclear Spin, $I$. Nucleons themselves also have Angular Momentum ($l$) and Intrinsic Spin ($s$). The vital point in our QM shell model is that the $l$ and $s$ of all the nucleons together determines the Total Nuclear Spin $I$ of a nucleus.
 
 The result of treating the nucleus in this way we will see is the ability to now predict
 - Nuclear Magic Numbers
@@ -207,6 +208,7 @@ The key to this is to work out the Shell Energy Levels and then determine how ma
 We start by considering the QM behavior of an individual nucleon (p or n) in the Central Potential Well of the nucleus. When we invoke QM, by applying the Schrödinger equation to solve the three dimensional system we end up with an Angular Momentum Quantum Number, $l$, that tells us about the spatial behavior of wave function of each nucleon and defines the energy levels oof the nucleons as a result. In our simple central potential model all nucleons with the same $l$ have the same energy but we will see that it is a new quantum number $j$ that defines the actual number of states at a specific energy.
 
 The magnitude of $l$ is given by 
+
 $$
 \langle l^{2} \rangle  = \hbar^{2}(l+1)
 $$
@@ -257,25 +259,31 @@ A summary of what we expect for each number is below.
 #### Simple Potential Example
 Let's consider a simple case below by calculating the number of states in the $l=0$ and $l=1$ case to see if it makes sense based on the Magic Number shell information we are aware off. 
 
-In the case of the ground shell we just have $l=0$, this means $m_{z}$ can only be $0$, and $m_{s}$ can only be $\pm \frac{1}{2}$. The result is we have two allowed states for the $j=\frac{1}{2}$ case as shown in the figure below.
+In the case of the ground shell we just have $l=0$, this means $m_{z}$ can only be $0$, and $m_{s}$ can only be $\pm \frac{1}{2}$. The result is we have two allowed states for the $j=\frac{1}{2}$ case as shown in {numref}`shellfillinga`
 
-:::{figure-md} semf1
+:::{figure-md} shellfillinga
 <img src='image-88.png' width="100%" alt="Rutherford Form">
+
+Diagram shell filling in a simple spherical model for the lowest energy shell.
 :::
 
 
-Now as we increase the possible $l$ state it is the $j$ value for a specific shell that is going to tell us how to fill up the Shell Energy Levels.  For instance, in the new example shown below we choose level $l=1$ and we find we are allowed total $j$ values = $\pm\frac{1}{2}$ and $\pm\frac{3}{2}$. This is because in our new shell we have the two similar $m_{z}=0$ cases as before (states 5 and 6), but also four new ones, corresponding to the case where $m_{z}=1$.
+Now as we increase the possible $l$ state it is the $j$ value for a specific shell that is going to tell us how to fill up the Shell Energy Levels.  For instance, in the new example shown below we choose level $l=1$ as shown in {numref}`shellfillingb` we find we are allowed total $j$ values = $\pm\frac{1}{2}$ and $\pm\frac{3}{2}$. This is because in our new shell we have the two similar $m_{z}=0$ cases as before (states 5 and 6), but also four new ones, corresponding to the case where $m_{z}=1$.
 
 
-:::{figure-md} semf1
+:::{figure-md} shellfillinga
 <img src='image-89.png' width="100%" alt="Rutherford Form">
+
+
+Diagram shell filling in a simple spherical model for the lowest energy shell.
 :::
 
 
-Each nucleon must have its own allowed state of $m_z$ and $m_s$ when considering possible values of $j$. As shown in the figure  this results in six possible states $3/2, 1/2, -1/2, -3/2$ for $j=3/2$, and $1/2, -1/2$ for $j=1/2$. he cases where the angular momentum is parallel or anti-parallel are sometimes referred to as *stretched* and *jacknife* states respectively.
+Each nucleon must have its own allowed state of $m_z$ and $m_s$ when considering possible values of $j$. As shown in the figure  this results in six possible states $3/2, 1/2, -1/2, -3/2$ for $j=3/2$, and $1/2, -1/2$ for $j=1/2$. The cases where the angular momentum is parallel or anti-parallel are sometimes referred to as *stretched* and *jacknife* states respectively.
 
 
 Similarly if we repeated the same process for $l=2$, we would have possible $j$ values of $\frac{5}{2},~\frac{3}{2},~\frac{1}{2}$ implying a total of 10 nucleon states allowed. The sequence for our simple model can be expressed as 
+
 $$
 n_{\textnormal{states}} = 2(2l+1)
 $$
@@ -287,9 +295,9 @@ It is importtant to remember when calculating these state that protons and neutr
 Based on this a notation for labelling levels has been developed in Nuclear Physics as below. This is annoyingly similar looking to that used for electrons in atomic orbits but is actually very different so be careful not to mix them up.
 
 
-:::{figure-md} semf1
+:::{figure-md} nucleonnotation
 <img src='figures/FiguresSlides.013.png' width="100%" alt="Rutherford Form">
-SESMF
+
 :::
 
 
@@ -305,7 +313,11 @@ We can now attempt a first prediction with this model, i.e. can we account for t
 
 We expect to fill up our shells in terms of increasing energy. So based on this very simple model we would expect the first shell to close after 2 nucleons, and the second after 8. It gets a little bit more complex after that as the energy gaps of the principal quantum states $n$ start to overlap with the angular momentum splittings.
 
-![Alt text](image-92.png)
+
+:::{figure-md} firstpredmdel
+<img src='image-92.png' width="70%" alt="Rutherford Form">
+:::
+
 
 
 We find as our shell closures: 
