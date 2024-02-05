@@ -236,8 +236,6 @@ Cobalt-60 (Co-60) undergoes beta decay, resulting in the formation of Nickel-60 
 
    Note that because of the larger energy jump the $4+$ state is far more likely to decay into the lower $2+$ state than the higher one resulting in 1.1732 MeV being one of the dominant gamma rays emitted. Both of these emissions are E2 transitions. 
 
-![Alt text](image-114.png)
-
 
 In the next few lectures, we'll probe further into the behavior of excited states of the nucleus and how this can lead to different forms of spontaneous radioactive decay. Before we do that however lets understand what else our simple shell model can say about one form of radiation, 
 

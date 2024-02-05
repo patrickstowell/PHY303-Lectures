@@ -17,27 +17,27 @@ $$
 Q = M(A,Z)^{2}c^{2} - [M(A-X,Z-Y)c^{2} + M(X,Y)c^{2}] > 0 
 $$
 
-Decay is possible only if the $Q$ value is positive, and the decay is not disallowed by any other selection rule or conservation law. The energy released in the decay will come out in the kinetic energy of the release fragments in the decay. Let's consider both beta decay and alpha decay in turn to see how theoretical concepts of the nucleus help us understand their behaviour.
+Decay is possible only if the $Q$ value is positive, and the decay is not disallowed by any other selection rule or conservation law. The energy released in the decay will come out in the kinetic energy of the release fragments in the decay. Let's consider both beta decay and alpha decay in turn to see how theoretical concepts of the nucleus help us understand their behavior.
 
 
-### 6.3 Beta Decay
+### Beta Decay
 
 In beta decay we typically see experimentally an emission of an Electron from the nucleus combined with a transmutation of a nucleus from one type into another with a lower neutron number. This is referred to as beta-minus decay and typically occurs in neutron rich nuclei which are trying to lower their energy by rebalancing their proton/neutron ratios. 
 
-In the early years of Beta Decay studies the process observed was highly mysterious and showed very different a behaviour to Alpha Decay which was being studied at a similar time. This is illustrated by the Cloud Chamber image shown below. We see the decay of $^6$He into $^6$Li and a charged electron. We see two tracks, curving because there is a magnetic field applied. But from analysis of the plot it looks like energy, momentum and even Total Angular Momentum $J$ are not conserved if we assume the interaction:
+In the early years of Beta Decay studies the process observed was highly mysterious and showed very different a behavior to Alpha Decay which was being studied at a similar time. This is illustrated by the Cloud Chamber image shown below. We see the decay of $^6$He into $^6$Li and a charged electron. We see two tracks, curving because there is a magnetic field applied. But from analysis of the plot it looks like energy, momentum and even Total Angular Momentum $J$ are not conserved if we assume the interaction:
 
 
-$ ^6He \rightarrow ^6Li + e^- $
+$ ^6He~\rightarrow~^{6}Li + e^- $
 
 Of course the reason is that there is a Neutrino emitted as well, but this escapes the detector and we don’t see it. There are actually four things we need to consider in beta-minus(-plus) decay not just the neutrino.
 
-1. Beta Decay is a Three-body Process, unlike alpha decay (two body). We have to account for the energies and behaviour of 3 objects - the nucleus, the beta and neutrino.
+1. Beta Decay is a Three-body Process, unlike alpha decay (two body). We have to account for the energies and behavior of 3 objects - the nucleus, the beta and neutrino.
 2.  The electron (positron) and neutrino produced do not exist before the decay, we need to account for their formation.
 3. The electron and neutrino are relativistic, unlike the alpha in alpha decay. This makes calculations of the energies and kinematics of the decay more complicated.
-4. The energy of the beta emitted by the nucleus in question is not the same in every decay. We get a continuum of energies put to a maximum. In contrast to alpha decay and gamma decays where we get one “Monoenergetic” particle depending on the energy levels or $Q$ value considered.
+4. The energy of the beta emitted by the nucleus in question is not the same in every decay. We get a continuum of energies put to a maximum. In contrast to alpha decay and gamma decays where we get one “Mono energetic” particle depending on the energy levels or $Q$ value considered.
 
 
-An example to illustrate this behaviour is:
+An example to illustrate this behavior is:
 
 $$
 \bf
@@ -46,178 +46,156 @@ $$
 
 Note how with an electron emitted in beta decay we get an Anti-neutrino (this is Lepton Number conservation in particle physics)
 
-Beta decay is a common type of radioactive decay that involves the transformation of nucleons within the nucleus, resulting in the emission of beta particles and a change in the nuclear charge. There are three main types of beta decay: electron emission (\(\beta^-\) decay), positron emission (\(\beta^+\) decay), and electron capture (EC). Each of these processes alters the nucleus in distinct ways, driven by the weak nuclear force. Here's a breakdown of their differences:
+Beta decay is a common type of radioactive decay that involves the transformation of nucleons within the nucleus, resulting in the emission of beta particles and a change in the nuclear charge. There are three main types of beta decay: electron emission ($\beta^-$ decay), positron emission ($\beta^+$ decay), and electron capture (EC). Each of these processes alters the nucleus in distinct ways, driven by the weak nuclear force. Here's a breakdown of their differences:
 
-### Electron Emission (\(\beta^-\) Decay)
+#### Electron Emission ($\beta^-$ Decay)
 
-- **Process:** In \(\beta^-\) decay, a neutron inside the nucleus is transformed into a proton, an electron (\(e^-\)), and an electron antineutrino (\(\bar{\nu}_e\)).
+- **Process:** In $\beta^-$ decay, a neutron inside the nucleus is transformed into a proton, an electron ($e^-$), and an electron antineutrino ($\bar{\nu}_e$).
   
-- **Equation:** \(n \rightarrow p + e^- + \bar{\nu}_e\)
+- **Equation:** $n \rightarrow p + e^- + \bar{\nu}_e$
 
-- **Result:** The atomic number (\(Z\)) of the nucleus increases by one, while the mass number (\(A\)) remains unchanged. This process leads to the element changing to its next higher neighbor in the periodic table.
+- **Result:** The atomic number ($Z$) of the nucleus increases by one, while the mass number ($A$) remains unchanged. This process leads to the element changing to its next higher neighbor in the periodic table.
 
-- **Driving Force:** \(\beta^-\) decay occurs in neutron-rich nuclei, where the neutron-to-proton ratio is higher than that for a stable isotope of the element.
+- **Driving Force:** $\beta^-$ decay occurs in neutron-rich nuclei, where the neutron-to-proton ratio is higher than that for a stable isotope of the element.
 
-### Positron Emission (\(\beta^+\) Decay)
+#### Positron Emission ($\beta^+$ Decay)
 
-- **Process:** In \(\beta^+\) decay, a proton is converted into a neutron, a positron (\(e^+\)), and an electron neutrino (\(\nu_e\)).
+- **Process:** In $\beta^+$ decay, a proton is converted into a neutron, a positron ($e^+$), and an electron neutrino ($\nu_e$).
   
-- **Equation:** \(p \rightarrow n + e^+ + \nu_e\)
+- **Equation:** $p \rightarrow n + e^+ + \nu_e$
 
-- **Result:** The atomic number (\(Z\)) decreases by one, but the mass number (\(A\)) remains the same. The element changes to its previous neighbor in the periodic table.
+- **Result:** The atomic number ($Z$) decreases by one, but the mass number ($A$) remains the same. The element changes to its previous neighbor in the periodic table.
 
-- **Driving Force:** \(\beta^+\) decay is favored in proton-rich nuclei, where the proton-to-neutron ratio is higher than the stable ratio for that element. It requires more energy than \(\beta^-\) decay, as the mass of the nucleus must compensate for the mass of the positron and the difference in mass between protons and neutrons.
+- **Driving Force:** $\beta^+$ decay is favored in proton-rich nuclei, where the proton-to-neutron ratio is higher than the stable ratio for that element. It requires more energy than $\beta^-$ decay, as the mass of the nucleus must compensate for the mass of the positron and the difference in mass between protons and neutrons.
 
-### Electron Capture (EC)
+#### Electron Capture (EC)
 
 - **Process:** In electron capture, an inner orbital electron is captured by a proton in the nucleus, resulting in the formation of a neutron and the emission of an electron neutrino.
   
-- **Equation:** \(p + e^- \rightarrow n + \nu_e\)
+- **Equation:** $p + e^- \rightarrow n + \nu_e$
 
-- **Result:** Similar to \(\beta^+\) decay, electron capture decreases the atomic number by one without changing the mass number, shifting the element to its previous neighbor in the periodic table.
+- **Result:** Similar to $\beta^+$ decay, electron capture decreases the atomic number by one without changing the mass number, shifting the element to its previous neighbor in the periodic table.
 
-- **Driving Force:** EC also occurs in proton-rich nuclei and can be thought of as an alternative to \(\beta^+\) decay, especially in cases where the energy difference between the initial and final states does not favor positron emission. It strongly competes with e^+ decay and is the only decay available to nuclei with a Proton Excess if the mass difference between the atoms is less than 1 MeV/c^2.
+- **Driving Force:** EC also occurs in proton-rich nuclei and can be thought of as an alternative to $\beta^+$ decay, especially in cases where the energy difference between the initial and final states does not favor positron emission. It strongly competes with $e^+$ decay and is the only decay available to nuclei with a Proton Excess if the mass difference between the atoms is less than $1~\textnormal{MeV}/\textnormal{c}^2$.
 
 ### Energy Considerations and Occurrence
 
 
 Note we have to be careful in Beta Decay to consider the mass of everything including the Atomic Electrons, not just the nucleons. Hence the mass used are atomic masses, not the nuclear masses. We were less careful earlier when dealing with Binding Energy calculations and the SEMF.
 
-- **\(\beta^-\) Decay:** This process is energetically favored in neutron-rich nuclei and does not require additional energy to occur since the mass of the neutron is greater than that of the proton.
+- *** *$\beta^-$ Decay:** This process is energetically favored in neutron-rich nuclei and does not require additional energy to occur since the mass of the neutron is greater than that of the proton.
 
-- **\(\beta^+\) Decay and EC:** Both require the nucleus to have excess energy because the mass of a neutron is less than that of a proton (when considering the mass of the positron for \(\beta^+\) decay or the binding energy of the captured electron for EC). These processes are less common than \(\beta^-\) decay due to the energy requirements and occur in proton-rich nuclei.
+- **$\beta^+$ Decay and EC:** Both require the nucleus to have excess energy because the mass of a neutron is less than that of a proton (when considering the mass of the positron for $\beta^+$ decay or the binding energy of the captured electron for EC). These processes are less common than $\beta^-$ decay due to the energy requirements and occur in proton-rich nuclei.
 
+### Transitions
 
+In beta decay, transitions between nuclear states are classified as "allowed" or "forbidden" based on certain selection rules derived from conservation laws and quantum mechanics. These rules are related to the spin ($J$) and parity ($P$) of the initial and final nuclear states, as well as the angular momentum and parity of the emitted beta particle and neutrino system. 
 
+Allowed transitions are those that require the least change in angular momentum and have no change in parity between the initial and final states. The simplest case is the "superallowed" transition, which involves no change in nuclear spin and parity ($\Delta J^P = 0^+$) and is the most favorable in terms of transition probability.
 
+**Superallowed Transition:**
 
-In beta decay, transitions between nuclear states are classified as "allowed" or "forbidden" based on certain selection rules derived from conservation laws and quantum mechanics. These rules are related to the spin (\(J\)) and parity (\(P\)) of the initial and final nuclear states, as well as the angular momentum and parity of the emitted beta particle and neutrino system. 
+$$
+ \Delta J = 0, \quad \Delta P = 0 
+ $$
+ 
 
-### Allowed Transitions
+Here, $\Delta J$ represents the change in total angular momentum quantum number, and $\Delta P$ represents the change in parity; $0^+$ indicates no change in either.
 
-Allowed transitions are those that require the least change in angular momentum and have no change in parity between the initial and final states. The simplest case is the "superallowed" transition, which involves no change in nuclear spin and parity (\(\Delta J^P = 0^+\)) and is the most favorable in terms of transition probability.
-
-**Equation for Superallowed Transition:**
-\[ \Delta J = 0, \quad \Delta P = 0 \]
-
-Here, \(\Delta J\) represents the change in total angular momentum quantum number, and \(\Delta P\) represents the change in parity; \(0^+\) indicates no change in either.
-
+**Allowed Transition:**
 For "allowed" transitions (not superallowed), the changes are still minimal:
-\[ \Delta J = 0 \text{ or } \pm 1, \quad \Delta P = 0 \]
-except for \(0 \rightarrow 0\) transitions, which are forbidden.
 
-These transitions are characterized by a high transition probability because they involve minimal changes in the nuclear state, making them the most common type of beta decay.
+$$
+ \Delta J = 0 \text{ or } \pm 1, \quad \Delta P = 0 
+ $$
+ 
+except for $0 \rightarrow 0$ transitions, which are forbidden.
 
-### Forbidden Transitions
+Superallowed and allowed transitions are characterized by a high transition probability because they involve minimal changes in the nuclear state, making them the most common type of beta decay.
+
+**Forbidden Transitions**
 
 Forbidden transitions occur when the change in angular momentum and/or parity does not meet the criteria for allowed transitions. They are less likely to occur due to the need for higher changes in angular momentum between the initial and final states. Forbidden transitions are categorized by the degree of "forbiddenness," which corresponds to the change in angular momentum of the emitted particles.
 
-**First Forbidden Transition:**
-\[ \Delta J = 0, \pm 1, \pm 2, \quad \Delta P = 1 \]
-except for \(0 \rightarrow 0\) transitions, which are still forbidden.
+$$
+ \Delta J = 0, \pm 1, \pm 2, \quad \Delta P = 1 
+ $$
+ 
+except for $0 \rightarrow 0$ transitions, which are still forbidden.
 
 In general, the "n-th forbidden" transition is characterized by:
-\[ \Delta J = n, n \pm 1, n \pm 2, ..., \quad \Delta P = n \, (\text{mod} \, 2) \]
+
+$$
+ \Delta J = n, n \pm 1, n \pm 2, ..., \quad \Delta P = 1
+ $$
+ 
 
 The transition probability decreases significantly with increasing order of forbiddenness, making higher-order forbidden transitions increasingly rare.
 
 ### Beta Decay Matrix Element
 
-The probability of a beta decay occurring is proportional to the square of the matrix element, \(M\), which depends on the overlap of the initial and final nuclear wave functions and the operators involved in the transition. For allowed transitions, the matrix element involves simpler operators (e.g., Fermi and Gamow-Teller operators), while for forbidden transitions, more complex operators that include higher angular momentum components are required.
-
-### Selection Rules Impact
-
-- **Superallowed and Allowed Transitions:** These transitions are most likely to occur and have the shortest half-lives. They involve minimal changes in nuclear configuration and are dominated by the conservation of angular momentum and parity.
-  
-- **Forbidden Transitions:** These require more significant changes in the nuclear state, leading to longer half-lives and lower transition probabilities. They are crucial for understanding nuclear structure and the weak interaction, especially in nuclei far from stability.
-
-Understanding allowed and forbidden transitions in beta decay is essential for interpreting nuclear decay patterns, predicting half-lives, and studying nuclear structure and weak interaction processes.
-
-To determine if a beta decay transition is allowed or forbidden, we need to look at the change in angular momentum (\(\Delta J\)) and parity (\(\Delta P\)) between the initial and final states of the nucleus. Here's a step-by-step example using hypothetical nuclear states to illustrate how to calculate and classify a transition.
+The probability of a beta decay occurring is proportional to the square of the matrix element, $M$, which depends on the overlap of the initial and final nuclear wave functions and the operators involved in the transition. For allowed transitions, the matrix element involves simpler operators (e.g., Fermi and Gamow-Teller operators), while for forbidden transitions, more complex operators that include higher angular momentum components are required.
 
 ### Example: Beta Decay of Nucleus X to Y
 
 Suppose we have a beta decay process where nucleus X decays to nucleus Y. Let's say:
 
-- The initial state of nucleus X has a total angular momentum quantum number \(J_i = 2\) and positive parity (\(P_i = +1\)).
-- The final state of nucleus Y has a total angular momentum quantum number \(J_f = 1\) and negative parity (\(P_f = -1\)).
+- The initial state of nucleus X has a total angular momentum quantum number $J_i = 2$ and positive parity ($P_i = +1$).
+- The final state of nucleus Y has a total angular momentum quantum number $J_f = 1$ and negative parity ($P_f = -1$).
 
-### Step 1: Calculate the Change in Angular Momentum (\(\Delta J\))
-
-\[ \Delta J = |J_f - J_i| = |1 - 2| = 1 \]
-
-### Step 2: Determine the Change in Parity (\(\Delta P\))
-
-Since the parity changes from positive to negative, there is a change in parity (\(\Delta P = 1\)).
-
-### Step 3: Classify the Transition
-
-Using the calculated \(\Delta J\) and \(\Delta P\), we can classify the transition. For allowed transitions, we expect \(\Delta J = 0\) or \(\pm 1\) (excluding \(0 \rightarrow 0\) without a change in parity), and \(\Delta P = 0\).
-
-- In our example, \(\Delta J = 1\) fits the criterion for \(\Delta J\) in allowed transitions, but the change in parity (\(\Delta P = 1\)) indicates this is a **forbidden transition**.
-- Specifically, since there's a change in parity and the \(\Delta J\) value fits within the first forbidden category (considering \(\Delta J = 0, \pm 1, \pm 2\) with a parity change), this would be a **first forbidden transition**.
-
-### Conclusion
-
-The transition from nucleus X to nucleus Y in our example is classified as a first forbidden transition due to the change in both angular momentum (\(\Delta J = 1\)) and parity (\(\Delta P = 1\)). Forbidden transitions are less probable than allowed transitions, meaning they typically have longer half-lives.
-
-This example demonstrates the basic method to determine whether a beta decay transition is allowed or forbidden based on the initial and final states' angular momentum and parity. This classification helps predict the decay's likelihood and its half-life, providing insight into the nuclear structure and the weak interaction's role in nuclear processes.
+**Step 1: Calculate the Change in Angular Momentum ($\Delta J$)**
 
 
+$$
+ \Delta J = |J_f - J_i| = |1 - 2| = 1 
+ $$
+ 
 
-For an example of an allowed transition in beta decay, let's consider the beta-minus decay of tritium (\(^3H\)) to helium-3 (\(^3He\)). This decay is interesting because it's a simple case often cited in discussions of nuclear beta decay and provides a clear illustration of an allowed transition.
+**Step 2: Determine the Change in Parity ($\Delta P$)**
 
-### Nucleus Details:
+Since the parity changes from positive to negative, there is a change in parity ($\Delta P = 1$).
 
-- **Tritium (\(^3H\))** has one proton and two neutrons. Its nuclear spin and parity (\(J^P\)) are \(1/2^+\) in its ground state.
-- **Helium-3 (\(^3He\))** has two protons and one neutron. Its ground state also has a nuclear spin and parity of \(1/2^+\).
+**Step 3: Classify the Transition**
 
-### Beta-minus Decay Process:
+Using the calculated $\Delta J$ and $\Delta P$, we can classify the transition. For allowed transitions, we expect $\Delta J = 0$ or $\pm 1$ (excluding $0 \rightarrow 0$ without a change in parity), and $\Delta P = 0$.
 
-In this decay, one of the neutrons in tritium is converted into a proton, emitting an electron (\(e^-\)) and an electron antineutrino (\(\bar{\nu}_e\)):
+- In our example, $\Delta J = 1$ fits the criterion for $\Delta J$ in allowed transitions, but the change in parity ($\Delta P = 1$) indicates this is a **forbidden transition**.
+- Specifically, since there's a change in parity and the $\Delta J$ value fits within the first forbidden category (considering $\Delta J = 0, \pm 1, \pm 2$ with a parity change), this would be a **first forbidden transition**.
 
-\[ ^3H \rightarrow \, ^3He + e^- + \bar{\nu}_e \]
+For another example of an allowed transition in beta decay, let's consider the beta-minus decay of tritium ($^3H$) to helium-3 ($^3He$):
 
-### Step 1: Calculate the Change in Angular Momentum (\(\Delta J\))
+- **Tritium ($^3H$)** has one proton and two neutrons. Its nuclear spin and parity ($J^P$) are $1/2^+$ in its ground state.
+- **Helium-3 ($^3He$)** has two protons and one neutron. Its ground state also has a nuclear spin and parity of $1/2^+$.
 
-Given that both the initial and final states have spins of \(1/2\), the change in angular momentum is:
-
-\[ \Delta J = |J_f - J_i| = |1/2 - 1/2| = 0 \]
-
-### Step 2: Determine the Change in Parity (\(\Delta P\))
-
-Both the initial and final states have positive parity (\(+\)), so there is no change in parity:
-
-\[ \Delta P = 0 \]
-
-### Step 3: Classify the Transition
-
-For the transition to be allowed:
-- \(\Delta J = 0\) or \(\pm 1\) (excluding \(0 \rightarrow 0\) without a change in parity)
-- \(\Delta P = 0\)
-
-Our transition meets these criteria (\(\Delta J = 0\) and \(\Delta P = 0\)), indicating it is an **allowed transition**.
-
-### Conclusion
-
-The beta-minus decay of tritium (\(^3H\)) to helium-3 (\(^3He\)) is an example of an allowed transition in nuclear beta decay. Since the transition involves minimal changes in angular momentum and no change in parity, it falls into the category of allowed transitions, which are characterized by higher transition probabilities and shorter half-lives compared to forbidden transitions.
-
-This example illustrates the criteria for allowed beta decay transitions within the context of the nuclear shell model, showing how nuclear quantum numbers play a crucial role in determining the nature and likelihood of beta decay processes.
+In this decay, one of the neutrons in tritium is converted into a proton, emitting an electron ($e^-$) and an electron antineutrino ($\bar{\nu}_e$):
 
 
+$$
+ ^3H \rightarrow~ ^3He + e^- + \bar{\nu}_e 
+$$
 
-#### 6.3.2 Applied Beta Physics
-- As described earlier there are many applications of beta decay. Notable is Positron Emission Tomography.
-Patients are injected with a positron emitting isotope. The positron finds an electron and Annihilates to produce two back to back gammas that can be detected and hence used to find the location of the decay, and hence image, say, the brain.
-PET is an example application
-$ _{9}^{18}F \rightarrow _{8}^{18}O + e^+ + $\nu_e$ $
-- Often the Decay Sequence is depicted as an Energy Level Diagramme as in this example:
-  
-For beta decay we should have a diagram showing how the shell orbitals can change.
+Given that both the initial and final states have spins of $1/2$, the change in angular momentum is:
 
-![Alt text](image-112.png)
+$$
+ \Delta J = |J_f - J_i| = |1/2 - 1/2| = 0 
+ $$
+ 
+
+Both the initial and final states have positive parity ($+$), so there is no change in parity:
 
 
+$$
+ \Delta P = 0 
+ $$
+ 
+
+This means for the transition to be allowed:
+- $\Delta J = \pm 1$ 
+- $\Delta P = 0$
+
+Note we've explicitly excluded the $\Delta J=0$ case as we know the change in parity is $0$. Our transition meets these criteria ($\Delta J = 0$ and $\Delta P = 0$), indicating it is an **allowed transition**.
+
+<!-- 
 ### 6.4 Fermi Theory
 - Fermi Theory results in an equation for dn/dE given as:
 
@@ -240,12 +218,22 @@ $$
  (T_{max} - T_e)^{0.5} \propto \sqrt{\frac{N(p_e)}{p_e^2}} 
  $$ 
 
-![Alt text](image-113.png)
+ -->
+
+### Alpha Decay
+
+Finally let's turn our attention to alpha decay. In the context of the nuclear shell model, alpha decay can be understood in terms of the rearrangement of the nucleons in the daughter nucleus and how this rearrangement affects the nuclear stability. The shell model predicts that nuclei near magic numbers (where shells are either fully filled or empty) are more stable. Thus, alpha decay often moves a nucleus closer to these magic numbers, thereby increasing its stability.
+
+While the selection rules for alpha decay are not as strictly defined as for beta decay in terms of angular momentum and parity changes, the energy and stability considerations play a crucial role. The key factors influencing alpha decay include:
+
+1. **Q-Value:** The energy release ($Q$-value) in alpha decay is a critical factor. The decay can only occur if the $Q$-value is positive, meaning the mass of the parent nucleus is greater than the combined mass of the daughter nucleus and the alpha particle. 
+
+2. **Nuclear Shell Effects:** The shell model predicts that nuclei with a full shell of protons or neutrons (magic numbers) are particularly stable. Alpha decay is found for mostly higher $A$ neutron rich nuclei and results in a daughter nucleus that is closer to these magic numbers.
+
+3. **Overlap and Tunneling:** The probability of alpha decay is also determined by the quantum mechanical tunneling effect. As we will see alpha particles need to tunnel out of a potential barrier if they are to escape the nucleus.
 
 
-### 6.2 Alpha Decay
-
-First, let's start to use our newfound understanding of nuclear structure to try to understand alpha decay. There are some important questions we need to ask for this process:
+Based on our understanding of the nucleus there are some important questions we need to ask for the alpha decay process:
 - Why are the $\alpha$ particles emitted and not some other combination of nucleons?
 - Why is there such a range of lifetimes and energies? What is the relationship between the two? 
 - What determines the frequency of $\alpha$ decay?
@@ -268,10 +256,15 @@ $$
 \ln\lambda = -a_{1} \frac{Z}{Q^{1/2}} + a_2
 $$
 
-It turns out that trying to understand why the data follows this shape leads us once again to the need for a quantum mechanical treatment of Alpha Decay. To explain the relation, it turns out we need to consider that the alpha forms inside the nucleus and then escapes by Quantum Mechanical Barrier Penetration. The alpha is envisioned as a free-particle wavefunction subject to a combination of the Nuclear Potential binding it to the nucleus, and a coulomb potential that repels it from the other charged particles in the nucleus. Typically we expect a coulomb repulsion to pulse the charged alpha away from the rest of the nucleus, but in this case we are imagining that the alpha is **inside** the rest of the nucleus, therefore the remaining protons form a charged barrier that the alpha needs to tunnel through to escape. The Coulomb barrier arises because the electrostatic force is repulsive between two positively charged entities—the alpha particle and the rest of the nucleus. As the alpha particle gets closer to the nuclear surface (from within), the electrostatic potential energy increases because the repulsive force increases. At the surface of the nucleus, this potential energy reaches a maximum, forming the Coulomb barrier.
+It turns out that trying to understand why the data follows this shape leads us once again to the need for a quantum mechanical treatment of Alpha Decay. To explain the relation, it turns out we need to consider that the alpha forms inside the nucleus and then escapes by Quantum Mechanical Barrier Penetration. 
 
-Inside the Nucleus: While inside the nucleus, the alpha particle is bound by the strong nuclear force, which is attractive and much stronger than the Coulomb force at short distances. This force keeps the nucleons (including those in the alpha particle) together.
-Escape Requirement: For the alpha particle to escape, it must have enough energy to overcome the maximum potential energy at the surface created by the Coulomb repulsion. Typically, the alpha particle's kinetic energy (within the nucleus) is insufficient to overcome this barrier due to the energy binding it inside the nucleus.
+The alpha is envisioned as a free-particle wavefunction subject to a combination of the Nuclear Potential binding it to the nucleus, and a coulomb potential that repels it from the other charged particles in the nucleus. Typically we expect a coulomb repulsion to pulse the charged alpha away from the rest of the nucleus, but in this case we are imagining that the alpha is **inside** the rest of the nucleus, therefore the remaining protons form a charged barrier that the alpha needs to tunnel through to escape. The Coulomb barrier arises because the electrostatic force is repulsive between two positively charged entities—the alpha particle and the rest of the nucleus. 
+
+- As the alpha particle gets closer to the nuclear surface (from within), the electrostatic potential energy increases because the repulsive force increases. At the surface of the nucleus, this potential energy reaches a maximum, forming the Coulomb barrier.
+
+- Inside the Nucleus: While inside the nucleus, the alpha particle is bound by the strong nuclear force, which is attractive and much stronger than the Coulomb force at short distances. This force keeps the nucleons (including those in the alpha particle) together.
+
+- Escape Requirement: For the alpha particle to escape, it must have enough energy to overcome the maximum potential energy at the surface created by the Coulomb repulsion. Typically, the alpha particle's kinetic energy (within the nucleus) is insufficient to overcome this barrier due to the energy binding it inside the nucleus.
 
 
 
@@ -307,6 +300,8 @@ $$
 
 If the alpha hits the barrier faster than 1 Hz, then we expect the probability that it leaves the nucleus to scale upwards as well. If we can work out the frequency that the alpha hits the barrier, which will be determined by its velocity and the size of the nucleus, and we know the height of the barrier $U_0$ and the width $L$ and the energy of the alpha $E$, then we can find the half-life $T_{1/2}$. We can then see if this agrees with the Geiger-Nuttall observation from data.
 
+### Alpha 212-Po Example
+
 The way to proceed is illustrated below, where we attempt to find the half-life of 212Po, which emits an 8.78 MeV alpha.  First, we need to find the width of the barrier. For this, we need to know the Nuclear Separation $R$, i.e., the distance between the center of the nucleus and the center of the alpha. Be careful that at this point the nucleus we are talking about is not A=212, but A=208, because we have removed the alpha.
 
 
@@ -334,23 +329,27 @@ L = 26.90 fm - 9.01 fm = 17.9 fm \\
 \alpha = \sqrt{\frac{2m(26.2-8.78)}{\hbar^{2}}} = 1.879 fm^{-1}
 $$
 
-This results in a transmission probability of 
+When assuming a 'top-hat' potential barrier this results in a transmission probability of 
 $$
 X = e^{-\alpha L} = e^{- (1.879) \cdot (17.9) } = 2.47 \times 10^{-15}
 $$
 
-The real frequency of the alpha hitting the barrier can als be estimated by determining how many times an alpha of energy $8.78 MeV$ makes contact with the walls.
+The real frequency of the alpha hitting the barrier can also be estimated by determining how many times an alpha of energy $8.78 MeV$ makes contact with the walls.
 $$
 8.78MeV = \frac{mv^{2}}{2} \rightarrow v=2.06 \times 10^{7} ms^{-1} \\
 f=\frac{v}{2R}  \rightarrow 1.14 \times 10^{21} s^{-1}
 $$
 
 
-For a given alpha, the combined Tunnelling Probability per second for emission is therefore the product f the barrier frequency and the transmission
+For a given alpha, the combined Tunnelling Probability per second for emission is therefore the product of the barrier frequency and the transmission
 
 $$
 \lambda = f X = (2.47 \times 10^{-15})(1.14 \times 10^{21} s^{-1}) = 2.82 \times 10^6 s^{-1} 
 $$
+<!-- 
+$$
+f=\frac{v^{2}}{2R} = \frac{mv^{2}}{2} \frac{1}{Rm} = \frac{Q}{2m}
+$$ -->
 
 
 
@@ -403,103 +402,51 @@ $$
 where we can pull the $Q$ value out of the integral
 
 $$
-X = exp \left( -\frac{Q}{\hbar} \int_{R}^{r_{2}} \sqrt{2m(\frac{ r_{c}}{r} - 1)} \cdot dr \right)
+X = exp \left( -\frac{Q}{\hbar} \int_{R}^{r_{2}} \sqrt{2m(\frac{ r_{c}}{r} - 1)} \cdot dr \right) = exp(G)
 $$
 
-$$
+<!-- $$
 X = exp \left( \frac{Q}{\hbar}\left[ \frac{2}{3} r \left( \frac{r_{c}-r}{r}\right)^{2/3} \right ]_{R}^{r_{2}} \right)
 $$
 
 $$
-X = exp \left( \frac{Q}{\hbar}\left[ \frac{2}{3} R \left( \frac{(a/Q)-R}{R}\right)^{2/3} \right ]_{R}^{r_{2}} \right)
-$$
+X = exp \left( \frac{Q}{\hbar}\left[ \frac{2}{3} R \left( \frac{(a/Q)-R}{R}\right)^{2/3} \right ]_{R}^{r_{2}} \right) = exp(G)
+$$ -->
 
 
-Rearrangeing this ends up in a final form where our ttransmission factor
-$$
-G=\alpha L \propto \frac{Z}{Q}
-$$
-
-The alph emission rate depends upon how many times the alpha with its energy 8.78 MeV inside the nucleus will hit the walls.
-
-Since an alpha at this energy is nonrelativistic. The frequency of hitting the walls is then as here:
-$$
-8.78 MeV = \frac{mv^{2}}{2} = \frac{3727 MeV v^{2}}{2c^{2}}
-$$
+Rearranging this ends up in a final form where the Gamow factor in our transmission factor is given by
 
 $$
-\frac{v}{c} = 0.00686; v=2.06 \times 10^{7} m/s
+G=4 Z \alpha \left( \frac{2m c^{2}}{Q}\right)^{1/2} \left( cos^{-1} \sqrt{\frac{R}{r_c}} - \sqrt{\frac{R}{r_{c}}\left( 1-\frac{R}{r_{c}}\right)} \right)
 $$
 
-$$
-f=\frac{v}{2R} = \frac{2.06 \times 10^{7} m/s}{2(9.01 fm) (10^{-15}m/fm)} = 1.14 \times 10^{21} / s
-$$
-
-So the half-life for a single rectangular barrier with height equal to the peak of the barrier of 26.2 MeV and width 17.9 fm is: 
+In this solution
 
 $$
-X=Ae^{-\alpha L} = e^{-\gamma} = 2.47\times10^{-15}
+\textnormal{Last term goes to}~\frac{\pi}{2}~\textnormal{if}~R << r_{c}
 $$
 
-$$
-\alpha = \sqrt{\frac{2m(U_{0} - E)}{\hbar^{2}}}
-$$
-
-Here $U_{0} = 26.2 MeV and E=8.78 MeV, and L = 17.9fm.$
-
-So this basic Alpha Tunnelling Model allows us to predict the relationship between alpha energy and half-life of the decay, and it nicely fits with the Geiger-Nuttall relation. We had to make some assumptions, like the nucleus being spherical etc. (which is dangerous as we have seen) but it can get us very close to the data. Here is an example plot:
-
-$ \ln \lambda = -a'\frac{Z}{Q^{1/2}} + a_2 $
+and we arrive at a relation for the Gamow factor's correlation with $Z$ and $Q$,
 
 $$
-F=4 Z \alpha \frac{2m c^{2}}{E_{a}}^{1/2} \left( cos^{-1} \sqrt{\frac{R}{r_c}} - \sqrt{\frac{R}{r_{c}}\left( 1-\frac{R}{r_{c}}\right)} \right)
+G \propto \frac{Z}{\sqrt{Q}}.
 $$
 
-$$
-Last term goes to pi/2 if R << r_{c}
-$$
+Based on our calculations before the half-life is still proportional to the frequency that the alpha contacts the barrier and our new more realistic integrated transmission
 
 $$
-G \propto \frac{Z}{\sqrt{E_{\alpha}}}
+t_{1/2} \propto \lambda = f e^{-G} = f e^{- \frac{D \cdot Z}{\sqrt{Q}}}
 $$
 
-$$
-t_{1/2} \propto \lambda = T w(\alpha) \frac{v_{alpha}{2R}} \propto e^{-G} e(\alpha) \frac{v}{2R}
-$$
+where $D$ is a new constant we have introduced based on the full form of Gamow values above. Taking the log of the equation gives us that below which ultimately ends up matching our Geiger Nutall form,
 
-Taking the log of the equtaion gives us that belw which matches our geiger nutall foorm.
 $$
-log_{10} t_{1/2} = a + b Q_{\alpha}^{-1/2}
+log_{10} t_{1/2} = a + b Q_{\alpha}^{-1/2},
 $$
 
+where $a=ln(f)$ and $b=D \cdot Z$. This confirms why we see this behavior in the first place. The exponential drop in half life for alpha emitters is due to every alpha undergoing tunneling through a falling potential barrier at the edge of the nucleus. 
 
-
-Alpha decay, unlike beta decay, does not involve the transformation of nucleons from one type to another within the nucleus (such as a neutron to a proton or vice versa). Instead, alpha decay is the process by which an unstable nucleus emits an alpha particle (a \(^4He\) nucleus consisting of 2 protons and 2 neutrons) to become a more stable nucleus. The shell model and transition rules for alpha decay primarily focus on the change in the configuration of the remaining nucleus after the alpha particle is emitted.
-
-### Shell Model and Alpha Decay
-
-In the context of the nuclear shell model, alpha decay can be understood in terms of the rearrangement of the nucleons in the daughter nucleus and how this rearrangement affects the nuclear stability. The shell model predicts that nuclei near magic numbers (where shells are either fully filled or empty) are more stable. Thus, alpha decay often moves a nucleus closer to these magic numbers, thereby increasing its stability.
-
-### Transition Rules for Alpha Decay
-
-While the selection rules for alpha decay are not as strictly defined as for beta decay in terms of angular momentum and parity changes, the energy and stability considerations play a crucial role. The key factors influencing alpha decay include:
-
-1. **Q-Value:** The energy release (\(Q\)-value) in alpha decay is a critical factor. The decay can only occur if the \(Q\)-value is positive, meaning the mass of the parent nucleus is greater than the combined mass of the daughter nucleus and the alpha particle. The \(Q\)-value is given by:
-
-   \[ Q = [M(P) - M(D) - M(\alpha)]c^2 \]
-
-   where \(M(P)\) is the mass of the parent nucleus, \(M(D)\) is the mass of the daughter nucleus, \(M(\alpha)\) is the mass of the alpha particle, and \(c\) is the speed of light.
-
-2. **Nuclear Shell Effects:** The shell model predicts that nuclei with a full shell of protons or neutrons (magic numbers) are particularly stable. Alpha decay often results in a daughter nucleus that is closer to these magic numbers, making the decay more favorable if the parent nucleus is not near these numbers.
-
-3. **Overlap and Tunneling:** The probability of alpha decay is also determined by the quantum mechanical tunneling effect. The alpha particle must overcome a potential barrier (Coulomb barrier) to escape the nucleus. The probability of tunneling depends on the height and width of the barrier and the energy of the alpha particle. This is described by the Gamow factor, which plays a significant role in determining the half-life of the alpha decay process.
-
-### Conclusion
-
-In summary, while the shell model and its transition rules for beta decay focus on angular momentum and parity changes, the considerations for alpha decay within the shell model framework are more about the energetics of the decay process, the stability of the daughter nucleus in terms of its proximity to magic numbers, and the quantum mechanical tunneling effect. The shell model helps explain why certain nuclei are more prone to alpha decay and how the structure of the daughter nucleus affects the decay's likelihood and rate.
-
-
-
+The procedures shown here can be applied to many nuclei to gain an estimate on the half-life and potential barrier properties if a decay process' $Q$ value is known. Importantly the free parameters in the Geiger Nutall form are dependent on the specific starting isotope (indicated by the lines in the GN plot), therefore measurements of the half life and $Q$ value of one specific isotope can be used to estimate the half-life of any other nuclei in the chain provided the $Q$ value can be calculated to a reasonable estimate (which it can with the SEMF!).
 
 ### Summary
 In this unit we've discussed the final dominant radioactive decay channels and the effect these can have on the nucleon content of a nucleus, and the various factors that need to be considered when trying to calculate their probability and daughter product kinetic energies.
