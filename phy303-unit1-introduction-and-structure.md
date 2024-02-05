@@ -102,11 +102,10 @@ Nuclei can also be grouped according to their $Z$, $N$, and $A$ values:
 
 The known elements cover essentially everything from Hydrogen, H-1 to Oganesson-294. Shown in [Fig. 4](chart-of-nuclideslarge) is a chart showing different known nuclei. Around 3000 different nuclei have so far been confirmed, each specified by the proton number $(Z)$ and neutron number $(N)$. This nuclide plot is one of the most important plots in nuclear physics.
 
-
 :::{figure-md} chart-of-nuclideslarge
-<img src='https://d20khd7ddkh5ls.cloudfront.net/screen_shot_2020-12-11_at_10.34.44_am_2.png' width="100%" alt="IAEA Chart of Nuclides">
+<img src='image-136.png' width="100%" alt="IAEA Chart of Nuclides">
 
-Chart of all known nuclides. All observed nuclei are given a square based on their $N$ and $Z$ value. As we move away from the black line in both directions the nuclei become more and more unstable.
+Chart of all known nuclides. All observed nuclei are given a square based on their $N$ and $Z$ value. As we move away from the black line in both directions the nuclei become more and more unstable. At higher $Z$ values we need more neutrons to counteract electrostatic repulsion and make the nucleus stable.
 :::
 
 
