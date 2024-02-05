@@ -296,8 +296,9 @@ Based on this a notation for labelling levels has been developed in Nuclear Phys
 
 
 :::{figure-md} nucleonnotation
-<img src='figures/FiguresSlides.013.png' width="100%" alt="Rutherford Form">
+<img src='figures/FiguresSlides.013.png' width="60%" alt="Rutherford Form">
 
+Nuclear notation guide.
 :::
 
 
@@ -316,6 +317,8 @@ We expect to fill up our shells in terms of increasing energy. So based on this 
 
 :::{figure-md} firstpredmdel
 <img src='image-92.png' width="70%" alt="Rutherford Form">
+
+Shell closure result for a simple spherical shell model.
 :::
 
 
@@ -350,6 +353,7 @@ So the former degeneracy in which we had to consider all these 6 nucleons in one
 :::{figure-md} shellsplittingtwo
 <img src='image-93.png' width="100%" alt="Spin orbit corrections">
 
+Diagram of shell state splitting when spin-orbit coupling is included.
 :::
 
 This effect applies for all the $l$ levels, they all get split into two levels, except for $l$=0 (the $\textnormal{s}$ sharp) one because that only has one $j$ assignment, $j=1/2$ $($with values $1/2, -1/2$$)$.
