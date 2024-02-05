@@ -347,9 +347,8 @@ For instance, consider the $l=1$ level. Previously this had 6 nucleons, $3/2, 1/
 
 So the former degeneracy in which we had to consider all these 6 nucleons in one level is broken, and the previous single energy level becomes two, at different levels.
 
-:::{figure-md} semf1
+:::{figure-md} shellsplitting
 <img src='image-93.png' width="100%" alt="Rutherford Form">
-SESMF
 :::
 
 This effect applies for all the $l$ levels, they all get split into two levels, except for $l$=0 (the $\textnormal{s}$ sharp) one because that only has one $j$ assignment, $j=1/2$ $($with values $1/2, -1/2$$)$.
