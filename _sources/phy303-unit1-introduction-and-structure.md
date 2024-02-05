@@ -226,7 +226,7 @@ Nuclei as opposed to atoms, have a net charge, from the sum of the proton charge
 
 The fact that nucleons consist of quarks is actually the reason nuclei form in the first place. The nuclear force that binds nuclei together is in itself **not a fundamental force**. Instead the nuclear force is mediated by virtual pions (particle made of a quark and anti-quark) being exchanged between nucleons as a result of strong interactions. The nuclear force can therefore be thought of almost as a leakage of the strong force which reaches a very small range outside of each nucleon.
 
-Of course nuclei also have finite size, but it's impressively small when compared to the size of the electron orbitals in an atom, and the scale of the nuclei itself is typically only one to two orders of magnitude greater than nucleons themselves. A comparison of relative scale differences in the relative sizes for some nuclei shown in {numref}`nuclear-size``.
+Of course nuclei also have finite size, but it's impressively small when compared to the size of the electron orbitals in an atom, and the scale of the nuclei itself is typically only one to two orders of magnitude greater than nucleons themselves. A comparison of relative scale differences in the relative sizes for some nuclei shown in {numref}`nuclear-size`.
 
 
 :::{figure-md} nuclear-size

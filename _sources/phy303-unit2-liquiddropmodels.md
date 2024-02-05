@@ -34,7 +34,7 @@ where $\rho({\bf r})$ is the charge distribution, and ${\bf r}$ is the position.
 It's worth pointing out here that the Fourier transform of a delta function is just $1$, so if the nucleus was indeed a point charge at the center, we would arrive at the same cross-section for a point-like target as before.
 ```
 
-Based on our reasoning that the nucleus has some underlying distribution of charge the simplest model we could come up with would be a so called **Top-Hat Distribution**. That is, constant uniform density, falling to zero at the "edge" of the nucleus.  Importantly what was actually found during the early electron scattering experiments was that at higher values of $\bf q$ we start to see bumps or ridges in our measurements of the cross-section as shown below. 
+Based on our reasoning that the nucleus has some underlying distribution of charge the simplest model we could come up with would be a so called **Top-Hat Distribution**. That is, constant uniform density, falling to zero at the "edge" of the nucleus.  Importantly what was actually found during the early electron scattering experiments was that at higher values of $\bf q$ we start to see bumps or ridges in our measurements of the cross-section as shown in {numref}`e-scattering-charge`. 
 
 :::{figure-md} e-scattering-charge
 <img src='image-102.png' width="70%" alt="Saxon Woods Form">
@@ -44,7 +44,7 @@ Measured cross-section from electron scattering of nickel.
 
 
 
-The shape of these structures give an indication of something very close to a top-hat distribution in the center of nuclei, but also that a more "fuzzy" form is needed at the edges. A better fit to the data is given by a so called Saxon-Woods form which accounts for this edge. The Saxon-Woods potential modifies the simple Top-Hat by introducing a smooth edge parameterized in terms of the radius, $r$, as follows:
+The shape of these structures give an indication of something very close to a top-hat distribution in the center of nuclei, but also that a more "fuzzy" form is needed at the edges. A better fit to the data is given by a so called Saxon-Woods form which accounts for this edge. The Saxon-Woods potential modifies the simple top-hat by introducing a smooth edge parameterized in terms of the radius, $r$, as follows:
 
 ```{math}
 :label: saxonwoods
@@ -62,7 +62,7 @@ The plot below shows the charge density vs distance $r$ from the centre of the n
 
 
 :::{figure-md} saxonwods
-<img src='figures/saxton_woods.png' width="100%" alt="Saxon Woods Form">
+<img src='figures/saxton_woods.png' width="60%" alt="Saxon Woods Form">
 
 Saxon Woods charge distribution shape vs Distance from the center of the nucleus for several nuclei.
 :::
@@ -80,7 +80,7 @@ Saxon Woods charge distribution shape vs Distance from the center of the nucleus
 - $a = 1.07 A^{1/3} ~\textnormal{fm}~~\textnormal{(radius)}$ 
 - $d = 0.54~\textnormal{fm}~\textnormal{ (skin thickness)}$ 
 - $\rho^{0} = 0.06-0.08~e~\textnormal{fm}^{-3}~\textnormal{ (average charge density)}$
-- Note: We expect $\rho^{0}$ to be lower for heavier nuclei.
+- Note: We expect $\rho^{0}$ to be lower for heavy nuclei as $Z$ tends away from $N$.
 
 
 **Typical Values For the mass density distribution**
@@ -105,6 +105,8 @@ Key observations for both models are:
 - The central densities are constant, independent of how many nucleons there are in the nucleus.
 
 
+Studies of electron scattering data found this generally gave a good fit across many nuclei. The last point on central densities is important as it points at a fundamental idea in nuclear physics - the **Incompressible Nucleus**.
+
 ### The Liquid Drop Model
 ####  Introduction
 
@@ -114,7 +116,7 @@ The LDM arises from the following main observations:
 - Nuclei are spherical (in general) with central density having a fixed value independent of radius. i.e. no matter how many nucleons you pile in to make your nucleus bigger, the density remains the same, the nuclear fluid is Incompressible (like a water drop).
 - The observation that the radius (size) of the nucleus goes as $R \sim A^{1/3}$.
 - The force binding the nucleons together appears to be short range - rather like the intramolecular force in liquids.
-- The Binding Energy Curve suggests that whatever size of a nucleus, a nucleon situated inside has roughly the same binding energy as all other nucleons. It takes roughly the same energy to free it no matter how many other nucleons are present.
+- The Binding Energy Curve suggests that whatever size of a nucleus, a nucleon situated inside has roughly the same binding energy as all other nucleons. It takes roughly the same energy to free it no matter how many other nucleons are present (neglecting proton/neutron mass differences as we will see later).
    
 These four arguments allow us to build a simple model of the nucleus that satisfies all constraints - The Liquid Drop Model. The assumptions of the model are:
 
@@ -132,6 +134,7 @@ B(A,Z) = a_{V}A - a_{s}A^{2/3} - a_{c}Z^{2}A^{-1/3}
 ```
 
 In line with our description we have three terms:
+
 $$
 \textnormal{Volume Energy Term :} a_{V}A
 $$
@@ -144,12 +147,12 @@ $$
 \textnormal{Coulomb Potential Energy Term :} a_{c}Z^{2}A^{-1/3}
 $$
 
-Note dividing B(A,Z) by the total nucleons A, gives us a prediction for the binding energy per nucleon plot we discussed in Lecture 1. 
+Note dividing B(A,Z) by the total nucleons A, gives us a prediction for the binding energy per nucleon plot we discussed in the last set of lectures. 
 
-By convention we talk about the binding energy as a positive value (e.g. 52MeV for Carbon-12) when in fact it's a negative value when considering all nucleons in the nucleus - **energy needs to be added** to the system for us to liberate a nucleon. Our **negative** volume potential energy term above therefore corresponds to a positive term in the binding energy estimate in the LDM equation.
+By convention we talk about the binding energy as a positive value (e.g. $52~\textnormal{MeV}$ for Carbon-12) when in fact it's a negative value when considering all nucleons in the nucleus - **energy needs to be added** to the system for us to liberate a nucleon. Our **negative** volume potential energy term above therefore corresponds to a positive term in the binding energy estimate in the LDM equation.
 
 
-To understand in a bit more detail the components f the SEMF lets go through them one by one seeing how they improve our fit to real data. We'll take the data frmo the IAEA database, and select only the most abundant nuclei with the highest binding energy for each possible value of $A$. This is how the figures you've already seen for binding energy are actually made.
+To understand in a bit more detail the components of the SEMF lets go through them one by one seeing how they improve our fit to real data. We'll take the data from the IAEA database, and select only the most abundant nuclei with the highest binding energy for each possible value of $A$. This is how the figures you've already seen for binding energy are actually made.
 
 #### Energy Terms
 ##### The Volume Energy Term
@@ -171,12 +174,12 @@ Once the other terms are included (subtracting from this Volume term) we find th
 :::{figure-md} semf1
 <img src='figures/semf_goodness_uptovol.png' width="60%" alt="Rutherford Form">
 
-Volume term in the liquid drop model compared to the IAEA binding energy data.
+Volume term (V) in the liquid drop model compared to the IAEA binding energy data.
 :::
 
 
 ##### The Surface Tension Energy Term
-This is a correction to the Volume Term, subtracting from it, to allow for the assumptions that the Outer Nucleons near the surface will be less tightly bound. These nucleons make the nucleus weaker, so feel less of the Short Range Attractive Forces between nucleons compared to those nucleons well inside the nucleus. It's like a Surface Tension Term. It's no surprise then that it is a proportional to the surface area which is proportional to $A^{2/3}$.
+This is a correction to the Volume Term, subtracting from it, to allow for the assumptions that the outer nucleons near the surface will be less tightly bound. These nucleons make the nucleus weaker, so feel less of the short range attractive forces between nucleons compared to those nucleons well inside the nucleus. It's like a surface tension term. It's no surprise then that it is a proportional to the surface area which is proportional to $A^{2/3}$.
 
 $$
 B_{E} = -a_{s} A^{2/3} ~~~~ a_{s} = 17.23 MeV.
@@ -188,12 +191,12 @@ See here the effect of the surface term. It has the greatest effect on small nuc
 :::{figure-md} semf1
 <img src='figures/semf_goodness_uptosurf.png' width="60%" alt="Rutherford Form">
 
-Volume and Surface term in the liquid drop model compared to the IAEA binding energy data.
+Volume (V) and Surface (S) term in the liquid drop model compared to the IAEA binding energy data.
 :::
 
 
 ##### The Coulomb Potential Energy Term
-This second correction to the Volume Term comes because nuclei contain positively charged protons that repel each other. This Electrostatic Repulsion also weakens the nucleus, hence a negative term, reducing the overall binding strength.
+This second correction to the Volume Term comes because nuclei contain positively charged protons that repel each other. This electrostatic repulsion also weakens the nucleus, hence a negative term, reducing the overall binding strength.
 
 By assuming the protons are distributed evenly in the spherical nucleus we can deduce the equation by considering the repulsion of a shell of protons of thickness $dr$ due to those inside the shell, and integrating over the entire nucleus size.
 
@@ -212,20 +215,23 @@ $$
 Based on this we see that the Electrostatic Energy in the shell $dr$, we call $dE_{e}$, is given by:
 
 $$
-dE_{e} = {4\pi r^{2} dr \rho_c} \times \frac{4\pi r^{3} \rho_{C}}{3} \times \frac{1}{4 \pi \epsilon_{0} r}
+dE_{e} = \left[{\rho_c \cdot 4\pi r^{2} dr }\right]_{shell} \times \left[ \frac{4\pi r^{3} \rho_{C}}{3} \times \frac{1}{4 \pi \epsilon_{0} r} \right]_{inner}
 $$
+
 which reduces to
+
 $$
 dE_{e} = \frac{4\pi^{4}\rho_{c}^{2}}{3\epsilon_{0}} dr
 $$
 
 
-Intregating this out to the maximum radius of the nucleus, $r=0\rightarrow R$, gives the total Electrostatic Energy:
+Integrating this out to the maximum radius of the nucleus, $r=0\rightarrow R$, gives the total Electrostatic Energy:
+
 $$
 E_{e} = \int_{0}^{R} \frac{4}{3} \frac{\pi r^{4}}{\epsilon_0}\rho_{c}^{2}dr = \frac{4}{3} \frac{\pi R^{5}}{5\epsilon_{0}}\rho_{c}^{2}
 $$
 
-If we substitute in the charge density given earlier we get
+Finally, if we substitute in the charge density given earlier we get
 
 $$
 E_{e} = \frac{4}{3} \frac{\pi R^{5}}{5\epsilon_{0}} \frac{Z^{2}e^{2}}{(4/3)^{2} \pi^{2} R^{6}} =
@@ -233,15 +239,19 @@ E_{e} = \frac{4}{3} \frac{\pi R^{5}}{5\epsilon_{0}} \frac{Z^{2}e^{2}}{(4/3)^{2} 
 $$
 
 If we remember that the nuclear size is given by $R=r_{0}A^{1/3}$ where $r_{0}$ is the Nucleon Effective Radius and we gather the constants out we get
+
 $$
 a_{c} = \frac{3}{5} \times \frac{e^{2}}{4\pi \epsilon_{0} r_{0}} \approx 0.7~\textnormal{MeV}
 $$
+
 and
+
 $$
 B_{E} = -a_{C} \frac{Z^{2}}{A^{1/3}}
 $$
 
 This is close to our contribution we showed in the equations above, however the analysis includes a slight approximation. As charge is quantized the integration over $r$ should really only start once a single charge has been enclosed. If this is accounted for the **Total Electrostatic Energy** is actually given by
+
 $$
 B_{E} = -a_{C} \frac{Z(Z-1)}{A^{1/3}}
 $$
@@ -252,18 +262,16 @@ The effect this has on our distribution is shown below. We can see that the coul
 :::{figure-md} semf1
 <img src='figures/semf_goodness_uptocoul.png' width="60%" alt="Rutherford Form">
 
-Volume, Surface, and Coulomb terms in the liquid drop model compared to the IAEA binding energy data.
+Volume (V), Surface (S), and Coulomb (C) terms in the liquid drop model compared to the IAEA binding energy data.
 :::
 
-This change in shape due to the Coulomb Term is of fundamental importance in Nuclear Physics and has profound implications further on in this course.
-
-We see that the effect of the Coulomb Term is to bend the B/A curve down at higher A yielding a peak in the B/A curve. One implication concerns the existence of Nuclear Fission in nature. 
+This change in shape due to the Coulomb Term is of fundamental importance in Nuclear Physics and has profound implications further on in this course. We see that the effect of the Coulomb Term is to bend the B/A curve down at higher A yielding a peak in the B/A curve. One implication concerns the existence of Nuclear Fission in nature. 
 - The gradient of the B/A curve tells us whether energy is released as we move along it. For light nuclei below iron, if nucleons are **added** to the system for example through fusion, then energy is released. 
 - In contrast however at higher atomic numbers, for example U-235, then energy is only released if nucleons are **removed** from the nucleus, for example if the nucleus is split up through nuclear fission.
 
 :::{figure-md} semf1
 <img src='figures/semf_goodness_simple_ratio.png' width="60%" alt="Rutherford Form">
-Differences between SEMF and data.
+Differences between three term liquid drop model and data.
 :::
 
 
@@ -281,7 +289,7 @@ $$
 B(A,Z) = a_{V}A - a_{s}A^{2/3} - a_{c}Z^{2}A^{-1/3} - a_a(A-2Z)^{2}A^{-1} - \delta_{\textnormal{pair}}
 $$
 
-At this stage we can regard both these new terms as arising empirically by observation from the data. Though you might guess that the physics origin comes from treating the nucleus using Quantum Mechanics. Not the negative terms - e.g. the more N deviates from the quality with Z, the more negative is the Asymmetry Term and the weaker bound is the nucleus (lower B/A).
+At this stage we can regard both these new terms as arising empirically by observation from the data. Though you might guess that the physics origin comes from treating the nucleus using Quantum Mechanics. Note the negative terms - e.g. the more N deviates from the quality with Z, the more negative is the Asymmetry Term and the weaker bound is the nucleus (lower B/A).
 
 
 ##### Nucleon Pairing Term
@@ -304,7 +312,7 @@ We might expect that the neutrons and protons in a nucleus might best pile into 
 
 - **Odd-Odd**  Finally we can consider states where both an odd proton and an odd neutron is left. These are referred to as Odd-Odd states. Because they are the least stable they are very rare in nature.
 
-So how nucleons pair up is important in the binding energy and dictates the $\delta_{pair}$ term. 
+So how nucleons pair up is important in the binding energy and this dictates the $\delta_{pair}$ term. 
 
 $$
 \delta_{\textnormal{pair}} = +a_{p}A^{-1/2} ~~~~\textnormal{for N odd and Z odd}\\
@@ -312,14 +320,14 @@ $$
 \delta_{\textnormal{pair}} = -a_{p}A^{-1/2} ~~~~\textnormal{for N even and Z even}\\
 $$
 
-Note the negative term in the binding energy equation that cancels out the negative term in the Even-Even case to produce an increase in binding energy overall (the nucleus is more stable). The $A^{-1/2}$ part is an empirical fit and the $a_p$ factor is a constant. Its important to get the sign of the term correct.
+Note the negative term in the binding energy equation that cancels out the negative term in the **Even-Even** case to produce an **increase in binding energy** overall (the nucleus is more stable). The $A^{-1/2}$ part is an empirical fit and the $a_p$ factor is a constant. Its important to get the sign of the term correct.
 
 
 
 ##### Nucleon Assymetry
 Finally we also see that nuclei are also more stable, roughly, if there are qual numbers of neutrons and protons (and preferably in pairs, Even-Even).
 
-In the simplest QM Model (an infinite 3d potential well) we can assume that spacing between the energy levels is a constant value and is proportional to the inverse of the volume hence $\Delta E \propto A^{-1}$. This yields the form 
+In the simplest QM Model (an infinite 3d potential well) we can assume that spacing between the energy levels is a constant value and is proportional to the inverse of the volume hence $\Delta E \propto A^{-1}$. A full derivation of this is beyond us at this point but if we were to do so it would yield the form 
 
 $$
 -a_{a} (A-2Z)^{2}A^{-1}
@@ -327,13 +335,13 @@ $$
 
  where $a_{a}$ is another constant. Importantly this gives zero if $N=Z$ as then $A=2Z$. 
 
-If we look at how both the additional pairing and asymmetry terms in our model behave we see that they are capable of bringing us closer to the data.The asymmetry term makes the biggest difference at high $A$ whilst the pairing term brings us slightly closer at low $A$.  We can now predict the binding energies for most of the common nuclei to within a few percent which is not bad for still a relatively simple model!
+If we look at how both the additional pairing and asymmetry terms in our model behave we see that they are capable of bringing us closer to the data.The asymmetry term makes the biggest difference at high $A$ whilst the pairing term brings us slightly closer at low $A$ and has smoothed out the fluctuations we saw at higher atomic mass.  We can now predict the binding energies for most of the common nuclei to within a few percent which is not bad for still a relatively simple model!
 
 
 :::{figure-md} nucleon-pairing-digram
 <img src='figures/semf_goodness_withpairing.png' width="100%" alt="ldm_combined">
 
-Possible pairing states of protons, each possible energy state or 'level' can have two protons or neutrons inside it, provided their spins are opposite.
+Volume (V), Surface (S), Coulomb (C), Asymmetry (A), and Pairing (P) terms in the liquid drop model compared to the IAEA binding energy data.
 :::
 
 
@@ -373,10 +381,10 @@ The Semi Empirical Mass Formula or Binding Energy Equation gives an excellent fi
 **SEMF Advantages**
 - It makes good predictions of the masses and binding energies of most nuclei and explains the basic shape of the Binding Energy (BE) Curve.
 - It allows predictions of the energy release in nuclear decay (or energy input needed to make a reaction occur)
-- It tells us why, for instance, fission can occur in nature.
+- It suggests, for instance, why fission can occur in nature due to changes in the binding energy for fission parents and daughters.
   
 **SEMF Disadvantages**
-- It does not explain why there are splines in the BE curve at certain nuclei.
+- It does not explain why there are spikes in the BE curve at certain nuclei.
 - It doesn't explain nuclei shape, in particular why some are observed to not be spherical.
 - It doesn't explain nuclear properties like **Nuclear Spin**, **Parity**, and **Magnetic Moment**. 
 
