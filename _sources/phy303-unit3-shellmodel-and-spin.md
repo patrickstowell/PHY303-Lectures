@@ -271,7 +271,7 @@ Diagram shell filling in a simple spherical model for the lowest energy shell.
 Now as we increase the possible $l$ state it is the $j$ value for a specific shell that is going to tell us how to fill up the Shell Energy Levels.  For instance, in the new example shown below we choose level $l=1$ as shown in {numref}`shellfillingb` we find we are allowed total $j$ values = $\pm\frac{1}{2}$ and $\pm\frac{3}{2}$. This is because in our new shell we have the two similar $m_{z}=0$ cases as before (states 5 and 6), but also four new ones, corresponding to the case where $m_{z}=1$.
 
 
-:::{figure-md} shellfillinga
+:::{figure-md} shellfillingb
 <img src='image-89.png' width="100%" alt="Rutherford Form">
 
 
@@ -292,7 +292,7 @@ It is importtant to remember when calculating these state that protons and neutr
 
 ### Nucleon and Level Notation
 
-Based on this a notation for labelling levels has been developed in Nuclear Physics as below. This is annoyingly similar looking to that used for electrons in atomic orbits but is actually very different so be careful not to mix them up.
+Based on this a notation for labelling levels has been developed in Nuclear Physics as in {numref}`nucleonnotation`. This is annoyingly similar looking to that used for electrons in atomic orbits but is actually very different so be careful not to mix them up.
 
 
 :::{figure-md} nucleonnotation
@@ -332,14 +332,15 @@ Although we get the first few Magic Numbers correct $(2, 8,$ and $20)$, the high
 ### Spin Orbit Corrections
 The answer turns out to be a so-called **Spin orbit Coupling** term. The propoosal of this critical extra term in the Nuclear Potential was made in 1949 by Maria Goeppert Mayer and Johannes Jense, recognised by award of the Nobel Prize in 1963 - together with Eugene Wigner.
 
-The basis is to introduce a further contribution to the internuclear force and hence the potential $V(r)$ that depends on the orientation of the spin $s$ and angular momentum $l$. This extra factor causes a re-ording of the energy levels 
+The basis is to introduce a further contribution to the internuclear force and hence the potential $V(r)$ that depends on the orientation of the spin $s$ and angular momentum $l$. This extra factor causes a re-ording of the energy levels
+
 $$
 V=V(r)l\cdot s.
 $$
 
 Recall how the Nuclear Potential Well shape (we said it comes from the Saxon Woods distribution of matter above) determines the energy levels. The Spin Orbit Correction changes this shape. The potential is deeper (nucleons are more strongly attracted) if the $l$ and $s$ are aligned parallel, and less deep (nucleons repulsed more) if they are aligned anti-parallel.
 
-If the nucleon is deep inside the nucleus then it also encounters many other nucleons with **Spin-Up** as **Spin-Down** and so the effect will average out, but it does not average everywhere, particularly close to the edges of the nucleus. The effect of this is to break the Degeneracy in the assignment of nucleons t energy levels by introducing new energy levels depending on the $j$ value.
+If the nucleon is deep inside the nucleus then it also encounters many other nucleons with **Spin-Up** as **Spin-Down** and so the effect will average out, but it does not average everywhere, particularly close to the edges of the nucleus. The effect of this is to break the degeneracy in the assignment of nucleon energy levels by introducing new energy levels depending on the $j$ value.
 
 For instance, consider the $l=1$ level. Previously this had 6 nucleons, $3/2, 1/2, -1/2, -3/2$ (for the $j=3/2$) and 1$/2, -1/2$ (for the $j=1/2$) all in the same level. Now the $j=3/2$ nucleons (parallel $l$ and $s$) get their own new, lower, energy level. The $j=1/2$ nucleons (anti-parallel $l$ and $s$) get their own new, higher, energy level.
 
@@ -355,7 +356,7 @@ This effect applies for all the $l$ levels, they all get split into two levels, 
 
 ### Modified Shell Model
 
-The effect of the Energy Levels splitting is dramatic. As shown below it changes the position of the gaps, and can also makes neighboring $j$ states jump over one another. To calculate this what we need to do is work our way successively up the shells, first figuring out how many energy states there are given $j$, and then figuring out which correspond to parallel anti-parallel combinations. See how this gives the necessary extra splitting in the figure below. THe number of states for each $l$ remains, we just break the degeneracy, creating more levels. We see a different clustering of levels, and different major "gaps" corresponding to our magic numbers. Notice for instance how the $1\textnormal{g}$ level splits. All the $1g_{9/2}$ nucleons get moved down and the $1\textnormal{g}_{7/2}$ ones go up, creating a new gap when the total of 50 nucleons is reached.
+The effect of the Energy Levels splitting is dramatic. As shown below it changes the position of the gaps, and can also make neighboring $j$ states jump over one another. To calculate this what we need to do is work our way successively up the shells, first figuring out how many energy states there are given $j$, and then figuring out which correspond to parallel anti-parallel combinations. See how this gives the necessary extra splitting in the figure below. The number of states for each $l$ remains, we just break the degeneracy, creating more levels. We see a different clustering of levels, and different major "gaps" corresponding to our magic numbers. Notice for instance how the $1\textnormal{g}$ level splits. All the $1g_{9/2}$ nucleons get moved down and the $1\textnormal{g}_{7/2}$ ones go up, creating a new gap when the total of 50 nucleons is reached.
 
 ![Alt text](image-34.png)
 
@@ -366,7 +367,7 @@ $$
 2, 8, (14), 20, 28, 50, 82, 126.
 $$
 
-You'll notice that in some oof my examples I've mentioned 14 as a possible shell. This is because the energy gap for the $1d_{5/2}$ state means it appears to give the impressions of shell closures in some datasets, but it is not as strong as some of the main magic numbers.
+You'll notice that in some of my examples I've mentioned 14 as a possible shell. This is because the energy gap for the $1d_{5/2}$ state means it appears to give the impressions of shell closures in some datasets, but it is not as strong as some of the main magic numbers.
 
 The ability to describe the Magic numbers is a great success of the shell model. 
 We now have a way to explain how protons and nucleons structure themselves inside our nucleus. In the next unit we'll discuss how this can be used to estimate some other observed properties of the nucleus, such as parity and the magnetic moment.
