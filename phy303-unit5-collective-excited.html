@@ -411,7 +411,12 @@ document.write(`
 <p>The way to deal with this is to use a combination of concepts often referred to as Collective Models. The idea of a collective model is to merge concepts where the behavior of individual nucleons is used, as in the Shell Model, with aspects where the behavior of the nucleus as a coherent single entity is considered.</p>
 <p>In a sense, the Semi-Empirical Mass Formula is already a collective type model as it involves combining elements that take account of individual nucleons, such as the Pairing Term, with elements that are about the Bulk Nucleus as a whole, such as the Volume Term. A collective body aspect in which no account is taken of individual nucleonic state or behavior, and an individual particle aspect, where individual nucleons take on discrete energy levels and states. The most interesting area where a collective treatment is needed is with large nuclei, like U-235. Such nuclei show deformities in their shape and exhibit exotic behavior that can be modeled as either vibrations and rotations of the bulk nuclear material acting together.</p>
 <p>The motivation of the Collective Model is to assume that an interaction occurs between the outer nucleons and the closed-shell core of these nuclei, leading to deformation of the whole nucleus. The result is that there is still a central nuclear potential due to the filled core shells as before in the basic Shell Model, with nucleons in the outer shells moving under the influence of this core potential. But importantly, the potential is now not necessarily spherically symmetric. It may be deformed, either permanently or actually changing with time. The concept here is to invoke an extension of the Liquid Drop and Shell Models to include the physics associated with deformation of nuclei away from the basic spherical shape to more complex shapes, as illustrated below:</p>
-<p><img alt="Alt text" src="_images/image-45.png" /></p>
+<figure class="align-default" id="collectivediagram">
+<a class="reference internal image-reference" href="_images/image-45.png"><img alt="Spin orbit corrections" src="_images/image-45.png" style="width: 60%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 5.1 </span><span class="caption-text">Diagrams of possible nuclear shapes based on different poles. Further visualizations for the spherical, prolate, oblate, and hexadecapole are given in the visualizers section.</span><a class="headerlink" href="#collectivediagram" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <p>The combination of the single-particle and liquid drop models presents very difficult theoretical problems, including the need for the Single Particle State to be calculated for both spherical and non-spherical potentials. That is beyond our scope here, so we concentrate on the qualitative features.</p>
 <p>Allowing a nuclear core to be deformed in our model changes the possible Shell Energy Levels, because the Nuclear Potential Well shape is changed for deformed nuclei. This introduces two new types of Collective Modes of Excitation and with them associated energy levels due to (a) Vibration states and (b) rotation (Rotational States). We expect that the allowed energy levels for both of these modes will also be quantized in some way, depending on the shape of the nucleus.</p>
 </section>
@@ -419,16 +424,26 @@ document.write(`
 <h2><span class="section-number">5.2. </span>Rotational States<a class="headerlink" href="#rotational-states" title="Permalink to this heading">#</a></h2>
 <p>Let’s consider the rotational states first. We can start by describing the shape as a revolution around some central point, with Cylindrical Symmetry, and two extreme cases as shown below, following the prolate and oblate structures we saw previously when considering the electric quadrupole moment of nuclei.</p>
 <p>If we modify our model to remove the requirement that nuclei are spherical, what we find in the full derivation of the Schrödinger’s Equation is that wave functions based on nuclei occupying physical spaces based on Laplace spherical harmonics are also valid solutions. Since a linear combination of any two equations that satisfy Schrödinger’s Equation are also valid solutions, we could consider particle wave functions that are arbitrary combinations of spherical harmonics. However, what we actually find is that when considering the possible discrete energy levels of the nucleus, different harmonics correspond to different states. Laplace Spherical Harmonics are described in general form as <span class="math notranslate nohighlight">\(Y_{l,m}\)</span> and are shown in their base form in the image below. You’ll see that <span class="math notranslate nohighlight">\(Y_{0}^{0}\)</span> corresponds to our simple case of a plain sphere.</p>
-<p><img alt="Alt text" src="_images/image-46.png" /></p>
+<figure class="align-default" id="laplaceshapes">
+<a class="reference internal image-reference" href="_images/image-46.png"><img alt="Spin orbit corrections" src="_images/image-46.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 5.2 </span><span class="caption-text">Diagram of possible spherical harmonics that contribute to underlying nuclear structure. Further visualizations are given in the contents panel.</span><a class="headerlink" href="#laplaceshapes" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <p>To better understand the relation between spherical harmonics lets consider the simplest possibe case for a deformed nucleus. Imagine we have for the sake of argument a blob of our hypothetical nuclear material, and we deform it (<em>squash it down</em>) so that it has an oblate structure like in the previous unit. This change in shape can be represented in our waveform by considering a state which is a combination of our spherical form <span class="math notranslate nohighlight">\(Y_{00}\)</span>, and the first quadrupole spherical harmonic corresponding to <span class="math notranslate nohighlight">\(Y_{20}\)</span> as in the picture below.</p>
-<p><img alt="Alt text" src="_images/image-48.png" /></p>
+<figure class="align-default" id="oblateexample">
+<a class="reference internal image-reference" href="_images/image-48.png"><img alt="Spin orbit corrections" src="_images/image-48.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 5.3 </span><span class="caption-text">Example of how variations in <span class="math notranslate nohighlight">\(\beta\)</span> change the shape of the nucleus.</span><a class="headerlink" href="#oblateexample" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <p>We express this algebraically by saying that the surface of our nucleus has a radius at a given angle in spherical co-ordinates as</p>
 <div class="math notranslate nohighlight">
 \[
-R(\theta, \phi) = R_{av} [Y_{0,0}+\beta Y_{20} (\theta, \phi)]
+R(\theta, \phi) = R_{av} [Y_{00}+\beta Y_{20} (\theta, \phi)]
 \]</div>
 <p>where <span class="math notranslate nohighlight">\(Y_{20}\)</span> is a Laplace spherical harmonic representing the distance from origin to the surface of the shape, <span class="math notranslate nohighlight">\(R_{av}\)</span> is the average nuclear radius, and <span class="math notranslate nohighlight">\(\beta\)</span> is a deformation parameter. As shown in the picture below we expect that as we increase <span class="math notranslate nohighlight">\(\beta\)</span> the shape of our nucleus slowly transitions between <span class="math notranslate nohighlight">\(Y_{00}\)</span> and <span class="math notranslate nohighlight">\(Y_{20}\)</span> states. In reality our deformed nuclei may be somewhere in between.</p>
-<p>Note also that <span class="math notranslate nohighlight">\(Y_{0,0}\)</span> is just our spherical shape and has a constant value of <span class="math notranslate nohighlight">\(Y_{0,0}=1\)</span> so we’ve dropped the angular dependence in the equation.  The important thing to notice is that if <span class="math notranslate nohighlight">\(\beta\)</span> is equal to zero, then we have only the spherical component, and we arrive at a spherical nuclear shape as in the figure. Exactly what we want in the no deformation case!</p>
+<p>Note also that <span class="math notranslate nohighlight">\(Y_{00}\)</span> is just our spherical shape and has a constant value of <span class="math notranslate nohighlight">\(Y_{00}=1\)</span> so we’ve dropped the angular dependence there in the equation.  The important thing to notice is that if <span class="math notranslate nohighlight">\(\beta\)</span> is equal to zero, then we have only the <span class="math notranslate nohighlight">\(Y_{00}\)</span>, and we arrive at a spherical nuclear shape as in the figure. Exactly what we want in the no deformation case!</p>
 <p>If <span class="math notranslate nohighlight">\(\beta\)</span> is non-zero however we get slight modifications of our nuclear shape as a result. The deformation parameter <span class="math notranslate nohighlight">\(\beta\)</span> can be expressed in terms of the actual nuclear radius as</p>
 <div class="math notranslate nohighlight">
 \[
@@ -439,24 +454,23 @@ R(\theta, \phi) = R_{av} [Y_{0,0}+\beta Y_{20} (\theta, \phi)]
 <p>It turns out the Electric Quadrupole Moment of a deformed nucleus is directly related to the deformation of the nucleus itself. It  is given by:</p>
 <div class="math notranslate nohighlight">
 \[
-Q_{0} = \frac{3}{\sqrt{5\pi}} R_{av}^{2} Z \beta (1+0.16\beta)
+Q_{EQM} = \frac{3}{\sqrt{5\pi}} R_{av}^{2} Z \beta (1+0.16\beta)
 \]</div>
-<p>This is the intrinsic electric quadrupole moment for a deformed nucleus at rest. Note how it depends on a surface area <span class="math notranslate nohighlight">\(R_{av}^{2}\)</span>, the number of protons <span class="math notranslate nohighlight">\(Z\)</span> and the deformation parameter. You can see how <span class="math notranslate nohighlight">\(Q\)</span> becomes zero for the spherical case, i.e. when <span class="math notranslate nohighlight">\(\beta\)</span> = 0.</p>
-<p>So, what about the Rotational Energy Levels? In classical mechanics, this comes from considering the kinetic energy of a rigid rotating body with angular momentum <span class="math notranslate nohighlight">\(\mathbf{R}\)</span> (note this is a different symbol than the radius used above).</p>
-<p>In the classical case, we get the equation for the kinetic energy of a Rigid Rotation as here, based on the picture that shows the angular momentum axis.</p>
+<p>This is the intrinsic electric quadrupole moment for a deformed nucleus at rest. Note how it depends on a surface area <span class="math notranslate nohighlight">\(R_{av}^{2}\)</span>, the number of protons <span class="math notranslate nohighlight">\(Z\)</span> and the deformation parameter. You can see how <span class="math notranslate nohighlight">\(Q_{EQM}\)</span> becomes zero for the spherical case, i.e. when <span class="math notranslate nohighlight">\(\beta\)</span> = 0.</p>
+<p>So, what about the Rotational Energy Levels? In classical mechanics, this comes from considering the kinetic energy of a rigid rotating body with angular momentum <span class="math notranslate nohighlight">\(\hat{L}\)</span>.</p>
+<p>In the classical case, we get the equation for the kinetic energy of a Rigid Rotation <span class="math notranslate nohighlight">\(L_{c}\)</span> given its rotational kinetic energy and effective moment of inertia <span class="math notranslate nohighlight">\(I_{c}\)</span> as.</p>
 <div class="math notranslate nohighlight">
 \[
-E_{R} = \frac{R^{2}}{2I}
+E_{R} = \frac{L_{c}^{2}}{2I_{c}}
 \]</div>
-<p>where <span class="math notranslate nohighlight">\(I\)</span> is the effective moment of inertia.</p>
-<p>Now, switching to the quantum mechanical case, the energies are given by solving the relevant Schrödinger Equation. We replace the angular momentum <span class="math notranslate nohighlight">\(R\)</span> with an operator acting on the wave function. Then the Eigenvalues and Eigenfunctions are given as follows:</p>
+<p>Now, switching to the quantum mechanical case, the energies are given by solving the relevant Schrödinger Equation. We replace the angular momentum <span class="math notranslate nohighlight">\(L\)</span> with an operator acting on the wave function. Then the Eigenvalues and Eigenfunctions are given as follows:</p>
 <div class="math notranslate nohighlight">
 \[
-\frac{R^{2}}{2I} \psi = E_{J} \psi
+\frac{\hat{L}^{2}}{2I} \psi = E_{J} \psi
 \]</div>
 <div class="math notranslate nohighlight">
 \[
-R^{2} Y_{JM}(\theta,\phi) = J(J+1) \hbar^{2} Y_{JM} (\theta, \phi)
+\frac{L^{2}}{2} Y_{JM}(\theta,\phi) = J(J+1) \hbar^{2} Y_{JM} (\theta, \phi)
 \]</div>
 <div class="math notranslate nohighlight">
 \[
@@ -497,12 +511,12 @@ E_{J} = \frac{1}{6} J(J+1)E_{2}~~~~~~~~~J=0,2,4,\ldots
 </div>
 <p>The Vibration states we introduce are time-variable changes in surface shape that yield quantized standing waves. That is, what we need to envisage here is standing wave patterns. In the quantum world, only certain such standing waves are allowed, as determined by the relevant quantum numbers. The details are beyond our scope here, but we can gain a general picture.</p>
 <p>Note that the average shape might be spherical, or it could be a deformed shape, depending on the nucleus. Either way, the instantaneous shape will be non-spherical.</p>
-<p>Firstly, we need to describe the surface. This is done again using Spherical Harmonics and Legendre Polynomials but instead now we consider time-varying giving standing wave patterns based on the harmonics. In spherical coordinates, we can consider the instantaneous coordinate of a point on the surface at θ, φ as a linear combination of many possible harmonics as before</p>
+<p>Firstly, we need to describe the surface. This is done again using Spherical Harmonics and Legendre Polynomials but instead now we consider time-varying  standing wave patterns based on the harmonics. In spherical coordinates, we can consider the instantaneous coordinate of a point on the surface at θ, φ as a linear combination of many possible harmonics as before</p>
 <div class="math notranslate nohighlight">
 \[
 R(t, \theta,\phi) = R_{av} + \sum_{\lambda&gt;1}^{\lambda=\infty} \sum_{\mu=-\lambda}^{\mu=+\lambda}  \alpha_{\lambda \mu}(t) Y_{\lambda \mu} (\theta, \phi)
 \]</div>
-<p>Note how this time we include all possible spherical harmonics <span class="math notranslate nohighlight">\(Y\)</span> that may contribute, and each possible shape has its own amplitude <span class="math notranslate nohighlight">\(\alpha\)</span>.</p>
+<p>Note how this time we include all possible spherical harmonics <span class="math notranslate nohighlight">\(Y_{\lambda\mu}\)</span> that may contribute, and each possible shape has its own amplitude <span class="math notranslate nohighlight">\(\alpha_{\lambda \mu}\)</span> and is time varying.</p>
 <p>The basic modes of vibration are determined by the <span class="math notranslate nohighlight">\(\lambda\)</span> factor here as:</p>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(\lambda=0\)</span> Monopole - forbidden</p></li>
@@ -510,7 +524,7 @@ R(t, \theta,\phi) = R_{av} + \sum_{\lambda&gt;1}^{\lambda=\infty} \sum_{\mu=-\la
 <li><p><span class="math notranslate nohighlight">\(\lambda=2\)</span> Quadrupole</p></li>
 <li><p><span class="math notranslate nohighlight">\(\lambda=3\)</span> Octupole</p></li>
 </ul>
-<p>The first state is forbidden because the oscillations over time only modify the radial component (<span class="math notranslate nohighlight">\(Y_{0,0} = 1\)</span>). If <span class="math notranslate nohighlight">\(\alpha_{0,0}\)</span> had any time variability, this would result in fluctuations in the density of the nucleus, which is forbidden in our incompressible model.</p>
+<p>The first state is forbidden because the oscillations over time only modify the radial component (<span class="math notranslate nohighlight">\(Y_{00} = 1\)</span>). If <span class="math notranslate nohighlight">\(\alpha_{00}\)</span> had any time variability, this would result in fluctuations in the density of the nucleus, which is forbidden in our incompressible model.</p>
 <p>The second state is not considered because the dipole form produces net shifts in the center of mass (all neutrons and protons moving up and down together). This cannot result from internal forces, only external ones, so it is not worth considering in our nucleus-centric model.</p>
 <p>The first important vibrational model is therefore the Quadrupole.
 The various allowed vibrational states in nuclei are very complicated, but we can get a feel for their behavior. For the simplest even-even nuclei, the Ground Vibration State is designated <span class="math notranslate nohighlight">\(0^{+}\)</span>. If we add a unit of Quantized Vibration (a phonon) <span class="math notranslate nohighlight">\(1\hbar \omega\)</span>, we get to the first quadrupole state designated <span class="math notranslate nohighlight">\(2^{+}\)</span>.</p>
@@ -520,7 +534,7 @@ The various allowed vibrational states in nuclei are very complicated, but we ca
 <p>The basic vibrational energy levels can be written as follows</p>
 <div class="math notranslate nohighlight">
 \[
-EE_{N} = \hbar \omega_{l} \left(\frac{2l+1}{2} +N \right)
+E_{N} = \hbar \omega_{l} \left(\frac{2l+1}{2} +N \right)
 \]</div>
 <p>So here we see that the Quadrupole (<span class="math notranslate nohighlight">\(l=2\)</span>) Ground State (no phonons) has an energy level at</p>
 <div class="math notranslate nohighlight">
@@ -549,7 +563,7 @@ Unlike electrons in atoms, nucleons in nuclei experience a more complex spacing 
 <p><strong>Angular Momentum and Radiation Types:</strong>
 When the nucleon undergoes an energy transition, it emits a photon (gamma ray) to return to the ground state. The photon carries a total angular momentum, including its own spin. The minimum value of angular momentum (L) for gamma radiation is 1 therefore the transition also needs to induce a change in angular momentum of the nucleus of at least 1.</p>
 <ul class="simple">
-<li><p>If <span class="math notranslate nohighlight">\(J_i\)</span> (initial spin) is equal to <span class="math notranslate nohighlight">\(J_f\)</span> (final spin), the transition is forbidden. This means that gamma-ray transitions typically involve changes in angular momentum. Lower values of <span class="math notranslate nohighlight">\(L\)</span> make the transition more probable, with $L=1% transitions being the most common.</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(J_i\)</span> (initial spin) is equal to <span class="math notranslate nohighlight">\(J_f\)</span> (final spin), the transition is forbidden. This means that gamma-ray transitions typically involve changes in angular momentum. Lower values of <span class="math notranslate nohighlight">\(L\)</span> make the transition more probable, with <span class="math notranslate nohighlight">\(L=1\)</span> transitions being the most common.</p></li>
 <li><p>Depending on the value of L, different types of radiation are possible:</p>
 <ul>
 <li><p>L=1 corresponds to dipole radiation.</p></li>
@@ -561,18 +575,17 @@ When the nucleon undergoes an energy transition, it emits a photon (gamma ray) t
 <p><strong>Parity Conservation:</strong>
 In gamma-ray transitions, parity is conserved. Electric multipole radiation has parity <span class="math notranslate nohighlight">\((-1)^l\)</span>, while magnetic multipole radiation has parity <span class="math notranslate nohighlight">\((-1)^{(L+1)}\)</span>. Any transition has to make sure that parity is also conserved between the states, this means we if we know the parity of the starting and final nucleon state we can estimate the form of the radiation.</p>
 <p><img alt="Alt text" src="_images/image-51.png" /></p>
-<p>Above are some possible transitions based no values of <span class="math notranslate nohighlight">\(J_{f}\)</span> and <span class="math notranslate nohighlight">\(J_{i}\)</span> and whteher these are likely to be due to electromagnetic or magnetic multipole radiations. The most likely transitions are described below.</p>
+<p>Above are some possible transitions based on values of <span class="math notranslate nohighlight">\(J_{f}\)</span> and <span class="math notranslate nohighlight">\(J_{i}\)</span> and whether these are likely to be due to electromagnetic or magnetic multipole radiations. The most likely transitions are described below.</p>
 <ul class="simple">
-<li><p><strong>Electric Dipole (E1) Transitions:</strong> These transitions involve ΔL = 1 and result in a parity change of π = <span class="math notranslate nohighlight">\((-1)^1\)</span> = -1 (parity-changing). Electric dipole transitions are more common than other multipole transitions and have relatively higher probabilities. They often correspond to the emission of gamma rays.</p></li>
+<li><p><strong>Electric Dipole (E1) Transitions:</strong> These transitions involve ΔL = 1 and result in a parity change of π = <span class="math notranslate nohighlight">\((-1)^1\)</span> = -1 (parity-changing). Electric dipole transitions are more common than other multipole transitions and have relatively higher probabilities.</p></li>
 <li><p><strong>Magnetic Dipole (M1) Transitions:</strong> These transitions involve ΔL = 0 and result in a parity change of π = <span class="math notranslate nohighlight">\((-1)^{1+1}\)</span> = 1 (parity-preserving). Magnetic dipole transitions are less common than E1 transitions but still occur in certain nuclear decays.</p></li>
 <li><p><strong>Quadrupole (E2) Transitions:</strong> Quadrupole transitions involve ΔL = 2 and result in a parity change of π = <span class="math notranslate nohighlight">\((-1)^2\)</span> = 1 (parity-preserving). Quadrupole transitions are less probable than E1 and M1 transitions and are associated with higher-order nuclear excitations.</p></li>
 </ul>
 </section>
 <section id="example-cobalt-60-decay">
 <h2><span class="section-number">5.5. </span>Example: Cobalt-60 Decay<a class="headerlink" href="#example-cobalt-60-decay" title="Permalink to this heading">#</a></h2>
-<p>As an example for gamma ray decays lets consider Co-60 a very common radio-isotope used in nuclear labs to calibrate detector response as placing it in a gamma spectrometer results in two two very clear gamma ray peaks at 1.1732 MeV and 1.3325 MeV next to one another that can be used to assess detector resolution. Co-60 itself however is primarily a <span class="math notranslate nohighlight">\(\beta\)</span> emitter as we see in the figure below. What actually happens during a radioactive decay of <span class="math notranslate nohighlight">\(\beta\)</span> is the 99% of the time it converts into an excited state of Nickel which subsequently emits gamma radiation.</p>
+<p>As an example for gamma ray decay lets consider Co-60. This is a very common radio-isotope used in nuclear labs to calibrate detector response as placing it in a gamma spectrometer results in two two very clear gamma ray peaks at 1.1732 MeV and 1.3325 MeV next to one another that can be used to assess detector resolution. Co-60 itself however is primarily a <span class="math notranslate nohighlight">\(\beta\)</span> emitter as we see in the figure below. What happens during a radioactive decay of Co-60 is that 99% of the time it converts into an excited state of Nickel which subsequently emits gamma radiation.</p>
 <p><img alt="Alt text" src="_images/image-100.png" /></p>
-<p>Certainly! Let’s explore the electromagnetic transitions in the decay of Cobalt-60 (Co-60) to its final Nickel isotopes, considering the changes in parity and angular momentum and determining whether the radiation is electric or magnetic dipole or quadrupole.</p>
 <p>Cobalt-60 (Co-60) undergoes beta decay, resulting in the formation of Nickel-60 (Ni-60). During this decay, several electromagnetic transitions can occur, and we will focus on the relevant details:</p>
 <ol class="arabic">
 <li><p><strong>Beta Decay of Co-60 to Ni-60:</strong>
@@ -581,7 +594,7 @@ Co-60 decays primarily through beta-minus (β-) decay. In this process, a neutro
 <p>The decay process itself does not directly involve electromagnetic transitions. However, the resulting Ni-60 nucleus may exist in an excited state, and subsequent gamma-ray transitions can occur as Ni-60 de-excites to its ground state.</p>
 </li>
 <li><p><strong>Gamma-Ray Transitions in Ni-60:</strong>
-When Ni-60 is formed it is in an excited state, it can emit gamma rays (high-energy photons) as it undergoes de-excitation to reach its ground state. These gamma-ray transitions involve changes in angular momentum (L) and parity (π) of the nucleus as we see it jump betwen the <span class="math notranslate nohighlight">\(4^+\)</span>, <span class="math notranslate nohighlight">\(2^+\)</span>, and <span class="math notranslate nohighlight">\(0^{+}\)</span> states.B ecause <span class="math notranslate nohighlight">\(L=4\)</span> transitions have a lower probability, the nucleus also tends to avoid jumping straight from the <span class="math notranslate nohighlight">\(4+\)</span> state to <span class="math notranslate nohighlight">\(0+\)</span>, and instead emits to gamma rays as it moves down the energy levels. The short decay times of these two states results in two gamma rays being emitted in a very short time period corresponding to the two energy differences between these levels and showing up as two co-incident peaks in gamma ray detectors.
+When Ni-60 is formed it is in an excited state, it undergoes de-excitation to reach its ground state. These gamma-ray transitions involve changes in angular momentum (L) and parity (π) of the nucleus as we see it jump betwen the <span class="math notranslate nohighlight">\(4^+\)</span>, <span class="math notranslate nohighlight">\(2^+\)</span>, and <span class="math notranslate nohighlight">\(0^{+}\)</span> states. Because <span class="math notranslate nohighlight">\(L=4\)</span> transitions have a lower probability, the nucleus also tends to avoid jumping straight from the <span class="math notranslate nohighlight">\(4+\)</span> state to <span class="math notranslate nohighlight">\(0+\)</span>, and instead emits to gamma rays as it moves down the energy levels. The short decay times of these two states results in two gamma rays being emitted in a very short time period corresponding to the two energy differences between these levels and showing up as two co-incident peaks in gamma ray detectors.
 <br></p>
 <p>Note that because of the larger energy jump the <span class="math notranslate nohighlight">\(4+\)</span> state is far more likely to decay into the lower <span class="math notranslate nohighlight">\(2+\)</span> state than the higher one resulting in 1.1732 MeV being one of the dominant gamma rays emitted. Both of these emissions are E2 transitions.</p>
 </li>
