@@ -1,6 +1,6 @@
 ## Nuclear Power
 
-### 10.1 Introduction: basic energetics of nuclear power
+### Introduction: basic energetics of nuclear power
 If we plot the binding energy per nucleon against the mass number (Figure 1), we find a broad maximum around iron.  This implies that, in principle, it is energetically favourable for elements lighter than iron to fuse and for elements heavier than iron to split into smaller nuclei (by fission or, for nuclei not much heavier than iron, by $α$ decay).  If the elements formed in thermodynamic equilibrium, we would expect the elements around iron to be most abundant, but in nature the temperatures needed for this only occur in the interior of supernova explosions (producing a pronounced “iron peak” in the elemental abundances, see right panel of Figure 1).  
 
 ![Alt text](image-74.png)
@@ -10,8 +10,8 @@ If we plot the binding energy per nucleon against the mass number (Figure 1), we
 In fact, most of the elements up to bismuth $(Z = 83)$ have at least one stable isotope (the exceptions, which appear as missing points in the abundance plot, are technetium, $Z = 43$, and promethium, $Z = 61$).  The reason for this is the Coulomb barrier, which prevents light nuclei from getting close enough to fuse, and confines protons in heavy nuclei.  Nevertheless, it remains the case that energy would be released by fission of heavy nuclei or by fusion of light nuclei.  Stars are powered by nuclear fusion, although we have yet to surmount the technical challenges involved in achieving this on Earth (see section fusion section discussed later); on the other hand, we have solved the problems involved in generating energy by the fission of heavy nuclei.
 
 
-### 10.2 Fission
-#### 10.2.1 Physics of fission
+### Fission
+#### Physics of fission
 ##### Spontaneous fission
 In the liquid drop model, a nucleus will decay by spontaneous fission if it is unstable to small changes in its shape.  If we start with a spherical nucleus, a small elongation along one axis (pulling it into a rugby-ball shape, technically known as a prolate spheroid) will decrease the Coulomb term in the semi-empirical mass formula (the protons are a bit further apart) but increase the surface term (the surface area is increased).  If we assume that the nucleons remain closely packed together, so that the volume stays the same, a small shape change of this type corresponds to changing the long axis to  while reducing the short axes to , where .  It turns out (neither Martin nor Krane proves this, so I’m not going to either!) that in this case  and , so .  The nucleus will be unstable to spontaneous fission if this releases energy, so the condition from spontaneous fission is	(the exact number depends on the coefficients you adopt for the semi-empirical mass formula: Martin’s coefficients give 49, Krane’s give 47).  This condition is not met until well into the transuranic region, somewhere around A = 300.  However, it is an unduly pessimistic estimate, because it does not take into account quantum tunnelling: nuclei that have small fission barriers may be able to decay by spontaneous fission even though this does not look possible in the classical liquid drop model.  In addition, some heavy nuclei are not spherical in the ground state, and we should also consider the effects of nuclear structure as described by the shell model.  One effect of this is to make fission much more likely for even-even than for even-odd nuclei: for example,  has a spontaneous fission half-life of 2.8 hours, whereas  (which decays primarily by α emission) has a spontaneous fission half-life of 131 years.  This appears to be related to the effect of the spin of the unpaired neutron.  This feature is also seen in induced fission: neutron capture by 235U, producing the even-even nucleus 236U, is much more likely to induce fission than neutron capture by 238U.
 The effects of quantum tunnelling, non-spherical nuclei and shell corrections can be seen in figure 2.  Spontaneous fission becomes a viable decay mode for  (though it should be noted that the dominant decay mode for nearly all these very heavy nuclei remains α-decay).  
@@ -24,7 +24,7 @@ spontaneous fission, plotted against fissility parameter  (which in this paper i
 :::
 
 
-#### 10.2.1.2 Induced fission
+##### Induced fission
 Even with the corrections for shell model effects and quantum tunnelling, it remains true that only very heavy nuclei decay by spontaneous fission.  The heaviest naturally occurring isotope is 238U, and its half-life to spontaneous fission is $8.4\times10^{15}$ years $($or, to put it another way, its branching fraction for spontaneous fission is $5.4\times 10^{−5}\%$$)$.  The only way to use fission to generate energy is to induce it by neutron capture.  If the result of neutron capture is an excited state above the fission barrier, which as we can see from Figure 2 can be taken as 6 MeV for all relevant isotopes, then we have a good chance of inducing fission.
 
 For example, the atomic mass of 235U is 235.043924 u.  If we add a thermal neutron to this, we get $236.052589 u$ (we can neglect the tiny kinetic energy of a thermal neutron).  The atomic mass of the ground state of 236U is $232.045563 u$, so the level of excitation of the compound nucleus formed in the neutron capture is $0.007026 u = 0.54 MeV$.  This is higher than the fission barrier, so this nucleus should decay by spontaneous fission.
@@ -58,7 +58,7 @@ The binding energy of 236U is 7.587 MeV/nucleon.  The average binding energy of 
   
 Thus, most of the energy release comes in the form of the kinetic energy of the fission fragments.  This will quickly be redistributed among neighbouring atoms as the recoiling fragments collide with them, so the overall effect is to heat up the uranium.
 
-#### 10.2.1.3 Chain reactions
+#### Chain reactions
 If at least one of the neutrons released by a 235U fission manages to induce fission in another 235U nucleus, we have a chain reaction.  There are three possible scenarios:
 
 - If the number of neutrons inducing a further fission is <1, the system is sub-critical and the fission process will not sustain itself.
@@ -75,7 +75,7 @@ The need to keep the prompt neutron yield subcritical makes starting up a nuclea
 ##### Subcritical reactors
 Startup sources supply additional neutrons to an initially subcritical chain reaction.  Some reactor designs have been proposed that would always be subcritical, with the additional neutrons needed to maintain the chain reaction supplied, for example, by a spallation source.  The benefits of subcritical reactors are that they could use a wider range of fuel, especially long-lived nuclear waste (such as neptunium, americium and curium, which have isotopes with half-lives of thousands to millions of years) and thorium (which is more abundant on Earth than uranium), and that they allay many concerns about reactor safety, since they are inherently incapable of going supercritical (but, as we saw with Fukushima, a successfully shut-down reactor can still pose a safety hazard, because fission product decays will continue to heat the reactor core after the chain reaction has stopped).  The disadvantages are high cost and concerns about reliability (if the accelerator for the spallation source goes offline, the reactor will shut down).  Although subcritical reactors have some vociferous supporters, they have so far failed to win over the nuclear industry.
 
-#### 10.2.2 Reactor design
+#### Reactor design
 ##### The four-factor formula
 The design goal of a nuclear reactor is to maintain a precisely critical, and therefore stable, fission chain reaction.  In order to do this, we must have exactly one neutron from each fission (including delayed neutrons) initiate another fission reaction.  There are four factors that determine this number:
 - **η** is the number of neutrons per fission that are available to be thermalized (i.e. are not absorbed in (n,γ) reactions on uranium); 
@@ -102,7 +102,7 @@ Fast reactors are very efficient in terms of fuel usage, and produce less waste 
 
 Fast reactor designs, especially fast breeders, were intensively studied in the 1950s and 60s, when the supply of uranium was thought to be very limited.  However, commercial uranium supply increased significantly through the 1970s, and at the same time increased concerns over safety and radioactive waste caused a slowdown in the rate of reactor construction.  The combination of these effects meant that the perceived need for fast reactors was greatly reduced, and their economic competitiveness effectively disappeared.
 
-#### 10.2.2.3 Common reactor designs
+#### Common reactor designs
 A typical reactor design includes the following components:
 
 - fuel, generally pellets of uranium oxide (UO2) packed into tubes to form fuel rods;
@@ -175,7 +175,7 @@ The AGR is an uncommon design worldwide, but it is a British design and is the d
 Having a gaseous coolant means that AGRs run hotter than PWRs, at about 650 °C.  This produces higher-temperature steam, which increases the thermal efficiency of the turbines.  The name advanced gas-cooled reactor comes from the fact that the design evolved from the older British Magnox reactors, which used the same basic ingredients of CO2 cooling and graphite moderator, but ran on natural uranium metal instead of enriched uranium oxide.  (AGRs require slightly enriched uranium because their higher operating temperature meant that the magnesium-clad fuel rods used in the Magnox design would not work, and the high-temperature design turns out to absorb more neutrons, decreasing f in the four-factor formula.)  The original 1950s Magnox design was specifically intended as a dual-purpose facility, both generating electricity and breeding plutonium for Britain’s nuclear weapons programme; the AGR design, however, was always intended purely for electricity generation.
 
 
-#### 10.2.2.4 Reactor power output
+#### Reactor power output
 Since nuclear reactors do not generate electricity directly, but instead generate heat which is then used to generate energy via a steam turbine, there are different ways of specifying the power output of a reactor.
 - The thermal power output, measured in MWt, is the amount of heat generated, and is determined from the properties (pressure, temperature, rate of flow) of the steam produced by the reactor.
 - The gross electrical power, measured in MWe, is the electrical power produced by the turbines.
@@ -183,7 +183,7 @@ Since nuclear reactors do not generate electricity directly, but instead generat
 
 From the perspective of the consumer (or the electricity company), the appropriate power output is the net electrical power.  For the perspective of the reactor engineer (or neutrino physicist) the relevant power output is the thermal power.
 
-#### 10.2.2.5 A natural nuclear reactor (not examinable)
+#### A natural nuclear reactor (not examinable)
 We have said that natural uranium cannot sustain a chain reaction, and most nuclear reactor designs require enriched uranium.  However, the half-life of 235U is much less than the half-life of 238U, so if we go back in time the concentration of 235U in natural uranium must get higher.  Natural uranium two or three billion years ago would have a composition similar to reactor-grade enriched uranium today.  So, could this have sustained a natural chain reaction?
 
 :::{figure-md} naturalfission
@@ -210,7 +210,7 @@ Although the vast majority of uranium deposits will not meet all these condition
 
 Apart from their intrinsic interest, the Oklo natural reactors are an interesting testbed for the behaviour of nuclear waste: studies have been conducted to see how far the detectable fission products, especially the long-lived isotopes such as the actinides (the elements with atomic numbers 89 to 103), have travelled from their site of production.  (The encouraging answer seems to be, not very far at all.) 
 
-#### 10.2.3 Summary (fission)
+#### Summary (fission)
 In principle, any nucleus heavier than iron has a positive Q-value for decay, and elements significantly heavier than iron should be capable of fission.  However, the Coulomb barrier produced by the limited range of the strong force compared to the electromagnetic force means that many nuclei heavier than iron are perfectly stable: this fission barrier is too high to surmount and too think to tunnel through.  No naturally occurring isotope has any significant branching ratio to spontaneous fission.
 
 Using the liquid-drop model, we can calculate that spontaneous fission should happen if .  This is an overly pessimistic estimate, because it is based on classical physics and does not take quantum tunnelling into account, and it is also subject to modifications based on the shell model (nuclei with closed shells of either protons or neutrons being more resistant to fission).  However, it is still true that only very heavy nuclei are likely to have a significant decay branching ratio to spontaneous fission.  It is noticeable that even-even nuclei are much more fission prone than even-odd nuclei.
@@ -233,13 +233,13 @@ Nuclear reactor power output is quantified in three ways: the thermal power outp
 
 
 
-### 7 Fusion
-#### 7.1 Energetics of fusion
+### Fusion
+#### Energetics of fusion
 Fusion is the combination of two nuclei into one. As can be seen from figure 1, it should release energy if the fusing nuclei are lighter than iron.
 
 Nuclear fusion is the power source of stars, nearly all of which generate energy by fusing hydrogen into helium^2. Fusion energy is an attractive prospect for us too, because it is clean—no CO2 and no long-lived radioactive waste—and highly efficient. While uranium fission releases 200 MeV per fission of one nucleus of $^{236}U$, corresponding to the conversion of 0.09% of the initial mass into energy, hydrogen fusion, $4p \rightarrow ^{4}He + 2e^+ + 2\nu_e$, releases 24.7 MeV, plus another 2.0 MeV when the two positrons annihilate with electrons—a net efficiency of 0.7%, or eight times better than uranium fission. However, fusion is far more challenging to achieve than fission, because it requires two positively charged nuclei to approach very close to one another, against their mutual Coulomb repulsion.
 
-#### 7.1.1 The Coulomb barrier
+#### The Coulomb barrier
 The potential energy of two charges $Z_1e$ and $Z_2e$ separated by a distance r is $Z_1Z_2e^2/(4\pi\epsilon_0r)$. Therefore, the potential energy of two nuclei just touching one another is
 
 $$
@@ -248,7 +248,7 @@ $$
 
 where the nuclear radii $R_1$ and $R_2$ are measured in fm. Classically, in order to get the two nuclei to touch, we would need to supply enough initial kinetic energy to overcome this potential barrier, so for two protons of equal energy, the required kinetic energy would be 0.72/2.4 = 0.3 MeV. Equating this to $ \frac{3}{2}k_BT $ gives a temperature of 2.3x10^9 K, which is about 200 times the actual temperature of the core of the Sun. The reason that the Sun can fuse hydrogen despite this apparent mismatch is quantum tunnelling: the Schrödinger equation tells us that there is a small but nonzero probability that the protons will “tunnel” through the potential barrier, even though they do not appear to have enough energy to do so. This probability is very small in the Sun, about 10^-9.6, but the Sun contains a very large number of protons!
 
-#### 7.1.2 Fusion reactions
+#### Fusion reactions
 Another issue with proton-proton fusion is that there is no bound state of two protons: in order for the fusion to work, one proton has to transform into a neutron, $ p + p \rightarrow d + e^+ + \nu_e $. This is a weak interaction, and therefore has a very small cross section, further increasing the improbability of pp fusion—again, it works in the Sun because of the immense number of protons present in the Sun’s core. Although we can increase the tunnelling probability by running a hypothetical fusion reactor at a higher temperature than the solar core, we cannot magically increase the cross section for pp fusion, so the inescapable conclusion is that this is not an appropriate reaction for fusion power.
 
 For viable fusion with the fuel masses we can hope to use in a terrestrial fusion reactor, we need reactions that can go by the strong interaction, requiring only rearrangement of nucleons rather than transformation of protons to neutrons or vice versa. We also need to restrict ourselves to the lightest
@@ -275,7 +275,7 @@ These are favoured because they are both aneutronic fusion, with all the product
 
 Unfortunately for the proponents of aneutronic fusion, both of these reactions involve nuclei with higher Z and therefore higher Coulomb barriers than d-d or d-t fusion. Given that ignition tempera- tures even for d-d and d-t fusion are at the limit of current technology, it is clear than aneutronic fusion is currently not a viable proposition.
 
-#### 7.1.3 Fusion reaction rates
+#### Fusion reaction rates
 The general formula for the rate of events in any reaction is $ R = n_1 \sigma \Phi $. Where $ \Phi $ is the incoming flux, $ n_1 $ is the number density of target particle and $\sigma$ is the cross section. This assumes that the target particles are stationary. If the incoming particles are travelling with speed $ v $ and have number density $ n_2 $, then the flux is $ Φ = n_2v $, so overall we have $ R_{12} = n_1n_2σv $.
 
 This would (and does) apply to the case where the incoming particles are in the form of a monoenergetic beam. However, in the case of fusion energy, we are raising the particle kinetic energy by heating them to a very high temperature, so the energies and speeds are given by the Maxwell-Boltzmann distribution. We therefore have to average over speed, and, since the cross section is a strong function of energy, also over cross section. We can therefore write the reaction rate as
@@ -351,15 +351,15 @@ Reactivity for different candidate fusion reactions as a function of temperature
 :::
 
 
-### 7.2 Deuterium-tritium fusion
-#### 7.2.1 The challenges
+### Deuterium-tritium fusion
+#### The challenges
 Anyone wishing to generate energy by d-t fusion has to overcome some obvious technical challenges:
 
 - From figure 9, it is clear the temperatures of at least 120 MK, and ideally twice that, must be achieved to obtain a high enough reactivity. Such temperatures would obviously vaporise any structural material, so the deuterium-tritium plasma must be kept away from the walls of its container.
 - Tritium is radioactive, so does not occur in nature, and the supply is very limited.
 - Since a kinetic energy of ~20 keV is negligible, we can assume that when the two nuclei fuse they are approximately at rest relative to each other, and so the momenta of the products must be equal and opposite. In this non-relativistic regime we can write the kinetic energy as $p^2/2m$, so it follows that the kinetic energy of the products (a neutron and an $α$ particle) is inversely proportional to their masses (about $1 u$ and $4 u$ respectively), which means that 80% of the energy produced is released as kinetic energy of the neutron. We must therefore extract this energy if the reactor is to be efficient.
 
-#### 7.2.2 The Lawson criterion and fusion strategies
+#### The Lawson criterion and fusion strategies
 An economically viable fusion reactor must obviously generate more energy than it consumes. We can quantify this by defining the Lawson criterion,
 
 $$
@@ -379,5 +379,5 @@ Two strategies for achieving fusion power are currently being pursued:
 
 Both techniques are close to achieving breakeven, i.e. $L = 1$, but both are far from commercialisation.
 
-7.2.3 Magnetic confinement fusion (MCF)
+### Magnetic confinement fusion (MCF)
 The principle of magnetic confinement fusion is that a complex magnetic field is used to keep the plasma away from the walls of the container. There are various magnetic geometries, but the most widely used and studied is the tokamak (a name derived from a Russian acronym, as this design was first developed in Russia). The aim of all magnetic confinement devices is to maintain the confinement of the plasma for an indefinitely long time, thereby increasing τ_c to a very large value; the challenge is maintaining stability over long periods. Hot plasmas moving at high speeds are subject to a number of dynamic instabilities, and controlling these is the principal design challenge in tokamak research.
