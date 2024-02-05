@@ -3,7 +3,7 @@ Now that we have our shell model, which describes our observed magic numbers, we
 
 However, we can simplify things hugely because the $j$ values are half-integer and in any filled shell, all the nucleons there will pair up as positive-negative pairs and so contribute nothing to the overall total. So, we really only need to worry about the nucleons in the outer shell. If this shell is full, then again the total contribution will be zero, and we have $I=0$. In fact, in general, if we have even N and even Z, then $I=0$ as all nucleons will form spin up-down combinations.
 
-The more interesting case is when we have one unpaired nucleon in the outer shell. Consider the case of a nucleus with the proton energy levels filled up exactly, but where the neutrons in the outer Shell have just one neutron. **The nuclear spin takes on the $j$ value assigned to that nucleon**.
+The more interesting case is when we have one unpaired nucleon in the outer shell. Consider the case of a nucleus with the proton energy levels filled up exactly, but where the neutrons in the outer shell have just one neutron. **The nuclear spin takes on the $j$ value assigned to that nucleon**.
 
 That is, if we fill up the levels with nucleons but have a leftover nucleon, alone in an unfilled shell, the level spin assignment appropriate to that nucleon will be the same as the Nuclear Spin itself.
 
@@ -56,7 +56,12 @@ Most importantly, there are two corrections for protons:
 
 This electrostatic repulsion energy between protons implies a decrease in the depth of the potential for protons, due to their interaction with all the other protons, as here:
 
-![Alt text](image-96.png)
+:::{figure-md} potentialdifferences
+<img src='image-96.png' width="100%" alt="Spin orbit corrections">
+
+Diagram of differences in potential wells for protons and neutrons.
+:::
+
 If all these final tweaks are taken into account, the shell model becomes a powerful complement to the LDM (Liquid Drop Model) and SEMF (Semi-Empirical Mass Formula) models, based on the idea that the total angular momentum of each single nucleon is the vector sum of its spin and orbital angular momentum.
 
 #### Shell Model Summary
@@ -96,7 +101,9 @@ $$
 \mu = g_{I} \frac{e\hbar}{2m_{p}} I = g_{I} I \mu_{N}
 $$
 
-where $g_{I}$ is a nuclear $g$ factor which accounts for differences in the relative magnetic moments of nucleons, $e$ is the charge of one electron (quantized charge), $m_{p}$ is the mass of the proton, and $\mu_{N}$ is the nuclear magneton. The nuclear magneton is a constant used to express magnetic moments, and is equal to
+where $g_{I}$ is a nuclear $g$ factor which accounts for differences in the relative magnetic moments of nucleons, $e$ is the charge of one electron (quantized charge), $m_{p}$ is the mass of the proton, and $\mu_{N}$ is the nuclear magneton.  The parameter $g$, is referred to as the **gyromagnetic ratio**, a dimensionless quantity that characterizes the magnetic moment, just a proportionality constant that relates the magnetic moment to the total angular momentum or nuclear spin quantum number.
+
+The nuclear magneton is a constant used to express magnetic moments, and is equal to
 
 $$
 \mu_{N} = \frac{e\hbar}{2m_{p}} = 5.05\times 10^{-27}\textnormal{J/T} = 3.25 \times 10^{-8} \textnormal{eV/T}
@@ -126,11 +133,7 @@ and we evaluate the magnetic moment from the expectation value of the magnetic m
 
 Based on the equations above, we can see that if the nuclear spin, $I$, or $j$ value of an unpaired nucleon is equal to zero, then $\mu=0$. So, the first basic shell model prediction is simply that all Even-Even $I=0$ states have no magnetic moment.
 
-For other combinations of protons and neutrons, it gets more complicated, and we need to account for the gyromagnetic ratio in the equation. The gyromagnetic ratio is referred to as the **gyromagnetic ratio**, a dimensionless quantity that characterizes the magnetic moment, just a proportionality constant that relates the magnetic moment to the total angular momentum or
-
- nuclear spin quantum number.
-
-There are two components to $g$, governing the angular momentum $g_l$ and spin $g_s$, with different values for the proton and neutron. The total $g$ is calculated according to the coupling of $l$ and $s$ and the relation to $j$.
+For other combinations of protons and neutrons, it gets more complicated, and we need to account for the gyromagnetic ratio in the equation. There are two components to $g$, governing the angular momentum $g_l$ and spin $g_s$, with different values for the proton and neutron. The total $g$ is calculated according to the coupling of $l$ and $s$ and the relation to $j$.
 
 The result, just given here is:
 
@@ -172,12 +175,15 @@ Unfortunately, as we can see in the figures below, in general, the calculated va
 
 The fact that the majority of nuclei lie between these two lines is indicative of a more complex mixing of states, for instance, such might be caused if the Shell model assumption that nuclei are in a spherically symmetric potential well is not always true.
 
-Magnetic moments of odd-Z even-N nuclei in terms of nuclear magnetons. The lines are calculated, and the points are experimental determinations.
 
-![Alt text](image-97.png)
-
+:::{figure-md} magmoments
+<img src='image-97.png' width="100%" alt="Spin orbit corrections">
 
 Magnetic moments of even-Z odd-N nuclei in terms of Nuclear Magnetons. The lines are calculated and the points are experimental determinations.
+:::
+
+
+
 
 
 #### Electric Quadrupole Moments
@@ -188,63 +194,71 @@ If we consider the shape of nuclei in the shell model, the simplest case would b
 
 ![Alt text](image-43.png)
 
-So how can we quantify this, firstly note that there are different types of electric momoent. We could have an eletric dipole moment, however as we only have psitive chargese of proton this does not exist in nuclei as there is no opposite charge in the nucleus that could sit on the other end of the dipole. This means only higher order types Quadrupole, Octupole, etc, are allowed. 
+So how can we quantify this, firstly note that there are different types of electric moment. We could have an electric dipole moment, however as we only have positive charges of proton this does not exist in nuclei as there is no opposite charge in the nucleus that could sit on the other end of the dipole. This means only higher order types Quadrupole, Octupole, etc, are allowed. We can think of a quadrupole moment as the sum of two dipoles set antiparallel from one another.
 
-We can think of a quadrupole moment as the sum of two dipoles set antiparallel from one another.
-
-In the classic form we can describe the EQM for a quadrupole as as:
+In the classic form we can describe the EQM for a quadrupole a:
 
 $$
-Q = \frac{1}{e} \int \rho(3z^{2}-r^{2}) dV \textnormal{units of area, usually barn}
+Q_{EQM} = \frac{1}{e} \int \rho(3z^{2}-r^{2}) dV \textnormal~~~{units of area, usually barn}
 $$
 
  where  $\rho$ is the charge density distirbution. We can see here that if the nucleus is spherical then $z^{2}=x^{2}=y^{2}=r^{2}/3$ which leads to $Q=0$.
 
-Again with the shell model we can make a few predictionos for simple cases, such as when we have a proton in orbit in the Outer Shell. or a shall that is one proton short of being filled up.
+Again with the shell model we can make a few predictions for simple cases, such as when we have a proton in orbit in the outer shell. or a shall that is one proton short of being filled up.
 
 To do this we need the full Quantum Mechanical version of the equation above which is 
 
 $$
-eQ = e\int \psi^{*} (2z^{2} - r^{2})\psi dV
+eQ_{EQM} = e\int \psi^{*} (2z^{2} - r^{2})\psi dV
 $$
 
 
 Calculations to find the expectation value $< \psi >^{2}$ end up giving as values for $Q$ of:
 
 $$
-Q = - < r^{2} > \frac{2j-1}{2(j+1)}
+Q_{EQM} = - < r^{2} > \frac{2j-1}{2(j+1)}
 $$
 
 
 where $j$ is the Angular Momentum Quantum Number of the odd particle (equivalent to the Nuclear Spin) and $r$ the radius. 
 
 ##### Even Nuclei
-Based on the equations for EQM we expect that for Even-Even Nuclei $Q$ should be around zero.
+Based on the equations for EQM we expect that for Even-Even Nuclei $Q_{EQM}$ should be around zero.
 
 ##### Odd Protons
 If we have unpaired protons then we have two possible cases:
-1. If we have a single odd proton in an outer shell in an orbit of given $j$, the maximum projection $m_j$ will put vector $j$ close to alignment with the $z$ axis. In this case the proton will be in orbit int the $x-y$ plane. This is equivaleent to a so called *Oblate* charge distribution and $Q<0$. Note how in this case, with charge concentrated on the $z-y$ plane $(z=0)$ then $Q = -<r^{2}>$
-2. If the proton is missing from a closed shell (i.e. a kind of proton hole), then we get a *Prolate* charge ditribution and $Q>0$.
-In this case charge is more concentrated on the $z$ plane $(z=r)$ and $Q=+2<r^{2}>$.
+1. If we have a single odd proton in an outer shell in an orbit of given $j$, the maximum projection $m_j$ will put vector $j$ close to alignment with the $z$ axis. In this case the proton will be in orbit int the $x-y$ plane. This is equivalent to a so called *Oblate* charge distribution and $Q_{EQM}<0$. Note how in this case, with charge concentrated on the $z-y$ plane $(z=0)$ then $Q_{EQM} = -<r^{2}>$
+2. If the proton is missing from a closed shell (i.e. a kind of proton hole), then we get a *Prolate* charge distribution and $Q_{EQM}>0$.
+In this case charge is more concentrated on the $z$ plane $(z=r)$ and $Q_{EQM}=+2<r^{2}>$.
 
-![Alt text](image-98.png)
+:::{figure-md} oddprotons
+<img src='image-98.png' width="70%" alt="Spin orbit corrections">
+
+Different shape states of nuclei with odd protons.
+:::
+
 
 ##### Odd Neutrons
 
 For neutrons, things start to get a bit stranger. Although the neutron is neutral, one might expect that an odd neutron in the outer shell outside the core would make no difference to $Q$. However, due to the nuclear force, the neutron will attract protons in the core and form a *ridge* or *tide* of nuclear material. In this case, we expect a small negative $Q$, similar to if we had an odd unpaired proton.
-![Alt text](image-99.png)
 
-Working through the numbers, we find typical values for the Electric Quadrupole Moment (EQM) with odd neutrons in the range of $0.06-0.6 eb$ (electron barns).
+:::{figure-md} oddneutrons
+<img src='image-99.png' width="100%" alt="Spin orbit corrections">
+
+Different shape state of nuclei with odd neutrons.
+:::
+
+Working through the numbers, we find typical values for the Electric Quadrupole Moment (EQM) with odd neutrons in the range of $0.06-0.6 e\textnormal{b}$ (electron barns).
 
 But what if we have several nucleons in a partially filled outer shell? As with other predictions in the Shell Model, in general, it is harder to calculate this explicitly because all the nucleons can contribute. However, a basic derivation yields:
 
 
 $$
-< Q > = < Q_{sp} > \left [ 1-2\frac{n-1}{j-1} \right ]
+< Q_{EQM} > = < Q_{sp} > \left [ 1-2\frac{n-1}{j-1} \right ]
 $$
 
 
-where $Q_{sp}$ is the Single Particle Value as mentioned above, and $n$ is the number of nucleons in the partially filled shell. Here, $n$ can range from $1$ to $2j$. So, when $n=2j$, a shell that is only one nucleon from being filled, we get $Q=-Q_{sp}$.
+where $Q_{sp}$ is the Single Particle Value as mentioned above, and $n$ is the number of nucleons in the partially filled shell. Here, $n$ can range from $1$ to $2j$. So, when $n=2j$, a shell that is only one nucleon from being filled, we get $Q_{EQM}=-Q_{sp}$.
 
 #### EQM Predictions
 Using the results above with $r=r_{0}A^{1/3}$ etc., we can calculate the $Q$ values for different nuclei and compare them with the measured values. Some results are shown in the table below. Generally, at least the correct sign is found, but often the real value is larger than expected.
@@ -265,7 +279,7 @@ Using the results above with $r=r_{0}A^{1/3}$ etc., we can calculate the $Q$ val
 
 
 
-Things work best when we consider nuclei close to the magic numbers in most cases. 
+Things work best when we consider nuclei close to the magic numbers in most cases. Take for example the following selected nuclei.
 
 
 | Nuclei    |   $Z$ | $N$ | Character |  $j$  | $Q_{obs}$ | $Q_{pred}$ | $Q_{obs}/Q_{pred}$ |
