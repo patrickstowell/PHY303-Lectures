@@ -308,10 +308,13 @@ The way to proceed is illustrated below, where we attempt to find the half-life 
 ![Alt text](image-134.png)
 
 This results in an estimate of the nuclear seperation as
+
 $$
 R= 1.2(A)^{1/3} + 1.2(208)^{1/3} = 9.01~\textnormal{fm}
 $$
+
 We now find the height of the barrier by applying Coulomb’s Law at the nuclear separation as illustrated here
+
 $$
 \frac{(k\cdot 2e \cdot (Z - 2)e)}{r} = \frac{(2\cdot (82-2) \cdot 1.44~\textnormal{MeV fm})}{9.01~\textnormal{fm}} = 26.21~\textnormal{MeV}
 $$
