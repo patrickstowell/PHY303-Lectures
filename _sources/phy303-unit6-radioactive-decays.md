@@ -294,7 +294,10 @@ $$
 where $α = \sqrt{(2m(U_0 - E))/\hbar^2}$ is called the Gamow Factor, and $A$ is a normalization constant we will call 1 for now to make the derivation simpler. Now, if we assume the alpha makes contact with the barrier once every second, then the average probability that the alpha leaves (a decay takes place) and the half-life is just related to the tunneling probability by:
 
 $$
-\lambda = \sqrt{X} \\
+\lambda = \sqrt{X} 
+$$
+
+$$
 T_{1/2} = \ln(2)/\lambda = \ln(2)/\sqrt{X}
 $$
 
@@ -328,18 +331,26 @@ $$
 So the barrier width L and gammow factor is:
 
 $$
-L = 26.90 fm - 9.01 fm = 17.9 fm \\
+L = 26.90 fm - 9.01 fm = 17.9 fm
+$$
+
+$$
 \alpha = \sqrt{\frac{2m(26.2-8.78)}{\hbar^{2}}} = 1.879 fm^{-1}
 $$
 
 When assuming a 'top-hat' potential barrier this results in a transmission probability of 
+
 $$
 X = e^{-\alpha L} = e^{- (1.879) \cdot (17.9) } = 2.47 \times 10^{-15}
 $$
 
 The real frequency of the alpha hitting the barrier can also be estimated by determining how many times an alpha of energy $8.78 MeV$ makes contact with the walls.
+
 $$
-8.78MeV = \frac{mv^{2}}{2} \rightarrow v=2.06 \times 10^{7} ms^{-1} \\
+8.78MeV = \frac{mv^{2}}{2} \rightarrow v=2.06 \times 10^{7} ms^{-1} 
+$$
+
+$$
 f=\frac{v}{2R}  \rightarrow 1.14 \times 10^{21} s^{-1}
 $$
 
