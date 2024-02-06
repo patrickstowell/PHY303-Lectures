@@ -18,19 +18,19 @@ parts:
       title: Collective Excited States
     - file: phy303-unit6-radioactive-decays
       title: Radioactive Decay
-- caption: Application
-  numbered: True
-  chapters:
-    - file: phy303-unit7-reactions
-      title: Reactions
-    - file: phy303-unit8-compoundreactions
-      title: Compound Reactions
-    - file: phy303-unit9-neutronphysics
-      title: Neutron Physics
-    - file: phy303-unit10-fissionandfusion
-      title: Nuclear Power
-    - file: phy303-unit11-medicalapplications
-      title: Nuclear Medicine
+#- caption: Application
+#  numbered: True
+#  chapters:
+#    - file: phy303-unit7-reactions
+#      title: Reactions
+#    - file: phy303-unit8-compoundreactions
+#      title: Compound Reactions
+#    - file: phy303-unit9-neutronphysics
+#      title: Neutron Physics
+#    - file: phy303-unit10-fissionandfusion
+#      title: Nuclear Power
+#    - file: phy303-unit11-medicalapplications
+#      title: Nuclear Medicine
     #- file: phy303-unit1-flashcards
     #  title: Unit 1 Flash Cards
 - caption: Visualization
