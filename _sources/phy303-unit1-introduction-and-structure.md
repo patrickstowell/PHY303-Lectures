@@ -553,11 +553,13 @@ N = N_{0}~e^{-x/\lambda}
 $$
 
 Taking the natural log this gives
+
 $$
 x = -\lambda ~\textnormal{ln}\left( \frac{N}{N_{0}}\right)
 $$
 
 Now if we consider our known attenuation and drop required we get
+
 $$
 x = -0.704 ~\textnormal{ln} \left( \frac{1~\textnormal{Smv/hr}}{1.073~\textnormal{Sv/hr}}\right) = 4.91~\textnormal{cm}
 $$
@@ -600,6 +602,7 @@ Now to determine the energy of the alphe we need to consider the mass deficit of
 $$
 \textnormal{Po}_{210} \rightarrow \textnormal{Pb}_{206} + \alpha.
 $$
+
 The mass contributions from each of these are taken from the NIST material database as
 
 $$
