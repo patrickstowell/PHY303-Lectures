@@ -575,26 +575,33 @@ To consider the limit of the alpha scattering experiments we need to determine t
 Coonsider the case when an alpha particle is directed head-on towards the nucleus, so that when it reaches the distance of closest approach it turns around and travels back in the direction it came. At this turning point all of the alpha's kinetic energy has been transformed into electric potential energy.
 
 The potential some distance, $r$, away is given by
+
 $$
 E_{Q} = \frac{1}{4\pi\epsilon_{0}} \frac{(2e)\cdot(Ze)}{r}
 $$
+
 where 2e is the charge of the alpha, and Ze is the charge of the gold nucleus.
 
 At the distance of closest approach, $d$, this potential is equal to the starting kinetic energy of the alpha,
+
 $$
 K_{\alpha} =  \frac{1}{4\pi\epsilon_{0}} \frac{(2e)\cdot(Ze)}{d}.
 $$
+
 This means the distance is simply
+
 $$
 d =  \frac{1}{4\pi\epsilon_{0}} \frac{(2e)\cdot(Ze)}{K_{\alpha}}.
 $$
 
 
 Now to determine the energy of the alphe we need to consider the mass deficit of the decay that took place to produce it. 
+
 $$
 \textnormal{Po}_{210} \rightarrow \textnormal{Pb}_{206} + \alpha.
 $$
 The mass contributions from each of these are taken from the NIST material database as
+
 $$
 M(\textnormal{Pb}_{210}) = 209.9828u \\
 M(\textnormal{Pb}_{206}) = 205.9794u \\
@@ -602,16 +609,19 @@ M(\alpha) = 4.0026u \\
 $$
 
 This means the mass deficit, $Q$, is given by
+
 $$
 Q = 209.9828u - 205.9794u - 4.0026u = 0.0058u
 $$
 
 If we assume that all the energy goes into the kinetic energy of the alpha given it has much smaller mass this gives the maximum kinetic energy in standard units as
+
 $$
 K_\alpha = 5.40~\textnormal{MeV} = 8.65175 \times 10^{-13} J
 $$
 
 Subbing this back into our equation for the distance gives
+
 $$
 d = 4.905 \times 10^{-14}~\textnormal{m}
 $$
