@@ -574,6 +574,10 @@ M(A,Z) &lt; Zm_{p} + Nm_{n}.
 <span class="eqno">(1.3)<a class="headerlink" href="#equation-nuclearmassdeficit" title="Permalink to this equation">#</a></span>\[\begin{equation}
 \Delta M(A,Z) = M(A,Z) - ZM_{p} + NM_{n}.
 \end{equation}\]</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Note that in the equation above we haven’t included the electron masses. This contributes several percent for low mass nuclei so in some cases can’t be neglected. The important point to determine if electron masses should be included is in whether the mass of just the nucleus <span class="math notranslate nohighlight">\(M(A,Z)\)</span> is given, or the mass of the neutral atom is given <span class="math notranslate nohighlight">\(M_{atom}\)</span>.</p>
+</div>
 <p>The deficit shown in Eq. <a class="reference internal" href="#equation-nuclearmassdeficit">(1.3)</a> is related to the binding energy, <span class="math notranslate nohighlight">\(B\)</span> of nuclei, corresponding to the total energy required to split the nucleus apart into free nucleons</p>
 <div class="math notranslate nohighlight" id="equation-bindingenergyeq">
 <span class="eqno">(1.4)<a class="headerlink" href="#equation-bindingenergyeq" title="Permalink to this equation">#</a></span>\[\begin{equation}
@@ -761,6 +765,133 @@ C=\frac{xN_0}{\lambda} = N_{0}n\sigma x.
 </figure>
 <p>Hofstadter’s experiments provided a strong constraint on the scattering cross-section of nuclei over a broad range of angles. Unfortunately however they showed that that the data still deviates even from the Mott prediction and more is needed to fully describe the nucleus.</p>
 <p>This deviation is now interpreted as telling us about the charge/matter distribution in the nucleus. That not only is the nucleus not point-like as assumed in the Mott formula but it has a particular density profile and shape which can be further explicitly probed by electron scattering experiments.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p class="rubric">Example 1.1 : Carbon Mass Calculation</p>
+<p><strong>Given the mass of a carbon-12 atom is <span class="math notranslate nohighlight">\(12u\)</span>, estimate the binding energy of the carbon nucleus.</strong></p>
+<p>First we start with the mass of the proton, neutron, and electrons in the atomic mass units. Since the mass if that of a carbon-12 atom, we include the electrons in oour calculation.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+m_{p} = 1.00728 u \\
+m_{n} = 1.00866 u \\
+m_{e} = 0.00055 u \\
+\end{split}\]</div>
+<p>Now we can write the binding energy as</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+B = M_{C12} - 6m_{n} - 6m_{p} - 6m_{e} \\
+Bc^{2} = 0.9894 u = 0.9894 \times 931.5~\textnormal{MeV/u} = 92.16~\textnormal{MeV}
+\end{split}\]</div>
+<p>If we want to get this per nucleon we just need to divide by the total nucleons in a carbon 12 nucleus.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+B/A = 92.16 / 12 = 7.42~\textnormal{MeV/nucleon}\\
+\end{split}\]</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p class="rubric">Example 1.2 : Nucleon Momentum Estimate</p>
+<p>Use the Heisenberg Uncertainty principle to estimate the momentum of nucleons inside the nucleus given that the nuclear radius is on the order of <span class="math notranslate nohighlight">\(5~\textnormal{fm}\)</span>.</p>
+<p>The Heisenberg principle states that</p>
+<div class="math notranslate nohighlight">
+\[
+\Delta x \Delta p \geq \frac{\hbar}{2}
+\]</div>
+<p>in the case of a solid sphere we can emasure the nucleoonos position with an uncertainty similar to the nuclear radius, hence</p>
+<div class="math notranslate nohighlight">
+\[
+c\Delta p \approx \frac{\hbar c}{2\Delta x}
+\]</div>
+<p>as usual multiplying both terms by <span class="math notranslate nohighlight">\(c\)</span> to make use of the simple to remember quantity of <span class="math notranslate nohighlight">\(\hbar c \approx 200~\textnormal{MeV}~\textnormal{fm}\)</span>. This implies that the momenta of the nucleons will be of the order of</p>
+<div class="math notranslate nohighlight">
+\[
+pc \approx \frac{200~\textnormal{MeV}~\textnormal{fm}}{2 \times 5~\textnormal{fm}} = 20~\textnormal{MeV}.
+\]</div>
+<p>This 20 MeV momentum is considerable, however it is much smaller than the nucleons mass, which means that albeit fast, they will not be in the relativistic regime. Therefore the moomentum can be written as</p>
+<div class="math notranslate nohighlight">
+\[
+p = m v
+\]</div>
+<p>and the ratio <span class="math notranslate nohighlight">\(pc/E\)</span> can be expressed as</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{pc}{E} = \frac{mvc}{mc^{2}} = \frac{v}{c} = \beta
+\]</div>
+<p>which gives <span class="math notranslate nohighlight">\(\beta \approx 0.02\)</span>. Despite the fact that we consider the nucleus as a solid sphere of protons and neutrons tightly packed together, the quantum mechanical reality is quite different as the nucleons move quite quickly around the allowed space.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p class="rubric">Example 1.3 : Shielding Cross-section Estimate</p>
+<p><strong>Consider a 1-TBq source of Cs-137 that produces an effective dose of 1.073 Sv/hr at a distance of 30cm (<em>Delecroix Handbook 2002</em>). The decay chain of Cs-137 produces a clear gamma ray peak at 662 keV. Assuming a cross-section of 662keV gamma rays on lead nuclei of <span class="math notranslate nohighlight">\(\sigma=4.3 \times 10^{-23} cm^{2}\)</span> determine the lead shielding thickness required to reduce the dose rate to 1mSv/hr.</strong></p>
+<p>To calculte the thickness of lead first we need to know the attenuation rate of our gamma rays in the lead shielding. We can estimate this based on the cross-section and the density of lead itself, <span class="math notranslate nohighlight">\(\rho\)</span>.</p>
+<p>Given the density, <span class="math notranslate nohighlight">\(\rho=11.36 \textnormal{g/cm}^{3}\)</span>, and the mass of a lead atom to be <span class="math notranslate nohighlight">\(m_{Pb} = 207.293u\)</span> we can estimate <span class="math notranslate nohighlight">\(n\)</span> as</p>
+<div class="math notranslate nohighlight">
+\[
+n = \frac{11.36 \textnormal{g/cm}^{3}}{207.293u \times 1.66056\times 10^{-24} \textnormal{g/u} } = 3.3 \times 10 ^{23} \textnormal{cm}^{-3}
+\]</div>
+<p>This leads to a mean free path of</p>
+<div class="math notranslate nohighlight">
+\[
+\lambda = \frac{1}{n\sigma} = 0.704 \textnormal{cm}^{-1}
+\]</div>
+<p>If we consider the intensity of our source passing through the lead shielding we get</p>
+<div class="math notranslate nohighlight">
+\[
+N = N_{0}~e^{-x/\lambda}
+\]</div>
+<p>Taking the natural log this gives
+$<span class="math notranslate nohighlight">\(
+x = -\lambda ~\textnormal{ln}\left( \frac{N}{N_{0}}\right)
+\)</span>$</p>
+<p>Now if we consider our known attenuation and drop required we get
+$<span class="math notranslate nohighlight">\(
+x = -0.704 ~\textnormal{ln} \left( \frac{1~\textnormal{Smv/hr}}{1.073~\textnormal{Sv/hr}}\right) = 4.91~\textnormal{cm}
+\)</span>$</p>
+<p>Note that this is an estimate based on just the 662keV peak, and neglects the <span class="math notranslate nohighlight">\(r^{2}\)</span> fall-off for point radioactive sources, but it highlights how the cross-section has an effect on the result. If the cross-section’s for gamma radiation were higher, we would expect much thicker shielding requirements.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p class="rubric">Example 1.4 : Closest Approach Estimate</p>
+<p><strong>Considering Polonium-210 as an alpha emitter in Rutherford’s gold foil experiment, estimate the minimum theoretical limit to which alpha scattering may be able place a limit on the size of the nucleus.</strong></p>
+<p>To consider the limit of the alpha scattering experiments we need to determine their distance of closest possible approach under the hyperbolic trajectory assumption.</p>
+<p>Coonsider the case when an alpha particle is directed head-on towards the nucleus, so that when it reaches the distance of closest approach it turns around and travels back in the direction it came. At this turning point all of the alpha’s kinetic energy has been transformed into electric potential energy.</p>
+<p>The potential some distance, <span class="math notranslate nohighlight">\(r\)</span>, away is given by
+$<span class="math notranslate nohighlight">\(
+E_{Q} = \frac{1}{4\pi\epsilon_{0}} \frac{(2e)\cdot(Ze)}{r}
+\)</span>$
+where 2e is the charge of the alpha, and Ze is the charge of the gold nucleus.</p>
+<p>At the distance of closest approach, <span class="math notranslate nohighlight">\(d\)</span>, this potential is equal to the starting kinetic energy of the alpha,
+$<span class="math notranslate nohighlight">\(
+K_{\alpha} =  \frac{1}{4\pi\epsilon_{0}} \frac{(2e)\cdot(Ze)}{d}.
+\)</span><span class="math notranslate nohighlight">\(
+This means the distance is simply
+\)</span><span class="math notranslate nohighlight">\(
+d =  \frac{1}{4\pi\epsilon_{0}} \frac{(2e)\cdot(Ze)}{K_{\alpha}}.
+\)</span>$</p>
+<p>Now to determine the energy of the alphe we need to consider the mass deficit of the decay that took place to produce it.
+$<span class="math notranslate nohighlight">\(
+\textnormal{Po}_{210} \rightarrow \textnormal{Pb}_{206} + \alpha.
+\)</span><span class="math notranslate nohighlight">\(
+The mass contributions from each of these are taken from the NIST material database as
+\)</span><span class="math notranslate nohighlight">\(
+M(\textnormal{Pb}_{210}) = 209.9828u \\
+M(\textnormal{Pb}_{206}) = 205.9794u \\
+M(\alpha) = 4.0026u \\
+\)</span>$</p>
+<p>This means the mass deficit, <span class="math notranslate nohighlight">\(Q\)</span>, is given by
+$<span class="math notranslate nohighlight">\(
+Q = 209.9828u - 205.9794u - 4.0026u = 0.0058u
+\)</span>$</p>
+<p>If we assume that all the energy goes into the kinetic energy of the alpha given it has much smaller mass this gives the maximum kinetic energy in standard units as
+$<span class="math notranslate nohighlight">\(
+K_\alpha = 5.40~\textnormal{MeV} = 8.65175 \times 10^{-13} J
+\)</span>$</p>
+<p>Subbing this back into our equation for the distance gives
+$<span class="math notranslate nohighlight">\(
+d = 4.905 \times 10^{-14}~\textnormal{m}
+\)</span>$</p>
+<p>So our alpha particles only manage to get <span class="math notranslate nohighlight">\(49 \textnormal{fm}\)</span> and that is if they hit them dead on. If we consider that typical <span class="math notranslate nohighlight">\(\alpha\)</span> particle energies are between <span class="math notranslate nohighlight">\(0-11 \textnormal{MeV}\)</span> this gives a minimum distance of closest approach of around <span class="math notranslate nohighlight">\(25~\textnormal{fm}\)</span> still much bigger than the size of the gold nucleus (<span class="math notranslate nohighlight">\(6.6~\textnormal{fm}\)</span>).</p>
+</div>
 </section>
 </section>
 
