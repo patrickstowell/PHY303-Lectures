@@ -316,9 +316,9 @@ We might expect that the neutrons and protons in a nucleus might best pile into 
 So how nucleons pair up is important in the binding energy and this dictates the $\delta_{pair}$ term. 
 
 $$
-\delta_{\textnormal{pair}} = +a_{p}A^{-1/2} ~~~~\textnormal{for N odd and Z odd}\\
-\delta_{\textnormal{pair}} = 0 ~~~~\textnormal{for N even {\bf OR} Z even} \\
-\delta_{\textnormal{pair}} = -a_{p}A^{-1/2} ~~~~\textnormal{for N even {\bf AND} Z even}\\
+\delta_{\textnormal{pair}} = +a_{p}A^{-1/2} ~~~~\textnormal{for N odd AND Z odd}\\
+\delta_{\textnormal{pair}} = 0 ~~~~\textnormal{for N even OR Z even} \\
+\delta_{\textnormal{pair}} = -a_{p}A^{-1/2} ~~~~\textnormal{for N even AND Z even}\\
 $$
 
 Note the negative term in the binding energy equation that cancels out the negative term in the **Even-Even** case to produce an **increase in binding energy** overall (the nucleus is more stable). The $A^{-1/2}$ part is an empirical fit and the $a_p$ factor is a constant. Its important to get the sign of the term correct.
@@ -360,11 +360,11 @@ B_{E}(A,Z)/A = a_{v} - a_{s}A^{-1/3} - a_{c} Z(Z-1) A^{\frac{-4}{3}} - a_{a}(N-Z
 $$
 
 where 
-- $a_{v} = 15.5MeV$, 
-- $a_{s} = 16.8MeV$, 
-- $a_{c} = 0.72 MeV$, 
-- $a_{a} = 23.0 MeV$, 
-- $a_{p} = 12.0 MeV$.
+- $a_{v} = 15.5 \textnormal{MeV}$, 
+- $a_{s} = 16.8 \textnormal{MeV}$, 
+- $a_{c} = 0.72 \textnormal{MeV}$, 
+- $a_{a} = 23.0 \textnormal{MeV}$, 
+- $a_{p} = 12.0 \textnormal{MeV}$.
 
 Whilst emperical in its form this is an amazing useful equation as it allows us to make estimates of the energies of radiative emissions. For example, let's say we consider a nuclear reaction such as alpha decay
 
