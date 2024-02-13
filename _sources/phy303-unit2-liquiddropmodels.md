@@ -58,7 +58,7 @@ The shape of these structures give an indication of something very close to a to
 - $d$ is the so-called Skin or Surface Thickness.
 - The same form applies for both the charge and density distribution with slightly different 
 
-The plot below shows the charge density vs distance $r$ from the centre of the nucleus for several known nuclei. We see that as the nuclei size increases the "top-hat" part of the distribution just gets slightly wider but the Skin Thickness that defines the fall of close to the edge of the nucleus remains mostly constant.
+The plot below shows the charge density versus distance $r$ from the centre of the nucleus for several known nuclei. We see that as the nuclei size increases the "top-hat" part of the distribution just gets slightly wider but the skin thickness that defines the fall of close to the edge of the nucleus remains mostly constant.
 
 
 :::{figure-md} saxonwods
@@ -286,7 +286,7 @@ On a quick look we find two important features:
 To do this we introduce two further terms which you may have seen before, the **Asymmetry Term** and the **Pairing Term** as follows:
 
 $$
-B(A,Z) = a_{V}A - a_{s}A^{2/3} - a_{c}Z^{2}A^{-1/3} - a_a(A-2Z)^{2}A^{-1} - \delta_{\textnormal{pair}}
+B(A,Z) = a_{V}A - a_{s}A^{2/3} - a_{c}Z(Z-1)A^{-1/3} - a_a(A-2Z)^{2}A^{-1} - \delta_{\textnormal{pair}}
 $$
 
 At this stage we can regard both these new terms as arising empirically by observation from the data. Though you might guess that the physics origin comes from treating the nucleus using Quantum Mechanics. Note the negative terms - e.g. the more N deviates from the quality with Z, the more negative is the Asymmetry Term and the weaker bound is the nucleus (lower B/A).
