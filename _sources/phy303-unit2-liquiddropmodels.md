@@ -136,15 +136,15 @@ B(A,Z) = a_{V}A - a_{s}A^{2/3} - a_{c}Z^{2}A^{-1/3}
 In line with our description we have three terms:
 
 $$
-\textnormal{Volume Energy Term :} a_{V}A
+\textnormal{Volume Energy Term :}~~ a_{v}A
 $$
 
 $$
-\textnormal{Surface Tension Energy Term :} a_{s}A^{2/3}
+\textnormal{Surface Tension Energy Term :}~~ a_{s}A^{2/3}
 $$
 
 $$
-\textnormal{Coulomb Potential Energy Term :} a_{c}Z^{2}A^{-1/3}
+\textnormal{Coulomb Potential Energy Term :}~~ -a_{c} \frac{Z(Z-1)}{A^{1/3}}
 $$
 
 Note dividing B(A,Z) by the total nucleons A, gives us a prediction for the binding energy per nucleon plot we discussed in the last set of lectures. 
