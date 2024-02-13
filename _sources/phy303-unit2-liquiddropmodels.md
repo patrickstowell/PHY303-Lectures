@@ -221,7 +221,7 @@ $$
 which reduces to
 
 $$
-dE_{e} = \frac{4\pi^{4}\rho_{c}^{2}}{3\epsilon_{0}} dr
+dE_{e} = \frac{4\pi r^{4}\rho_{c}^{2}}{3\epsilon_{0}} dr
 $$
 
 
