@@ -302,6 +302,7 @@ In the figure below each line corresponds to a new energy level that the protons
 
 :::{figure-md} nucleon-pairing-digram
 <img src='figures/FiguresSlides.093.png' width="100%" alt="Rutherford Form">
+
 Possible pairing states of protons, each possible energy state or 'level' can have two protons or neutrons inside it, provided their spins are opposite.
 :::
 
@@ -316,8 +317,8 @@ So how nucleons pair up is important in the binding energy and this dictates the
 
 $$
 \delta_{\textnormal{pair}} = +a_{p}A^{-1/2} ~~~~\textnormal{for N odd and Z odd}\\
-\delta_{\textnormal{pair}} = 0 ~~~~\textnormal{for N even and Z even} \\
-\delta_{\textnormal{pair}} = -a_{p}A^{-1/2} ~~~~\textnormal{for N even and Z even}\\
+\delta_{\textnormal{pair}} = 0 ~~~~\textnormal{for N even {\bf OR} Z even} \\
+\delta_{\textnormal{pair}} = -a_{p}A^{-1/2} ~~~~\textnormal{for N even {\bf AND} Z even}\\
 $$
 
 Note the negative term in the binding energy equation that cancels out the negative term in the **Even-Even** case to produce an **increase in binding energy** overall (the nucleus is more stable). The $A^{-1/2}$ part is an empirical fit and the $a_p$ factor is a constant. Its important to get the sign of the term correct.
@@ -355,11 +356,11 @@ $$
 or in terms of B/A for the plots above
 
 $$
-B_{E}(A,Z) = a_{v} - a_{s}A^{-1/3} - a_{c} Z(Z-1) A^{\frac{-4}{3}} - a_{a}(N-Z)^{2}A^{-2} + \delta A^{-1}
+B_{E}(A,Z)/A = a_{v} - a_{s}A^{-1/3} - a_{c} Z(Z-1) A^{\frac{-4}{3}} - a_{a}(N-Z)^{2}A^{-2} + \delta A^{-1}
 $$
 
 where 
-- $a_{V} = 15.5MeV$, 
+- $a_{v} = 15.5MeV$, 
 - $a_{s} = 16.8MeV$, 
 - $a_{c} = 0.72 MeV$, 
 - $a_{a} = 23.0 MeV$, 
