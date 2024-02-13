@@ -629,6 +629,6 @@ $$
 d = 4.905 \times 10^{-14}~\textnormal{m}
 $$
 
-So our alpha particles only manage to get $49 \textnormal{fm}$ and that is if they hit them dead on. If we consider that typical $\alpha$ particle energies are between $0-11 \textnormal{MeV}$ this gives a minimum distance of closest approach of around $25~\textnormal{fm}$ still much bigger than the size of the gold nucleus ($6.6~\textnormal{fm}$). 
+So our alpha particles only manage to get within $49 \textnormal{fm}$ from the nucleus and that is if they hit the gold nucleus head on. If we consider that typical $\alpha$ particle energies are between $0-11 \textnormal{MeV}$ this gives a minimum distance of closest approach of around $25~\textnormal{fm}$ still much bigger than the size of the gold nucleus ($6.6~\textnormal{fm}$). 
 
 ```
