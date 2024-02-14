@@ -129,7 +129,7 @@ Putting this together mathematically in the Liquid Drop Model (LDM) leads to an 
 ```{math}
 :label: simpledropmodel
 \begin{equation}
-B(A,Z) = a_{V}A - a_{s}A^{2/3} - a_{c}Z^{2}A^{-1/3}
+B(A,Z) = a_{v}A - a_{s}A^{2/3} - a_{c}Z(Z-1)A^{-1/3}
 \end{equation}
 ```
 
@@ -160,9 +160,9 @@ To understand in a bit more detail the components of the SEMF lets go through th
 This is the main term, its positive, associated with the short range forces between nucleons pulling them together, its the same for all nucleons (a constant),hence the total for a nucleus is just proportional to the number of nucleons $A$. 
 
 ```{math}
-:label: simpledropmodel
+:label: simpledropmodel_be
 \begin{equation}
-B_{E} \propto A = +a_{V}A ~~~~~~~~ 
+B_{E} \propto A = +a_{v}A ~~~~~~~~ 
 \end{equation}
 ```
 
@@ -181,15 +181,19 @@ Volume term (V) in the liquid drop model compared to the IAEA binding energy dat
 ##### The Surface Tension Energy Term
 This is a correction to the Volume Term, subtracting from it, to allow for the assumptions that the outer nucleons near the surface will be less tightly bound. These nucleons make the nucleus weaker, so feel less of the short range attractive forces between nucleons compared to those nucleons well inside the nucleus. It's like a surface tension term. It's no surprise then that it is a proportional to the surface area which is proportional to $A^{2/3}$.
 
-$$
-B_{E} = -a_{s} A^{2/3} ~~~~ a_{s} = 17.23 MeV.
-$$
+```{math}
+:label: simpledropmodel_bs
+\begin{equation}
+B_{S} = -a_{s} A^{2/3} ~~~~ a_{s} = 17.23 MeV.
+\end{equation}
+```
+
 
 See here the effect of the surface term. It has the greatest effect on small nuclei, because they have a greater fraction of their nucleons near the surface compared to inside. 
 
 
 :::{figure-md} semf1
-<img src='figures/semf_goodness_uptosurf.png' width="60%" alt="Rutherford Form">
+<img src='figures/semf_goodness_uptosurf.png' width="60%" alt="BE Curve with V and V+S terms overlaid.">
 
 Volume (V) and Surface (S) term in the liquid drop model compared to the IAEA binding energy data.
 :::
@@ -202,65 +206,95 @@ By assuming the protons are distributed evenly in the spherical nucleus we can d
 
 Recall first that the electric potential energy of a charge $q_{1}$ in the potential of $q_{2}$ distance $r$ away is:
 
-$$
+```{math}
+:label: simpledropmodel_epotential
+\begin{equation}
 E(r) = \frac{1}{4\pi\epsilon_{0}} \frac{q_{1}q_{2}}{r}
-$$
+\end{equation}
+```
+
 
 The Charge Density (it is uniform remember) is given by : 
 
-$$
-\rho_{C} = \frac{Q}{V} \approx \frac{3Ze}{4\pi r^{3}_{0}A}
-$$
+```{math}
+:label: simpledropmodel_density
+\begin{equation}
+\rho_{c} = \frac{Q}{V} \approx \frac{3Ze}{4\pi r^{3}_{0}A}
+\end{equation}
+```
+
 
 Based on this we see that the Electrostatic Energy in the shell $dr$, we call $dE_{e}$, is given by:
 
-$$
-dE_{e} = \left[{\rho_c \cdot 4\pi r^{2} dr }\right]_{shell} \times \left[ \frac{4\pi r^{3} \rho_{C}}{3} \times \frac{1}{4 \pi \epsilon_{0} r} \right]_{inner}
-$$
+```{math}
+:label: simpledropmodel_energysphere
+\begin{equation}
+dE_{e} = \left[{\rho_c \cdot 4\pi r^{2} dr }\right]_{shell} \times \left[ \frac{4\pi r^{3} \rho_{c}}{3} \times \frac{1}{4 \pi \epsilon_{0} r} \right]_{inner}
+\end{equation}
+```
+
 
 which reduces to
 
-$$
+```{math}
+:label: simpledropmodel_energyspherereduction
+\begin{equation}
 dE_{e} = \frac{4\pi r^{4}\rho_{c}^{2}}{3\epsilon_{0}} dr
-$$
+\end{equation}
+```
 
 
 Integrating this out to the maximum radius of the nucleus, $r=0\rightarrow R$, gives the total Electrostatic Energy:
 
-$$
+```{math}
+:label: simpledropmodel_energyintegralbefore
+\begin{equation}
 E_{e} = \int_{0}^{R} \frac{4}{3} \frac{\pi r^{4}}{\epsilon_0}\rho_{c}^{2}dr = \frac{4}{3} \frac{\pi R^{5}}{5\epsilon_{0}}\rho_{c}^{2}
-$$
+\end{equation}
+```
 
 Finally, if we substitute in the charge density given earlier we get
 
-$$
+```{math}
+:label: simpledropmodel_energyintegralafter
+\begin{equation}
 E_{e} = \frac{4}{3} \frac{\pi R^{5}}{5\epsilon_{0}} \frac{Z^{2}e^{2}}{(4/3)^{2} \pi^{2} R^{6}} =
 \frac{3}{5} \frac{Z^{2}e^{2}}{4\pi \epsilon_{0}R}
-$$
+\end{equation}
+```
 
 If we remember that the nuclear size is given by $R=r_{0}A^{1/3}$ where $r_{0}$ is the Nucleon Effective Radius and we gather the constants out we get
 
-$$
+```{math}
+:label: simpledropmodel_coloumbfinalterm
+\begin{equation}
 a_{c} = \frac{3}{5} \times \frac{e^{2}}{4\pi \epsilon_{0} r_{0}} \approx 0.7~\textnormal{MeV}
-$$
+\end{equation}
+```
 
 and
 
-$$
-B_{E} = -a_{C} \frac{Z^{2}}{A^{1/3}}
-$$
+```{math}
+:label: simpledropmodel_coloumbfinaltermreduced
+\begin{equation}
+B_{C} = -a_{C} \frac{Z^{2}}{A^{1/3}}
+\end{equation}
+```
 
 This is close to our contribution we showed in the equations above, however the analysis includes a slight approximation. As charge is quantized the integration over $r$ should really only start once a single charge has been enclosed. If this is accounted for the **Total Electrostatic Energy** is actually given by
 
-$$
-B_{E} = -a_{C} \frac{Z(Z-1)}{A^{1/3}}
-$$
+```{math}
+:label: simpledropmodel_coloumbfinaltermquantised
+\begin{equation}
+B_{C} = -a_{C} \frac{Z(Z-1)}{A^{1/3}}
+\end{equation}
+```
 
 The effect this has on our distribution is shown below. We can see that the coulomb term adds some noise to our prediction as it now depends on $Z$ and at higher $A$ the most stable value of $Z$ can vary slightly from nuclei to nuclei.
 
 
-:::{figure-md} semf1
-<img src='figures/semf_goodness_uptocoul.png' width="60%" alt="Rutherford Form">
+:::{figure-md} semf2
+<img src='figures/semf_goodness_uptocoul.png' width="60%" alt="BE Curve with V + S + C terms from LDM overlaid.">
 
 Volume (V), Surface (S), and Coulomb (C) terms in the liquid drop model compared to the IAEA binding energy data.
 :::
@@ -269,8 +303,8 @@ This change in shape due to the Coulomb Term is of fundamental importance in Nuc
 - The gradient of the B/A curve tells us whether energy is released as we move along it. For light nuclei below iron, if nucleons are **added** to the system for example through fusion, then energy is released. 
 - In contrast however at higher atomic numbers, for example U-235, then energy is only released if nucleons are **removed** from the nucleus, for example if the nucleus is split up through nuclear fission.
 
-:::{figure-md} semf1
-<img src='figures/semf_goodness_simple_ratio.png' width="60%" alt="Rutherford Form">
+:::{figure-md} semf3
+<img src='figures/semf_goodness_simple_ratio.png' width="60%" alt="BE Curve showing differences between final V+S+C model.">
 Differences between three term liquid drop model and data.
 :::
 
@@ -285,9 +319,12 @@ On a quick look we find two important features:
 
 To do this we introduce two further terms which you may have seen before, the **Asymmetry Term** and the **Pairing Term** as follows:
 
-$$
-B(A,Z) = a_{V}A - a_{s}A^{2/3} - a_{c}Z(Z-1)A^{-1/3} - a_a(A-2Z)^{2}A^{-1} - \delta_{\textnormal{pair}}
-$$
+```{math}
+:label: simpledropcombined_extraterms
+\begin{equation}
+B(A,Z) = a_{v}A - a_{s}A^{2/3} - a_{c}Z(Z-1)A^{-1/3} - \left[a_a(A-2Z)^{2}A^{-1}\right]_{\textnormal{assym}}- \delta_{\textnormal{pair}}
+\end{equation}
+```
 
 At this stage we can regard both these new terms as arising empirically by observation from the data. Though you might guess that the physics origin comes from treating the nucleus using Quantum Mechanics. Note the negative terms - e.g. the more N deviates from the quality with Z, the more negative is the Asymmetry Term and the weaker bound is the nucleus (lower B/A).
 
@@ -301,7 +338,7 @@ Both protons and neutrons are Fermions, i.e. they have Asymmetric Wave Functions
 In the figure below each line corresponds to a new energy level that the protons or neutrons can occupy when the states below them are filled.
 
 :::{figure-md} nucleon-pairing-digram
-<img src='figures/FiguresSlides.093.png' width="100%" alt="Rutherford Form">
+<img src='figures/FiguresSlides.093.png' width="100%" alt="Nucleon pairing diagram showing protons and neutron spin alignment.">
 
 Possible pairing states of protons, each possible energy state or 'level' can have two protons or neutrons inside it, provided their spins are opposite.
 :::
@@ -315,11 +352,14 @@ We might expect that the neutrons and protons in a nucleus might best pile into 
 
 So how nucleons pair up is important in the binding energy and this dictates the $\delta_{pair}$ term. 
 
-$$
-\delta_{\textnormal{pair}} = +a_{p}A^{-1/2} ~~~~\textnormal{for N odd AND Z odd}\\
-\delta_{\textnormal{pair}} = 0 ~~~~\textnormal{for N even OR Z even} \\
-\delta_{\textnormal{pair}} = -a_{p}A^{-1/2} ~~~~\textnormal{for N even AND Z even}\\
-$$
+```{math}
+:label: simpledropcombined_terms
+\begin{align}
+\delta_{\textnormal{pair}} &= +a_{p}A^{-1/2} ~~~~\textnormal{for N odd AND Z odd}\\
+\delta_{\textnormal{pair}} &= 0 ~~~~~~~~~~~~~~~~~~~\textnormal{for N even OR Z even} \\
+\delta_{\textnormal{pair}} &= -a_{p}A^{-1/2} ~~~~\textnormal{for N even AND Z even}\\
+\end{align}
+```
 
 Note the negative term in the binding energy equation that cancels out the negative term in the **Even-Even** case to produce an **increase in binding energy** overall (the nucleus is more stable). The $A^{-1/2}$ part is an empirical fit and the $a_p$ factor is a constant. Its important to get the sign of the term correct.
 
@@ -330,9 +370,12 @@ Finally we also see that nuclei are also more stable, roughly, if there are qual
 
 In the simplest QM Model (an infinite 3d potential well) we can assume that spacing between the energy levels is a constant value and is proportional to the inverse of the volume hence $\Delta E \propto A^{-1}$. A full derivation of this is beyond us at this point but if we were to do so it would yield the form 
 
-$$
--a_{a} (A-2Z)^{2}A^{-1}
-$$
+```{math}
+:label: simpledropcombined_assymn
+\begin{align}
+B_{A} = -a_{a} (A-2Z)^{2}A^{-1}
+\end{align}
+```
 
  where $a_{a}$ is another constant. Importantly this gives zero if $N=Z$ as then $A=2Z$. 
 
@@ -349,15 +392,21 @@ Volume (V), Surface (S), Coulomb (C), Asymmetry (A), and Pairing (P) terms in th
 ### Total Liquid Drop Binding Energy Equation
 With all our terms added together we finally have a
 
-$$
-B_{E}(A,Z) = a_{v} A - a_{s}A^{2/3} - a_{c} Z(Z-1) A^{\frac{-1}{3}} - a_{a}(N-Z)^{2}A^{-1} + \delta
-$$
+```{math}
+:label: simpledropcombined_totalequation
+\begin{align}
+B(A,Z) = a_{v} A - a_{s}A^{2/3} - a_{c} Z(Z-1) A^{-1/3} - a_{a}(A-2Z)^{2}A^{-1} + \delta
+\end{align}
+```
 
 or in terms of B/A for the plots above
 
-$$
-B_{E}(A,Z)/A = a_{v} - a_{s}A^{-1/3} - a_{c} Z(Z-1) A^{\frac{-4}{3}} - a_{a}(N-Z)^{2}A^{-2} + \delta A^{-1}
-$$
+```{math}
+:label: simpledropcombined_totalequationperA
+\begin{align}
+B(A,Z)/A = a_{v} - a_{s}A^{-1/3} - a_{c} Z(Z-1) A^{-4/3} - a_{a}(A-2Z)^{2}A^{-2} + \delta A^{-1}
+\end{align}
+```
 
 where 
 - $a_{v} = 15.5 \textnormal{MeV}$, 
