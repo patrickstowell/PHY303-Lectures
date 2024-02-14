@@ -504,8 +504,8 @@ F(q) = \int_{-\infty}^{\infty} e^{i~{\bf q} \cdot {\bf r} / \hbar} ~\rho({\bf r}
 </ol>
 <p>Putting this together mathematically in the Liquid Drop Model (LDM) leads to an equation for the binding energy for the nucleus as</p>
 <div class="math notranslate nohighlight" id="equation-simpledropmodel">
-<span class="eqno">(2.7)<a class="headerlink" href="#equation-simpledropmodel" title="Permalink to this equation">#</a></span>\[\begin{equation}
-B(A,Z) = a_{V}A - a_{s}A^{2/3} - a_{c}Z^{2}A^{-1/3}
+<span class="eqno">(2.6)<a class="headerlink" href="#equation-simpledropmodel" title="Permalink to this equation">#</a></span>\[\begin{equation}
+B(A,Z) = a_{v}A - a_{s}A^{2/3} - a_{c}Z(Z-1)A^{-1/3}
 \end{equation}\]</div>
 <p>In line with our description we have three terms:</p>
 <div class="math notranslate nohighlight">
@@ -529,9 +529,9 @@ B(A,Z) = a_{V}A - a_{s}A^{2/3} - a_{c}Z^{2}A^{-1/3}
 <section id="the-volume-energy-term">
 <h4><span class="section-number">2.2.2.1. </span>The Volume Energy Term<a class="headerlink" href="#the-volume-energy-term" title="Permalink to this heading">#</a></h4>
 <p>This is the main term, its positive, associated with the short range forces between nucleons pulling them together, its the same for all nucleons (a constant),hence the total for a nucleus is just proportional to the number of nucleons <span class="math notranslate nohighlight">\(A\)</span>.</p>
-<div class="math notranslate nohighlight" id="equation-simpledropmodel">
-<span class="eqno">(2.7)<a class="headerlink" href="#equation-simpledropmodel" title="Permalink to this equation">#</a></span>\[\begin{equation}
-B_{E} \propto A = +a_{V}A ~~~~~~~~ 
+<div class="math notranslate nohighlight" id="equation-simpledropmodel-be">
+<span class="eqno">(2.7)<a class="headerlink" href="#equation-simpledropmodel-be" title="Permalink to this equation">#</a></span>\[\begin{equation}
+B_{E} \propto A = +a_{v}A ~~~~~~~~ 
 \end{equation}\]</div>
 <p>The <span class="math notranslate nohighlight">\(a_{V}\)</span> term sets the scale of the energies we are dealing with in nuclear physics. It is typically given as <span class="math notranslate nohighlight">\(a_{V} = 15.56~\textnormal{MeV}\)</span>.</p>
 <p>Once the other terms are included (subtracting from this Volume term) we find that a good typical value for the Binding Energy per Nucleon is about <span class="math notranslate nohighlight">\(8~\textnormal{MeV/nucleon}\)</span>. We therefore expect the other terms to reduce the binding energy by around <span class="math notranslate nohighlight">\(7-8~\textnormal{MeV}\)</span>.</p>
@@ -545,13 +545,13 @@ B_{E} \propto A = +a_{V}A ~~~~~~~~
 <section id="the-surface-tension-energy-term">
 <h4><span class="section-number">2.2.2.2. </span>The Surface Tension Energy Term<a class="headerlink" href="#the-surface-tension-energy-term" title="Permalink to this heading">#</a></h4>
 <p>This is a correction to the Volume Term, subtracting from it, to allow for the assumptions that the outer nucleons near the surface will be less tightly bound. These nucleons make the nucleus weaker, so feel less of the short range attractive forces between nucleons compared to those nucleons well inside the nucleus. It’s like a surface tension term. It’s no surprise then that it is a proportional to the surface area which is proportional to <span class="math notranslate nohighlight">\(A^{2/3}\)</span>.</p>
-<div class="math notranslate nohighlight">
-\[
-B_{E} = -a_{s} A^{2/3} ~~~~ a_{s} = 17.23 MeV.
-\]</div>
+<div class="math notranslate nohighlight" id="equation-simpledropmodel-bs">
+<span class="eqno">(2.8)<a class="headerlink" href="#equation-simpledropmodel-bs" title="Permalink to this equation">#</a></span>\[\begin{equation}
+B_{S} = -a_{s} A^{2/3} ~~~~ a_{s} = 17.23 MeV.
+\end{equation}\]</div>
 <p>See here the effect of the surface term. It has the greatest effect on small nuclei, because they have a greater fraction of their nucleons near the surface compared to inside.</p>
 <figure class="align-default" id="id1">
-<a class="reference internal image-reference" href="_images/semf_goodness_uptosurf.png"><img alt="Rutherford Form" src="_images/semf_goodness_uptosurf.png" style="width: 60%;" /></a>
+<a class="reference internal image-reference" href="_images/semf_goodness_uptosurf.png"><img alt="BE Curve with V and V+S terms overlaid." src="_images/semf_goodness_uptosurf.png" style="width: 60%;" /></a>
 <figcaption>
 <p><span class="caption-number">Fig. 2.4 </span><span class="caption-text">Volume (V) and Surface (S) term in the liquid drop model compared to the IAEA binding energy data.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
 </figcaption>
@@ -562,56 +562,56 @@ B_{E} = -a_{s} A^{2/3} ~~~~ a_{s} = 17.23 MeV.
 <p>This second correction to the Volume Term comes because nuclei contain positively charged protons that repel each other. This electrostatic repulsion also weakens the nucleus, hence a negative term, reducing the overall binding strength.</p>
 <p>By assuming the protons are distributed evenly in the spherical nucleus we can deduce the equation by considering the repulsion of a shell of protons of thickness <span class="math notranslate nohighlight">\(dr\)</span> due to those inside the shell, and integrating over the entire nucleus size.</p>
 <p>Recall first that the electric potential energy of a charge <span class="math notranslate nohighlight">\(q_{1}\)</span> in the potential of <span class="math notranslate nohighlight">\(q_{2}\)</span> distance <span class="math notranslate nohighlight">\(r\)</span> away is:</p>
-<div class="math notranslate nohighlight">
-\[
+<div class="math notranslate nohighlight" id="equation-simpledropmodel-epotential">
+<span class="eqno">(2.9)<a class="headerlink" href="#equation-simpledropmodel-epotential" title="Permalink to this equation">#</a></span>\[\begin{equation}
 E(r) = \frac{1}{4\pi\epsilon_{0}} \frac{q_{1}q_{2}}{r}
-\]</div>
+\end{equation}\]</div>
 <p>The Charge Density (it is uniform remember) is given by :</p>
-<div class="math notranslate nohighlight">
-\[
-\rho_{C} = \frac{Q}{V} \approx \frac{3Ze}{4\pi r^{3}_{0}A}
-\]</div>
+<div class="math notranslate nohighlight" id="equation-simpledropmodel-density">
+<span class="eqno">(2.10)<a class="headerlink" href="#equation-simpledropmodel-density" title="Permalink to this equation">#</a></span>\[\begin{equation}
+\rho_{c} = \frac{Q}{V} \approx \frac{3Ze}{4\pi r^{3}_{0}A}
+\end{equation}\]</div>
 <p>Based on this we see that the Electrostatic Energy in the shell <span class="math notranslate nohighlight">\(dr\)</span>, we call <span class="math notranslate nohighlight">\(dE_{e}\)</span>, is given by:</p>
-<div class="math notranslate nohighlight">
-\[
-dE_{e} = \left[{\rho_c \cdot 4\pi r^{2} dr }\right]_{shell} \times \left[ \frac{4\pi r^{3} \rho_{C}}{3} \times \frac{1}{4 \pi \epsilon_{0} r} \right]_{inner}
-\]</div>
+<div class="math notranslate nohighlight" id="equation-simpledropmodel-energysphere">
+<span class="eqno">(2.11)<a class="headerlink" href="#equation-simpledropmodel-energysphere" title="Permalink to this equation">#</a></span>\[\begin{equation}
+dE_{e} = \left[{\rho_c \cdot 4\pi r^{2} dr }\right]_{shell} \times \left[ \frac{4\pi r^{3} \rho_{c}}{3} \times \frac{1}{4 \pi \epsilon_{0} r} \right]_{inner}
+\end{equation}\]</div>
 <p>which reduces to</p>
-<div class="math notranslate nohighlight">
-\[
+<div class="math notranslate nohighlight" id="equation-simpledropmodel-energyspherereduction">
+<span class="eqno">(2.12)<a class="headerlink" href="#equation-simpledropmodel-energyspherereduction" title="Permalink to this equation">#</a></span>\[\begin{equation}
 dE_{e} = \frac{4\pi r^{4}\rho_{c}^{2}}{3\epsilon_{0}} dr
-\]</div>
+\end{equation}\]</div>
 <p>Integrating this out to the maximum radius of the nucleus, <span class="math notranslate nohighlight">\(r=0\rightarrow R\)</span>, gives the total Electrostatic Energy:</p>
-<div class="math notranslate nohighlight">
-\[
+<div class="math notranslate nohighlight" id="equation-simpledropmodel-energyintegralbefore">
+<span class="eqno">(2.13)<a class="headerlink" href="#equation-simpledropmodel-energyintegralbefore" title="Permalink to this equation">#</a></span>\[\begin{equation}
 E_{e} = \int_{0}^{R} \frac{4}{3} \frac{\pi r^{4}}{\epsilon_0}\rho_{c}^{2}dr = \frac{4}{3} \frac{\pi R^{5}}{5\epsilon_{0}}\rho_{c}^{2}
-\]</div>
+\end{equation}\]</div>
 <p>Finally, if we substitute in the charge density given earlier we get</p>
-<div class="math notranslate nohighlight">
-\[
+<div class="math notranslate nohighlight" id="equation-simpledropmodel-energyintegralafter">
+<span class="eqno">(2.14)<a class="headerlink" href="#equation-simpledropmodel-energyintegralafter" title="Permalink to this equation">#</a></span>\[\begin{equation}
 E_{e} = \frac{4}{3} \frac{\pi R^{5}}{5\epsilon_{0}} \frac{Z^{2}e^{2}}{(4/3)^{2} \pi^{2} R^{6}} =
 \frac{3}{5} \frac{Z^{2}e^{2}}{4\pi \epsilon_{0}R}
-\]</div>
+\end{equation}\]</div>
 <p>If we remember that the nuclear size is given by <span class="math notranslate nohighlight">\(R=r_{0}A^{1/3}\)</span> where <span class="math notranslate nohighlight">\(r_{0}\)</span> is the Nucleon Effective Radius and we gather the constants out we get</p>
-<div class="math notranslate nohighlight">
-\[
+<div class="math notranslate nohighlight" id="equation-simpledropmodel-coloumbfinalterm">
+<span class="eqno">(2.15)<a class="headerlink" href="#equation-simpledropmodel-coloumbfinalterm" title="Permalink to this equation">#</a></span>\[\begin{equation}
 a_{c} = \frac{3}{5} \times \frac{e^{2}}{4\pi \epsilon_{0} r_{0}} \approx 0.7~\textnormal{MeV}
-\]</div>
+\end{equation}\]</div>
 <p>and</p>
-<div class="math notranslate nohighlight">
-\[
-B_{E} = -a_{C} \frac{Z^{2}}{A^{1/3}}
-\]</div>
+<div class="math notranslate nohighlight" id="equation-simpledropmodel-coloumbfinaltermreduced">
+<span class="eqno">(2.16)<a class="headerlink" href="#equation-simpledropmodel-coloumbfinaltermreduced" title="Permalink to this equation">#</a></span>\[\begin{equation}
+B_{C} = -a_{C} \frac{Z^{2}}{A^{1/3}}
+\end{equation}\]</div>
 <p>This is close to our contribution we showed in the equations above, however the analysis includes a slight approximation. As charge is quantized the integration over <span class="math notranslate nohighlight">\(r\)</span> should really only start once a single charge has been enclosed. If this is accounted for the <strong>Total Electrostatic Energy</strong> is actually given by</p>
-<div class="math notranslate nohighlight">
-\[
-B_{E} = -a_{C} \frac{Z(Z-1)}{A^{1/3}}
-\]</div>
+<div class="math notranslate nohighlight" id="equation-simpledropmodel-coloumbfinaltermquantised">
+<span class="eqno">(2.17)<a class="headerlink" href="#equation-simpledropmodel-coloumbfinaltermquantised" title="Permalink to this equation">#</a></span>\[\begin{equation}
+B_{C} = -a_{C} \frac{Z(Z-1)}{A^{1/3}}
+\end{equation}\]</div>
 <p>The effect this has on our distribution is shown below. We can see that the coulomb term adds some noise to our prediction as it now depends on <span class="math notranslate nohighlight">\(Z\)</span> and at higher <span class="math notranslate nohighlight">\(A\)</span> the most stable value of <span class="math notranslate nohighlight">\(Z\)</span> can vary slightly from nuclei to nuclei.</p>
-<figure class="align-default" id="id2">
-<a class="reference internal image-reference" href="_images/semf_goodness_uptocoul.png"><img alt="Rutherford Form" src="_images/semf_goodness_uptocoul.png" style="width: 60%;" /></a>
+<figure class="align-default" id="semf2">
+<a class="reference internal image-reference" href="_images/semf_goodness_uptocoul.png"><img alt="BE Curve with V + S + C terms from LDM overlaid." src="_images/semf_goodness_uptocoul.png" style="width: 60%;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 2.5 </span><span class="caption-text">Volume (V), Surface (S), and Coulomb (C) terms in the liquid drop model compared to the IAEA binding energy data.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 2.5 </span><span class="caption-text">Volume (V), Surface (S), and Coulomb (C) terms in the liquid drop model compared to the IAEA binding energy data.</span><a class="headerlink" href="#semf2" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>This change in shape due to the Coulomb Term is of fundamental importance in Nuclear Physics and has profound implications further on in this course. We see that the effect of the Coulomb Term is to bend the B/A curve down at higher A yielding a peak in the B/A curve. One implication concerns the existence of Nuclear Fission in nature.</p>
@@ -627,10 +627,10 @@ B_{E} = -a_{C} \frac{Z(Z-1)}{A^{1/3}}
 <li><p>Anything that tends to make nuclei less stable, implying the nucleons are less well bound together, is equivalent to lowering the average B/A value - <em>we need to account for this</em></p></li>
 </ul>
 <p>To do this we introduce two further terms which you may have seen before, the <strong>Asymmetry Term</strong> and the <strong>Pairing Term</strong> as follows:</p>
-<div class="math notranslate nohighlight">
-\[
-B(A,Z) = a_{V}A - a_{s}A^{2/3} - a_{c}Z(Z-1)A^{-1/3} - a_a(A-2Z)^{2}A^{-1} - \delta_{\textnormal{pair}}
-\]</div>
+<div class="math notranslate nohighlight" id="equation-simpledropcombined-extraterms">
+<span class="eqno">(2.18)<a class="headerlink" href="#equation-simpledropcombined-extraterms" title="Permalink to this equation">#</a></span>\[\begin{equation}
+B(A,Z) = a_{v}A - a_{s}A^{2/3} - a_{c}Z(Z-1)A^{-1/3} - \left[a_a(A-2Z)^{2}A^{-1}\right]_{\textnormal{assym}}- \delta_{\textnormal{pair}}
+\end{equation}\]</div>
 <p>At this stage we can regard both these new terms as arising empirically by observation from the data. Though you might guess that the physics origin comes from treating the nucleus using Quantum Mechanics. Note the negative terms - e.g. the more N deviates from the quality with Z, the more negative is the Asymmetry Term and the weaker bound is the nucleus (lower B/A).</p>
 </section>
 <section id="nucleon-pairing-term">
@@ -639,7 +639,7 @@ B(A,Z) = a_{V}A - a_{s}A^{2/3} - a_{c}Z(Z-1)A^{-1/3} - a_a(A-2Z)^{2}A^{-1} - \de
 <p>Both protons and neutrons are Fermions, i.e. they have Asymmetric Wave Functions and spin =1/2. Thus they obey the Pauli Exclusion Principle. So we would expect that only two protons (or two neutrons) can occupy a given energy state, one with Spin-up the other Spin-down. In fact the coupling of these spins means it is energetically favorable to have pairs of neutrons or pairs of protons, rather than an odd neutron or proton alone in a given level.</p>
 <p>In the figure below each line corresponds to a new energy level that the protons or neutrons can occupy when the states below them are filled.</p>
 <figure class="align-default" id="nucleon-pairing-digram">
-<a class="reference internal image-reference" href="_images/FiguresSlides.093.png"><img alt="Rutherford Form" src="_images/FiguresSlides.093.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="_images/FiguresSlides.093.png"><img alt="Nucleon pairing diagram showing protons and neutron spin alignment." src="_images/FiguresSlides.093.png" style="width: 100%;" /></a>
 <figcaption>
 <p><span class="caption-number">Fig. 2.6 </span><span class="caption-text">Possible pairing states of protons, each possible energy state or ‘level’ can have two protons or neutrons inside it, provided their spins are opposite.</span><a class="headerlink" href="#nucleon-pairing-digram" title="Permalink to this image">#</a></p>
 </figcaption>
@@ -651,28 +651,28 @@ B(A,Z) = a_{V}A - a_{s}A^{2/3} - a_{c}Z(Z-1)A^{-1/3} - a_a(A-2Z)^{2}A^{-1} - \de
 <li><p><strong>Odd-Odd</strong>  Finally we can consider states where both an odd proton and an odd neutron is left. These are referred to as Odd-Odd states. Because they are the least stable they are very rare in nature.</p></li>
 </ul>
 <p>So how nucleons pair up is important in the binding energy and this dictates the <span class="math notranslate nohighlight">\(\delta_{pair}\)</span> term.</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\delta_{\textnormal{pair}} = +a_{p}A^{-1/2} ~~~~\textnormal{for N odd AND Z odd}\\
-\delta_{\textnormal{pair}} = 0 ~~~~\textnormal{for N even OR Z even} \\
-\delta_{\textnormal{pair}} = -a_{p}A^{-1/2} ~~~~\textnormal{for N even AND Z even}\\
-\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-simpledropcombined-terms">
+<span class="eqno">(2.19)<a class="headerlink" href="#equation-simpledropcombined-terms" title="Permalink to this equation">#</a></span>\[\begin{split}\begin{align}
+\delta_{\textnormal{pair}} &amp;= +a_{p}A^{-1/2} ~~~~\textnormal{for N odd AND Z odd}\\
+\delta_{\textnormal{pair}} &amp;= 0 ~~~~~~~~~~~~~~~~~~~\textnormal{for N even OR Z even} \\
+\delta_{\textnormal{pair}} &amp;= -a_{p}A^{-1/2} ~~~~\textnormal{for N even AND Z even}\\
+\end{align}\end{split}\]</div>
 <p>Note the negative term in the binding energy equation that cancels out the negative term in the <strong>Even-Even</strong> case to produce an <strong>increase in binding energy</strong> overall (the nucleus is more stable). The <span class="math notranslate nohighlight">\(A^{-1/2}\)</span> part is an empirical fit and the <span class="math notranslate nohighlight">\(a_p\)</span> factor is a constant. Its important to get the sign of the term correct.</p>
 </section>
 <section id="nucleon-assymetry">
 <h4><span class="section-number">2.2.2.5. </span>Nucleon Assymetry<a class="headerlink" href="#nucleon-assymetry" title="Permalink to this heading">#</a></h4>
 <p>Finally we also see that nuclei are also more stable, roughly, if there are qual numbers of neutrons and protons (and preferably in pairs, Even-Even).</p>
 <p>In the simplest QM Model (an infinite 3d potential well) we can assume that spacing between the energy levels is a constant value and is proportional to the inverse of the volume hence <span class="math notranslate nohighlight">\(\Delta E \propto A^{-1}\)</span>. A full derivation of this is beyond us at this point but if we were to do so it would yield the form</p>
-<div class="math notranslate nohighlight">
-\[
--a_{a} (A-2Z)^{2}A^{-1}
-\]</div>
+<div class="math notranslate nohighlight" id="equation-simpledropcombined-assymn">
+<span class="eqno">(2.20)<a class="headerlink" href="#equation-simpledropcombined-assymn" title="Permalink to this equation">#</a></span>\[\begin{align}
+B_{A} = -a_{a} (A-2Z)^{2}A^{-1}
+\end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(a_{a}\)</span> is another constant. Importantly this gives zero if <span class="math notranslate nohighlight">\(N=Z\)</span> as then <span class="math notranslate nohighlight">\(A=2Z\)</span>.</p>
 <p>If we look at how both the additional pairing and asymmetry terms in our model behave we see that they are capable of bringing us closer to the data.The asymmetry term makes the biggest difference at high <span class="math notranslate nohighlight">\(A\)</span> whilst the pairing term brings us slightly closer at low <span class="math notranslate nohighlight">\(A\)</span> and has smoothed out the fluctuations we saw at higher atomic mass.  We can now predict the binding energies for most of the common nuclei to within a few percent which is not bad for still a relatively simple model!</p>
-<figure class="align-default" id="id3">
+<figure class="align-default" id="id2">
 <a class="reference internal image-reference" href="_images/semf_goodness_withpairing.png"><img alt="ldm_combined" src="_images/semf_goodness_withpairing.png" style="width: 100%;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 2.7 </span><span class="caption-text">Volume (V), Surface (S), Coulomb (C), Asymmetry (A), and Pairing (P) terms in the liquid drop model compared to the IAEA binding energy data.</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 2.7 </span><span class="caption-text">Volume (V), Surface (S), Coulomb (C), Asymmetry (A), and Pairing (P) terms in the liquid drop model compared to the IAEA binding energy data.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -681,15 +681,15 @@ B(A,Z) = a_{V}A - a_{s}A^{2/3} - a_{c}Z(Z-1)A^{-1/3} - a_a(A-2Z)^{2}A^{-1} - \de
 <section id="total-liquid-drop-binding-energy-equation">
 <h2><span class="section-number">2.3. </span>Total Liquid Drop Binding Energy Equation<a class="headerlink" href="#total-liquid-drop-binding-energy-equation" title="Permalink to this heading">#</a></h2>
 <p>With all our terms added together we finally have a</p>
-<div class="math notranslate nohighlight">
-\[
-B_{E}(A,Z) = a_{v} A - a_{s}A^{2/3} - a_{c} Z(Z-1) A^{\frac{-1}{3}} - a_{a}(N-Z)^{2}A^{-1} + \delta
-\]</div>
+<div class="math notranslate nohighlight" id="equation-simpledropcombined-totalequation">
+<span class="eqno">(2.21)<a class="headerlink" href="#equation-simpledropcombined-totalequation" title="Permalink to this equation">#</a></span>\[\begin{align}
+B(A,Z) = a_{v} A - a_{s}A^{2/3} - a_{c} Z(Z-1) A^{-1/3} - a_{a}(A-2Z)^{2}A^{-1} + \delta
+\end{align}\]</div>
 <p>or in terms of B/A for the plots above</p>
-<div class="math notranslate nohighlight">
-\[
-B_{E}(A,Z)/A = a_{v} - a_{s}A^{-1/3} - a_{c} Z(Z-1) A^{\frac{-4}{3}} - a_{a}(N-Z)^{2}A^{-2} + \delta A^{-1}
-\]</div>
+<div class="math notranslate nohighlight" id="equation-simpledropcombined-totalequationpera">
+<span class="eqno">(2.22)<a class="headerlink" href="#equation-simpledropcombined-totalequationpera" title="Permalink to this equation">#</a></span>\[\begin{align}
+B(A,Z)/A = a_{v} - a_{s}A^{-1/3} - a_{c} Z(Z-1) A^{-4/3} - a_{a}(A-2Z)^{2}A^{-2} + \delta A^{-1}
+\end{align}\]</div>
 <p>where</p>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(a_{v} = 15.5 \textnormal{MeV}\)</span>,</p></li>
