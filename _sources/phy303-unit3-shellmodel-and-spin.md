@@ -7,9 +7,12 @@ However notice how this derivation was only possible by merging two different co
 
 We find evidence not only that we need to account for the preference for pairing and balance between neutrons and protons, but also that specific numerical N and Z combinations have very different properties. This results in the observation of Magic Number Nuclei, 
 
-$$
+```{math}
+:label: shellmodelnuclei
+\begin{equation}
 \bf \textnormal{Magic Nuclei -}~ Z~\textnormal{or}~N=2, 8, 20, 28, 50, 82, 126...
-$$
+\end{equation}
+```
 
 These nuclei have particularly stable properties, and mark a transition point for nuclei such that those with $Z$ or $N$ below a given Magic Number have very different behavior to those above. This leads to the idea that nucleons in nuclei somehow lie in **Concentric Shells**, analogous (but very different) to the way electrons lie in shells in atoms and similarly that a "filled" outer shell produces a more stable configuration
 
@@ -50,15 +53,21 @@ A closer look at the chart of Nuclides shows that nuclei with N and Z away from 
 
 Based on this we can make a prediction of which isotope of the given A is most stable against Nuclear Decay. From a parabola fit to the data shown of the form
 
-$$
+```{math}
+:label: BindingEnergyParabola
+\begin{equation}
 M(A,Z) = aA + bZ + cZ^{2}
-$$
+\end{equation}
+```
 
 where $a$, $b$, and $c$ are free parameters that are nuclei dependent. We can determine the minima by finding the case where
 
-$$
+```{math}
+:label: BindingEnergyParabolaDif
+\begin{equation}
 \frac{dM(A,Z)}{dZ} \rightarrow 0\\
-$$
+\end{equation}
+```
 
 Whatever the nearest integer value of Z is at the minimum will be the isotope we are after. Notice how the curves are symmetric about the minimum. This leads to the concept of **Mirror Nuclei**. This refers to a pair of nuclei that have the same $A$ but where the $N$ and $Z$ values are reversed. An example is nitrogen-15 (7 protons and 8 neutrons) and oxygen-15 (8 protons and 7 neutrons).
 
@@ -150,9 +159,12 @@ So there is strong evidence for shell structure in Nuclei. This is compatible wi
 
 To determine the energy levels in the shell model we need to solve the full time-independent 3D Schrödinger Equation for particle mass $m$ and wave-function $\psi$ which has the form:
 
-$$
+```{math}
+:label: BindingEnergyParabolaDif
+\begin{equation}
 \frac{-\hbar^{2}}{2m} \nabla^{2} \psi(r,\theta,\phi) + V(r,\theta,\phi) \psi(r,\theta,\phi) = E \psi(r,\theta,\phi)
-$$
+\end{equation}
+```
 
 For a given nucleon, the forces acting on it by all the other nucleons in the nucleus can be presented to first approximation by an average potential $V(r)$ which only depends on distance from the core. We call this the **Shell Theory Potential**.
 
@@ -163,16 +175,22 @@ The origin of this potential $V(r)$ is in the force that holds individual nucleo
 
 Right now we take the mass distribution given previously from the Saxon Woods
 
-$$
+```{math}
+:label: simpledropcombined_extraterms
+\begin{equation}
 \rho(r) = \frac{\rho(0)}{1+\textnormal{exp}(\frac{r-b}{a})}
-$$
+\end{equation}
+```
 
 and invert it to get the potential $V(r)$. It is this function that goes into the Schrödinger equation to get the Energy Levels.
 
 
-$$
+```{math}
+:label: simpledropcombined_extraterms
+\begin{equation}
 V(r) = \frac{-V_{0}}{1+\textnormal{exp}(\frac{r-b}{a})}
-$$
+\end{equation}
+```
 
 ![Alt text](image-31.png)
 
@@ -181,9 +199,12 @@ The basis of this nuclear potential shape, for instance its spatial radius, is t
 
 In the shell model now since we are assuming spherical symmetry in our potential and the nucleus, we can simplify the spherical coordinates, splitting $\psi(r,\theta,\phi) = \Psi(r)\Theta(\theta)\Phi(\phi)$.
 
-$$
+```{math}
+:label: simpledropcombined_extraterms
+\begin{equation}
 \frac{-\hbar^{2}}{2m} \frac{d^{2}\Psi(r)}{dr^{2}} + V(r) \Psi(r) = E \Psi(r)
-$$
+\end{equation}
+```
 
 We will avoid fully deriving this for now as the focus on this course is the implications that a full QM approach has on the behavior of our nucleons.
 
@@ -209,27 +230,39 @@ We start by considering the QM behavior of an individual nucleon (p or n) in the
 
 The magnitude of $l$ is given by 
 
-$$
-\langle l^{2} \rangle  = \hbar^{2}(l+1)
-$$
+```{math}
+:label: simpledropcombined_extraterms
+\begin{equation}
+\langle l^{2} \rangle  = \hbar^{2}l(l+1)
+\end{equation}
+```
 
 The angular motion is a constant of the motion and the uncertainty principle gives us certain allowed "substates" of $l$ which we will label $m_{z}$.
 
-$$
+```{math}
+:label: simpledropcombined_extraterms
+\begin{equation}
 \langle l_{z} \rangle = \hbar m_{z} ~~~~\textnormal{where}~~~~ m_z=0,\pm1,\pm2,...,\pm l
-$$
+\end{equation}
+```
 
 Nucleons **also** have an Intrinsic Angular Momentum called Spin $s$ such that
 
-$$
+```{math}
+:label: simpledropcombined_extraterms
+\begin{equation}
 \langle s^{2} \rangle = \hbar^{2} s(s+1)
-$$
+\end{equation}
+```
 
 We find that similar to the angular momentum case this also has certain allowed spin substates, however these can only correspond to spin-up, or spin-down.
 
-$$
+```{math}
+:label: simpledropcombined_extraterms
+\begin{equation}
 \langle s_z\rangle  = \hbar m_{s} ~~~~\textnormal{where}~~~~ m_{s} = \pm \frac{1}{2}.
-$$
+\end{equation}
+```
 
 
 The two quantum numbers $l$ and $s$ can vector couple to give a new quantum number $j$, known as the Total Angular Momentum Quantum Number for the nucleon. In nuclear systems it is the $j$ that is regarded as the "good" quantum number. The vector addition in this case is simply obtained from the possible combinations of $m_{z}$ and $m_{s}$ given what we know about possible values for $l,s,j$. In the figure below we can see the calculation of the quantum number $j$ represented as a combination of different arrows for $l$ and $s$. If $l$ and $s$ are parallel (both positive) then we get higher values of $j$ than if they are anti-parallel.

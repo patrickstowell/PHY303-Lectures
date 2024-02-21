@@ -185,6 +185,11 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="legendre-polynomials.html">Legendre Polynomials</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nucleus-shape.html">Nucleus Shape</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Revision Tools</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="unit1-terms.html">Unit 1 : Equations &amp; Terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit2-terms.html">Unit 2 : Equations &amp; Terms</a></li>
+</ul>
 
     </div>
 </nav></div>
@@ -419,10 +424,10 @@ document.write(`
 <p>We’ve seen how study of the binding energy curve for nuclei and basic features like the chart of stability has led to an empirical formula for the binding energy and the mass of nuclei through the semi empirical mass formula.</p>
 <p>However notice how this derivation was only possible by merging two different concepts for nuclei. Firstly, regarding the nucleus as a single drop of Nuclear Material which acts as a Collective Body.  Secondly a concept that starts at to look at the quantum behavior of individual nucleons and that they somehow lie in specific (and restricted) Energy Levels. So we have two sorts of model, a Collective Body Model, and an Individual particle Model coming together. They Asymmetry Term and Pairing Term in the SEMF can only be explained assuming this second concept.</p>
 <p>We find evidence not only that we need to account for the preference for pairing and balance between neutrons and protons, but also that specific numerical N and Z combinations have very different properties. This results in the observation of Magic Number Nuclei,</p>
-<div class="math notranslate nohighlight">
-\[
+<div class="math notranslate nohighlight" id="equation-shellmodelnuclei">
+<span class="eqno">(3.1)<a class="headerlink" href="#equation-shellmodelnuclei" title="Permalink to this equation">#</a></span>\[\begin{equation}
 \bf \textnormal{Magic Nuclei -}~ Z~\textnormal{or}~N=2, 8, 20, 28, 50, 82, 126...
-\]</div>
+\end{equation}\]</div>
 <p>These nuclei have particularly stable properties, and mark a transition point for nuclei such that those with <span class="math notranslate nohighlight">\(Z\)</span> or <span class="math notranslate nohighlight">\(N\)</span> below a given Magic Number have very different behavior to those above. This leads to the idea that nucleons in nuclei somehow lie in <strong>Concentric Shells</strong>, analogous (but very different) to the way electrons lie in shells in atoms and similarly that a “filled” outer shell produces a more stable configuration</p>
 <p>This shell model idea is of course tied up with introducing Quantum Mechanics to our nucleus. The basis of QM here as seen before, is that we introduce a nuclear potential well. It is the QM treatment of this Well that will determine (1) the energy levels (shells) that nucleons are allowed to occupy, and (2) how many nucleons can occupy each level.</p>
 <p>As an example the simplest model for the Nuclear Well might be that associated with a Harmonic Oscillator, resulting in equally spaced energy levels throughout the well as shown in <code class="xref std std-numref docutils literal notranslate"><span class="pre">harmonics</span></code>.</p>
@@ -453,15 +458,15 @@ document.write(`
 <p>A closer look at the chart of Nuclides shows that nuclei with N and Z away from the major numbers are more likely to be unstable. If we plot nuclei that lie on a line of a constant A, for example A=121 we find that odd and even A nuclei sit on two seperate parabola. Whilst our delta term in the SEMF can account for some of this it cannot account for the difference across all nuclei.</p>
 <p><img alt="Alt text" src="_images/image-21.png" /></p>
 <p>Based on this we can make a prediction of which isotope of the given A is most stable against Nuclear Decay. From a parabola fit to the data shown of the form</p>
-<div class="math notranslate nohighlight">
-\[
+<div class="math notranslate nohighlight" id="equation-bindingenergyparabola">
+<span class="eqno">(3.2)<a class="headerlink" href="#equation-bindingenergyparabola" title="Permalink to this equation">#</a></span>\[\begin{equation}
 M(A,Z) = aA + bZ + cZ^{2}
-\]</div>
+\end{equation}\]</div>
 <p>where <span class="math notranslate nohighlight">\(a\)</span>, <span class="math notranslate nohighlight">\(b\)</span>, and <span class="math notranslate nohighlight">\(c\)</span> are free parameters that are nuclei dependent. We can determine the minima by finding the case where</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
+<div class="math notranslate nohighlight" id="equation-bindingenergyparaboladif">
+<span class="eqno">(3.4)<a class="headerlink" href="#equation-bindingenergyparaboladif" title="Permalink to this equation">#</a></span>\[\begin{split}\begin{equation}
 \frac{dM(A,Z)}{dZ} \rightarrow 0\\
-\end{split}\]</div>
+\end{equation}\end{split}\]</div>
 <p>Whatever the nearest integer value of Z is at the minimum will be the isotope we are after. Notice how the curves are symmetric about the minimum. This leads to the concept of <strong>Mirror Nuclei</strong>. This refers to a pair of nuclei that have the same <span class="math notranslate nohighlight">\(A\)</span> but where the <span class="math notranslate nohighlight">\(N\)</span> and <span class="math notranslate nohighlight">\(Z\)</span> values are reversed. An example is nitrogen-15 (7 protons and 8 neutrons) and oxygen-15 (8 protons and 7 neutrons).</p>
 <p>The nuclear properties of a given Mirror Nuclei pair like this are similar. The chemical properties of the associated neutral atoms (dictated by the electrons determined by the number of protons only) will be very different of course.</p>
 </section>
@@ -526,29 +531,29 @@ M(A,Z) = aA + bZ + cZ^{2}
 <p>Our shell model will need to explain these characteristic numbers using QM to produce the quantized energy levels (shells), filling them with the correct number of states (nucleons) to reproduce the Magic Numbers. So our basic aim is to explain the Magic Numbers, i.e. all the Nuclear Energy Levels, and then hopefully make new predictions that can be tested.</p>
 <p>So there is strong evidence for shell structure in Nuclei. This is compatible with a QM description with Nucleons occupying Energy Levels determined by a Central Nuclear Potential Well. We will discuss the form of this potential and the Nuclear Force between nucleons that determines its nature later.</p>
 <p>To determine the energy levels in the shell model we need to solve the full time-independent 3D Schrödinger Equation for particle mass <span class="math notranslate nohighlight">\(m\)</span> and wave-function <span class="math notranslate nohighlight">\(\psi\)</span> which has the form:</p>
-<div class="math notranslate nohighlight">
-\[
+<div class="math notranslate nohighlight" id="equation-bindingenergyparaboladif">
+<span class="eqno">(3.4)<a class="headerlink" href="#equation-bindingenergyparaboladif" title="Permalink to this equation">#</a></span>\[\begin{equation}
 \frac{-\hbar^{2}}{2m} \nabla^{2} \psi(r,\theta,\phi) + V(r,\theta,\phi) \psi(r,\theta,\phi) = E \psi(r,\theta,\phi)
-\]</div>
+\end{equation}\]</div>
 <p>For a given nucleon, the forces acting on it by all the other nucleons in the nucleus can be presented to first approximation by an average potential <span class="math notranslate nohighlight">\(V(r)\)</span> which only depends on distance from the core. We call this the <strong>Shell Theory Potential</strong>.</p>
 <p>The origin of this potential <span class="math notranslate nohighlight">\(V(r)\)</span> is in the force that holds individual nucleons together, the Nuclear Force or N-N potential. So it is reasonable to assume that the form and depth of <span class="math notranslate nohighlight">\(V(r)\)</span> should reflect the overall density distribution of the nucleons in the nucleus.</p>
 <p>Right now we take the mass distribution given previously from the Saxon Woods</p>
-<div class="math notranslate nohighlight">
-\[
+<div class="math notranslate nohighlight" id="equation-simpledropcombined-extraterms">
+<span class="eqno">(3.11)<a class="headerlink" href="#equation-simpledropcombined-extraterms" title="Permalink to this equation">#</a></span>\[\begin{equation}
 \rho(r) = \frac{\rho(0)}{1+\textnormal{exp}(\frac{r-b}{a})}
-\]</div>
+\end{equation}\]</div>
 <p>and invert it to get the potential <span class="math notranslate nohighlight">\(V(r)\)</span>. It is this function that goes into the Schrödinger equation to get the Energy Levels.</p>
-<div class="math notranslate nohighlight">
-\[
+<div class="math notranslate nohighlight" id="equation-simpledropcombined-extraterms">
+<span class="eqno">(3.11)<a class="headerlink" href="#equation-simpledropcombined-extraterms" title="Permalink to this equation">#</a></span>\[\begin{equation}
 V(r) = \frac{-V_{0}}{1+\textnormal{exp}(\frac{r-b}{a})}
-\]</div>
+\end{equation}\]</div>
 <p><img alt="Alt text" src="_images/image-31.png" /></p>
 <p>The basis of this nuclear potential shape, for instance its spatial radius, is the force between nucleons, the Nuclear Force, that keeps nucleons bound together. This gives us our <strong>Average Potential</strong> with radius of the nucleus (<span class="math notranslate nohighlight">\(A^{1/3}\)</span>), much bigger than the range of the Nuclear Force (about 1.4 or so).  Anyway for now we will just start to describe the QM result, the Shell Model in more detail, and how this helps explain many of the observed properties of Nuclei.</p>
 <p>In the shell model now since we are assuming spherical symmetry in our potential and the nucleus, we can simplify the spherical coordinates, splitting <span class="math notranslate nohighlight">\(\psi(r,\theta,\phi) = \Psi(r)\Theta(\theta)\Phi(\phi)\)</span>.</p>
-<div class="math notranslate nohighlight">
-\[
+<div class="math notranslate nohighlight" id="equation-simpledropcombined-extraterms">
+<span class="eqno">(3.11)<a class="headerlink" href="#equation-simpledropcombined-extraterms" title="Permalink to this equation">#</a></span>\[\begin{equation}
 \frac{-\hbar^{2}}{2m} \frac{d^{2}\Psi(r)}{dr^{2}} + V(r) \Psi(r) = E \Psi(r)
-\]</div>
+\end{equation}\]</div>
 <p>We will avoid fully deriving this for now as the focus on this course is the implications that a full QM approach has on the behavior of our nucleons.</p>
 <p>A major point is to realise that although nuclei are composed of nucleons they largely act as an isolated single entity. In particular they have a well defined Total Angular Momentum called Nuclear Spin, <span class="math notranslate nohighlight">\(I\)</span>. Nucleons themselves also have Angular Momentum (<span class="math notranslate nohighlight">\(l\)</span>) and Intrinsic Spin (<span class="math notranslate nohighlight">\(s\)</span>). The vital point in our QM shell model is that the <span class="math notranslate nohighlight">\(l\)</span> and <span class="math notranslate nohighlight">\(s\)</span> of all the nucleons together determines the Total Nuclear Spin <span class="math notranslate nohighlight">\(I\)</span> of a nucleus.</p>
 <p>The result of treating the nucleus in this way we will see is the ability to now predict</p>
@@ -569,25 +574,25 @@ V(r) = \frac{-V_{0}}{1+\textnormal{exp}(\frac{r-b}{a})}
 <h2><span class="section-number">3.4. </span>Shell Model Quantum Mechanics<a class="headerlink" href="#shell-model-quantum-mechanics" title="Permalink to this heading">#</a></h2>
 <p>We start by considering the QM behavior of an individual nucleon (p or n) in the Central Potential Well of the nucleus. When we invoke QM, by applying the Schrödinger equation to solve the three dimensional system we end up with an Angular Momentum Quantum Number, <span class="math notranslate nohighlight">\(l\)</span>, that tells us about the spatial behavior of wave function of each nucleon and defines the energy levels oof the nucleons as a result. In our simple central potential model all nucleons with the same <span class="math notranslate nohighlight">\(l\)</span> have the same energy but we will see that it is a new quantum number <span class="math notranslate nohighlight">\(j\)</span> that defines the actual number of states at a specific energy.</p>
 <p>The magnitude of <span class="math notranslate nohighlight">\(l\)</span> is given by</p>
-<div class="math notranslate nohighlight">
-\[
-\langle l^{2} \rangle  = \hbar^{2}(l+1)
-\]</div>
+<div class="math notranslate nohighlight" id="equation-simpledropcombined-extraterms">
+<span class="eqno">(3.11)<a class="headerlink" href="#equation-simpledropcombined-extraterms" title="Permalink to this equation">#</a></span>\[\begin{equation}
+\langle l^{2} \rangle  = \hbar^{2}l(l+1)
+\end{equation}\]</div>
 <p>The angular motion is a constant of the motion and the uncertainty principle gives us certain allowed “substates” of <span class="math notranslate nohighlight">\(l\)</span> which we will label <span class="math notranslate nohighlight">\(m_{z}\)</span>.</p>
-<div class="math notranslate nohighlight">
-\[
+<div class="math notranslate nohighlight" id="equation-simpledropcombined-extraterms">
+<span class="eqno">(3.11)<a class="headerlink" href="#equation-simpledropcombined-extraterms" title="Permalink to this equation">#</a></span>\[\begin{equation}
 \langle l_{z} \rangle = \hbar m_{z} ~~~~\textnormal{where}~~~~ m_z=0,\pm1,\pm2,...,\pm l
-\]</div>
+\end{equation}\]</div>
 <p>Nucleons <strong>also</strong> have an Intrinsic Angular Momentum called Spin <span class="math notranslate nohighlight">\(s\)</span> such that</p>
-<div class="math notranslate nohighlight">
-\[
+<div class="math notranslate nohighlight" id="equation-simpledropcombined-extraterms">
+<span class="eqno">(3.11)<a class="headerlink" href="#equation-simpledropcombined-extraterms" title="Permalink to this equation">#</a></span>\[\begin{equation}
 \langle s^{2} \rangle = \hbar^{2} s(s+1)
-\]</div>
+\end{equation}\]</div>
 <p>We find that similar to the angular momentum case this also has certain allowed spin substates, however these can only correspond to spin-up, or spin-down.</p>
-<div class="math notranslate nohighlight">
-\[
+<div class="math notranslate nohighlight" id="equation-simpledropcombined-extraterms">
+<span class="eqno">(3.11)<a class="headerlink" href="#equation-simpledropcombined-extraterms" title="Permalink to this equation">#</a></span>\[\begin{equation}
 \langle s_z\rangle  = \hbar m_{s} ~~~~\textnormal{where}~~~~ m_{s} = \pm \frac{1}{2}.
-\]</div>
+\end{equation}\]</div>
 <p>The two quantum numbers <span class="math notranslate nohighlight">\(l\)</span> and <span class="math notranslate nohighlight">\(s\)</span> can vector couple to give a new quantum number <span class="math notranslate nohighlight">\(j\)</span>, known as the Total Angular Momentum Quantum Number for the nucleon. In nuclear systems it is the <span class="math notranslate nohighlight">\(j\)</span> that is regarded as the “good” quantum number. The vector addition in this case is simply obtained from the possible combinations of <span class="math notranslate nohighlight">\(m_{z}\)</span> and <span class="math notranslate nohighlight">\(m_{s}\)</span> given what we know about possible values for <span class="math notranslate nohighlight">\(l,s,j\)</span>. In the figure below we can see the calculation of the quantum number <span class="math notranslate nohighlight">\(j\)</span> represented as a combination of different arrows for <span class="math notranslate nohighlight">\(l\)</span> and <span class="math notranslate nohighlight">\(s\)</span>. If <span class="math notranslate nohighlight">\(l\)</span> and <span class="math notranslate nohighlight">\(s\)</span> are parallel (both positive) then we get higher values of <span class="math notranslate nohighlight">\(j\)</span> than if they are anti-parallel.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
