@@ -189,6 +189,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="unit1-terms.html">Unit 1 : Equations &amp; Terms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="unit2-terms.html">Unit 2 : Equations &amp; Terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit3-terms.html">Unit 3 : Equations &amp; Terms</a></li>
 </ul>
 
     </div>
@@ -434,10 +435,10 @@ From the level diagram above, we predict that the nuclear spin of O-15 is <span 
 <p><img alt="Alt text" src="_images/image-36.png" /></p>
 <p>As shown, the wave function of a nucleon in a stationary state can have either odd or even parity depending on what happens under the transformation. It’s convenient to think of a Parity Operator <span class="math notranslate nohighlight">\(P\)</span> with effect <span class="math notranslate nohighlight">\(P\Psi(r) = \Psi(-r)\)</span>. If <span class="math notranslate nohighlight">\(\Psi\)</span> has a unique parity, then <span class="math notranslate nohighlight">\(P\psi(r) = \pm \Psi(r)\)</span>, and parity <span class="math notranslate nohighlight">\(\pm1\)</span> are the eigenvalues of <span class="math notranslate nohighlight">\(P\)</span>. Parity is often denoted as <span class="math notranslate nohighlight">\(\pi\)</span>, so <span class="math notranslate nohighlight">\(\pi=\pm 1\)</span>.</p>
 <p>It is simple to find the parity of a nucleon; it’s just <span class="math notranslate nohighlight">\(\pi=(-1)^{l}\)</span> where <span class="math notranslate nohighlight">\(l\)</span> is the Orbital Angular Momentum. Again, remember from our notation the letter corresponds to the value of <span class="math notranslate nohighlight">\(l\)</span> (0-s, 1-p, 2-d, 3-f). Parity is a multiplicative quantity. The parity assignment of a nucleus, therefore, comes from the product of the parity of all the nucleons</p>
-<div class="math notranslate nohighlight">
-\[
+<div class="math notranslate nohighlight" id="equation-paritycombination">
+<span class="eqno">(4.1)<a class="headerlink" href="#equation-paritycombination" title="Permalink to this equation">#</a></span>\[\begin{equation}
 \pi_{total}=\pi_{1}\pi_{2}\pi_{3}\pi_{4} = \prod_{A}(-1)^{l} = + (\textnormal{even})~~\textnormal{or}~~-(\textnormal{odd})
-\]</div>
+\end{equation}\]</div>
 <p>When considering parity alongside the Nuclear Spin, the nomenclature is to write it as: <span class="math notranslate nohighlight">\(I^{\pi}\)</span>. For example, the state <span class="math notranslate nohighlight">\(0^{+}\)</span> has zero nuclear spin and even parity.</p>
 <p>When trying to estimate parity, we can simplify things in the same way as we did for nuclear spin. If the nucleons all pair up, then we end up with even parity. If we are left with an unpaired nucleon, then the parity comes from the <span class="math notranslate nohighlight">\(l\)</span> value appropriate to the level in which that nucleon sits. So, for instance, returning to our example of O-15 above, the unpaired nucleon sits in the p-level, <span class="math notranslate nohighlight">\(l=1\)</span>, so the parity of the nucleus is <span class="math notranslate nohighlight">\((-1)^{l}=-1\)</span>. This means it has odd parity, and we would write both its spin and parity state as: <span class="math notranslate nohighlight">\(I^{\pi}=\frac{1}{2}^{-}\)</span>.</p>
 </section>
@@ -515,51 +516,51 @@ From the level diagram above, we predict that the nuclear spin of O-15 is <span 
 <p>We know that nuclei possess Nuclear Spin <span class="math notranslate nohighlight">\(I\)</span>, that can be predicted by the Shell Model. Associated with each Nuclear Spin is the possibility of a Magnetic Dipole Moment - a nuclear magnetic moment, which can produce magnetic interactions within the environment. In the case of our nuclei, it is the flow of charge (a current) around the nucleus that produces a magnetic moment.</p>
 <p>More precisely, the term Magnetic Moment <span class="math notranslate nohighlight">\((\mu)\)</span> refers to the Torque arising when something is placed in a magnetic field, as can happen with more traditional electric currents. So, for nucleons in nuclei, we require net motion of charge, e.g., a finite amount of spin <span class="math notranslate nohighlight">\(s\)</span> and/or angular momentum <span class="math notranslate nohighlight">\(l\)</span>. In the shell model, this is encompassed in the total Nuclear Spin <span class="math notranslate nohighlight">\(I\)</span>. Because of this, we expect that predictions can be made of <span class="math notranslate nohighlight">\(\mu\)</span> based on <span class="math notranslate nohighlight">\(I\)</span>.</p>
 <p>Now both protons and neutrons also have their own Intrinsic Magnetic Moments. They both have spin motion, and although the neutron is nominally neutral, it has an Internal Charge Structure due to the Quarks inside, so there is an effective charge motion inside it, like the proton itself. The magnetic moment of a nucleus can therefore be determined through a combination of the individual magnetic moments of the nucleons and the total associated spin of the nucleus.</p>
-<div class="math notranslate nohighlight">
-\[
+<div class="math notranslate nohighlight" id="equation-giprojection">
+<span class="eqno">(4.2)<a class="headerlink" href="#equation-giprojection" title="Permalink to this equation">#</a></span>\[\begin{equation}
 \mu = g_{I} \frac{e\hbar}{2m_{p}} I = g_{I} I \mu_{N}
-\]</div>
+\end{equation}\]</div>
 <p>where <span class="math notranslate nohighlight">\(g_{I}\)</span> is a nuclear <span class="math notranslate nohighlight">\(g\)</span> factor which accounts for differences in the relative magnetic moments of nucleons, <span class="math notranslate nohighlight">\(e\)</span> is the charge of one electron (quantized charge), <span class="math notranslate nohighlight">\(m_{p}\)</span> is the mass of the proton, and <span class="math notranslate nohighlight">\(\mu_{N}\)</span> is the nuclear magneton.  The parameter <span class="math notranslate nohighlight">\(g\)</span>, is referred to as the <strong>gyromagnetic ratio</strong>, a dimensionless quantity that characterizes the magnetic moment, just a proportionality constant that relates the magnetic moment to the total angular momentum or nuclear spin quantum number.</p>
 <p>The nuclear magneton is a constant used to express magnetic moments, and is equal to</p>
-<div class="math notranslate nohighlight">
-\[
+<div class="math notranslate nohighlight" id="equation-nuclearmagneton">
+<span class="eqno">(4.3)<a class="headerlink" href="#equation-nuclearmagneton" title="Permalink to this equation">#</a></span>\[\begin{equation}
 \mu_{N} = \frac{e\hbar}{2m_{p}} = 5.05\times 10^{-27}\textnormal{J/T} = 3.25 \times 10^{-8} \textnormal{eV/T}
-\]</div>
+\end{equation}\]</div>
 <p>For the case of unpaired nucleons, we can apply the same rules we considered previously to calculate the nuclear magnetic moment. This is simply the nuclear magneton multiplied by the <span class="math notranslate nohighlight">\(j\)</span> value of the unpaired nucleon.</p>
-<div class="math notranslate nohighlight">
-\[
+<div class="math notranslate nohighlight" id="equation-magneticmoment">
+<span class="eqno">(4.4)<a class="headerlink" href="#equation-magneticmoment" title="Permalink to this equation">#</a></span>\[\begin{equation}
 \mu = g_{j}~j~\mu_{N}
-\]</div>
+\end{equation}\]</div>
 <p>Note here that the <span class="math notranslate nohighlight">\(g\)</span> factor has now changed to <span class="math notranslate nohighlight">\(g_{j}\)</span> as it depends on the gyromagnetic ratio needed for the state of the nucleus being considered. For protons and neutrons, the gyromagnetic ratios are given by <span class="math notranslate nohighlight">\(g_{p}=2.793\)</span> and <span class="math notranslate nohighlight">\(g_{n}=-1.913\)</span> respectively, however for a nucleus, it is more complex for us to calculate.</p>
 <p>Note that the <span class="math notranslate nohighlight">\(\mu_N\)</span>, Nuclear Magnetron, yields the energy <span class="math notranslate nohighlight">\(U\)</span> of the Nuclear Magnetic Dipole in a B-field as <span class="math notranslate nohighlight">\(E=\mu_N B\)</span>. The Nuclear Magnetron is analogous to the Bohr Magnetron in atomic physics but with the electron mass replaced by the proton mass. It is much smaller than the Bohr Magnetron.</p>
 <p>In practice, the Observed Magnetic Moment in an external B-field comes from the z-component. That is when the nucleus is put in a magnetic field, it is the vector <span class="math notranslate nohighlight">\(j\)</span> that starts to precess with fixed values along the z-axis. In a full QM treatment (beyond our scope here), the observed Magnetic Moment of the nucleus turns out to be</p>
-<div class="math notranslate nohighlight">
-\[
+<div class="math notranslate nohighlight" id="equation-magneticmoment-obs">
+<span class="eqno">(4.5)<a class="headerlink" href="#equation-magneticmoment-obs" title="Permalink to this equation">#</a></span>\[\begin{equation}
 \mu_{obs} = g_j j_z \mu_N
-\]</div>
+\end{equation}\]</div>
 <p>and we evaluate the magnetic moment from the expectation value of the magnetic moment operator in the state with the maximum possible z projection of the angular momentum.</p>
 <p>Based on the equations above, we can see that if the nuclear spin, <span class="math notranslate nohighlight">\(I\)</span>, or <span class="math notranslate nohighlight">\(j\)</span> value of an unpaired nucleon is equal to zero, then <span class="math notranslate nohighlight">\(\mu=0\)</span>. So, the first basic shell model prediction is simply that all Even-Even <span class="math notranslate nohighlight">\(I=0\)</span> states have no magnetic moment.</p>
 <p>For other combinations of protons and neutrons, it gets more complicated, and we need to account for the gyromagnetic ratio in the equation. There are two components to <span class="math notranslate nohighlight">\(g\)</span>, governing the angular momentum <span class="math notranslate nohighlight">\(g_l\)</span> and spin <span class="math notranslate nohighlight">\(g_s\)</span>, with different values for the proton and neutron. The total <span class="math notranslate nohighlight">\(g\)</span> is calculated according to the coupling of <span class="math notranslate nohighlight">\(l\)</span> and <span class="math notranslate nohighlight">\(s\)</span> and the relation to <span class="math notranslate nohighlight">\(j\)</span>.</p>
 <p>The result, just given here is:</p>
-<div class="math notranslate nohighlight">
-\[
+<div class="math notranslate nohighlight" id="equation-gyromnagneticratio">
+<span class="eqno">(4.6)<a class="headerlink" href="#equation-gyromnagneticratio" title="Permalink to this equation">#</a></span>\[\begin{equation}
 g = g_{l} \frac{j(j+1)+l(l+1)-s(s+1)}{2j(j+1)} + g_s \frac{j(j+1)+s(s+1)-l(l+1)}{2j(j+1)}
-\]</div>
+\end{equation}\]</div>
 <p>However, if we take into account the possible values of each quantum number, that <span class="math notranslate nohighlight">\(s=1/2\)</span> or <span class="math notranslate nohighlight">\(-1/2\)</span> and that <span class="math notranslate nohighlight">\(s\)</span> and <span class="math notranslate nohighlight">\(l\)</span> can combine to give <span class="math notranslate nohighlight">\(j\)</span> by <span class="math notranslate nohighlight">\(l=j+1/2\)</span> (“Stretched”) to <span class="math notranslate nohighlight">\(l=j-1/2\)</span> (“Jackknife”), then we arrive at only two possible scenarios for <span class="math notranslate nohighlight">\(g\)</span>:</p>
-<div class="math notranslate nohighlight">
-\[
+<div class="math notranslate nohighlight" id="equation-magnetonestimate">
+<span class="eqno">(4.7)<a class="headerlink" href="#equation-magnetonestimate" title="Permalink to this equation">#</a></span>\[\begin{equation}
 \frac{\mu}{\mu_N} = (j-\frac{1}{2})g_l + \frac{1}{2}g_s \rightarrow (stretched)
-\]</div>
-<div class="math notranslate nohighlight">
-\[
-\frac{\mu}{\mu_N} = ((j+\frac{3}{2})g_l - \frac{1}{2}g_s))\frac{j}{j+1} \rightarrow (jackknife)
-\]</div>
+\end{equation}\]</div>
+<div class="math notranslate nohighlight" id="equation-jackknifeestimate">
+<span class="eqno">(4.8)<a class="headerlink" href="#equation-jackknifeestimate" title="Permalink to this equation">#</a></span>\[\begin{equation}
+\frac{\mu}{\mu_N} = \frac{1}{j+1}((j+\frac{3}{2})g_l - \frac{1}{2}g_s))\frac{j}{j+1} \rightarrow (jackknife)
+\end{equation}\]</div>
 <p>These are called the Schmidt Lines for nuclear magnetic moments where the <span class="math notranslate nohighlight">\(g\)</span> values here are given by:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-g_l = 1~~\textnormal{(proton)} ~~~g_l = 0 ~~\textnormal{(neutron)}\\
-g_{s} = 5.85 ~~\textnormal{(proton)} ~~~g_{s} = -3.826 \textnormal{(neutron)}
-\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-gyromagneticfactors">
+<span class="eqno">(4.9)<a class="headerlink" href="#equation-gyromagneticfactors" title="Permalink to this equation">#</a></span>\[\begin{split}\begin{equation}
+g_l = 1~~\textnormal{(proton)} ~~~~~~~ g_l = 0 ~~\textnormal{(neutron)}\\
+g_{s} = 5.85 ~~\textnormal{(proton)} ~~~~~~ g_{s} = -3.826 ~~\textnormal{(neutron)}
+\end{equation}\end{split}\]</div>
 <p>As seen here, the neutron has zero value for <span class="math notranslate nohighlight">\(g_l\)</span> but a finite value for <span class="math notranslate nohighlight">\(g_s\)</span>. Interestingly, the value of <span class="math notranslate nohighlight">\(g_s\)</span> for the proton is much greater than would be expected. This again is indicative of an internal structure, i.e., the quark content.</p>
 <p>So, based on this QM treatment and the Shell Model, we can make predictions of the Nuclear Magnetic Moments of nuclei, simply from working out the Nuclear Spin <span class="math notranslate nohighlight">\(I\)</span> and finding <span class="math notranslate nohighlight">\(j\)</span>. The easiest case is, as usual, when we have a single nucleon in an otherwise unfilled shell.</p>
 <p>Consider <span class="math notranslate nohighlight">\(^{17}O\)</span>: this has a neutron in the <span class="math notranslate nohighlight">\(1\textnormal{d}_{j=5/2}\)</span> level. Using the <span class="math notranslate nohighlight">\(g\)</span> values above, we get <span class="math notranslate nohighlight">\(\mu = -1.91\mu_N\)</span>. The measured value is <span class="math notranslate nohighlight">\(-1.89\mu_N\)</span>.</p>
@@ -579,22 +580,22 @@ g_{s} = 5.85 ~~\textnormal{(proton)} ~~~g_{s} = -3.826 \textnormal{(neutron)}
 <p><img alt="Alt text" src="_images/image-43.png" /></p>
 <p>So how can we quantify this, firstly note that there are different types of electric moment. We could have an electric dipole moment, however as we only have positive charges of proton this does not exist in nuclei as there is no opposite charge in the nucleus that could sit on the other end of the dipole. This means only higher order types Quadrupole, Octupole, etc, are allowed. We can think of a quadrupole moment as the sum of two dipoles set antiparallel from one another.</p>
 <p>In the classic form we can describe the EQM for a quadrupole a:</p>
-<div class="math notranslate nohighlight">
-\[
-Q_{EQM} = \frac{1}{e} \int \rho(3z^{2}-r^{2}) dV \textnormal~~~{units of area, usually barn}
-\]</div>
+<div class="math notranslate nohighlight" id="equation-quadrupoleestimate">
+<span class="eqno">(4.10)<a class="headerlink" href="#equation-quadrupoleestimate" title="Permalink to this equation">#</a></span>\[\begin{equation}
+Q_{EQM} = \frac{1}{e} \int \rho(3z^{2}-r^{2}) dV ~~~\textnormal{units of area, usually barn}
+\end{equation}\]</div>
 <p>where  <span class="math notranslate nohighlight">\(\rho\)</span> is the charge density distirbution. We can see here that if the nucleus is spherical then <span class="math notranslate nohighlight">\(z^{2}=x^{2}=y^{2}=r^{2}/3\)</span> which leads to <span class="math notranslate nohighlight">\(Q=0\)</span>.</p>
 <p>Again with the shell model we can make a few predictions for simple cases, such as when we have a proton in orbit in the outer shell. or a shall that is one proton short of being filled up.</p>
 <p>To do this we need the full Quantum Mechanical version of the equation above which is</p>
-<div class="math notranslate nohighlight">
-\[
-eQ_{EQM} = e\int \psi^{*} (2z^{2} - r^{2})\psi dV
-\]</div>
+<div class="math notranslate nohighlight" id="equation-quadrupoleoperation">
+<span class="eqno">(4.11)<a class="headerlink" href="#equation-quadrupoleoperation" title="Permalink to this equation">#</a></span>\[\begin{equation}
+eQ_{EQM} = e\int \psi^{*} (3z^{2} - r^{2})\psi dV
+\end{equation}\]</div>
 <p>Calculations to find the expectation value <span class="math notranslate nohighlight">\(&lt; \psi &gt;^{2}\)</span> end up giving as values for <span class="math notranslate nohighlight">\(Q\)</span> of:</p>
-<div class="math notranslate nohighlight">
-\[
+<div class="math notranslate nohighlight" id="equation-quadrupolecalculation">
+<span class="eqno">(4.12)<a class="headerlink" href="#equation-quadrupolecalculation" title="Permalink to this equation">#</a></span>\[\begin{equation}
 Q_{EQM} = - &lt; r^{2} &gt; \frac{2j-1}{2(j+1)}
-\]</div>
+\end{equation}\]</div>
 <p>where <span class="math notranslate nohighlight">\(j\)</span> is the Angular Momentum Quantum Number of the odd particle (equivalent to the Nuclear Spin) and <span class="math notranslate nohighlight">\(r\)</span> the radius.</p>
 <section id="even-nuclei">
 <h3><span class="section-number">4.6.1. </span>Even Nuclei<a class="headerlink" href="#even-nuclei" title="Permalink to this heading">#</a></h3>
@@ -626,10 +627,10 @@ In this case charge is more concentrated on the <span class="math notranslate no
 </figure>
 <p>Working through the numbers, we find typical values for the Electric Quadrupole Moment (EQM) with odd neutrons in the range of <span class="math notranslate nohighlight">\(0.06-0.6 e\textnormal{b}\)</span> (electron barns).</p>
 <p>But what if we have several nucleons in a partially filled outer shell? As with other predictions in the Shell Model, in general, it is harder to calculate this explicitly because all the nucleons can contribute. However, a basic derivation yields:</p>
-<div class="math notranslate nohighlight">
-\[
-&lt; Q_{EQM} &gt; = &lt; Q_{sp} &gt; \left [ 1-2\frac{n-1}{j-1} \right ]
-\]</div>
+<div class="math notranslate nohighlight" id="equation-quadrupoleunfilled">
+<span class="eqno">(4.13)<a class="headerlink" href="#equation-quadrupoleunfilled" title="Permalink to this equation">#</a></span>\[\begin{equation}
+&lt; Q_{EQM} &gt; = &lt; Q_{sp} &gt; \left [ 1-2\frac{n-1}{2j-1} \right ]
+\end{equation}\]</div>
 <p>where <span class="math notranslate nohighlight">\(Q_{sp}\)</span> is the Single Particle Value as mentioned above, and <span class="math notranslate nohighlight">\(n\)</span> is the number of nucleons in the partially filled shell. Here, <span class="math notranslate nohighlight">\(n\)</span> can range from <span class="math notranslate nohighlight">\(1\)</span> to <span class="math notranslate nohighlight">\(2j\)</span>. So, when <span class="math notranslate nohighlight">\(n=2j\)</span>, a shell that is only one nucleon from being filled, we get <span class="math notranslate nohighlight">\(Q_{EQM}=-Q_{sp}\)</span>.</p>
 </section>
 </section>

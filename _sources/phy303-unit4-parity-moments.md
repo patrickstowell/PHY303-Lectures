@@ -34,9 +34,12 @@ As shown, the wave function of a nucleon in a stationary state can have either o
 It is simple to find the parity of a nucleon; it's just $\pi=(-1)^{l}$ where $l$ is the Orbital Angular Momentum. Again, remember from our notation the letter corresponds to the value of $l$ (0-s, 1-p, 2-d, 3-f). Parity is a multiplicative quantity. The parity assignment of a nucleus, therefore, comes from the product of the parity of all the nucleons
 
 
-$$
+```{math}
+:label: paritycombination
+\begin{equation}
 \pi_{total}=\pi_{1}\pi_{2}\pi_{3}\pi_{4} = \prod_{A}(-1)^{l} = + (\textnormal{even})~~\textnormal{or}~~-(\textnormal{odd})
-$$
+\end{equation}
+```
 
 
 When considering parity alongside the Nuclear Spin, the nomenclature is to write it as: $I^{\pi}$. For example, the state $0^{+}$ has zero nuclear spin and even parity.
@@ -97,25 +100,34 @@ More precisely, the term Magnetic Moment $(\mu)$ refers to the Torque arising wh
 Now both protons and neutrons also have their own Intrinsic Magnetic Moments. They both have spin motion, and although the neutron is nominally neutral, it has an Internal Charge Structure due to the Quarks inside, so there is an effective charge motion inside it, like the proton itself. The magnetic moment of a nucleus can therefore be determined through a combination of the individual magnetic moments of the nucleons and the total associated spin of the nucleus.
 
 
-$$
+```{math}
+:label: giprojection
+\begin{equation}
 \mu = g_{I} \frac{e\hbar}{2m_{p}} I = g_{I} I \mu_{N}
-$$
+\end{equation}
+```
 
 where $g_{I}$ is a nuclear $g$ factor which accounts for differences in the relative magnetic moments of nucleons, $e$ is the charge of one electron (quantized charge), $m_{p}$ is the mass of the proton, and $\mu_{N}$ is the nuclear magneton.  The parameter $g$, is referred to as the **gyromagnetic ratio**, a dimensionless quantity that characterizes the magnetic moment, just a proportionality constant that relates the magnetic moment to the total angular momentum or nuclear spin quantum number.
 
 The nuclear magneton is a constant used to express magnetic moments, and is equal to
 
-$$
+```{math}
+:label: nuclearmagneton
+\begin{equation}
 \mu_{N} = \frac{e\hbar}{2m_{p}} = 5.05\times 10^{-27}\textnormal{J/T} = 3.25 \times 10^{-8} \textnormal{eV/T}
-$$
+\end{equation}
+```
 
 
 For the case of unpaired nucleons, we can apply the same rules we considered previously to calculate the nuclear magnetic moment. This is simply the nuclear magneton multiplied by the $j$ value of the unpaired nucleon.
 
 
-$$
+```{math}
+:label: magneticmoment
+\begin{equation}
 \mu = g_{j}~j~\mu_{N}
-$$
+\end{equation}
+```
 
 
 Note here that the $g$ factor has now changed to $g_{j}$ as it depends on the gyromagnetic ratio needed for the state of the nucleus being considered. For protons and neutrons, the gyromagnetic ratios are given by $g_{p}=2.793$ and $g_{n}=-1.913$ respectively, however for a nucleus, it is more complex for us to calculate.
@@ -124,9 +136,12 @@ Note that the $\mu_N$, Nuclear Magnetron, yields the energy $U$ of the Nuclear M
 
 In practice, the Observed Magnetic Moment in an external B-field comes from the z-component. That is when the nucleus is put in a magnetic field, it is the vector $j$ that starts to precess with fixed values along the z-axis. In a full QM treatment (beyond our scope here), the observed Magnetic Moment of the nucleus turns out to be
 
-$$
+```{math}
+:label: magneticmoment_obs
+\begin{equation}
 \mu_{obs} = g_j j_z \mu_N
-$$
+\end{equation}
+```
 
 
 and we evaluate the magnetic moment from the expectation value of the magnetic moment operator in the state with the maximum possible z projection of the angular momentum.
@@ -138,31 +153,43 @@ For other combinations of protons and neutrons, it gets more complicated, and we
 The result, just given here is:
 
 
-$$
+```{math}
+:label: gyromnagneticratio
+\begin{equation}
 g = g_{l} \frac{j(j+1)+l(l+1)-s(s+1)}{2j(j+1)} + g_s \frac{j(j+1)+s(s+1)-l(l+1)}{2j(j+1)}
-$$
+\end{equation}
+```
 
 
 However, if we take into account the possible values of each quantum number, that $s=1/2$ or $-1/2$ and that $s$ and $l$ can combine to give $j$ by $l=j+1/2$ ("Stretched") to $l=j-1/2$ ("Jackknife"), then we arrive at only two possible scenarios for $g$:
 
 
-$$
+```{math}
+:label: magnetonestimate
+\begin{equation}
 \frac{\mu}{\mu_N} = (j-\frac{1}{2})g_l + \frac{1}{2}g_s \rightarrow (stretched)
-$$
+\end{equation}
+```
 
 
 
-$$
-\frac{\mu}{\mu_N} = ((j+\frac{3}{2})g_l - \frac{1}{2}g_s))\frac{j}{j+1} \rightarrow (jackknife)
-$$
+```{math}
+:label: jackknifeestimate
+\begin{equation}
+\frac{\mu}{\mu_N} = \frac{1}{j+1}((j+\frac{3}{2})g_l - \frac{1}{2}g_s))\frac{j}{j+1} \rightarrow (jackknife)
+\end{equation}
+```
 
 
 These are called the Schmidt Lines for nuclear magnetic moments where the $g$ values here are given by:
 
-$$
-g_l = 1~~\textnormal{(proton)} ~~~g_l = 0 ~~\textnormal{(neutron)}\\
-g_{s} = 5.85 ~~\textnormal{(proton)} ~~~g_{s} = -3.826 \textnormal{(neutron)}
-$$
+```{math}
+:label: gyromagneticfactors
+\begin{equation}
+g_l = 1~~\textnormal{(proton)} ~~~~~~~ g_l = 0 ~~\textnormal{(neutron)}\\
+g_{s} = 5.85 ~~\textnormal{(proton)} ~~~~~~ g_{s} = -3.826 ~~\textnormal{(neutron)}
+\end{equation}
+```
 
 
 As seen here, the neutron has zero value for $g_l$ but a finite value for $g_s$. Interestingly, the value of $g_s$ for the proton is much greater than would be expected. This again is indicative of an internal structure, i.e., the quark content.
@@ -198,9 +225,12 @@ So how can we quantify this, firstly note that there are different types of elec
 
 In the classic form we can describe the EQM for a quadrupole a:
 
-$$
-Q_{EQM} = \frac{1}{e} \int \rho(3z^{2}-r^{2}) dV \textnormal~~~{units of area, usually barn}
-$$
+```{math}
+:label: quadrupoleestimate
+\begin{equation}
+Q_{EQM} = \frac{1}{e} \int \rho(3z^{2}-r^{2}) dV ~~~\textnormal{units of area, usually barn}
+\end{equation}
+```
 
  where  $\rho$ is the charge density distirbution. We can see here that if the nucleus is spherical then $z^{2}=x^{2}=y^{2}=r^{2}/3$ which leads to $Q=0$.
 
@@ -208,16 +238,22 @@ Again with the shell model we can make a few predictions for simple cases, such 
 
 To do this we need the full Quantum Mechanical version of the equation above which is 
 
-$$
-eQ_{EQM} = e\int \psi^{*} (2z^{2} - r^{2})\psi dV
-$$
+```{math}
+:label: quadrupoleoperation
+\begin{equation}
+eQ_{EQM} = e\int \psi^{*} (3z^{2} - r^{2})\psi dV
+\end{equation}
+```
 
 
 Calculations to find the expectation value $< \psi >^{2}$ end up giving as values for $Q$ of:
 
-$$
+```{math}
+:label: quadrupolecalculation
+\begin{equation}
 Q_{EQM} = - < r^{2} > \frac{2j-1}{2(j+1)}
-$$
+\end{equation}
+```
 
 
 where $j$ is the Angular Momentum Quantum Number of the odd particle (equivalent to the Nuclear Spin) and $r$ the radius. 
@@ -253,9 +289,12 @@ Working through the numbers, we find typical values for the Electric Quadrupole 
 But what if we have several nucleons in a partially filled outer shell? As with other predictions in the Shell Model, in general, it is harder to calculate this explicitly because all the nucleons can contribute. However, a basic derivation yields:
 
 
-$$
-< Q_{EQM} > = < Q_{sp} > \left [ 1-2\frac{n-1}{j-1} \right ]
-$$
+```{math}
+:label: quadrupoleunfilled
+\begin{equation}
+< Q_{EQM} > = < Q_{sp} > \left [ 1-2\frac{n-1}{2j-1} \right ]
+\end{equation}
+```
 
 
 where $Q_{sp}$ is the Single Particle Value as mentioned above, and $n$ is the number of nucleons in the partially filled shell. Here, $n$ can range from $1$ to $2j$. So, when $n=2j$, a shell that is only one nucleon from being filled, we get $Q_{EQM}=-Q_{sp}$.
