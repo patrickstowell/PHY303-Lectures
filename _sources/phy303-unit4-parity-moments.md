@@ -176,7 +176,7 @@ However, if we take into account the possible values of each quantum number, tha
 ```{math}
 :label: jackknifeestimate
 \begin{equation}
-\frac{\mu}{\mu_N} = \frac{1}{j+1}((j+\frac{3}{2})g_l - \frac{1}{2}g_s))\frac{j}{j+1} \rightarrow (jackknife)
+\frac{\mu}{\mu_N} = ((j+\frac{3}{2})g_l - \frac{1}{2}g_s))\frac{j}{j+1} \rightarrow (jackknife)
 \end{equation}
 ```
 
