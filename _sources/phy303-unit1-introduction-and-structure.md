@@ -5,7 +5,9 @@ The modern field of nuclear physics really began with the first detection of rad
 
 One of the major figures in nuclear physics after this was Marie Curie. She and husband Pierre were the first to isolate and characterize radium. Marie Curie's ground breaking work led to the Nobel Prize in 1903. Her research was conducted in a time when the dangers of radiation were less well known, and Marie Curie's lab equipment and notebooks are still highly radioactive to this day.
 
-```{note}
+```{admonition} Quote
+:class: info
+
 "I am one of those who think like Nobel, that humanity will draw more good than evil from new discoveries." - Marie Curie
 ```
 
@@ -100,7 +102,7 @@ Nuclei can also be grouped according to their $Z$, $N$, and $A$ values:
 - Nuclides with the **same $A$** are **Isobars**
 - Nuclides with the **same $N$** are **Isotones**
 
-The known elements cover essentially everything from Hydrogen, H-1 to Oganesson-294. {numref}`chart-of-nuclideslarge` is a chart showing different known nuclei. Around 3000 different nuclei have so far been confirmed, each specified by the proton number $(Z)$ and neutron number $(N)$. This nuclide plot is one of the most important plots in nuclear physics.
+The known elements cover essentially everything from Hydrogen, H-1 to Oganesson-294. `{numref}`chart-of-nuclideslarge` is a chart showing different known nuclei. Around 3000 different nuclei have so far been confirmed, each specified by the proton number $(Z)$ and neutron number $(N)$. This nuclide plot is one of the most important plots in nuclear physics.
 
 :::{figure-md} chart-of-nuclideslarge
 <img src='image-136.png' width="100%" alt="IAEA Chart of Nuclides">
@@ -461,7 +463,8 @@ This deviation is now interpreted as telling us about the charge/matter distribu
 
 
 
-```{note}
+```{admonition} Example Question
+:class: note
 ### Example 1.1 : Carbon Mass Calculation
 
 **Given the mass of a carbon-12 atom is $12u$, estimate the binding energy of the carbon nucleus.**
@@ -478,7 +481,7 @@ Now we can write the binding energy as
 
 $$
 B = M_{C12} - 6m_{n} - 6m_{p} - 6m_{e} \\
-Bc^{2} = 0.9894 u = 0.9894 \times 931.5~\textnormal{MeV/u} = 92.16~\textnormal{MeV}
+Bc^{2} = 0.09894 u = 0.09894 \times 931.5~\textnormal{MeV/u} = 92.16~\textnormal{MeV}
 $$
 
 If we want to get this per nucleon we just need to divide by the total nucleons in a carbon 12 nucleus.
@@ -490,7 +493,8 @@ $$
 ```
 
 
-```{note}
+```{admonition} Example Question
+:class: note
 ### Example 1.2 : Nucleon Momentum Estimate
 Use the Heisenberg Uncertainty principle to estimate the momentum of nucleons inside the nucleus given that the nuclear radius is on the order of $5~\textnormal{fm}$.
 
@@ -528,7 +532,8 @@ which gives $\beta \approx 0.02$. Despite the fact that we consider the nucleus 
 
 ```
 
-```{note}
+```{admonition} Example Question
+:class: note
 ### Example 1.3 : Shielding Cross-section Estimate
 **Consider a 1-TBq source of Cs-137 that produces an effective dose of 1.073 Sv/hr at a distance of 30cm (*Delecroix Handbook 2002*). The decay chain of Cs-137 produces a clear gamma ray peak at 662 keV. Assuming a cross-section of 662keV gamma rays on lead nuclei of $\sigma=4.3 \times 10^{-23} cm^{2}$ determine the lead shielding thickness required to reduce the dose rate to 1mSv/hr.**
 
@@ -568,13 +573,14 @@ Note that this is an estimate based on just the 662keV peak, and neglects the $r
 
 ```
 
-```{note}
+```{admonition} Example Question
+:class: note
 ### Example 1.4 : Closest Approach Estimate
 **Considering Polonium-210 as an alpha emitter in Rutherford's gold foil experiment, estimate the minimum theoretical limit to which alpha scattering may be able place a limit on the size of the nucleus.**
 
 To consider the limit of the alpha scattering experiments we need to determine their distance of closest possible approach under the hyperbolic trajectory assumption.
 
-Coonsider the case when an alpha particle is directed head-on towards the nucleus, so that when it reaches the distance of closest approach it turns around and travels back in the direction it came. At this turning point all of the alpha's kinetic energy has been transformed into electric potential energy.
+Consider the case when an alpha particle is directed head-on towards the nucleus, so that when it reaches the distance of closest approach it turns around and travels back in the direction it came. At this turning point all of the alpha's kinetic energy has been transformed into electric potential energy.
 
 The potential some distance, $r$, away is given by
 

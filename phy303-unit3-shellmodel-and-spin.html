@@ -189,6 +189,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="unit1-terms.html">Unit 1 : Equations &amp; Terms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="unit2-terms.html">Unit 2 : Equations &amp; Terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit3-terms.html">Unit 3 : Equations &amp; Terms</a></li>
 </ul>
 
     </div>
@@ -539,19 +540,19 @@ M(A,Z) = aA + bZ + cZ^{2}
 <p>The origin of this potential <span class="math notranslate nohighlight">\(V(r)\)</span> is in the force that holds individual nucleons together, the Nuclear Force or N-N potential. So it is reasonable to assume that the form and depth of <span class="math notranslate nohighlight">\(V(r)\)</span> should reflect the overall density distribution of the nucleons in the nucleus.</p>
 <p>Right now we take the mass distribution given previously from the Saxon Woods</p>
 <div class="math notranslate nohighlight" id="equation-simpledropcombined-extraterms">
-<span class="eqno">(3.11)<a class="headerlink" href="#equation-simpledropcombined-extraterms" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<span class="eqno">(3.5)<a class="headerlink" href="#equation-simpledropcombined-extraterms" title="Permalink to this equation">#</a></span>\[\begin{equation}
 \rho(r) = \frac{\rho(0)}{1+\textnormal{exp}(\frac{r-b}{a})}
 \end{equation}\]</div>
 <p>and invert it to get the potential <span class="math notranslate nohighlight">\(V(r)\)</span>. It is this function that goes into the Schrödinger equation to get the Energy Levels.</p>
-<div class="math notranslate nohighlight" id="equation-simpledropcombined-extraterms">
-<span class="eqno">(3.11)<a class="headerlink" href="#equation-simpledropcombined-extraterms" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="math notranslate nohighlight" id="equation-simpledropcombined-extraterms2">
+<span class="eqno">(3.6)<a class="headerlink" href="#equation-simpledropcombined-extraterms2" title="Permalink to this equation">#</a></span>\[\begin{equation}
 V(r) = \frac{-V_{0}}{1+\textnormal{exp}(\frac{r-b}{a})}
 \end{equation}\]</div>
 <p><img alt="Alt text" src="_images/image-31.png" /></p>
 <p>The basis of this nuclear potential shape, for instance its spatial radius, is the force between nucleons, the Nuclear Force, that keeps nucleons bound together. This gives us our <strong>Average Potential</strong> with radius of the nucleus (<span class="math notranslate nohighlight">\(A^{1/3}\)</span>), much bigger than the range of the Nuclear Force (about 1.4 or so).  Anyway for now we will just start to describe the QM result, the Shell Model in more detail, and how this helps explain many of the observed properties of Nuclei.</p>
 <p>In the shell model now since we are assuming spherical symmetry in our potential and the nucleus, we can simplify the spherical coordinates, splitting <span class="math notranslate nohighlight">\(\psi(r,\theta,\phi) = \Psi(r)\Theta(\theta)\Phi(\phi)\)</span>.</p>
-<div class="math notranslate nohighlight" id="equation-simpledropcombined-extraterms">
-<span class="eqno">(3.11)<a class="headerlink" href="#equation-simpledropcombined-extraterms" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="math notranslate nohighlight" id="equation-simpledropcombined-extraterms3">
+<span class="eqno">(3.7)<a class="headerlink" href="#equation-simpledropcombined-extraterms3" title="Permalink to this equation">#</a></span>\[\begin{equation}
 \frac{-\hbar^{2}}{2m} \frac{d^{2}\Psi(r)}{dr^{2}} + V(r) \Psi(r) = E \Psi(r)
 \end{equation}\]</div>
 <p>We will avoid fully deriving this for now as the focus on this course is the implications that a full QM approach has on the behavior of our nucleons.</p>
@@ -574,23 +575,23 @@ V(r) = \frac{-V_{0}}{1+\textnormal{exp}(\frac{r-b}{a})}
 <h2><span class="section-number">3.4. </span>Shell Model Quantum Mechanics<a class="headerlink" href="#shell-model-quantum-mechanics" title="Permalink to this heading">#</a></h2>
 <p>We start by considering the QM behavior of an individual nucleon (p or n) in the Central Potential Well of the nucleus. When we invoke QM, by applying the Schrödinger equation to solve the three dimensional system we end up with an Angular Momentum Quantum Number, <span class="math notranslate nohighlight">\(l\)</span>, that tells us about the spatial behavior of wave function of each nucleon and defines the energy levels oof the nucleons as a result. In our simple central potential model all nucleons with the same <span class="math notranslate nohighlight">\(l\)</span> have the same energy but we will see that it is a new quantum number <span class="math notranslate nohighlight">\(j\)</span> that defines the actual number of states at a specific energy.</p>
 <p>The magnitude of <span class="math notranslate nohighlight">\(l\)</span> is given by</p>
-<div class="math notranslate nohighlight" id="equation-simpledropcombined-extraterms">
-<span class="eqno">(3.11)<a class="headerlink" href="#equation-simpledropcombined-extraterms" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="math notranslate nohighlight" id="equation-shellmdoelam">
+<span class="eqno">(3.8)<a class="headerlink" href="#equation-shellmdoelam" title="Permalink to this equation">#</a></span>\[\begin{equation}
 \langle l^{2} \rangle  = \hbar^{2}l(l+1)
 \end{equation}\]</div>
 <p>The angular motion is a constant of the motion and the uncertainty principle gives us certain allowed “substates” of <span class="math notranslate nohighlight">\(l\)</span> which we will label <span class="math notranslate nohighlight">\(m_{z}\)</span>.</p>
-<div class="math notranslate nohighlight" id="equation-simpledropcombined-extraterms">
-<span class="eqno">(3.11)<a class="headerlink" href="#equation-simpledropcombined-extraterms" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="math notranslate nohighlight" id="equation-shellmodelamproj">
+<span class="eqno">(3.9)<a class="headerlink" href="#equation-shellmodelamproj" title="Permalink to this equation">#</a></span>\[\begin{equation}
 \langle l_{z} \rangle = \hbar m_{z} ~~~~\textnormal{where}~~~~ m_z=0,\pm1,\pm2,...,\pm l
 \end{equation}\]</div>
 <p>Nucleons <strong>also</strong> have an Intrinsic Angular Momentum called Spin <span class="math notranslate nohighlight">\(s\)</span> such that</p>
-<div class="math notranslate nohighlight" id="equation-simpledropcombined-extraterms">
-<span class="eqno">(3.11)<a class="headerlink" href="#equation-simpledropcombined-extraterms" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="math notranslate nohighlight" id="equation-shellmodelspin">
+<span class="eqno">(3.10)<a class="headerlink" href="#equation-shellmodelspin" title="Permalink to this equation">#</a></span>\[\begin{equation}
 \langle s^{2} \rangle = \hbar^{2} s(s+1)
 \end{equation}\]</div>
 <p>We find that similar to the angular momentum case this also has certain allowed spin substates, however these can only correspond to spin-up, or spin-down.</p>
-<div class="math notranslate nohighlight" id="equation-simpledropcombined-extraterms">
-<span class="eqno">(3.11)<a class="headerlink" href="#equation-simpledropcombined-extraterms" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="math notranslate nohighlight" id="equation-shellmodelproj">
+<span class="eqno">(3.11)<a class="headerlink" href="#equation-shellmodelproj" title="Permalink to this equation">#</a></span>\[\begin{equation}
 \langle s_z\rangle  = \hbar m_{s} ~~~~\textnormal{where}~~~~ m_{s} = \pm \frac{1}{2}.
 \end{equation}\]</div>
 <p>The two quantum numbers <span class="math notranslate nohighlight">\(l\)</span> and <span class="math notranslate nohighlight">\(s\)</span> can vector couple to give a new quantum number <span class="math notranslate nohighlight">\(j\)</span>, known as the Total Angular Momentum Quantum Number for the nucleon. In nuclear systems it is the <span class="math notranslate nohighlight">\(j\)</span> that is regarded as the “good” quantum number. The vector addition in this case is simply obtained from the possible combinations of <span class="math notranslate nohighlight">\(m_{z}\)</span> and <span class="math notranslate nohighlight">\(m_{s}\)</span> given what we know about possible values for <span class="math notranslate nohighlight">\(l,s,j\)</span>. In the figure below we can see the calculation of the quantum number <span class="math notranslate nohighlight">\(j\)</span> represented as a combination of different arrows for <span class="math notranslate nohighlight">\(l\)</span> and <span class="math notranslate nohighlight">\(s\)</span>. If <span class="math notranslate nohighlight">\(l\)</span> and <span class="math notranslate nohighlight">\(s\)</span> are parallel (both positive) then we get higher values of <span class="math notranslate nohighlight">\(j\)</span> than if they are anti-parallel.</p>
