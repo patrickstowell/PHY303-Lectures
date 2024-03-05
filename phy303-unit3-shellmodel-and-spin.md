@@ -186,7 +186,7 @@ and invert it to get the potential $V(r)$. It is this function that goes into th
 
 
 ```{math}
-:label: simpledropcombined_extraterms
+:label: simpledropcombined_extraterms2
 \begin{equation}
 V(r) = \frac{-V_{0}}{1+\textnormal{exp}(\frac{r-b}{a})}
 \end{equation}
@@ -200,7 +200,7 @@ The basis of this nuclear potential shape, for instance its spatial radius, is t
 In the shell model now since we are assuming spherical symmetry in our potential and the nucleus, we can simplify the spherical coordinates, splitting $\psi(r,\theta,\phi) = \Psi(r)\Theta(\theta)\Phi(\phi)$.
 
 ```{math}
-:label: simpledropcombined_extraterms
+:label: simpledropcombined_extraterms3
 \begin{equation}
 \frac{-\hbar^{2}}{2m} \frac{d^{2}\Psi(r)}{dr^{2}} + V(r) \Psi(r) = E \Psi(r)
 \end{equation}
@@ -231,7 +231,7 @@ We start by considering the QM behavior of an individual nucleon (p or n) in the
 The magnitude of $l$ is given by 
 
 ```{math}
-:label: simpledropcombined_extraterms
+:label: shellmdoelam
 \begin{equation}
 \langle l^{2} \rangle  = \hbar^{2}l(l+1)
 \end{equation}
@@ -240,7 +240,7 @@ The magnitude of $l$ is given by
 The angular motion is a constant of the motion and the uncertainty principle gives us certain allowed "substates" of $l$ which we will label $m_{z}$.
 
 ```{math}
-:label: simpledropcombined_extraterms
+:label: shellmodelamproj
 \begin{equation}
 \langle l_{z} \rangle = \hbar m_{z} ~~~~\textnormal{where}~~~~ m_z=0,\pm1,\pm2,...,\pm l
 \end{equation}
@@ -249,7 +249,7 @@ The angular motion is a constant of the motion and the uncertainty principle giv
 Nucleons **also** have an Intrinsic Angular Momentum called Spin $s$ such that
 
 ```{math}
-:label: simpledropcombined_extraterms
+:label: shellmodelspin
 \begin{equation}
 \langle s^{2} \rangle = \hbar^{2} s(s+1)
 \end{equation}
@@ -258,7 +258,7 @@ Nucleons **also** have an Intrinsic Angular Momentum called Spin $s$ such that
 We find that similar to the angular momentum case this also has certain allowed spin substates, however these can only correspond to spin-up, or spin-down.
 
 ```{math}
-:label: simpledropcombined_extraterms
+:label: shellmodelproj
 \begin{equation}
 \langle s_z\rangle  = \hbar m_{s} ~~~~\textnormal{where}~~~~ m_{s} = \pm \frac{1}{2}.
 \end{equation}

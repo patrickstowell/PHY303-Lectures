@@ -478,7 +478,7 @@ Now we can write the binding energy as
 
 $$
 B = M_{C12} - 6m_{n} - 6m_{p} - 6m_{e} \\
-Bc^{2} = 0.9894 u = 0.9894 \times 931.5~\textnormal{MeV/u} = 92.16~\textnormal{MeV}
+Bc^{2} = 0.09894 u = 0.09894 \times 931.5~\textnormal{MeV/u} = 92.16~\textnormal{MeV}
 $$
 
 If we want to get this per nucleon we just need to divide by the total nucleons in a carbon 12 nucleus.
