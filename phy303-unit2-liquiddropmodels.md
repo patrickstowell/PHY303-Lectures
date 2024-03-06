@@ -513,7 +513,8 @@ which is remarkably close.
 The graph presented in the lectures shows the Saxton-Woods distribution of
 the charge inside the nucleus. In this example we evaluate the density of nucleons inside the nuclear region for two nuclei: 12C and 208Pb.
 
-We assume that the density of nucleons is proportional to the charge density and given by
+We assume that the density of nucleons is proportional to the charge density and is given by
+
 $$
 \rho_{nucl} = \frac{A}{Ze} \rho_{ch}
 $$
@@ -558,6 +559,7 @@ $$
 $$
 
 and
+
 $$
 ρM(r)=0~~\textnormal{for}~~r>R
 $$
@@ -575,6 +577,7 @@ $$
 $$
 
 Therefore the nuclear radius is
+
 $$
 R = \frac{5}{3} \sqrt{ <r^{2}>} = 1.21~A^{1/3} fm
 $$

@@ -70,10 +70,10 @@ Note here we are talking of a permanent deformation in shape. Thanks to the char
 It turns out the Electric Quadrupole Moment of a deformed nucleus is directly related to the deformation of the nucleus itself. It  is given by:
 
 $$
-Q_{EQM} = \frac{3}{\sqrt{5\pi}} R_{av}^{2} Z \beta (1+0.16\beta)
+Q_{0} = \frac{3}{\sqrt{5\pi}} R_{av}^{2} Z \beta (1+0.16\beta)
 $$
 
-This is the intrinsic electric quadrupole moment for a deformed nucleus at rest. Note how it depends on a surface area $R_{av}^{2}$, the number of protons $Z$ and the deformation parameter. You can see how $Q_{EQM}$ becomes zero for the spherical case, i.e. when $\beta$ = 0.
+This is the intrinsic electric quadrupole moment for a deformed nucleus at rest. Note how it depends on a surface area $R_{av}^{2}$, the number of protons $Z$ and the deformation parameter. You can see how $Q_{0}$ becomes zero for the spherical case, i.e. when $\beta$ = 0. 
 
 
 So, what about the Rotational Energy Levels? In classical mechanics, this comes from considering the kinetic energy of a rigid rotating body with angular momentum $\hat{L}$.
@@ -90,7 +90,7 @@ $$
 \frac{\hat{L}^{2}}{2I} \psi = E_{J} \psi
 $$
 $$
-\frac{L^{2}}{2} Y_{JM}(\theta,\phi) = J(J+1) \hbar^{2} Y_{JM} (\theta, \phi)
+\frac{\hat{L}^{2}}{2} Y_{JM}(\theta,\phi) = J(J+1) \hbar^{2} Y_{JM} (\theta, \phi)
 $$
 $$
 E_{J} = \frac{\hbar^{2}}{2I}J(J+1)~~~~~J=0,2,4,\ldots
@@ -166,10 +166,10 @@ $$
 E_{N} = \hbar \omega_{l} \left(\frac{2l+1}{2} +N \right)
 $$
 
-So here we see that the Quadrupole ($l=2$) Ground State (no phonons) has an energy level at
+Here $N$ is the number of oscillator quanta, and $l$ is the quantized oscillator state (0-monopole, 1-dipole, etc). So here we see that the Quadrupole ($l=2$) Ground State (no phonons) has an energy level at
 
 $$
-E_{N} = \left(N+\frac{5}{2}\right) \hbar \omega
+E_{N} = \left(\frac{5}{2}\right) \hbar \omega
 $$
 
 Of course, a nucleus can show both Rotational and Vibrational energy levels, and these levels can overlap. Note that in general, rotational levels can go up to higher energies than vibration, the latter reaching typically 1-2 MeV.
