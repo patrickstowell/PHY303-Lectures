@@ -189,6 +189,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="unit1-terms.html">Unit 1 : Equations &amp; Terms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="unit2-terms.html">Unit 2 : Equations &amp; Terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit3-terms.html">Unit 3 : Equations &amp; Terms</a></li>
 </ul>
 
     </div>
@@ -451,9 +452,9 @@ R(\theta, \phi) = R_{av} [Y_{00}+\beta Y_{20} (\theta, \phi)]
 <p>It turns out the Electric Quadrupole Moment of a deformed nucleus is directly related to the deformation of the nucleus itself. It  is given by:</p>
 <div class="math notranslate nohighlight">
 \[
-Q_{EQM} = \frac{3}{\sqrt{5\pi}} R_{av}^{2} Z \beta (1+0.16\beta)
+Q_{0} = \frac{3}{\sqrt{5\pi}} R_{av}^{2} Z \beta (1+0.16\beta)
 \]</div>
-<p>This is the intrinsic electric quadrupole moment for a deformed nucleus at rest. Note how it depends on a surface area <span class="math notranslate nohighlight">\(R_{av}^{2}\)</span>, the number of protons <span class="math notranslate nohighlight">\(Z\)</span> and the deformation parameter. You can see how <span class="math notranslate nohighlight">\(Q_{EQM}\)</span> becomes zero for the spherical case, i.e. when <span class="math notranslate nohighlight">\(\beta\)</span> = 0.</p>
+<p>This is the intrinsic electric quadrupole moment for a deformed nucleus at rest. Note how it depends on a surface area <span class="math notranslate nohighlight">\(R_{av}^{2}\)</span>, the number of protons <span class="math notranslate nohighlight">\(Z\)</span> and the deformation parameter. You can see how <span class="math notranslate nohighlight">\(Q_{0}\)</span> becomes zero for the spherical case, i.e. when <span class="math notranslate nohighlight">\(\beta\)</span> = 0.</p>
 <p>So, what about the Rotational Energy Levels? In classical mechanics, this comes from considering the kinetic energy of a rigid rotating body with angular momentum <span class="math notranslate nohighlight">\(\hat{L}\)</span>.</p>
 <p>In the classical case, we get the equation for the kinetic energy of a Rigid Rotation <span class="math notranslate nohighlight">\(L_{c}\)</span> given its rotational kinetic energy and effective moment of inertia <span class="math notranslate nohighlight">\(I_{c}\)</span> as.</p>
 <div class="math notranslate nohighlight">
@@ -467,7 +468,7 @@ E_{R} = \frac{L_{c}^{2}}{2I_{c}}
 \]</div>
 <div class="math notranslate nohighlight">
 \[
-\frac{L^{2}}{2} Y_{JM}(\theta,\phi) = J(J+1) \hbar^{2} Y_{JM} (\theta, \phi)
+\frac{\hat{L}^{2}}{2} Y_{JM}(\theta,\phi) = J(J+1) \hbar^{2} Y_{JM} (\theta, \phi)
 \]</div>
 <div class="math notranslate nohighlight">
 \[
@@ -533,10 +534,10 @@ The various allowed vibrational states in nuclei are very complicated, but we ca
 \[
 E_{N} = \hbar \omega_{l} \left(\frac{2l+1}{2} +N \right)
 \]</div>
-<p>So here we see that the Quadrupole (<span class="math notranslate nohighlight">\(l=2\)</span>) Ground State (no phonons) has an energy level at</p>
+<p>Here <span class="math notranslate nohighlight">\(N\)</span> is the number of oscillator quanta, and <span class="math notranslate nohighlight">\(l\)</span> is the quantized oscillator state (0-monopole, 1-dipole, etc). So here we see that the Quadrupole (<span class="math notranslate nohighlight">\(l=2\)</span>) Ground State (no phonons) has an energy level at</p>
 <div class="math notranslate nohighlight">
 \[
-E_{N} = \left(N+\frac{5}{2}\right) \hbar \omega
+E_{N} = \left(\frac{5}{2}\right) \hbar \omega
 \]</div>
 <p>Of course, a nucleus can show both Rotational and Vibrational energy levels, and these levels can overlap. Note that in general, rotational levels can go up to higher energies than vibration, the latter reaching typically 1-2 MeV.</p>
 <p>Note that as nuclei move away from having a closed shell, it gets easier to excite rotation and vibration states; they are more distorted as we expect. So these nuclei tend to have lower collective mode excitation states like this.</p>
