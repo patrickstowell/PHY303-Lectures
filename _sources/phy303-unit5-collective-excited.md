@@ -90,7 +90,7 @@ $$
 \frac{\hat{L}^{2}}{2I} \psi = E_{J} \psi
 $$
 $$
-\frac{\hat{L}^{2}}{2} Y_{JM}(\theta,\phi) = J(J+1) \hbar^{2} Y_{JM} (\theta, \phi)
+\hat{L}^{2} Y_{JM}(\theta,\phi) = J(J+1) \hbar^{2} Y_{JM} (\theta, \phi)
 $$
 $$
 E_{J} = \frac{\hbar^{2}}{2I}J(J+1)~~~~~J=0,2,4,\ldots
