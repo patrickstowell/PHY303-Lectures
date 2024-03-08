@@ -393,12 +393,14 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#energy-considerations-and-occurrence">6.3. Energy Considerations and Occurrence</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transitions">6.4. Transitions</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#beta-decay-matrix-element">6.5. Beta Decay Matrix Element</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-beta-decay-of-nucleus-x-to-y">6.6. Example: Beta Decay of Nucleus X to Y</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#alpha-decay">6.7. Alpha Decay</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#alpha-212-po-example">6.8. Alpha 212-Po Example</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">6.9. Summary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#beta-decay-matrix-element">6.4. Beta Decay Matrix Element</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transitions">6.5. Transitions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#selection-rules-summary">6.6. Selection Rules Summary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-beta-decay-of-nucleus-x-to-y">6.7. Example: Beta Decay of Nucleus X to Y</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#double-beta-decay">6.8. Double Beta Decay</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#alpha-decay">6.9. Alpha Decay</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#alpha-212-po-example">6.10. Alpha 212-Po Example</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">6.11. Summary</a></li>
 </ul>
             </nav>
         </div>
@@ -419,8 +421,10 @@ document.write(`
 <ul class="simple">
 <li><p>The probability of decay per unit time <span class="math notranslate nohighlight">\(\rightarrow \lambda\)</span></p></li>
 <li><p>The average time a nucleus lasts before decay <span class="math notranslate nohighlight">\(\rightarrow \tau = 1/\lambda\)</span></p></li>
-<li><p>The time for half the sample to decay (half-life) <span class="math notranslate nohighlight">\(\rightarrow T_{1/2} = \tau \textnormal{ln}(2) = 0.693\tau\)</span></p></li>
+<li><p>The time for half the sample to decay (half-life)</p></li>
 </ul>
+<div class="math notranslate nohighlight">
+\[ T_{1/2} = \tau \textnormal{ln}(2) = 0.693\tau\]</div>
 <p>Radioactive decay itself is a stochastic process. That is why we define it in terms of the average times it takes bulk samples of material to decay. The main thing that governs the rate of this decay in a nucleus is actually whether the process is energetically favorable or not. In gamma radiation we saw it was almost always energetically favorable for an excited nuclear state to drop down some energy levels by emitting radiation.</p>
 <p>What about other forms of radiation? In alpha and beta radiation the nucleus physically changes from one type to another. It turns out that a nucleus is likely to be unstable and decay through these channels if the net energy of the final products <span class="math notranslate nohighlight">\(E_{f}\)</span> is less than that of the starting nucleus <span class="math notranslate nohighlight">\(E_{i}\)</span>. This energy deficit is defined as:</p>
 <div class="math notranslate nohighlight">
@@ -432,15 +436,26 @@ Q = M(A,Z)^{2}c^{2} - [M(A-X,Z-Y)c^{2} + M(X,Y)c^{2}] &gt; 0
 <section id="beta-decay">
 <h2><span class="section-number">6.2. </span>Beta Decay<a class="headerlink" href="#beta-decay" title="Permalink to this heading">#</a></h2>
 <p>In beta decay we typically see experimentally an emission of an Electron from the nucleus combined with a transmutation of a nucleus from one type into another with a lower neutron number. This is referred to as beta-minus decay and typically occurs in neutron rich nuclei which are trying to lower their energy by rebalancing their proton/neutron ratios.</p>
-<p>In the early years of Beta Decay studies the process observed was highly mysterious and showed very different a behavior to Alpha Decay which was being studied at a similar time. This is illustrated by the Cloud Chamber image shown below. We see the decay of <span class="math notranslate nohighlight">\(^6\)</span>He into <span class="math notranslate nohighlight">\(^6\)</span>Li and a charged electron. We see two tracks, curving because there is a magnetic field applied. But from analysis of the plot it looks like energy, momentum and even Total Angular Momentum <span class="math notranslate nohighlight">\(J\)</span> are not conserved if we assume the interaction:</p>
-<p><span class="math notranslate nohighlight">\( ^6He~\rightarrow~^{6}Li + e^- \)</span></p>
+<p>In the early years of Beta Decay studies the process observed was highly mysterious and showed very different a behavior to Alpha Decay which was being studied at a similar time. This is illustrated by the Cloud Chamber image shown below.</p>
+<figure class="align-default" id="neutrino-emission">
+<a class="reference internal image-reference" href="_images/image-137.png"><img alt="Bubble Chamber example of Beta Decay" src="_images/image-137.png" style="width: 70%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 6.1 </span><span class="caption-text">Bubble chamber photo of He-6 decay into Li-6, showing what appears to be non-conservation of momentum.</span><a class="headerlink" href="#neutrino-emission" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>We see the decay of <span class="math notranslate nohighlight">\(^6\)</span>He into <span class="math notranslate nohighlight">\(^6\)</span>Li and a charged electron. We see two tracks, curving because there is a magnetic field applied. But from analysis of the plot it looks like energy, momentum and even Total Angular Momentum <span class="math notranslate nohighlight">\(I\)</span> are not conserved if we assume the interaction:</p>
+<div class="math notranslate nohighlight">
+\[
+ ^6\textnormal{He}~\rightarrow~^{6}\textnormal{Li} + e^- 
+\]</div>
 <p>Of course the reason is that there is a Neutrino emitted as well, but this escapes the detector and we don’t see it. There are actually four things we need to consider in beta-minus(-plus) decay not just the neutrino.</p>
 <ol class="arabic simple">
 <li><p>Beta Decay is a Three-body Process, unlike alpha decay (two body). We have to account for the energies and behavior of 3 objects - the nucleus, the beta and neutrino.</p></li>
 <li><p>The electron (positron) and neutrino produced do not exist before the decay, we need to account for their formation.</p></li>
 <li><p>The electron and neutrino are relativistic, unlike the alpha in alpha decay. This makes calculations of the energies and kinematics of the decay more complicated.</p></li>
-<li><p>The energy of the beta emitted by the nucleus in question is not the same in every decay. We get a continuum of energies put to a maximum. In contrast to alpha decay and gamma decays where we get one “Mono energetic” particle depending on the energy levels or <span class="math notranslate nohighlight">\(Q\)</span> value considered.</p></li>
+<li><p>The energy of the beta emitted by the nucleus in question is not the same in every decay. We get a continuum of energies put to a maximum. In contrast to alpha decay and gamma decays where we get one “Mono energetic” particle depending on the energy levels or <span class="math notranslate nohighlight">\(Q\)</span> value considered. The quark level interaction is given in the figure below. Typically the ‘Matrix Element’ is calculated based on the interacting particles considering the d quark in the initial state and u quark and electron and anti-neutrino in the final state.</p></li>
 </ol>
+<p><img alt="Alt text" src="_images/image-142.png" /></p>
 <p>An example to illustrate this behavior is:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -481,69 +496,148 @@ Q = M(A,Z)^{2}c^{2} - [M(A-X,Z-Y)c^{2} + M(X,Y)c^{2}] &gt; 0
 <h2><span class="section-number">6.3. </span>Energy Considerations and Occurrence<a class="headerlink" href="#energy-considerations-and-occurrence" title="Permalink to this heading">#</a></h2>
 <p>Note we have to be careful in Beta Decay to consider the mass of everything including the Atomic Electrons, not just the nucleons. Hence the mass used are atomic masses, not the nuclear masses. We were less careful earlier when dealing with Binding Energy calculations and the SEMF.</p>
 <ul class="simple">
-<li><p>*** <em><span class="math notranslate nohighlight">\(\beta^-\)</span> Decay:</em>* This process is energetically favored in neutron-rich nuclei and does not require additional energy to occur since the mass of the neutron is greater than that of the proton.</p></li>
+<li><p><strong><span class="math notranslate nohighlight">\(\beta^-\)</span> Decay:</strong> This process is energetically favored in neutron-rich nuclei and does not require additional energy to occur since the mass of the neutron is greater than that of the proton. The <span class="math notranslate nohighlight">\(Q\)</span> value for this interaction is calculated based on the atomic masses as</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+Q_{\beta^{-}} = [ M(A,Z) - M(A,Z-1) ]c^{2}
+\]</div>
+<ul class="simple">
 <li><p><strong><span class="math notranslate nohighlight">\(\beta^+\)</span> Decay and EC:</strong> Both require the nucleus to have excess energy because the mass of a neutron is less than that of a proton (when considering the mass of the positron for <span class="math notranslate nohighlight">\(\beta^+\)</span> decay or the binding energy of the captured electron for EC). These processes are less common than <span class="math notranslate nohighlight">\(\beta^-\)</span> decay due to the energy requirements and occur in proton-rich nuclei.</p></li>
 </ul>
+<p>The Q value for <span class="math notranslate nohighlight">\(\beta^+\)</span> decay based on atomic masses is calculated as</p>
+<div class="math notranslate nohighlight">
+\[
+Q_{\beta^{+}} = [ M(A,Z) - M(A,Z-1) - 2m_{e}]c^{2}
+\]</div>
+<p>In the case for electron capture, the <span class="math notranslate nohighlight">\(Q\)</span> value needs to be calculated based on the energy of the electron that is captured based on which atomic orbital shell it is in (typically an inner shell).</p>
+</section>
+<section id="beta-decay-matrix-element">
+<h2><span class="section-number">6.4. </span>Beta Decay Matrix Element<a class="headerlink" href="#beta-decay-matrix-element" title="Permalink to this heading">#</a></h2>
+<p>Typically we find that the average Beta decay rate is proportional to <span class="math notranslate nohighlight">\(1/Q^{5}\)</span> of the interaction itself. This is the Sergeant rule that derives from the theory of weak interactions. Note that this <span class="math notranslate nohighlight">\(Q\)</span> value is the total energy available for the decay based on the mass differences, but we expect a continuous spectrum when looking at just the electron energy for example.</p>
+<p>As discussed in Krane, the probability of a beta decay occurring is proportional to the square of the matrix element, <span class="math notranslate nohighlight">\(M\)</span>, which depends on the overlap of the initial and final nuclear wave functions and the operators involved in the transition.</p>
+<div class="math notranslate nohighlight">
+\[
+\lambda = \frac{2\pi}{\hbar} ~| M_{if} |^{2} ~\frac{dn_{f}}{dE_{f}}
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(\lambda\)</span> is the rate <span class="math notranslate nohighlight">\(M_{if}\)</span> is the nuclear matrix element, and <span class="math notranslate nohighlight">\(\frac{dn_{f}}{dE_{f}}\)</span> is the ‘density of states’. We expect that as the density of possible states increases so to does the rate of interaction.</p>
+<p>The nuclear matrix element is commonly written based on some interaction Hamiltonian, <span class="math notranslate nohighlight">\(\hat{H}\)</span> that describes the transition,</p>
+<div class="math notranslate nohighlight">
+\[
+|M_{fi}| = \int \psi^{*} \hat{H} \psi dV.
+\]</div>
+<p>Weak interactions typically follow a <span class="math notranslate nohighlight">\(V-A\)</span> form for the Hamiltonian, where <span class="math notranslate nohighlight">\(V\)</span> corresponds to vector couplings (typically the electromagnetic part in electroweak interactions), and the <span class="math notranslate nohighlight">\(A\)</span> corresponds to axial couplings (which carry the weak force).</p>
+<p>If we consider that the neutrino and electron in <span class="math notranslate nohighlight">\(\beta^{-}\)</span> decay are being produced  some distance <span class="math notranslate nohighlight">\(\vec{r}\)</span> from the centre of the nucleus with momenta <span class="math notranslate nohighlight">\(\vec{p}\)</span> (electron) and <span class="math notranslate nohighlight">\(\vec{q}\)</span> (neutrino), then we can estimate the density of states at that momentum based on the volume of a spherical shell of thickness <span class="math notranslate nohighlight">\(dp\)</span> or <span class="math notranslate nohighlight">\(dq\)</span> as</p>
+<div class="math notranslate nohighlight">
+\[
+dn_{e} = \frac{4 \pi p^{2} dp V}{h^{3}}  
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+dn_{v} = \frac{4 \pi q^{2} dq V}{h^{3}}  
+\]</div>
+<p>The combined density of states can then be estimated from</p>
+<div class="math notranslate nohighlight">
+\[
+dn_{e}dn_{v} = \frac{ (4 \pi)^{2} ~ V^{2} ~ q^{2} dq ~p^{2} dp}{h^{6}}  
+\]</div>
+<p>If we consider the possible wave functions for our electron and neutrino we can consider free particle solutions in the first case</p>
+<div class="math notranslate nohighlight">
+\[
+\psi_{e}(r) \propto e^{i \frac{\vec{p}\cdot\vec{r}}{\hbar}} ~~~~~~~ \psi_{\nu}(r) \propto e^{i \frac{\vec{q}\cdot\vec{r}}{\hbar}} 
+\]</div>
+<p>If we consider the energy scales of beta decay, the electron is expected to have an energy in the range of around 1 MeV. This corresponds to around <span class="math notranslate nohighlight">\(p/\hbar \sim 0.007~\textnormal{fm}^{-1}\)</span> much smaller than the nucleus itself. As a result we can approximate the wavefunction as</p>
+<div class="math notranslate nohighlight">
+\[
+e^{i \frac{\vec{p}\cdot\vec{r}}{\hbar}}  \approx 1 + i\frac{\vec{p}\cdot\vec{r}}{\hbar} + .... \approx 1
+\]</div>
+<p>This last approximation where we assume the wavefunction is constant means the terms are constant in the matrix element calculations and only way that the rate depends on the momentum is in the density of states.</p>
+<p>When we account for this our density of states can be used to arrive at a form given in Krane for the number of beta particles at a given momentum of</p>
+<div class="math notranslate nohighlight">
+\[
+N(p) = \frac{C}{c^{2}} p^{2} (Q-T_{e})^{2}
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(C\)</span> is a constant, <span class="math notranslate nohighlight">\(c\)</span> is the speed of light, <span class="math notranslate nohighlight">\(p\)</span> is the momentum of the emitted beta particle, <span class="math notranslate nohighlight">\(Q\)</span> is the mass deficit for the decay, and <span class="math notranslate nohighlight">\(T_{e}\)</span> is the kinetic energy of the beta particle. You can see how this has a zero point both at <span class="math notranslate nohighlight">\(p=0\)</span> and <span class="math notranslate nohighlight">\(Q=T_{e}\)</span> corresponding to our end points of beta decay.</p>
+<p>As shown in the figures below for Cu-64 we expect a continuous distribution as a result. In fact what we find is that additional corrections are needed for <span class="math notranslate nohighlight">\(\beta^{-}\)</span> vs <span class="math notranslate nohighlight">\(\beta^{+}\)</span> decay since positrons typically observe additional coulomb repulsion inside the nucleus.</p>
+<p><img alt="Alt text" src="_images/image-141.png" /></p>
+<p>One way to understand allowed vs forbidden transitions is by producing what are called “Fermi-Kurie” plots. Based on the form shown above, if we plot the observed number of particles at a fixed momentum divided by <span class="math notranslate nohighlight">\(p^{2}\)</span> and an additional correction due to coulomb repulsion, what we find is a roughly linear fit to the data for many transitions. The point where this line crosses the x-axis determines the end point energy (maximum <span class="math notranslate nohighlight">\(T_{e}\)</span> of the transition). Linearity in this fit ends up only being true when our “allowed transition” assumption are valid. Any deviation from a straight line suggest a degree of “forbidden-ness” in the interaction. Importantly a Fermi-Kurie plot can be used to estimate the neutrino mass as the end point is expected to deviate from a straight line if the neutrino mass is non-zero as shown in the Figure below.</p>
+<figure class="align-default" id="fermi-kurie">
+<a class="reference internal image-reference" href="_images/image-145.png"><img alt="End point of the Fermi-Kurie Plot" src="_images/image-145.png" style="width: 70%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 6.2 </span><span class="caption-text">End point of the Fermi-Kurie plot which plots beta particle kinetic energy vs a scaled estimate of the number of particles observed at that energy. Deviations away from a straight line suggest forbidden transitions. The end point <span class="math notranslate nohighlight">\(T_{0}\)</span> here corresponds to the maximum <span class="math notranslate nohighlight">\(Q\)</span> value for the decay.</span><a class="headerlink" href="#fermi-kurie" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p><img alt="Alt text" src="_images/image-145.png" /></p>
+<p>For allowed transitions, the matrix element involves simpler operators (e.g., Fermi and Gamow-Teller operators), while for forbidden transitions, more complex operators that include higher angular momentum components are required in the calculation. These higher order corrections that include the second term in the exponential expansion above are referred to as ‘forbidden transitions’.</p>
 </section>
 <section id="transitions">
-<h2><span class="section-number">6.4. </span>Transitions<a class="headerlink" href="#transitions" title="Permalink to this heading">#</a></h2>
-<p>In beta decay, transitions between nuclear states are classified as “allowed” or “forbidden” based on certain selection rules derived from conservation laws and quantum mechanics. These rules are related to the spin (<span class="math notranslate nohighlight">\(J\)</span>) and parity (<span class="math notranslate nohighlight">\(P\)</span>) of the initial and final nuclear states, as well as the angular momentum and parity of the emitted beta particle and neutrino system.</p>
-<p>Allowed transitions are those that require the least change in angular momentum and have no change in parity between the initial and final states. The simplest case is the “superallowed” transition, which involves no change in nuclear spin and parity (<span class="math notranslate nohighlight">\(\Delta J^P = 0^+\)</span>) and is the most favorable in terms of transition probability.</p>
+<h2><span class="section-number">6.5. </span>Transitions<a class="headerlink" href="#transitions" title="Permalink to this heading">#</a></h2>
+<p>In beta decay, transitions between nuclear states are classified as “allowed” or “forbidden” based on certain selection rules derived from conservation laws and quantum mechanics. These rules are related to the spin (<span class="math notranslate nohighlight">\(I\)</span>) and parity (<span class="math notranslate nohighlight">\(P\)</span>) of the initial and final nuclear states, as well as the angular momentum and parity of the emitted beta particle and neutrino system.</p>
+<p>Allowed transitions are those that require the least change in angular momentum and have no change in parity between the initial and final states. The simplest case is the “superallowed” transition, which involves no change in nuclear spin and parity (<span class="math notranslate nohighlight">\(\Delta I^\pi = 0^+\)</span>) and is the most favorable in terms of transition probability.</p>
+<p>We expect that the spin of the electron and anti-neutrino (both spin half particles) can come out either parrallel or anti-parallel with one another, carrying either <span class="math notranslate nohighlight">\(S=0\)</span> or <span class="math notranslate nohighlight">\(S=1\)</span> respectively. The transitions where they are parallel are referred to as <strong>Gamow-Teller</strong> transitions, whilst those where they are anti-parallel are referred to as <strong>Fermi</strong> transitions.</p>
 <p><strong>Superallowed Transition:</strong></p>
 <div class="math notranslate nohighlight">
 \[
- \Delta J = 0, \quad \Delta P = 0 
+ \Delta I = 0, \quad \Delta \pi = \textnormal{none}
  \]</div>
-<p>Here, <span class="math notranslate nohighlight">\(\Delta J\)</span> represents the change in total angular momentum quantum number, and <span class="math notranslate nohighlight">\(\Delta P\)</span> represents the change in parity; <span class="math notranslate nohighlight">\(0^+\)</span> indicates no change in either.</p>
+<p>Here, <span class="math notranslate nohighlight">\(\Delta I\)</span> represents the change in total angular momentum quantum number, and <span class="math notranslate nohighlight">\(\Delta P\)</span> represents the change in parity; <span class="math notranslate nohighlight">\(0^+\)</span> indicates no change in either. We typically find that transitions with the shortest corrected half-life (corrections account for differences in the energy distribution and density of states) all correspond to this class of allowed transitions. This is why they are called “super-allowed”.</p>
 <p><strong>Allowed Transition:</strong>
 For “allowed” transitions (not superallowed), the changes are still minimal:</p>
 <div class="math notranslate nohighlight">
 \[
- \Delta J = 0 \text{ or } \pm 1, \quad \Delta P = 0 
+ \Delta I = 0 \text{ or } \pm 1, \quad \Delta \pi = \textnormal{none}
  \]</div>
 <p>except for <span class="math notranslate nohighlight">\(0 \rightarrow 0\)</span> transitions, which are forbidden.</p>
-<p>Superallowed and allowed transitions are characterized by a high transition probability because they involve minimal changes in the nuclear state, making them the most common type of beta decay.</p>
+<p>Superallowed and allowed transitions are characterized by a high transition probability because they involve minimal changes in the nuclear state, making them the most common type of beta decay. They correspond to the case where we produced the particle in our density of states at <span class="math notranslate nohighlight">\(\vec{r}=0\)</span> such that the wavefunction does not depend in any way on the momentum for the transition.</p>
 <p><strong>Forbidden Transitions</strong></p>
 <p>Forbidden transitions occur when the change in angular momentum and/or parity does not meet the criteria for allowed transitions. They are less likely to occur due to the need for higher changes in angular momentum between the initial and final states. Forbidden transitions are categorized by the degree of “forbiddenness,” which corresponds to the change in angular momentum of the emitted particles.</p>
 <div class="math notranslate nohighlight">
 \[
- \Delta J = 0, \pm 1, \pm 2, \quad \Delta P = 1 
+ \Delta I = 0, \pm 1, \pm 2, \quad \Delta P = 1 
  \]</div>
 <p>except for <span class="math notranslate nohighlight">\(0 \rightarrow 0\)</span> transitions, which are still forbidden.</p>
 <p>In general, the “n-th forbidden” transition is characterized by:</p>
 <div class="math notranslate nohighlight">
 \[
- \Delta J = n, n \pm 1, n \pm 2, ..., \quad \Delta P = 1
+ \Delta I = n, n \pm 1, n \pm 2, ..., \quad \Delta P = 1
  \]</div>
 <p>The transition probability decreases significantly with increasing order of forbiddenness, making higher-order forbidden transitions increasingly rare.</p>
 </section>
-<section id="beta-decay-matrix-element">
-<h2><span class="section-number">6.5. </span>Beta Decay Matrix Element<a class="headerlink" href="#beta-decay-matrix-element" title="Permalink to this heading">#</a></h2>
-<p>The probability of a beta decay occurring is proportional to the square of the matrix element, <span class="math notranslate nohighlight">\(M\)</span>, which depends on the overlap of the initial and final nuclear wave functions and the operators involved in the transition. For allowed transitions, the matrix element involves simpler operators (e.g., Fermi and Gamow-Teller operators), while for forbidden transitions, more complex operators that include higher angular momentum components are required.</p>
+<section id="selection-rules-summary">
+<h2><span class="section-number">6.6. </span>Selection Rules Summary<a class="headerlink" href="#selection-rules-summary" title="Permalink to this heading">#</a></h2>
+<p>This results in the following complete set of selection rules</p>
+<ul class="simple">
+<li><p><strong>Allowed</strong> <span class="math notranslate nohighlight">\(\Delta I=0,1\)</span> and <span class="math notranslate nohighlight">\(\Delta \pi = \textnormal{no}\)</span></p></li>
+<li><p><strong>1st Forbidden</strong> <span class="math notranslate nohighlight">\(\Delta I=0,1,2\)</span> and <span class="math notranslate nohighlight">\(\Delta \pi = \textnormal{yes}\)</span></p></li>
+<li><p><strong>2st Forbidden</strong> <span class="math notranslate nohighlight">\(\Delta I=2,3\)</span> and <span class="math notranslate nohighlight">\(\Delta \pi = \textnormal{no}\)</span></p></li>
+<li><p><strong>3rd Forbidden</strong> <span class="math notranslate nohighlight">\(\Delta I=3,4\)</span> and <span class="math notranslate nohighlight">\(\Delta \pi = \textnormal{yes}\)</span></p></li>
+</ul>
+<p>Here the 2nd forbidden transitions do actually allow for <span class="math notranslate nohighlight">\(\Delta I=0, 1\)</span> but since these are already covered by the allowed transitions these changes in the nuclear spin are far less likely.</p>
 </section>
 <section id="example-beta-decay-of-nucleus-x-to-y">
-<h2><span class="section-number">6.6. </span>Example: Beta Decay of Nucleus X to Y<a class="headerlink" href="#example-beta-decay-of-nucleus-x-to-y" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">6.7. </span>Example: Beta Decay of Nucleus X to Y<a class="headerlink" href="#example-beta-decay-of-nucleus-x-to-y" title="Permalink to this heading">#</a></h2>
 <p>Suppose we have a beta decay process where nucleus X decays to nucleus Y. Let’s say:</p>
 <ul class="simple">
-<li><p>The initial state of nucleus X has a total angular momentum quantum number <span class="math notranslate nohighlight">\(J_i = 2\)</span> and positive parity (<span class="math notranslate nohighlight">\(P_i = +1\)</span>).</p></li>
-<li><p>The final state of nucleus Y has a total angular momentum quantum number <span class="math notranslate nohighlight">\(J_f = 1\)</span> and negative parity (<span class="math notranslate nohighlight">\(P_f = -1\)</span>).</p></li>
+<li><p>The initial state of nucleus X has a total angular momentum quantum number <span class="math notranslate nohighlight">\(I_i = 2\)</span> and positive parity (<span class="math notranslate nohighlight">\(\pi_i = +1\)</span>).</p></li>
+<li><p>The final state of nucleus Y has a total angular momentum quantum number <span class="math notranslate nohighlight">\(I_f = 1\)</span> and negative parity (<span class="math notranslate nohighlight">\(\pi_f = -1\)</span>).</p></li>
 </ul>
-<p><strong>Step 1: Calculate the Change in Angular Momentum (<span class="math notranslate nohighlight">\(\Delta J\)</span>)</strong></p>
+<p><strong>Step 1: Calculate the Change in Angular Momentum (<span class="math notranslate nohighlight">\(\Delta I\)</span>)</strong></p>
 <div class="math notranslate nohighlight">
 \[
- \Delta J = |J_f - J_i| = |1 - 2| = 1 
+ \Delta I = |I_f - I_i| = |1 - 2| = 1 
  \]</div>
-<p><strong>Step 2: Determine the Change in Parity (<span class="math notranslate nohighlight">\(\Delta P\)</span>)</strong></p>
-<p>Since the parity changes from positive to negative, there is a change in parity (<span class="math notranslate nohighlight">\(\Delta P = 1\)</span>).</p>
+<p><strong>Step 2: Determine the Change in Parity (<span class="math notranslate nohighlight">\(\Delta \pi\)</span>)</strong></p>
+<p>Since the parity changes from positive to negative, there is a change in parity (<span class="math notranslate nohighlight">\(\Delta \pi = +1~\textnormal{or}~-1\)</span>).</p>
 <p><strong>Step 3: Classify the Transition</strong></p>
-<p>Using the calculated <span class="math notranslate nohighlight">\(\Delta J\)</span> and <span class="math notranslate nohighlight">\(\Delta P\)</span>, we can classify the transition. For allowed transitions, we expect <span class="math notranslate nohighlight">\(\Delta J = 0\)</span> or <span class="math notranslate nohighlight">\(\pm 1\)</span> (excluding <span class="math notranslate nohighlight">\(0 \rightarrow 0\)</span> without a change in parity), and <span class="math notranslate nohighlight">\(\Delta P = 0\)</span>.</p>
+<p>Using the calculated <span class="math notranslate nohighlight">\(\Delta I\)</span> and <span class="math notranslate nohighlight">\(\Delta \pi\)</span>, we can classify the transition. For allowed transitions, we expect <span class="math notranslate nohighlight">\(\Delta I = 0\)</span> or <span class="math notranslate nohighlight">\(\pm 1\)</span> (excluding <span class="math notranslate nohighlight">\(0 \rightarrow 0\)</span> without a change in parity), and <span class="math notranslate nohighlight">\(\Delta \pi = 0\)</span>.</p>
 <ul class="simple">
-<li><p>In our example, <span class="math notranslate nohighlight">\(\Delta J = 1\)</span> fits the criterion for <span class="math notranslate nohighlight">\(\Delta J\)</span> in allowed transitions, but the change in parity (<span class="math notranslate nohighlight">\(\Delta P = 1\)</span>) indicates this is a <strong>forbidden transition</strong>.</p></li>
-<li><p>Specifically, since there’s a change in parity and the <span class="math notranslate nohighlight">\(\Delta J\)</span> value fits within the first forbidden category (considering <span class="math notranslate nohighlight">\(\Delta J = 0, \pm 1, \pm 2\)</span> with a parity change), this would be a <strong>first forbidden transition</strong>.</p></li>
+<li><p>In our example, <span class="math notranslate nohighlight">\(\Delta I = 1\)</span> fits the criterion for <span class="math notranslate nohighlight">\(\Delta I\)</span> in allowed transitions, but the change in parity (<span class="math notranslate nohighlight">\(\Delta \pi = \textnormal{yes}\)</span>) indicates this is a <strong>forbidden transition</strong>.</p></li>
+<li><p>Specifically, since there’s a change in parity and the <span class="math notranslate nohighlight">\(\Delta I\)</span> value fits within the first forbidden category (considering <span class="math notranslate nohighlight">\(\Delta I = 0, \pm 1, \pm 2\)</span> with a parity change), this would be a <strong>first forbidden transition</strong>.</p></li>
 </ul>
-<p>For another example of an allowed transition in beta decay, let’s consider the beta-minus decay of tritium (<span class="math notranslate nohighlight">\(^3H\)</span>) to helium-3 (<span class="math notranslate nohighlight">\(^3He\)</span>):</p>
+<p><strong>Example 1</strong>
+For another example of an allowed transition in beta decay, let’s consider the beta-minus decay of tritium (<span class="math notranslate nohighlight">\(^3H\)</span>) to helium-3 (<span class="math notranslate nohighlight">\(^3He\)</span>):</p>
 <ul class="simple">
-<li><p><strong>Tritium (<span class="math notranslate nohighlight">\(^3H\)</span>)</strong> has one proton and two neutrons. Its nuclear spin and parity (<span class="math notranslate nohighlight">\(J^P\)</span>) are <span class="math notranslate nohighlight">\(1/2^+\)</span> in its ground state.</p></li>
+<li><p><strong>Tritium (<span class="math notranslate nohighlight">\(^3H\)</span>)</strong> has one proton and two neutrons. Its nuclear spin and parity (<span class="math notranslate nohighlight">\(I^P\)</span>) are <span class="math notranslate nohighlight">\(1/2^+\)</span> in its ground state.</p></li>
 <li><p><strong>Helium-3 (<span class="math notranslate nohighlight">\(^3He\)</span>)</strong> has two protons and one neutron. Its ground state also has a nuclear spin and parity of <span class="math notranslate nohighlight">\(1/2^+\)</span>.</p></li>
 </ul>
 <p>In this decay, one of the neutrons in tritium is converted into a proton, emitting an electron (<span class="math notranslate nohighlight">\(e^-\)</span>) and an electron antineutrino (<span class="math notranslate nohighlight">\(\bar{\nu}_e\)</span>):</p>
@@ -554,19 +648,23 @@ For “allowed” transitions (not superallowed), the changes are still minimal:
 <p>Given that both the initial and final states have spins of <span class="math notranslate nohighlight">\(1/2\)</span>, the change in angular momentum is:</p>
 <div class="math notranslate nohighlight">
 \[
- \Delta J = |J_f - J_i| = |1/2 - 1/2| = 0 
+ \Delta I = |I_f - I_i| = |1/2 - 1/2| = 0 
  \]</div>
-<p>Both the initial and final states have positive parity (<span class="math notranslate nohighlight">\(+\)</span>), so there is no change in parity:</p>
+<p>In this case we know that the electron and anti-neutrino needed to have taken away either <span class="math notranslate nohighlight">\(S=0\)</span> or <span class="math notranslate nohighlight">\(S=1\)</span>, so we expect this to be Fermi decay.
+Both the initial and final states have positive parity (<span class="math notranslate nohighlight">\(+\)</span>), so there is no change in parity:</p>
 <div class="math notranslate nohighlight">
 \[
- \Delta P = 0 
+ \Delta \pi = \textnormal{no} 
  \]</div>
-<p>This means for the transition to be allowed:</p>
-<ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(\Delta J = \pm 1\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(\Delta P = 0\)</span></p></li>
-</ul>
-<p>Note we’ve explicitly excluded the <span class="math notranslate nohighlight">\(\Delta J=0\)</span> case as we know the change in parity is <span class="math notranslate nohighlight">\(0\)</span>. Our transition meets these criteria (<span class="math notranslate nohighlight">\(\Delta J = 0\)</span> and <span class="math notranslate nohighlight">\(\Delta P = 0\)</span>), indicating it is an <strong>allowed transition</strong>.</p>
+<p>This means for the transition to be allowed we expect the orbital AM <span class="math notranslate nohighlight">\(l\)</span> to be even. Our transition meets these criteria (<span class="math notranslate nohighlight">\(\Delta I = 0\)</span> and <span class="math notranslate nohighlight">\(\Delta \pi = \textnormal{no}\)</span>), indicating it is an <strong>allowed transition</strong>.</p>
+<p><strong>Example 2</strong>
+Now consider the example of beta decay in <span class="math notranslate nohighlight">\(^{6}\textnormal{He} \rightarrow~^{6}Li\)</span>. In this case we expect a transition from <span class="math notranslate nohighlight">\(0^{+}\)</span> to <span class="math notranslate nohighlight">\(1^{+}\)</span> so we expect a change in one for the nuclear spin, but no change in parity.</p>
+<p>We therefore know that that orbital angular momentum has to be even, requiring that the combined spin is <span class="math notranslate nohighlight">\(S=1\)</span>, so that we get an odd number in <span class="math notranslate nohighlight">\(L+S\)</span>.</p>
+<p>This is therefore a Gamow Teller Transition, which is classified as allowed.</p>
+<p><strong>Example 3</strong>
+Finally let’s consider the beta decay from <span class="math notranslate nohighlight">\(^{17}\textnormal{N} \rightarrow~^{17}O\)</span> where we expect a transition between nuclear spin states <span class="math notranslate nohighlight">\(\frac{1}{2}^{+} \rightarrow \frac{5}{2}^{+}\)</span>. Here we are expecting <span class="math notranslate nohighlight">\(\Delta I=2\)</span> and <span class="math notranslate nohighlight">\(\Delta \pi=\textnormal{yes}\)</span>.</p>
+<p>We know that the orbital angular momentum has to be odd, and therefore we expect again that the spin state must be <span class="math notranslate nohighlight">\(S=1\)</span> to give an even total change in spin.</p>
+<p>This is therefore a 1st forbidden Gamow Teller decay and is significantly less likely than the decays in the previous examples.</p>
 <!-- 
 ### 6.4 Fermi Theory
 - Fermi Theory results in an equation for dn/dE given as:
@@ -592,8 +690,16 @@ $$
 
  -->
 </section>
+<section id="double-beta-decay">
+<h2><span class="section-number">6.8. </span>Double Beta Decay<a class="headerlink" href="#double-beta-decay" title="Permalink to this heading">#</a></h2>
+<p>In rare cases we find that the <span class="math notranslate nohighlight">\(Q\)</span> value of a decay or the selection rules limit our typical <span class="math notranslate nohighlight">\(\beta\)</span> decay processes. For example in the case of 128-Te, we find that the next nuclei on the beta decay chain would be 128-I, which would give a negative <span class="math notranslate nohighlight">\(Q\)</span> value. However a direct transition to 128-Xe would give a positive <span class="math notranslate nohighlight">\(Q\)</span> value, and is enough to allow the production of two <span class="math notranslate nohighlight">\(\beta\)</span> particles at once. This process whilst extremely rare (order of <span class="math notranslate nohighlight">\(10^{24}\)</span> years) can occur naturally.</p>
+<p><img alt="Alt text" src="_images/image-143.png" /></p>
+<p>A similar case also happens for the decay of 48-Ca, which we would expect to decay into 48-Sc. Whilst the <span class="math notranslate nohighlight">\(Q\)</span> can be positive in some cases, we find that all the possible transitions are high-order forbidden transitions and are extremely unlikely to occur. Instead it is far more likely that a double beta decay transition will occur (albeit with a very long half-life).</p>
+<p><img alt="Alt text" src="_images/image-144.png" /></p>
+<p>Double beta decay is of particular importance in some high energy particle physics experiments as there is a long standing debate on whether neutrinos may in fact be their own anti-particles (Majorana neutrinos). Since they have no charge this is allowed in some models, and if so would allow a possible neutrino-less double beta decay transition to also take place in which the two neutrino’s emitted in double-beta decay annihilate with one another, resulting in both beta particles carrying the entire <span class="math notranslate nohighlight">\(Q\)</span> energy for the interaction. Observation of a clear excess in number of particles right at the end of the beta decay spectrum for such particles therefore would confirm the true nature of these particles.</p>
+</section>
 <section id="alpha-decay">
-<h2><span class="section-number">6.7. </span>Alpha Decay<a class="headerlink" href="#alpha-decay" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">6.9. </span>Alpha Decay<a class="headerlink" href="#alpha-decay" title="Permalink to this heading">#</a></h2>
 <p>Finally let’s turn our attention to alpha decay. In the context of the nuclear shell model, alpha decay can be understood in terms of the rearrangement of the nucleons in the daughter nucleus and how this rearrangement affects the nuclear stability. The shell model predicts that nuclei near magic numbers (where shells are either fully filled or empty) are more stable. Thus, alpha decay often moves a nucleus closer to these magic numbers, thereby increasing its stability.</p>
 <p>While the selection rules for alpha decay are not as strictly defined as for beta decay in terms of angular momentum and parity changes, the energy and stability considerations play a crucial role. The key factors influencing alpha decay include:</p>
 <ol class="arabic simple">
@@ -655,7 +761,7 @@ T_{1/2} = \ln(2)/\lambda = \ln(2)/\sqrt{X}
 <p>If the alpha hits the barrier faster than 1 Hz, then we expect the probability that it leaves the nucleus to scale upwards as well. If we can work out the frequency that the alpha hits the barrier, which will be determined by its velocity and the size of the nucleus, and we know the height of the barrier <span class="math notranslate nohighlight">\(U_0\)</span> and the width <span class="math notranslate nohighlight">\(L\)</span> and the energy of the alpha <span class="math notranslate nohighlight">\(E\)</span>, then we can find the half-life <span class="math notranslate nohighlight">\(T_{1/2}\)</span>. We can then see if this agrees with the Geiger-Nuttall observation from data.</p>
 </section>
 <section id="alpha-212-po-example">
-<h2><span class="section-number">6.8. </span>Alpha 212-Po Example<a class="headerlink" href="#alpha-212-po-example" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">6.10. </span>Alpha 212-Po Example<a class="headerlink" href="#alpha-212-po-example" title="Permalink to this heading">#</a></h2>
 <p>The way to proceed is illustrated below, where we attempt to find the half-life of 212Po, which emits an 8.78 MeV alpha.  First, we need to find the width of the barrier. For this, we need to know the Nuclear Separation <span class="math notranslate nohighlight">\(R\)</span>, i.e., the distance between the center of the nucleus and the center of the alpha. Be careful that at this point the nucleus we are talking about is not A=212, but A=208, because we have removed the alpha.</p>
 <p><img alt="Alt text" src="_images/image-134.png" /></p>
 <p>This results in an estimate of the nuclear seperation as</p>
@@ -783,7 +889,7 @@ log_{10} t_{1/2} = a + b Q_{\alpha}^{-1/2},
 <p>The procedures shown here can be applied to many nuclei to gain an estimate on the half-life and potential barrier properties if a decay process’ <span class="math notranslate nohighlight">\(Q\)</span> value is known. Importantly the free parameters in the Geiger Nutall form are dependent on the specific starting isotope (indicated by the lines in the GN plot), therefore measurements of the half life and <span class="math notranslate nohighlight">\(Q\)</span> value of one specific isotope can be used to estimate the half-life of any other nuclei in the chain provided the <span class="math notranslate nohighlight">\(Q\)</span> value can be calculated to a reasonable estimate (which it can with the SEMF!).</p>
 </section>
 <section id="summary">
-<h2><span class="section-number">6.9. </span>Summary<a class="headerlink" href="#summary" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">6.11. </span>Summary<a class="headerlink" href="#summary" title="Permalink to this heading">#</a></h2>
 <p>In this unit we’ve discussed the final dominant radioactive decay channels and the effect these can have on the nucleon content of a nucleus, and the various factors that need to be considered when trying to calculate their probability and daughter product kinetic energies.</p>
 <p>In the next half of this course we’ll start to look at different possible reactions with nuclei in more detail before looking at how knowledge of nuclear structure and decays can be used in applied physics.</p>
 </section>
@@ -860,12 +966,14 @@ log_{10} t_{1/2} = a + b Q_{\alpha}^{-1/2},
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#energy-considerations-and-occurrence">6.3. Energy Considerations and Occurrence</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transitions">6.4. Transitions</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#beta-decay-matrix-element">6.5. Beta Decay Matrix Element</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-beta-decay-of-nucleus-x-to-y">6.6. Example: Beta Decay of Nucleus X to Y</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#alpha-decay">6.7. Alpha Decay</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#alpha-212-po-example">6.8. Alpha 212-Po Example</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">6.9. Summary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#beta-decay-matrix-element">6.4. Beta Decay Matrix Element</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transitions">6.5. Transitions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#selection-rules-summary">6.6. Selection Rules Summary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-beta-decay-of-nucleus-x-to-y">6.7. Example: Beta Decay of Nucleus X to Y</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#double-beta-decay">6.8. Double Beta Decay</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#alpha-decay">6.9. Alpha Decay</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#alpha-212-po-example">6.10. Alpha 212-Po Example</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">6.11. Summary</a></li>
 </ul>
   </nav></div>
 

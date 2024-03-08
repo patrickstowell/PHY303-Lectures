@@ -37,7 +37,7 @@ It's worth pointing out here that the Fourier transform of a delta function is j
 Based on our reasoning that the nucleus has some underlying distribution of charge the simplest model we could come up with would be a so called **Top-Hat Distribution**. That is, constant uniform density, falling to zero at the "edge" of the nucleus.  Importantly what was actually found during the early electron scattering experiments was that at higher values of $\bf q$ we start to see bumps or ridges in our measurements of the cross-section as shown in {numref}`e-scattering-charge`. 
 
 :::{figure-md} e-scattering-charge
-<img src='image-102.png' width="70%" alt="Saxon Woods Form">
+<img src='image-102.png' width="70%" alt="Electron Scattering Form">
 
 Measured cross-section from electron scattering of nickel.
 :::
