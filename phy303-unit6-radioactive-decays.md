@@ -7,7 +7,9 @@ These become a bit trickier to solve, as both decays lead to a fundamental chang
 
 - The probability of decay per unit time $\rightarrow \lambda$
 - The average time a nucleus lasts before decay $\rightarrow \tau = 1/\lambda$
-- The time for half the sample to decay (half-life) $\rightarrow T_{1/2} = \tau \textnormal{ln}(2) = 0.693\tau$
+- The time for half the sample to decay (half-life) 
+
+$$ T_{1/2} = \tau \textnormal{ln}(2) = 0.693\tau$$
 
 Radioactive decay itself is a stochastic process. That is why we define it in terms of the average times it takes bulk samples of material to decay. The main thing that governs the rate of this decay in a nucleus is actually whether the process is energetically favorable or not. In gamma radiation we saw it was almost always energetically favorable for an excited nuclear state to drop down some energy levels by emitting radiation.
 
@@ -24,18 +26,29 @@ Decay is possible only if the $Q$ value is positive, and the decay is not disall
 
 In beta decay we typically see experimentally an emission of an Electron from the nucleus combined with a transmutation of a nucleus from one type into another with a lower neutron number. This is referred to as beta-minus decay and typically occurs in neutron rich nuclei which are trying to lower their energy by rebalancing their proton/neutron ratios. 
 
-In the early years of Beta Decay studies the process observed was highly mysterious and showed very different a behavior to Alpha Decay which was being studied at a similar time. This is illustrated by the Cloud Chamber image shown below. We see the decay of $^6$He into $^6$Li and a charged electron. We see two tracks, curving because there is a magnetic field applied. But from analysis of the plot it looks like energy, momentum and even Total Angular Momentum $J$ are not conserved if we assume the interaction:
+In the early years of Beta Decay studies the process observed was highly mysterious and showed very different a behavior to Alpha Decay which was being studied at a similar time. This is illustrated by the Cloud Chamber image shown below. 
+
+:::{figure-md} neutrino-emission
+<img src='image-137.png' width="70%" alt="Bubble Chamber example of Beta Decay">
+
+Bubble chamber photo of He-6 decay into Li-6, showing what appears to be non-conservation of momentum.
+:::
 
 
-$ ^6He~\rightarrow~^{6}Li + e^- $
+We see the decay of $^6$He into $^6$Li and a charged electron. We see two tracks, curving because there is a magnetic field applied. But from analysis of the plot it looks like energy, momentum and even Total Angular Momentum $I$ are not conserved if we assume the interaction:
+
+$$
+ ^6\textnormal{He}~\rightarrow~^{6}\textnormal{Li} + e^- 
+$$
 
 Of course the reason is that there is a Neutrino emitted as well, but this escapes the detector and we don’t see it. There are actually four things we need to consider in beta-minus(-plus) decay not just the neutrino.
 
 1. Beta Decay is a Three-body Process, unlike alpha decay (two body). We have to account for the energies and behavior of 3 objects - the nucleus, the beta and neutrino.
 2.  The electron (positron) and neutrino produced do not exist before the decay, we need to account for their formation.
 3. The electron and neutrino are relativistic, unlike the alpha in alpha decay. This makes calculations of the energies and kinematics of the decay more complicated.
-4. The energy of the beta emitted by the nucleus in question is not the same in every decay. We get a continuum of energies put to a maximum. In contrast to alpha decay and gamma decays where we get one “Mono energetic” particle depending on the energy levels or $Q$ value considered.
+4. The energy of the beta emitted by the nucleus in question is not the same in every decay. We get a continuum of energies put to a maximum. In contrast to alpha decay and gamma decays where we get one “Mono energetic” particle depending on the energy levels or $Q$ value considered. The quark level interaction is given in the figure below. Typically the 'Matrix Element' is calculated based on the interacting particles considering the d quark in the initial state and u quark and electron and anti-neutrino in the final state.
 
+![Alt text](image-142.png)
 
 An example to illustrate this behavior is:
 
@@ -80,45 +93,142 @@ Beta decay is a common type of radioactive decay that involves the transformatio
 
 ### Energy Considerations and Occurrence
 
-
 Note we have to be careful in Beta Decay to consider the mass of everything including the Atomic Electrons, not just the nucleons. Hence the mass used are atomic masses, not the nuclear masses. We were less careful earlier when dealing with Binding Energy calculations and the SEMF.
 
-- *** *$\beta^-$ Decay:** This process is energetically favored in neutron-rich nuclei and does not require additional energy to occur since the mass of the neutron is greater than that of the proton.
+- **$\beta^-$ Decay:** This process is energetically favored in neutron-rich nuclei and does not require additional energy to occur since the mass of the neutron is greater than that of the proton. The $Q$ value for this interaction is calculated based on the atomic masses as
+
+$$
+Q_{\beta^{-}} = [ M(A,Z) - M(A,Z-1) ]c^{2}
+$$
+
 
 - **$\beta^+$ Decay and EC:** Both require the nucleus to have excess energy because the mass of a neutron is less than that of a proton (when considering the mass of the positron for $\beta^+$ decay or the binding energy of the captured electron for EC). These processes are less common than $\beta^-$ decay due to the energy requirements and occur in proton-rich nuclei.
 
+The Q value for $\beta^+$ decay based on atomic masses is calculated as
+
+$$
+Q_{\beta^{+}} = [ M(A,Z) - M(A,Z-1) - 2m_{e}]c^{2}
+$$
+
+In the case for electron capture, the $Q$ value needs to be calculated based on the energy of the electron that is captured based on which atomic orbital shell it is in (typically an inner shell).
+
+
+
+### Beta Decay Matrix Element
+
+Typically we find that the average Beta decay rate is proportional to $1/Q^{5}$ of the interaction itself. This is the Sergeant rule that derives from the theory of weak interactions. Note that this $Q$ value is the total energy available for the decay based on the mass differences, but we expect a continuous spectrum when looking at just the electron energy for example.
+
+As discussed in Krane, the probability of a beta decay occurring is proportional to the square of the matrix element, $M$, which depends on the overlap of the initial and final nuclear wave functions and the operators involved in the transition. 
+
+
+$$
+\lambda = \frac{2\pi}{\hbar} ~| M_{if} |^{2} ~\frac{dn_{f}}{dE_{f}}
+$$
+
+where $\lambda$ is the rate $M_{if}$ is the nuclear matrix element, and $\frac{dn_{f}}{dE_{f}}$ is the 'density of states'. We expect that as the density of possible states increases so to does the rate of interaction.
+
+The nuclear matrix element is commonly written based on some interaction Hamiltonian, $\hat{H}$ that describes the transition,
+
+$$
+|M_{fi}| = \int \psi^{*} \hat{H} \psi dV.
+$$
+
+Weak interactions typically follow a $V-A$ form for the Hamiltonian, where $V$ corresponds to vector couplings (typically the electromagnetic part in electroweak interactions), and the $A$ corresponds to axial couplings (which carry the weak force).
+
+If we consider that the neutrino and electron in $\beta^{-}$ decay are being produced  some distance $\vec{r}$ from the centre of the nucleus with momenta $\vec{p}$ (electron) and $\vec{q}$ (neutrino), then we can estimate the density of states at that momentum based on the volume of a spherical shell of thickness $dp$ or $dq$ as
+
+$$
+dn_{e} = \frac{4 \pi p^{2} dp V}{h^{3}}  
+$$
+
+$$
+dn_{v} = \frac{4 \pi q^{2} dq V}{h^{3}}  
+$$
+
+The combined density of states can then be estimated from
+
+$$
+dn_{e}dn_{v} = \frac{ (4 \pi)^{2} ~ V^{2} ~ q^{2} dq ~p^{2} dp}{h^{6}}  
+$$
+
+If we consider the possible wave functions for our electron and neutrino we can consider free particle solutions in the first case
+
+$$
+\psi_{e}(r) \propto e^{i \frac{\vec{p}\cdot\vec{r}}{\hbar}} ~~~~~~~ \psi_{\nu}(r) \propto e^{i \frac{\vec{q}\cdot\vec{r}}{\hbar}} 
+$$
+
+If we consider the energy scales of beta decay, the electron is expected to have an energy in the range of around 1 MeV. This corresponds to around $p/\hbar \sim 0.007~\textnormal{fm}^{-1}$ much smaller than the nucleus itself. As a result we can approximate the wavefunction as
+
+$$
+e^{i \frac{\vec{p}\cdot\vec{r}}{\hbar}}  \approx 1 + i\frac{\vec{p}\cdot\vec{r}}{\hbar} + .... \approx 1
+$$
+
+This last approximation where we assume the wavefunction is constant means the terms are constant in the matrix element calculations and only way that the rate depends on the momentum is in the density of states.
+
+When we account for this our density of states can be used to arrive at a form given in Krane for the number of beta particles at a given momentum of
+
+$$
+N(p) = \frac{C}{c^{2}} p^{2} (Q-T_{e})^{2}
+$$
+
+where $C$ is a constant, $c$ is the speed of light, $p$ is the momentum of the emitted beta particle, $Q$ is the mass deficit for the decay, and $T_{e}$ is the kinetic energy of the beta particle. You can see how this has a zero point both at $p=0$ and $Q=T_{e}$ corresponding to our end points of beta decay.
+
+As shown in the figures below for Cu-64 we expect a continuous distribution as a result. In fact what we find is that additional corrections are needed for $\beta^{-}$ vs $\beta^{+}$ decay since positrons typically observe additional coulomb repulsion inside the nucleus.
+
+![Alt text](image-141.png)
+
+One way to understand allowed vs forbidden transitions is by producing what are called "Fermi-Kurie" plots. Based on the form shown above, if we plot the observed number of particles at a fixed momentum divided by $p^{2}$ and an additional correction due to coulomb repulsion, what we find is a roughly linear fit to the data for many transitions. The point where this line crosses the x-axis determines the end point energy (maximum $T_{e}$ of the transition). Linearity in this fit ends up only being true when our "allowed transition" assumption are valid. Any deviation from a straight line suggest a degree of "forbidden-ness" in the interaction. Importantly a Fermi-Kurie plot can be used to estimate the neutrino mass as the end point is expected to deviate from a straight line if the neutrino mass is non-zero as shown in the Figure below.
+
+:::{figure-md} fermi-kurie
+<img src='image-145.png' width="70%" alt="End point of the Fermi-Kurie Plot">
+
+End point of the Fermi-Kurie plot which plots beta particle kinetic energy vs a scaled estimate of the number of particles observed at that energy. Deviations away from a straight line suggest forbidden transitions. The end point $T_{0}$ here corresponds to the maximum $Q$ value for the decay.
+:::
+
+
+![Alt text](image-145.png)
+
+For allowed transitions, the matrix element involves simpler operators (e.g., Fermi and Gamow-Teller operators), while for forbidden transitions, more complex operators that include higher angular momentum components are required in the calculation. These higher order corrections that include the second term in the exponential expansion above are referred to as 'forbidden transitions'.
+
+
+
+
+
+
 ### Transitions
 
-In beta decay, transitions between nuclear states are classified as "allowed" or "forbidden" based on certain selection rules derived from conservation laws and quantum mechanics. These rules are related to the spin ($J$) and parity ($P$) of the initial and final nuclear states, as well as the angular momentum and parity of the emitted beta particle and neutrino system. 
+In beta decay, transitions between nuclear states are classified as "allowed" or "forbidden" based on certain selection rules derived from conservation laws and quantum mechanics. These rules are related to the spin ($I$) and parity ($P$) of the initial and final nuclear states, as well as the angular momentum and parity of the emitted beta particle and neutrino system. 
 
-Allowed transitions are those that require the least change in angular momentum and have no change in parity between the initial and final states. The simplest case is the "superallowed" transition, which involves no change in nuclear spin and parity ($\Delta J^P = 0^+$) and is the most favorable in terms of transition probability.
+Allowed transitions are those that require the least change in angular momentum and have no change in parity between the initial and final states. The simplest case is the "superallowed" transition, which involves no change in nuclear spin and parity ($\Delta I^\pi = 0^+$) and is the most favorable in terms of transition probability.
+
+We expect that the spin of the electron and anti-neutrino (both spin half particles) can come out either parrallel or anti-parallel with one another, carrying either $S=0$ or $S=1$ respectively. The transitions where they are parallel are referred to as **Gamow-Teller** transitions, whilst those where they are anti-parallel are referred to as **Fermi** transitions.
 
 **Superallowed Transition:**
 
 $$
- \Delta J = 0, \quad \Delta P = 0 
+ \Delta I = 0, \quad \Delta \pi = \textnormal{none}
  $$
  
 
-Here, $\Delta J$ represents the change in total angular momentum quantum number, and $\Delta P$ represents the change in parity; $0^+$ indicates no change in either.
+Here, $\Delta I$ represents the change in total angular momentum quantum number, and $\Delta P$ represents the change in parity; $0^+$ indicates no change in either. We typically find that transitions with the shortest corrected half-life (corrections account for differences in the energy distribution and density of states) all correspond to this class of allowed transitions. This is why they are called "super-allowed".
 
 **Allowed Transition:**
 For "allowed" transitions (not superallowed), the changes are still minimal:
 
 $$
- \Delta J = 0 \text{ or } \pm 1, \quad \Delta P = 0 
+ \Delta I = 0 \text{ or } \pm 1, \quad \Delta \pi = \textnormal{none}
  $$
  
 except for $0 \rightarrow 0$ transitions, which are forbidden.
 
-Superallowed and allowed transitions are characterized by a high transition probability because they involve minimal changes in the nuclear state, making them the most common type of beta decay.
+Superallowed and allowed transitions are characterized by a high transition probability because they involve minimal changes in the nuclear state, making them the most common type of beta decay. They correspond to the case where we produced the particle in our density of states at $\vec{r}=0$ such that the wavefunction does not depend in any way on the momentum for the transition.
 
 **Forbidden Transitions**
 
 Forbidden transitions occur when the change in angular momentum and/or parity does not meet the criteria for allowed transitions. They are less likely to occur due to the need for higher changes in angular momentum between the initial and final states. Forbidden transitions are categorized by the degree of "forbiddenness," which corresponds to the change in angular momentum of the emitted particles.
 
 $$
- \Delta J = 0, \pm 1, \pm 2, \quad \Delta P = 1 
+ \Delta I = 0, \pm 1, \pm 2, \quad \Delta P = 1 
  $$
  
 except for $0 \rightarrow 0$ transitions, which are still forbidden.
@@ -126,45 +236,59 @@ except for $0 \rightarrow 0$ transitions, which are still forbidden.
 In general, the "n-th forbidden" transition is characterized by:
 
 $$
- \Delta J = n, n \pm 1, n \pm 2, ..., \quad \Delta P = 1
+ \Delta I = n, n \pm 1, n \pm 2, ..., \quad \Delta P = 1
  $$
  
 
 The transition probability decreases significantly with increasing order of forbiddenness, making higher-order forbidden transitions increasingly rare.
 
-### Beta Decay Matrix Element
 
-The probability of a beta decay occurring is proportional to the square of the matrix element, $M$, which depends on the overlap of the initial and final nuclear wave functions and the operators involved in the transition. For allowed transitions, the matrix element involves simpler operators (e.g., Fermi and Gamow-Teller operators), while for forbidden transitions, more complex operators that include higher angular momentum components are required.
+### Selection Rules Summary
+This results in the following complete set of selection rules
+
+- **Allowed** $\Delta I=0,1$ and $\Delta \pi = \textnormal{no}$
+- **1st Forbidden** $\Delta I=0,1,2$ and $\Delta \pi = \textnormal{yes}$
+- **2st Forbidden** $\Delta I=2,3$ and $\Delta \pi = \textnormal{no}$
+- **3rd Forbidden** $\Delta I=3,4$ and $\Delta \pi = \textnormal{yes}$
+
+Here the 2nd forbidden transitions do actually allow for $\Delta I=0, 1$ but since these are already covered by the allowed transitions these changes in the nuclear spin are far less likely.
+
+
+
+
+
 
 ### Example: Beta Decay of Nucleus X to Y
 
 Suppose we have a beta decay process where nucleus X decays to nucleus Y. Let's say:
 
-- The initial state of nucleus X has a total angular momentum quantum number $J_i = 2$ and positive parity ($P_i = +1$).
-- The final state of nucleus Y has a total angular momentum quantum number $J_f = 1$ and negative parity ($P_f = -1$).
+- The initial state of nucleus X has a total angular momentum quantum number $I_i = 2$ and positive parity ($\pi_i = +1$).
+- The final state of nucleus Y has a total angular momentum quantum number $I_f = 1$ and negative parity ($\pi_f = -1$).
 
-**Step 1: Calculate the Change in Angular Momentum ($\Delta J$)**
+**Step 1: Calculate the Change in Angular Momentum ($\Delta I$)**
 
 
 $$
- \Delta J = |J_f - J_i| = |1 - 2| = 1 
+ \Delta I = |I_f - I_i| = |1 - 2| = 1 
  $$
  
 
-**Step 2: Determine the Change in Parity ($\Delta P$)**
+**Step 2: Determine the Change in Parity ($\Delta \pi$)**
 
-Since the parity changes from positive to negative, there is a change in parity ($\Delta P = 1$).
+Since the parity changes from positive to negative, there is a change in parity ($\Delta \pi = +1~\textnormal{or}~-1$).
 
 **Step 3: Classify the Transition**
 
-Using the calculated $\Delta J$ and $\Delta P$, we can classify the transition. For allowed transitions, we expect $\Delta J = 0$ or $\pm 1$ (excluding $0 \rightarrow 0$ without a change in parity), and $\Delta P = 0$.
+Using the calculated $\Delta I$ and $\Delta \pi$, we can classify the transition. For allowed transitions, we expect $\Delta I = 0$ or $\pm 1$ (excluding $0 \rightarrow 0$ without a change in parity), and $\Delta \pi = 0$.
 
-- In our example, $\Delta J = 1$ fits the criterion for $\Delta J$ in allowed transitions, but the change in parity ($\Delta P = 1$) indicates this is a **forbidden transition**.
-- Specifically, since there's a change in parity and the $\Delta J$ value fits within the first forbidden category (considering $\Delta J = 0, \pm 1, \pm 2$ with a parity change), this would be a **first forbidden transition**.
+- In our example, $\Delta I = 1$ fits the criterion for $\Delta I$ in allowed transitions, but the change in parity ($\Delta \pi = \textnormal{yes}$) indicates this is a **forbidden transition**.
+- Specifically, since there's a change in parity and the $\Delta I$ value fits within the first forbidden category (considering $\Delta I = 0, \pm 1, \pm 2$ with a parity change), this would be a **first forbidden transition**.
 
+
+**Example 1**
 For another example of an allowed transition in beta decay, let's consider the beta-minus decay of tritium ($^3H$) to helium-3 ($^3He$):
 
-- **Tritium ($^3H$)** has one proton and two neutrons. Its nuclear spin and parity ($J^P$) are $1/2^+$ in its ground state.
+- **Tritium ($^3H$)** has one proton and two neutrons. Its nuclear spin and parity ($I^P$) are $1/2^+$ in its ground state.
 - **Helium-3 ($^3He$)** has two protons and one neutron. Its ground state also has a nuclear spin and parity of $1/2^+$.
 
 In this decay, one of the neutrons in tritium is converted into a proton, emitting an electron ($e^-$) and an electron antineutrino ($\bar{\nu}_e$):
@@ -177,23 +301,36 @@ $$
 Given that both the initial and final states have spins of $1/2$, the change in angular momentum is:
 
 $$
- \Delta J = |J_f - J_i| = |1/2 - 1/2| = 0 
+ \Delta I = |I_f - I_i| = |1/2 - 1/2| = 0 
  $$
  
-
+In this case we know that the electron and anti-neutrino needed to have taken away either $S=0$ or $S=1$, so we expect this to be Fermi decay. 
 Both the initial and final states have positive parity ($+$), so there is no change in parity:
 
-
 $$
- \Delta P = 0 
+ \Delta \pi = \textnormal{no} 
  $$
  
 
-This means for the transition to be allowed:
-- $\Delta J = \pm 1$ 
-- $\Delta P = 0$
+This means for the transition to be allowed we expect the orbital AM $l$ to be even. Our transition meets these criteria ($\Delta I = 0$ and $\Delta \pi = \textnormal{no}$), indicating it is an **allowed transition**.
 
-Note we've explicitly excluded the $\Delta J=0$ case as we know the change in parity is $0$. Our transition meets these criteria ($\Delta J = 0$ and $\Delta P = 0$), indicating it is an **allowed transition**.
+
+**Example 2**
+Now consider the example of beta decay in $^{6}\textnormal{He} \rightarrow~^{6}Li$. In this case we expect a transition from $0^{+}$ to $1^{+}$ so we expect a change in one for the nuclear spin, but no change in parity.
+
+We therefore know that that orbital angular momentum has to be even, requiring that the combined spin is $S=1$, so that we get an odd number in $L+S$.
+
+This is therefore a Gamow Teller Transition, which is classified as allowed.
+
+**Example 3**
+Finally let's consider the beta decay from $^{17}\textnormal{N} \rightarrow~^{17}O$ where we expect a transition between nuclear spin states $\frac{1}{2}^{+} \rightarrow \frac{5}{2}^{+}$. Here we are expecting $\Delta I=2$ and $\Delta \pi=\textnormal{yes}$.
+
+We know that the orbital angular momentum has to be odd, and therefore we expect again that the spin state must be $S=1$ to give an even total change in spin.
+
+This is therefore a 1st forbidden Gamow Teller decay and is significantly less likely than the decays in the previous examples.
+
+
+
 
 <!-- 
 ### 6.4 Fermi Theory
@@ -219,6 +356,22 @@ $$
  $$ 
 
  -->
+
+
+
+### Double Beta Decay
+
+In rare cases we find that the $Q$ value of a decay or the selection rules limit our typical $\beta$ decay processes. For example in the case of 128-Te, we find that the next nuclei on the beta decay chain would be 128-I, which would give a negative $Q$ value. However a direct transition to 128-Xe would give a positive $Q$ value, and is enough to allow the production of two $\beta$ particles at once. This process whilst extremely rare (order of $10^{24}$ years) can occur naturally.
+
+![Alt text](image-143.png)
+
+
+A similar case also happens for the decay of 48-Ca, which we would expect to decay into 48-Sc. Whilst the $Q$ can be positive in some cases, we find that all the possible transitions are high-order forbidden transitions and are extremely unlikely to occur. Instead it is far more likely that a double beta decay transition will occur (albeit with a very long half-life).
+
+![Alt text](image-144.png)
+
+Double beta decay is of particular importance in some high energy particle physics experiments as there is a long standing debate on whether neutrinos may in fact be their own anti-particles (Majorana neutrinos). Since they have no charge this is allowed in some models, and if so would allow a possible neutrino-less double beta decay transition to also take place in which the two neutrino's emitted in double-beta decay annihilate with one another, resulting in both beta particles carrying the entire $Q$ energy for the interaction. Observation of a clear excess in number of particles right at the end of the beta decay spectrum for such particles therefore would confirm the true nature of these particles.
+
 
 ### Alpha Decay
 
