@@ -185,9 +185,6 @@ One way to understand allowed vs forbidden transitions is by producing what are 
 End point of the Fermi-Kurie plot which plots beta particle kinetic energy vs a scaled estimate of the number of particles observed at that energy. Deviations away from a straight line suggest forbidden transitions. The end point $T_{0}$ here corresponds to the maximum $Q$ value for the decay.
 :::
 
-
-![Alt text](image-145.png)
-
 For allowed transitions, the matrix element involves simpler operators (e.g., Fermi and Gamow-Teller operators), while for forbidden transitions, more complex operators that include higher angular momentum components are required in the calculation. These higher order corrections that include the second term in the exponential expansion above are referred to as 'forbidden transitions'.
 
 
