@@ -207,7 +207,7 @@ $$
  $$
  
 
-Here, $\Delta I$ represents the change in total angular momentum quantum number, and $\Delta P$ represents the change in parity; $0^+$ indicates no change in either. We typically find that transitions with the shortest corrected half-life (corrections account for differences in the energy distribution and density of states) all correspond to this class of allowed transitions. This is why they are called "super-allowed".
+Here, $\Delta I$ represents the change in total angular momentum quantum number, and $\Delta \pi$ represents the change in parity; $0^+$ indicates no change in either. We typically find that transitions with the shortest corrected half-life (corrections account for differences in the energy distribution and density of states) all correspond to this class of allowed transitions. This is why they are called "super-allowed".
 
 **Allowed Transition:**
 For "allowed" transitions (not superallowed), the changes are still minimal:
@@ -225,7 +225,7 @@ Superallowed and allowed transitions are characterized by a high transition prob
 Forbidden transitions occur when the change in angular momentum and/or parity does not meet the criteria for allowed transitions. They are less likely to occur due to the need for higher changes in angular momentum between the initial and final states. Forbidden transitions are categorized by the degree of "forbiddenness," which corresponds to the change in angular momentum of the emitted particles.
 
 $$
- \Delta I = 0, \pm 1, \pm 2, \quad \Delta P = 1 
+ \Delta I = 0, \pm 1, \pm 2, \quad \Delta \pi = 1 
  $$
  
 except for $0 \rightarrow 0$ transitions, which are still forbidden.
@@ -233,7 +233,7 @@ except for $0 \rightarrow 0$ transitions, which are still forbidden.
 In general, the "n-th forbidden" transition is characterized by:
 
 $$
- \Delta I = n, n \pm 1, n \pm 2, ..., \quad \Delta P = 1
+ \Delta I = n, n \pm 1, n \pm 2, ..., \quad \Delta \pi = 1
  $$
  
 
