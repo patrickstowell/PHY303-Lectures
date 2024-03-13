@@ -9,15 +9,18 @@ These become a bit trickier to solve, as both decays lead to a fundamental chang
 - The average time a nucleus lasts before decay $\rightarrow \tau = 1/\lambda$
 - The time for half the sample to decay (half-life) 
 
-$$ T_{1/2} = \tau \textnormal{ln}(2) = 0.693\tau$$
+$$T_{1/2} = \tau \textnormal{ln}(2) = 0.693\tau$$
 
 Radioactive decay itself is a stochastic process. That is why we define it in terms of the average times it takes bulk samples of material to decay. The main thing that governs the rate of this decay in a nucleus is actually whether the process is energetically favorable or not. In gamma radiation we saw it was almost always energetically favorable for an excited nuclear state to drop down some energy levels by emitting radiation.
 
 What about other forms of radiation? In alpha and beta radiation the nucleus physically changes from one type to another. It turns out that a nucleus is likely to be unstable and decay through these channels if the net energy of the final products $E_{f}$ is less than that of the starting nucleus $E_{i}$. This energy deficit is defined as: 
 
-$$
+```{math}
+:label: massdeficit
+\begin{equation}
 Q = M(A,Z)^{2}c^{2} - [M(A-X,Z-Y)c^{2} + M(X,Y)c^{2}] > 0 
-$$
+\end{equation}
+```
 
 Decay is possible only if the $Q$ value is positive, and the decay is not disallowed by any other selection rule or conservation law. The energy released in the decay will come out in the kinetic energy of the release fragments in the decay. Let's consider both beta decay and alpha decay in turn to see how theoretical concepts of the nucleus help us understand their behavior.
 
@@ -97,18 +100,24 @@ Note we have to be careful in Beta Decay to consider the mass of everything incl
 
 - **$\beta^-$ Decay:** This process is energetically favored in neutron-rich nuclei and does not require additional energy to occur since the mass of the neutron is greater than that of the proton. The $Q$ value for this interaction is calculated based on the atomic masses as
 
-$$
+```{math}
+:label: betamqvalue
+\begin{equation}
 Q_{\beta^{-}} = [ M(A,Z) - M(A,Z-1) ]c^{2}
-$$
+\end{equation}
+```
 
 
 - **$\beta^+$ Decay and EC:** Both require the nucleus to have excess energy because the mass of a neutron is less than that of a proton (when considering the mass of the positron for $\beta^+$ decay or the binding energy of the captured electron for EC). These processes are less common than $\beta^-$ decay due to the energy requirements and occur in proton-rich nuclei.
 
 The Q value for $\beta^+$ decay based on atomic masses is calculated as
 
-$$
+```{math}
+:label: betapqvalue
+\begin{equation}
 Q_{\beta^{+}} = [ M(A,Z) - M(A,Z-1) - 2m_{e}]c^{2}
-$$
+\end{equation}
+```
 
 In the case for electron capture, the $Q$ value needs to be calculated based on the energy of the electron that is captured based on which atomic orbital shell it is in (typically an inner shell).
 
@@ -121,35 +130,51 @@ Typically we find that the average Beta decay rate is proportional to $1/Q^{5}$ 
 As discussed in Krane, the probability of a beta decay occurring is proportional to the square of the matrix element, $M$, which depends on the overlap of the initial and final nuclear wave functions and the operators involved in the transition. 
 
 
-$$
+```{math}
+:label: lambdacalc
+\begin{equation}
 \lambda = \frac{2\pi}{\hbar} ~| M_{if} |^{2} ~\frac{dn_{f}}{dE_{f}}
-$$
+\end{equation}
+```
 
 where $\lambda$ is the rate $M_{if}$ is the nuclear matrix element, and $\frac{dn_{f}}{dE_{f}}$ is the 'density of states'. We expect that as the density of possible states increases so to does the rate of interaction.
 
 The nuclear matrix element is commonly written based on some interaction Hamiltonian, $\hat{H}$ that describes the transition,
 
-$$
+```{math}
+:label: matrixelement
+\begin{equation}
 |M_{fi}| = \int \psi^{*} \hat{H} \psi dV.
-$$
+\end{equation}
+```
+
 
 Weak interactions typically follow a $V-A$ form for the Hamiltonian, where $V$ corresponds to vector couplings (typically the electromagnetic part in electroweak interactions), and the $A$ corresponds to axial couplings (which carry the weak force).
 
 If we consider that the neutrino and electron in $\beta^{-}$ decay are being produced  some distance $\vec{r}$ from the centre of the nucleus with momenta $\vec{p}$ (electron) and $\vec{q}$ (neutrino), then we can estimate the density of states at that momentum based on the volume of a spherical shell of thickness $dp$ or $dq$ as
 
-$$
+```{math}
+:label: densitystateselectron
+\begin{equation}
 dn_{e} = \frac{4 \pi p^{2} dp V}{h^{3}}  
-$$
+\end{equation}
+```
 
-$$
+```{math}
+:label: densitystatesneutrino
+\begin{equation}
 dn_{v} = \frac{4 \pi q^{2} dq V}{h^{3}}  
-$$
+\end{equation}
+```
 
 The combined density of states can then be estimated from
 
-$$
+```{math}
+:label: densitystatescombined
+\begin{equation}
 dn_{e}dn_{v} = \frac{ (4 \pi)^{2} ~ V^{2} ~ q^{2} dq ~p^{2} dp}{h^{6}}  
-$$
+\end{equation}
+```
 
 If we consider the possible wave functions for our electron and neutrino we can consider free particle solutions in the first case
 
@@ -159,17 +184,24 @@ $$
 
 If we consider the energy scales of beta decay, the electron is expected to have an energy in the range of around 1 MeV. This corresponds to around $p/\hbar \sim 0.007~\textnormal{fm}^{-1}$ much smaller than the nucleus itself. As a result we can approximate the wavefunction as
 
-$$
+```{math}
+:label: allowedapprox
+\begin{equation}
 e^{i \frac{\vec{p}\cdot\vec{r}}{\hbar}}  \approx 1 + i\frac{\vec{p}\cdot\vec{r}}{\hbar} + .... \approx 1
-$$
+\end{equation}
+```
+
 
 This last approximation where we assume the wavefunction is constant means the terms are constant in the matrix element calculations and only way that the rate depends on the momentum is in the density of states.
 
 When we account for this our density of states can be used to arrive at a form given in Krane for the number of beta particles at a given momentum of
 
-$$
+```{math}
+:label: densityfinal
+\begin{equation}
 N(p) = \frac{C}{c^{2}} p^{2} (Q-T_{e})^{2}
-$$
+\end{equation}
+```
 
 where $C$ is a constant, $c$ is the speed of light, $p$ is the momentum of the emitted beta particle, $Q$ is the mass deficit for the decay, and $T_{e}$ is the kinetic energy of the beta particle. You can see how this has a zero point both at $p=0$ and $Q=T_{e}$ corresponding to our end points of beta decay.
 
@@ -233,11 +265,11 @@ except for $0 \rightarrow 0$ transitions, which are still forbidden.
 In general, the "n-th forbidden" transition is characterized by:
 
 $$
- \Delta I = n, n \pm 1, n \pm 2, ..., \quad \Delta \pi = 1
+ \Delta I = n, n \pm 1, n \pm 2, ..., \quad \Delta \pi = (-1)^{n}
  $$
  
 
-The transition probability decreases significantly with increasing order of forbiddenness, making higher-order forbidden transitions increasingly rare.
+The transition probability decreases significantly with increasing order of forbidden-ness, making higher-order forbidden transitions increasingly rare.
 
 
 ### Selection Rules Summary
@@ -329,33 +361,6 @@ This is therefore a 1st forbidden Gamow Teller decay and is significantly less l
 
 
 
-<!-- 
-### 6.4 Fermi Theory
-- Fermi Theory results in an equation for dn/dE given as:
-
-$$
-\frac{dn}{dE} = \frac{16 \pi^2 \nu^2 }{h^6 c^3} (T_{max} - T_e)^2 p_e dp_e 
-$$
-
-- Here we have V as the volume of the nucleus and $ T_e (p_e) $ is the energy (momentum) of the electron. $ T_{max} $ is the maximum energy that the electron can have. Note that at this energy the neutrino must have zero energy and that $ T_{max} $ is equivalent to the Q of the reaction.
-- Putting this into the equation for $ W_{fi} $ and just noting that $ P(p_e) $ is equivalent to the number rate of events or intensity $ N(P_e) $ we see most things are constants and we can say:
-  
-$$
- P(p_e) = N(p_e) \propto \frac{(T_{max} - T_e)^2}{p_e^2} 
-$$
-
-- Note here how the function vanishes at the point when $ T_e = T_{max} $. This is called the Beta Decay Endpoint. This Endpoint is the subject of much research in physics because everything we have stated so far assumes the neutrino has no mass. If this is not the case then the Endpoint will shift slightly.
-
-A better way to study this Endpoint has been developed, called the Fermi-Kurie Plot. This simply rearranges the equation noting that:
-
-$$
- (T_{max} - T_e)^{0.5} \propto \sqrt{\frac{N(p_e)}{p_e^2}} 
- $$ 
-
- -->
-
-
-
 ### Double Beta Decay
 
 In rare cases we find that the $Q$ value of a decay or the selection rules limit our typical $\beta$ decay processes. For example in the case of 128-Te, we find that the next nuclei on the beta decay chain would be 128-I, which would give a negative $Q$ value. However a direct transition to 128-Xe would give a positive $Q$ value, and is enough to allow the production of two $\beta$ particles at once. This process whilst extremely rare (order of $10^{24}$ years) can occur naturally.
@@ -367,7 +372,7 @@ A similar case also happens for the decay of 48-Ca, which we would expect to dec
 
 ![Alt text](image-144.png)
 
-Double beta decay is of particular importance in some high energy particle physics experiments as there is a long standing debate on whether neutrinos may in fact be their own anti-particles (Majorana neutrinos). Since they have no charge this is allowed in some models, and if so would allow a possible neutrino-less double beta decay transition to also take place in which the two neutrino's emitted in double-beta decay annihilate with one another, resulting in both beta particles carrying the entire $Q$ energy for the interaction. Observation of a clear excess in number of particles right at the end of the beta decay spectrum for such particles therefore would confirm the true nature of these particles.
+Double beta decay is of particular importance in some high energy particle physics experiments as there is a long standing debate on whether neutrinos may in fact be their own anti-particles (Majorana neutrinos). Since they have no charge this is allowed in some models, and if so would allow a possible neutrino-less double beta decay transition to also take place in which the two neutrino's emitted in double-beta decay annihilate with one another, resulting in both beta particles carrying the entire $Q$ energy for the interaction. Observation of a clear excess in number of particles right at the end of the beta decay spectrum for such nuclei therefore would confirm the true nature of the neutrino.
 
 
 ### Alpha Decay
@@ -408,7 +413,7 @@ $$
 
 It turns out that trying to understand why the data follows this shape leads us once again to the need for a quantum mechanical treatment of Alpha Decay. To explain the relation, it turns out we need to consider that the alpha forms inside the nucleus and then escapes by Quantum Mechanical Barrier Penetration. 
 
-The alpha is envisioned as a free-particle wavefunction subject to a combination of the Nuclear Potential binding it to the nucleus, and a coulomb potential that repels it from the other charged particles in the nucleus. Typically we expect a coulomb repulsion to pulse the charged alpha away from the rest of the nucleus, but in this case we are imagining that the alpha is **inside** the rest of the nucleus, therefore the remaining protons form a charged barrier that the alpha needs to tunnel through to escape. The Coulomb barrier arises because the electrostatic force is repulsive between two positively charged entities—the alpha particle and the rest of the nucleus. 
+The alpha is envisioned as a free-particle wavefunction subject to a combination of the Nuclear Potential binding it to the nucleus, and a coulomb potential that repels it from the other charged particles in the nucleus. Typically we expect a coulomb repulsion to push the charged alpha away from the rest of the nucleus, but in this case we are imagining that the alpha is **inside** the rest of the nucleus, therefore the remaining protons form a charged barrier that the alpha needs to tunnel through to escape. The Coulomb barrier arises because the electrostatic force is repulsive between two positively charged entities—the alpha particle and the rest of the nucleus. 
 
 - As the alpha particle gets closer to the nuclear surface (from within), the electrostatic potential energy increases because the repulsive force increases. At the surface of the nucleus, this potential energy reaches a maximum, forming the Coulomb barrier.
 
@@ -431,95 +436,134 @@ Notice how the Potential Barrier drops as $1/r$. Rather than try to solve this, 
 ![Alt text](image-135.png)
 As a particle approaches the barrier, it is described by a Free Particle Wavefunction. When it reaches the barrier, it must satisfy the simplified Schrödinger Equation in the form:
 
-$$
+```{math}
+:label: seequation
+\begin{equation}
 -\frac{\hbar^2}{2m} \frac{d^{2}}{dr^{2}} \psi(r) = [E - U_0]\psi(r) \\
-$$
+\end{equation}
+```
 
 Solving this QM equation of simple Barrier Penetration is beyond our scope here. What is important is the result. It gives us a value for $X$, the probability of barrier penetration as:
 
-$$
+```{math}
+:label: transmissionprob
+\begin{equation}
 X = Ae^{-αL}
-$$
+\end{equation}
+```
 
 where $α = \sqrt{(2m(U_0 - E))/\hbar^2}$ is called the Gamow Factor, and $A$ is a normalization constant we will call 1 for now to make the derivation simpler. Now, if we assume the alpha makes contact with the barrier once every second, then the average probability that the alpha leaves (a decay takes place) and the half-life is just related to the tunneling probability by:
 
-$$
+```{math}
+:label: lambdavsX
+\begin{equation}
 \lambda = \sqrt{X} 
-$$
+\end{equation}
+```
 
-$$
+```{math}
+:label: T12calcdecay
+\begin{equation}
 T_{1/2} = \ln(2)/\lambda = \ln(2)/\sqrt{X}
-$$
+\end{equation}
+```
 
 If the alpha hits the barrier faster than 1 Hz, then we expect the probability that it leaves the nucleus to scale upwards as well. If we can work out the frequency that the alpha hits the barrier, which will be determined by its velocity and the size of the nucleus, and we know the height of the barrier $U_0$ and the width $L$ and the energy of the alpha $E$, then we can find the half-life $T_{1/2}$. We can then see if this agrees with the Geiger-Nuttall observation from data.
 
 ### Alpha 212-Po Example
 
-The way to proceed is illustrated below, where we attempt to find the half-life of 212Po, which emits an 8.78 MeV alpha.  First, we need to find the width of the barrier. For this, we need to know the Nuclear Separation $R$, i.e., the distance between the center of the nucleus and the center of the alpha. Be careful that at this point the nucleus we are talking about is not A=212, but A=208, because we have removed the alpha.
+The way to proceed is illustrated below, where we attempt to find the half-life of 212-Po, which emits an 8.78 MeV alpha.  First, we need to find the width of the barrier. For this, we need to know the Nuclear Separation $R$, i.e., the distance between the center of the nucleus and the center of the alpha. Be careful that at this point the nucleus we are talking about is not A=212, but A=208, because we have removed the alpha.
 
 
 ![Alt text](image-134.png)
 
 This results in an estimate of the nuclear seperation as
 
-$$
+```{math}
+:label: Radiuscomp
+\begin{equation}
 R= 1.2(A)^{1/3} + 1.2(208)^{1/3} = 9.01~\textnormal{fm}
-$$
+\end{equation}
+```
 
 We now find the height of the barrier by applying Coulomb’s Law at the nuclear separation as illustrated here
 
-$$
-\frac{(k\cdot 2e \cdot (Z - 2)e)}{r} = \frac{(2\cdot (82-2) \cdot 1.44~\textnormal{MeV fm})}{9.01~\textnormal{fm}} = 26.21~\textnormal{MeV}
-$$
+```{math}
+:label: barrierheight
+\begin{equation}
+\frac{(k\cdot 2e \cdot (Z - 2)e)}{r} = \frac{(2\cdot (84-2) \cdot 1.44~\textnormal{MeV fm})}{9.01~\textnormal{fm}} = 26.21~\textnormal{MeV}
+\end{equation}
+```
 
 where $k$ is equal to coulombs constant $k = 1/(4πε_0) = 8.987552 \times 10^9 N m^2/C^2$. Now the distance at which the Coulomb Potential drops to the level of energy of the observed alpha is:
 
-$$
-8.78 MeV = \frac{2(82)1.44 MeV·fm}{r} \rightarrow r = 26.9 fm
-$$
+```{math}
+:label: rcalculation
+\begin{equation}
+8.78 MeV = \frac{2(82)1.44~\textnormal{MeV~fm}}{r} \rightarrow r = 26.9 \textnormal{fm}
+\end{equation}
+```
 
-So the barrier width L and gammow factor is:
+So the barrier width L and Gammow factor is:
 
-$$
-L = 26.90 fm - 9.01 fm = 17.9 fm
-$$
+```{math}
+:label: barrierwidth_ex1
+\begin{equation}
+L = 26.90 \textnormal{fm} - 9.01~\textnormal{fm} = 17.9~\textnormal{fm}
+\end{equation}
+```
 
-$$
-\alpha = \sqrt{\frac{2m(26.2-8.78)}{\hbar^{2}}} = 1.879 fm^{-1}
-$$
+```{math}
+:label: alphaestimate
+\begin{equation}
+\alpha = \sqrt{\frac{2m(26.2-8.78)}{\hbar^{2}}} = 1.879~\textnormal{fm}^{-1}
+\end{equation}
+```
+
 
 When assuming a 'top-hat' potential barrier this results in a transmission probability of 
 
-$$
+```{math}
+:label: tophatprobresult
+\begin{equation}
 X = e^{-\alpha L} = e^{- (1.879) \cdot (17.9) } = 2.47 \times 10^{-15}
-$$
+\end{equation}
+```
 
-The real frequency of the alpha hitting the barrier can also be estimated by determining how many times an alpha of energy $8.78 MeV$ makes contact with the walls.
+The real frequency of the alpha hitting the barrier can also be estimated by determining how many times an alpha of energy $8.78~\textnormal{MeV}$ makes contact with the walls.
 
-$$
-8.78MeV = \frac{mv^{2}}{2} \rightarrow v=2.06 \times 10^{7} ms^{-1} 
-$$
+```{math}
+:label: alphavelocity
+\begin{equation}
+8.78MeV = \frac{mv^{2}}{2} \rightarrow v=2.06 \times 10^{7} ~\textnormal{ms}^{-1} 
+\end{equation}
+```
 
-$$
+```{math}
+:label: alphafrequency
+\begin{equation}
 f=\frac{v}{2R}  \rightarrow 1.14 \times 10^{21} s^{-1}
-$$
+\end{equation}
+```
 
 
 For a given alpha, the combined Tunnelling Probability per second for emission is therefore the product of the barrier frequency and the transmission
 
-$$
-\lambda = f X = (2.47 \times 10^{-15})(1.14 \times 10^{21} s^{-1}) = 2.82 \times 10^6 s^{-1} 
-$$
-<!-- 
-$$
-f=\frac{v^{2}}{2R} = \frac{mv^{2}}{2} \frac{1}{Rm} = \frac{Q}{2m}
-$$ -->
+```{math}
+:label: tunnellingprobfinal_tophat
+\begin{equation}
+\lambda = f X = (2.47 \times 10^{-15})(1.14 \times 10^{21}~\textnormal{s}^{-1}) = 2.82 \times 10^6~\textnormal{s}^{-1} 
+\end{equation}
+```
 
 
 
-$$
- T_{1/2} = \frac{\ln 2}{\lambda} = \frac{0.693}{2.82 \times 10^6 s^{-1}} = 2.5 \times 10^{-7} s = 0.25 \mu s 
-$$
+```{math}
+:label: halflifefinal_tophat
+\begin{equation}
+ T_{1/2} = \frac{\ln 2}{\lambda} = \frac{0.693}{2.82 \times 10^6 s^{-1}} = 2.5 \times 10^{-7}~\textnormal{s} = 0.25~\mu\textnormal{s} 
+\end{equation}
+```
 
 
 <!-- ![Alt text](image-106.png) -->
@@ -529,60 +573,83 @@ The result is quite good. But note we could do better by modelling the potential
 
 This can be written as:
 
-$$
- X = X_1 \times X_2 \times X_3 \times ... \times X_n = A exp \left( -\frac{1}{\hbar} \sum(\sqrt{ 2m(U_{i}-Q) }) \cdot \Delta r \right)
-$$
+```{math}
+:label: combinedprob
+\begin{equation}
+X = X_1 \times X_2 \times X_3 \times ... \times X_n
+\end{equation}
+```
+ 
+```{math}
+:label: combinedprob2
+\begin{equation}
+X = A \exp \left( -\frac{1}{\hbar} \sum \left(\sqrt{ 2m(U_{i}-Q) }\right) \cdot \Delta r \right)
+\end{equation}
+```
 
 In the limit as $\Delta r \rightarrow 0$, this analysis turns into an integral from R up to $r_{2}$ based on the known form of $V(r) \propto r^{-1}$
 
-$$
-X = exp \left( -\frac{1}{\hbar} \int_{R}^{r_{2}} \sqrt{2m(V(r) - Q)} \cdot dr \right)
-$$
+```{math}
+:label: combinedint
+\begin{equation}
+X = \exp \left( -\frac{1}{\hbar} \int_{R}^{r_{2}} \sqrt{2m(V(r) - Q)} \cdot dr \right)
+\end{equation}
+```
 
 No we can calculate the potential difference in the Gamow factor as based on the potential
 
-$$
+```{math}
+:label: newpotential
+\begin{equation}
 V(r) = \frac{2Ze^{2}}{4\pi \epsilon_{0}} \frac{1}{r}
-$$
+\end{equation}
+```
 
 We have defined $r_{c}$ as the point where 
 
-$$
+```{math}
+:label: newQrelation
+\begin{equation}
 Q = V(r_{c}) \rightarrow r_{c} = \frac{2Ze^{2}}{4\pi \epsilon_{0}} \frac{1}{Q}
-$$
+\end{equation}
+```
 
 Now subbing this back into our potential tells us $V(r_{c})$ based only on $Q$, $r$, and $r_{c}$ results in a potential dependent on $Q$
 
-$$
+```{math}
+:label: potentialvsQ
+\begin{equation}
 V_{c}(r) = \frac{Q r_{c}}{r}
-$$
+\end{equation}
+```
 
 Subbing this into our integral gives us a transmission of the form
 
-$$
-X = exp \left( -\frac{1}{\hbar} \int_{R}^{r_{2}} \sqrt{2m(\frac{Q r_{c}}{r} - Q)} \cdot dr \right) \\
-$$
+```{math}
+:label: newXrelation
+\begin{equation}
+X = \exp \left( -\frac{1}{\hbar} \int_{R}^{r_{2}} \sqrt{2m\left(\frac{Q r_{c}}{r} - Q\right)} \cdot dr \right) \\
+\end{equation}
+```
 
 where we can pull the $Q$ value out of the integral
 
-$$
-X = exp \left( -\frac{Q}{\hbar} \int_{R}^{r_{2}} \sqrt{2m(\frac{ r_{c}}{r} - 1)} \cdot dr \right) = exp(G)
-$$
-
-<!-- $$
-X = exp \left( \frac{Q}{\hbar}\left[ \frac{2}{3} r \left( \frac{r_{c}-r}{r}\right)^{2/3} \right ]_{R}^{r_{2}} \right)
-$$
-
-$$
-X = exp \left( \frac{Q}{\hbar}\left[ \frac{2}{3} R \left( \frac{(a/Q)-R}{R}\right)^{2/3} \right ]_{R}^{r_{2}} \right) = exp(G)
-$$ -->
+```{math}
+:label: Xcombinationvsgamow
+\begin{equation}
+X = \exp \left( -\frac{Q}{\hbar} \int_{R}^{r_{2}} \sqrt{2m\left(\frac{ r_{c}}{r} - 1\right)} \cdot dr \right) = \exp(G)
+\end{equation}
+```
 
 
 Rearranging this ends up in a final form where the Gamow factor in our transmission factor is given by
 
-$$
-G=4 Z \alpha \left( \frac{2m c^{2}}{Q}\right)^{1/2} \left( cos^{-1} \sqrt{\frac{R}{r_c}} - \sqrt{\frac{R}{r_{c}}\left( 1-\frac{R}{r_{c}}\right)} \right)
-$$
+```{math}
+:label: GamowFactorCombined
+\begin{equation}
+G=4 Z \alpha \left( \frac{2m c^{2}}{Q}\right)^{1/2} \left( \cos^{-1}\left( \sqrt{\frac{R}{r_c}} \right) - \sqrt{\frac{R}{r_{c}}\left( 1-\frac{R}{r_{c}}\right)} \right)
+\end{equation}
+```
 
 In this solution
 
@@ -592,23 +659,32 @@ $$
 
 and we arrive at a relation for the Gamow factor's correlation with $Z$ and $Q$,
 
-$$
+```{math}
+:label: GamowFactorRelation
+\begin{equation}
 G \propto \frac{Z}{\sqrt{Q}}.
-$$
+\end{equation}
+```
 
 Based on our calculations before the half-life is still proportional to the frequency that the alpha contacts the barrier and our new more realistic integrated transmission
 
-$$
+```{math}
+:label: HalfLifeForm
+\begin{equation}
 t_{1/2} \propto \lambda = f e^{-G} = f e^{- \frac{D \cdot Z}{\sqrt{Q}}}
-$$
+\end{equation}
+```
 
 where $D$ is a new constant we have introduced based on the full form of Gamow values above. Taking the log of the equation gives us that below which ultimately ends up matching our Geiger Nutall form,
 
-$$
-log_{10} t_{1/2} = a + b Q_{\alpha}^{-1/2},
-$$
+```{math}
+:label: GNFormProof
+\begin{equation}
+\log_{10} t_{1/2} = a + b Q_{\alpha}^{-1/2},
+\end{equation}
+```
 
-where $a=ln(f)$ and $b=D \cdot Z$. This confirms why we see this behavior in the first place. The exponential drop in half life for alpha emitters is due to every alpha undergoing tunneling through a falling potential barrier at the edge of the nucleus. 
+where $a=\ln(f)$ and $b=D \cdot Z$. This confirms why we see this behavior in the first place. The exponential drop in half life for alpha emitters is due to every alpha undergoing tunneling through a falling potential barrier at the edge of the nucleus. 
 
 The procedures shown here can be applied to many nuclei to gain an estimate on the half-life and potential barrier properties if a decay process' $Q$ value is known. Importantly the free parameters in the Geiger Nutall form are dependent on the specific starting isotope (indicated by the lines in the GN plot), therefore measurements of the half life and $Q$ value of one specific isotope can be used to estimate the half-life of any other nuclei in the chain provided the $Q$ value can be calculated to a reasonable estimate (which it can with the SEMF!).
 
