@@ -637,7 +637,7 @@ where we can pull the $Q$ value out of the integral
 ```{math}
 :label: Xcombinationvsgamow
 \begin{equation}
-X = \exp \left( -\frac{Q}{\hbar} \int_{R}^{r_{2}} \sqrt{2m\left(\frac{ r_{c}}{r} - 1\right)} \cdot dr \right) = \exp(G)
+X = \exp \left( -\frac{Q^{1/2}}{\hbar} \int_{R}^{r_{2}} \sqrt{2m\left(\frac{ r_{c}}{r} - 1\right)} \cdot dr \right) = \exp(G)
 \end{equation}
 ```
 
