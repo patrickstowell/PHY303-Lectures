@@ -18,11 +18,11 @@ parts:
       title: Collective Excited States
     - file: phy303-unit6-radioactive-decays
       title: Radioactive Decay
-#- caption: Application
-#  numbered: True
-#  chapters:
-#    - file: phy303-unit7-reactions
-#      title: Reactions
+- caption: Application
+  numbered: True
+  chapters:
+    - file: phy303-unit7-reactions
+      title: Reactions
 #    - file: phy303-unit8-compoundreactions
 #      title: Compound Reactions
 #    - file: phy303-unit9-neutronphysics
@@ -48,4 +48,10 @@ parts:
       title: Legendre Polynomials
     - file: nucleus-shape.ipynb
       title: Nucleus Shape
+- caption: Revision Tools
+  numbered: False
+  chapters:
+    - file: unit1-terms.md
+    - file: unit2-terms.md
+    - file: unit3-terms.md
 
