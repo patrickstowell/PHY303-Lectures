@@ -32,7 +32,7 @@ The magnitude of $ Δ\vec{p} $ is
 ```{math}
 :label: rutherford_change_in_mom
 \begin{equation}
-Δp = \mu\sqrt{2(1 - cos θ)} = 2\mu \sin(θ/2) 
+Δp = \mu\sqrt{2(1 - \cos θ)} = 2\mu \sin(θ/2) 
 \end{equation}
 ```
 
@@ -42,7 +42,7 @@ The direction of $ Δ\vec{p} $ is, by symmetry, along the line from the nucleus 
 ```{math}
 :label: rutherford_coulomb_force
 \begin{equation}
-F = \frac{Zze^2}{4πε_0 r^2} cos α 
+F = \frac{Zze^2}{4πε_0 r^2} \cos α 
 \end{equation}
 ```
 
@@ -53,7 +53,7 @@ Therefore, we have
 ```{math}
 :label: rutherford_change_in_mom2
 \begin{equation}
-Δp = \int F dt = \frac{Zze^2}{4πε_0} \int_{-\infty}^{+\infty} \frac{cos α}{r^2} dt 
+Δp = \int F dt = \frac{Zze^2}{4πε_0} \int_{-\infty}^{+\infty} \frac{\cos α}{r^2} dt 
 \end{equation}
 ```
 
@@ -106,7 +106,7 @@ Solving this for b gives us
 ```{math}
 :label: rutherford_bsolution
 \begin{equation}
-b = \frac{Zze^2}{4\pi\epsilon_0mu^2} \cot\left(\frac{\theta}{2}\right). 
+b = \frac{Zze^2}{4\pi\epsilon_0\mu^2} \cot\left(\frac{\theta}{2}\right). 
 \end{equation}
 ```
 
@@ -116,7 +116,7 @@ Now, if we have a uniform parallel beam of alpha particles with a flux per unit 
 ```{math}
 :label: rutherford_bsolution2
 \begin{equation}
-db = \frac{Zze^2}{4\pi\epsilon_0mu^2} \left( -\frac{1}{2} \sin^2\frac{\theta}{2} - \frac{1}{2} \cos^2\frac{\theta}{2} \right) \frac{\textnormal{d}\theta}{\sin^2\frac{\theta}{2}} = \frac{Zze^2}{4\pi\epsilon_0mu^2} \frac{-\textnormal{d}\theta}{2\sin^2(\theta/2)} 
+db = \frac{Zze^2}{4\pi\epsilon_0\mu^2} \left( -\frac{1}{2} \sin^2\frac{\theta}{2} - \frac{1}{2} \cos^2\frac{\theta}{2} \right) \frac{\textnormal{d}\theta}{\sin^2\frac{\theta}{2}} = \frac{Zze^2}{4\pi\epsilon_0\mu^2} \frac{-\textnormal{d}\theta}{2\sin^2(\theta/2)} 
 \end{equation}
 ```
 

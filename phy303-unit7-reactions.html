@@ -445,18 +445,18 @@ document.write(`
 <p>The magnitude of <span class="math notranslate nohighlight">\( Δ\vec{p} \)</span> is</p>
 <div class="math notranslate nohighlight" id="equation-rutherford-change-in-mom">
 <span class="eqno">(7.1)<a class="headerlink" href="#equation-rutherford-change-in-mom" title="Permalink to this equation">#</a></span>\[\begin{equation}
-Δp = \mu\sqrt{2(1 - cos θ)} = 2\mu \sin(θ/2) 
+Δp = \mu\sqrt{2(1 - \cos θ)} = 2\mu \sin(θ/2) 
 \end{equation}\]</div>
 <p>The direction of <span class="math notranslate nohighlight">\( Δ\vec{p} \)</span> is, by symmetry, along the line from the nucleus to the point of closest approach, labeled <span class="math notranslate nohighlight">\( r_0 \)</span> in figure 1. The Coulomb force in that direction when the particle is at a distance <span class="math notranslate nohighlight">\(r\)</span> from the nucleus is</p>
 <div class="math notranslate nohighlight" id="equation-rutherford-coulomb-force">
 <span class="eqno">(7.2)<a class="headerlink" href="#equation-rutherford-coulomb-force" title="Permalink to this equation">#</a></span>\[\begin{equation}
-F = \frac{Zze^2}{4πε_0 r^2} cos α 
+F = \frac{Zze^2}{4πε_0 r^2} \cos α 
 \end{equation}\]</div>
 <p>where <span class="math notranslate nohighlight">\(Ze\)</span> is the charge on the nucleus, <span class="math notranslate nohighlight">\(ze\)</span> is the charge on the projectile, and the angle <span class="math notranslate nohighlight">\(α\)</span> is defined in figure 1.</p>
 <p>Therefore, we have</p>
 <div class="math notranslate nohighlight" id="equation-rutherford-change-in-mom2">
 <span class="eqno">(7.3)<a class="headerlink" href="#equation-rutherford-change-in-mom2" title="Permalink to this equation">#</a></span>\[\begin{equation}
-Δp = \int F dt = \frac{Zze^2}{4πε_0} \int_{-\infty}^{+\infty} \frac{cos α}{r^2} dt 
+Δp = \int F dt = \frac{Zze^2}{4πε_0} \int_{-\infty}^{+\infty} \frac{\cos α}{r^2} dt 
 \end{equation}\]</div>
 <p>To do the integral we need to find the relationships between the variables <span class="math notranslate nohighlight">\(α\)</span>, <span class="math notranslate nohighlight">\(r\)</span> and <span class="math notranslate nohighlight">\(t\)</span>. To do this, we use the fact that the Coulomb force is a central force (i.e. it is directed along the line joining the two charges), and therefore does not change the angular momentum. The initial angular momentum of the particle is <span class="math notranslate nohighlight">\( \mu b \)</span>.</p>
 <p>At any given time, we can write the instantaneous velocity of the particle as</p>
@@ -485,12 +485,12 @@ to the left of <span class="math notranslate nohighlight">\(𝑟_{0}\)</span> an
 <p>Solving this for b gives us</p>
 <div class="math notranslate nohighlight" id="equation-rutherford-bsolution">
 <span class="eqno">(7.8)<a class="headerlink" href="#equation-rutherford-bsolution" title="Permalink to this equation">#</a></span>\[\begin{equation}
-b = \frac{Zze^2}{4\pi\epsilon_0mu^2} \cot\left(\frac{\theta}{2}\right). 
+b = \frac{Zze^2}{4\pi\epsilon_0\mu^2} \cot\left(\frac{\theta}{2}\right). 
 \end{equation}\]</div>
 <p>Now, if we have a uniform parallel beam of alpha particles with a flux per unit area <span class="math notranslate nohighlight">\(Φ\)</span>, the flux with impact parameter between <span class="math notranslate nohighlight">\(b\)</span> and <span class="math notranslate nohighlight">\(b + \textnormal{d}b\)</span> is <span class="math notranslate nohighlight">\(dΦ = 2\pi~b~\textnormal{d}b~Φ\)</span>. Differentiating the expression for <span class="math notranslate nohighlight">\(b\)</span> gives us</p>
 <div class="math notranslate nohighlight" id="equation-rutherford-bsolution2">
 <span class="eqno">(7.9)<a class="headerlink" href="#equation-rutherford-bsolution2" title="Permalink to this equation">#</a></span>\[\begin{equation}
-db = \frac{Zze^2}{4\pi\epsilon_0mu^2} \left( -\frac{1}{2} \sin^2\frac{\theta}{2} - \frac{1}{2} \cos^2\frac{\theta}{2} \right) \frac{\textnormal{d}\theta}{\sin^2\frac{\theta}{2}} = \frac{Zze^2}{4\pi\epsilon_0mu^2} \frac{-\textnormal{d}\theta}{2\sin^2(\theta/2)} 
+db = \frac{Zze^2}{4\pi\epsilon_0\mu^2} \left( -\frac{1}{2} \sin^2\frac{\theta}{2} - \frac{1}{2} \cos^2\frac{\theta}{2} \right) \frac{\textnormal{d}\theta}{\sin^2\frac{\theta}{2}} = \frac{Zze^2}{4\pi\epsilon_0\mu^2} \frac{-\textnormal{d}\theta}{2\sin^2(\theta/2)} 
 \end{equation}\]</div>
 <p>We now need to recognise that we are dealing with a three-dimensional experiment. The element of solid angle is <span class="math notranslate nohighlight">\(\textnormal{d}Ω = \sinθ \textnormal{d}θ\textnormal{d}φ\)</span>. For a ring between <span class="math notranslate nohighlight">\(θ\)</span> and <span class="math notranslate nohighlight">\(θ + \textnormal{d}θ\)</span>, we can integrate over φ to get <span class="math notranslate nohighlight">\(\textnormal{d}Ω = 2π\sinθ \textnormal{d}θ = 4π\sin(θ/2)\cos(θ/2)\textnormal{d}θ\)</span>. This gives us</p>
 <div class="math notranslate nohighlight" id="equation-rutherford-df">
