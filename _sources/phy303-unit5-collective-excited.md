@@ -201,9 +201,9 @@ The energy of the emitted gamma radiation is dependent on the energy splittings 
 There are some considerations we need to make when trying to assess whether a gamma ray decay actually takes place.
 
 **Angular Momentum and Radiation Types:**
-When the nucleon undergoes an energy transition, it emits a photon (gamma ray) to return to the ground state. The photon carries a total angular momentum, including its own spin. The minimum value of angular momentum (L) for gamma radiation is 1 therefore the transition also needs to induce a change in angular momentum of the nucleus of at least 1.
+When the nucleon undergoes an energy transition, it emits a photon (gamma ray) to return to the ground state. The photon carries a total angular momentum, including its own spin. The minimum value of angular momentum ($\vec{L}$) for gamma radiation is 1 therefore the transition also needs to induce a change in angular momentum of the nucleus of at least 1.
 
-- If $J_i$ (initial spin) is equal to $J_f$ (final spin), the transition is forbidden. This means that gamma-ray transitions typically involve changes in angular momentum. Lower values of $L$ make the transition more probable, with $L=1$ transitions being the most common.
+- If $\vec{J_i}$ (initial spin vector) is equal to $\vec{J_f}$ (final spin vector), the transition is forbidden. This means that gamma-ray transitions typically involve changes in angular momentum. Lower values of $L$ make the transition more probable, with $L=1$ transitions being the most common.
 
 - Depending on the value of L, different types of radiation are possible:
   - L=1 corresponds to dipole radiation.
@@ -218,12 +218,24 @@ When the nucleon undergoes an energy transition, it emits a photon (gamma ray) t
 ![Alt text](image-51.png)
 
  Above are some possible transitions based on values of $J_{f}$ and $J_{i}$ and whether these are likely to be due to electromagnetic or magnetic multipole radiations. The most likely transitions are described below.
- - **Electric Dipole (E1) Transitions:** These transitions involve ΔL = 1 and result in a parity change of π = $(-1)^1$ = -1 (parity-changing). Electric dipole transitions are more common than other multipole transitions and have relatively higher probabilities. 
+ - **Electric Dipole (E1) Transitions:** These transitions involve $ΔL = 1$ and result in a parity change of π = $(-1)^1$ = -1 (parity-changing). Electric dipole transitions are more common than other multipole transitions and have relatively higher probabilities. 
 
- - **Magnetic Dipole (M1) Transitions:** These transitions involve ΔL = 0 and result in a parity change of π = $(-1)^{1+1}$ = 1 (parity-preserving). Magnetic dipole transitions are less common than E1 transitions but still occur in certain nuclear decays.
+ - **Magnetic Dipole (M1) Transitions:** These transitions involve $ΔL = 1$ and result in a parity change of π = $(-1)^{1+1}$ = 1 (parity-preserving). Magnetic dipole transitions are less common than E1 transitions but still occur in certain nuclear decays.
 
- - **Quadrupole (E2) Transitions:** Quadrupole transitions involve ΔL = 2 and result in a parity change of π = $(-1)^2$ = 1 (parity-preserving). Quadrupole transitions are less probable than E1 and M1 transitions and are associated with higher-order nuclear excitations.
+ - **Quadrupole (E2) Transitions:** Quadrupole transitions involve $ΔL = 2$ and result in a parity change of π = $(-1)^2$ = 1 (parity-preserving). Quadrupole transitions are less probable than E1 and M1 transitions and are associated with higher-order nuclear excitations.
 
+
+```{note}
+Here the $J$ terms correspond to the vector components of the nuclear spin. When we say that the an equal $\vec{J}_{i}$ and $\vec{J}_{f}$ state mean that the transition can not take place we mean it in terms of the vector components since $\vec{J}_{i} = \vec{J}_{f} + \vec{L}$. 
+
+We can however have cases where the overall nuclear spin $I$ is identical before and afterwards, in this case we expect the allow magnitude of $\vec{L}$ to be
+
+$$
+| I_{f} - I_{i} | \leq L \leq|I_{f} + I_{i}|
+$$
+
+Note that this is now the projected magnitude of $L$, and follows similar vector rules to those we have seen before. 
+```
 
 
 

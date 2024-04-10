@@ -176,6 +176,11 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">5. Collective Excited States</a></li>
 <li class="toctree-l1"><a class="reference internal" href="phy303-unit6-radioactive-decays.html">6. Radioactive Decay</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Application</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit7-reactions.html">7. Reactions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phy303-unit8-compoundreactions.html">8. Compound Reactions</a></li>
+</ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Visualization</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="iaea-chart-of-nuclides.html">Chart of Nuclides</a></li>
@@ -559,9 +564,9 @@ Unlike electrons in atoms, nucleons in nuclei experience a more complex spacing 
 </ol>
 <p>There are some considerations we need to make when trying to assess whether a gamma ray decay actually takes place.</p>
 <p><strong>Angular Momentum and Radiation Types:</strong>
-When the nucleon undergoes an energy transition, it emits a photon (gamma ray) to return to the ground state. The photon carries a total angular momentum, including its own spin. The minimum value of angular momentum (L) for gamma radiation is 1 therefore the transition also needs to induce a change in angular momentum of the nucleus of at least 1.</p>
+When the nucleon undergoes an energy transition, it emits a photon (gamma ray) to return to the ground state. The photon carries a total angular momentum, including its own spin. The minimum value of angular momentum (<span class="math notranslate nohighlight">\(\vec{L}\)</span>) for gamma radiation is 1 therefore the transition also needs to induce a change in angular momentum of the nucleus of at least 1.</p>
 <ul class="simple">
-<li><p>If <span class="math notranslate nohighlight">\(J_i\)</span> (initial spin) is equal to <span class="math notranslate nohighlight">\(J_f\)</span> (final spin), the transition is forbidden. This means that gamma-ray transitions typically involve changes in angular momentum. Lower values of <span class="math notranslate nohighlight">\(L\)</span> make the transition more probable, with <span class="math notranslate nohighlight">\(L=1\)</span> transitions being the most common.</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(\vec{J_i}\)</span> (initial spin vector) is equal to <span class="math notranslate nohighlight">\(\vec{J_f}\)</span> (final spin vector), the transition is forbidden. This means that gamma-ray transitions typically involve changes in angular momentum. Lower values of <span class="math notranslate nohighlight">\(L\)</span> make the transition more probable, with <span class="math notranslate nohighlight">\(L=1\)</span> transitions being the most common.</p></li>
 <li><p>Depending on the value of L, different types of radiation are possible:</p>
 <ul>
 <li><p>L=1 corresponds to dipole radiation.</p></li>
@@ -575,10 +580,20 @@ In gamma-ray transitions, parity is conserved. Electric multipole radiation has 
 <p><img alt="Alt text" src="_images/image-51.png" /></p>
 <p>Above are some possible transitions based on values of <span class="math notranslate nohighlight">\(J_{f}\)</span> and <span class="math notranslate nohighlight">\(J_{i}\)</span> and whether these are likely to be due to electromagnetic or magnetic multipole radiations. The most likely transitions are described below.</p>
 <ul class="simple">
-<li><p><strong>Electric Dipole (E1) Transitions:</strong> These transitions involve ΔL = 1 and result in a parity change of π = <span class="math notranslate nohighlight">\((-1)^1\)</span> = -1 (parity-changing). Electric dipole transitions are more common than other multipole transitions and have relatively higher probabilities.</p></li>
-<li><p><strong>Magnetic Dipole (M1) Transitions:</strong> These transitions involve ΔL = 0 and result in a parity change of π = <span class="math notranslate nohighlight">\((-1)^{1+1}\)</span> = 1 (parity-preserving). Magnetic dipole transitions are less common than E1 transitions but still occur in certain nuclear decays.</p></li>
-<li><p><strong>Quadrupole (E2) Transitions:</strong> Quadrupole transitions involve ΔL = 2 and result in a parity change of π = <span class="math notranslate nohighlight">\((-1)^2\)</span> = 1 (parity-preserving). Quadrupole transitions are less probable than E1 and M1 transitions and are associated with higher-order nuclear excitations.</p></li>
+<li><p><strong>Electric Dipole (E1) Transitions:</strong> These transitions involve <span class="math notranslate nohighlight">\(ΔL = 1\)</span> and result in a parity change of π = <span class="math notranslate nohighlight">\((-1)^1\)</span> = -1 (parity-changing). Electric dipole transitions are more common than other multipole transitions and have relatively higher probabilities.</p></li>
+<li><p><strong>Magnetic Dipole (M1) Transitions:</strong> These transitions involve <span class="math notranslate nohighlight">\(ΔL = 1\)</span> and result in a parity change of π = <span class="math notranslate nohighlight">\((-1)^{1+1}\)</span> = 1 (parity-preserving). Magnetic dipole transitions are less common than E1 transitions but still occur in certain nuclear decays.</p></li>
+<li><p><strong>Quadrupole (E2) Transitions:</strong> Quadrupole transitions involve <span class="math notranslate nohighlight">\(ΔL = 2\)</span> and result in a parity change of π = <span class="math notranslate nohighlight">\((-1)^2\)</span> = 1 (parity-preserving). Quadrupole transitions are less probable than E1 and M1 transitions and are associated with higher-order nuclear excitations.</p></li>
 </ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Here the <span class="math notranslate nohighlight">\(J\)</span> terms correspond to the vector components of the nuclear spin. When we say that the an equal <span class="math notranslate nohighlight">\(\vec{J}_{i}\)</span> and <span class="math notranslate nohighlight">\(\vec{J}_{f}\)</span> state mean that the transition can not take place we mean it in terms of the vector components since <span class="math notranslate nohighlight">\(\vec{J}_{i} = \vec{J}_{f} + \vec{L}\)</span>.</p>
+<p>We can however have cases where the overall nuclear spin <span class="math notranslate nohighlight">\(I\)</span> is identical before and afterwards, in this case we expect the allow magnitude of <span class="math notranslate nohighlight">\(\vec{L}\)</span> to be</p>
+<div class="math notranslate nohighlight">
+\[
+| I_{f} - I_{i} | \leq L \leq|I_{f} + I_{i}|
+\]</div>
+<p>Note that this is now the projected magnitude of <span class="math notranslate nohighlight">\(L\)</span>, and follows similar vector rules to those we have seen before.</p>
+</div>
 </section>
 <section id="example-cobalt-60-decay">
 <h2><span class="section-number">5.5. </span>Example: Cobalt-60 Decay<a class="headerlink" href="#example-cobalt-60-decay" title="Permalink to this heading">#</a></h2>
