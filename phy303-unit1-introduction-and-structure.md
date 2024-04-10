@@ -469,7 +469,7 @@ This deviation is now interpreted as telling us about the charge/matter distribu
 
 **Given the mass of a carbon-12 atom is $12u$, estimate the binding energy of the carbon nucleus.**
 
-First we start with the mass of the proton, neutron, and electrons in the atomic mass units. Since the mass if that of a carbon-12 atom, we include the electrons in oour calculation.
+First we start with the mass of the proton, neutron, and electrons in the atomic mass units. Since the mass if that of a carbon-12 atom, we include the electrons in our calculation.
 
 $$
 m_{p} = 1.00728 u \\
@@ -487,8 +487,12 @@ $$
 If we want to get this per nucleon we just need to divide by the total nucleons in a carbon 12 nucleus.
 
 $$
-B/A = 92.16 / 12 = 7.42~\textnormal{MeV/nucleon}\\
+B/A = 92.16~\textnormal{MeV} / 12 = 7.42~\textnormal{MeV/nucleon}\\
 $$
+
+**Additional Clarification (04/2024)** : A key thing to remember is that the electron mass does contribute if we are working in **atomic** mass values, whilst if we have been given a **nuclear** mass value it does not. For heavy mass nuclei including the electrons  has a smaller effect as the number of protons relative to neutrons drop. 
+
+Given that the mass of an electron is around $0.511~\textnormal{MeV/c}^{2}$ we can expect shifts in the total binding energy on the order of several MeV depending on the nuclei. 
 
 ```
 
@@ -617,19 +621,23 @@ M(\textnormal{Pb}_{206}) = 205.9794u \\
 M(\alpha) = 4.0026u \\
 $$
 
-This means the mass deficit, $Q$, is given by
+**Additional Clarification (04/2024)** : 
+Note that here for the alpha mass contribution we have used the mass of a **Helium atom** as this encapsulates that the 2 extra electrons have to go somewhere.
+
+
+This means the mass deficit energy, $Q$, is given by
 
 $$
-Q = 209.9828u - 205.9794u - 4.0026u = 0.0058u
+Qc^{2} = (209.9828u - 205.9794u - 4.0026u)c^{2} = 0.0058u ~c^{2}
 $$
 
-If we assume that all the energy goes into the kinetic energy of the alpha given it has much smaller mass this gives the maximum kinetic energy in standard units as
+This energy will be split between the alpha and daughter nuclei, however if we assume that all the energy goes into the kinetic energy of the alpha given it has much smaller mass this gives the maximum kinetic energy of the alpha in standard units as
 
 $$
 K_\alpha = 5.40~\textnormal{MeV} = 8.65175 \times 10^{-13} J
 $$
 
-Subbing this back into our equation for the distance gives
+Subbing this maximum back into our equation for the distance gives
 
 $$
 d = 4.905 \times 10^{-14}~\textnormal{m}
