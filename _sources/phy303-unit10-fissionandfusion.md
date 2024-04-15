@@ -251,17 +251,14 @@ where the nuclear radii $R_1$ and $R_2$ are measured in fm. Classically, in orde
 #### Fusion reactions
 Another issue with proton-proton fusion is that there is no bound state of two protons: in order for the fusion to work, one proton has to transform into a neutron, $ p + p \rightarrow d + e^+ + \nu_e $. This is a weak interaction, and therefore has a very small cross section, further increasing the improbability of pp fusion—again, it works in the Sun because of the immense number of protons present in the Sun’s core. Although we can increase the tunnelling probability by running a hypothetical fusion reactor at a higher temperature than the solar core, we cannot magically increase the cross section for pp fusion, so the inescapable conclusion is that this is not an appropriate reaction for fusion power.
 
-For viable fusion with the fuel masses we can hope to use in a terrestrial fusion reactor, we need reactions that can go by the strong interaction, requiring only rearrangement of nucleons rather than transformation of protons to neutrons or vice versa. We also need to restrict ourselves to the lightest
+For viable fusion with the fuel masses we can hope to use in a terrestrial fusion reactor, we need reactions that can go by the strong interaction, requiring only rearrangement of nucleons rather than transformation of protons to neutrons or vice versa. We also need to restrict ourselves to the lightest elements, or more precisely to those with the lowest Z, because higher Z increases the height of the Coulomb barrier and therefore reduces the tunnelling probability. We are left with two main possibili- ties:
+- d-d fusion, $ ^2H(d,n)^3He $ or $ ^2H(d,p)^3H $ (these two reactions are almost equally likely and have very similar Q values, 3.3 and 4.0 MeV respectively);
+- d-t fusion, $ ^3H(d,n)^4He $, with a Q value of 17.6 MeV.
+
 
 ```{note}
  In the later stages of a star’s life, it will generate energy by fusing helium to carbon, and in the case of stars with mass greater than about 8-10 times that of the Sun, heavier elements right up to iron. But the vast majority of stars are low-mass K and M dwarfs, and none of these has yet left the main sequence—so nearly all stars are powered by hydrogen fusion.
 ```
-
-Certainly! Here's the text extracted from the image you provided:
-
-elements, or more precisely to those with the lowest Z, because higher Z increases the height of the Coulomb barrier and therefore reduces the tunnelling probability. We are left with two main possibili- ties:
-- d-d fusion, $ ^2H(d,n)^3He $ or $ ^2H(d,p)^3H $ (these two reactions are almost equally likely and have very similar Q values, 3.3 and 4.0 MeV respectively);
-- d-t fusion, $ ^3H(d,n)^4He $, with a Q value of 17.6 MeV.
 
 As we will see later, the second of these is much the more promising: not only does it have a much higher Q value, it also requires lower temperatures and has a higher reaction rate. Its main drawback is that it requires tritium, which is radioactive with a half-life of 12.3 years (it β decays to $ ^3He $), and which therefore does not occur in nature and has to be manufactured. Deuterium, in contrast, com- prises about 0.015% of natural hydrogen and can be extracted from seawater.
 
