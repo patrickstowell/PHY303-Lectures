@@ -23,16 +23,14 @@ parts:
   chapters:
     - file: phy303-unit7-reactions
       title: Reactions
-#    - file: phy303-unit8-compoundreactions
-#      title: Compound Reactions
-#    - file: phy303-unit9-neutronphysics
-#      title: Neutron Physics
-#    - file: phy303-unit10-fissionandfusion
-#      title: Nuclear Power
-#    - file: phy303-unit11-medicalapplications
-#      title: Nuclear Medicine
-    #- file: phy303-unit1-flashcards
-    #  title: Unit 1 Flash Cards
+    - file: phy303-unit8-compoundreactions
+      title: Compound Reactions
+    - file: phy303-unit9-neutronphysics
+      title: Neutron Physics
+    - file: phy303-unit10-fissionandfusion
+      title: Nuclear Power
+  #  - file: phy303-unit11-medicalapplications
+  #    title: Nuclear Medicine
 - caption: Visualization
   numbered: False
   chapters:
@@ -52,6 +50,7 @@ parts:
   numbered: False
   chapters:
     - file: unit1-terms.md
+  #  - file: phy303-unit1-flashcards
     - file: unit2-terms.md
     - file: unit3-terms.md
 
