@@ -29,8 +29,8 @@ parts:
       title: Neutron Physics
     - file: phy303-unit10-fissionandfusion
       title: Nuclear Power
-  #  - file: phy303-unit11-medicalapplications
-  #    title: Nuclear Medicine
+    - file: phy303-unit11-medicalapplications
+      title: Nuclear Medicine
 - caption: Visualization
   numbered: False
   chapters:
