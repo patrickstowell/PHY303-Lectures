@@ -260,7 +260,7 @@ $$
  \Delta I = 0, \pm 1, \pm 2, \quad \Delta \pi = 1 
  $$
  
-except for $0 \rightarrow 0$ transitions, which are still forbidden.
+except for $0 \rightarrow 0$ transitions, which are still completely forbidden.
 
 In general, the "n-th forbidden" transition is characterized by:
 

@@ -53,4 +53,13 @@ parts:
   #  - file: phy303-unit1-flashcards
     - file: unit2-terms.md
     - file: unit3-terms.md
+    - file: unit4-terms.md
+    - file: unit5-terms.md
+    - file: unit6-terms.md
+    # - file: unit7-terms.md
+    # - file: unit8-terms.md
+    # - file: unit9-terms.md
+    # - file: unit10-terms.md
+    # - file: unit11-terms.md
+
 
