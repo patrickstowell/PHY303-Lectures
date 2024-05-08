@@ -1,12 +1,14 @@
-## Unit 3 : Equations & Terms
+## Unit 6 : Equations & Terms
 
 ### Equations
 To aid with exam revision below is a list of all equations that you should learn for this unit in the course.
 
 **The time for half the sample to decay (half-life)**
+
 $$T_{1/2} = \tau \textnormal{ln}(2) = 0.693\tau$$
 
 **Mass Deficit**
+
 ```{math}
 :label: massdeficit
 \begin{equation}
@@ -15,6 +17,7 @@ Q = M(A,Z)^{2}c^{2} - [M(A-X,Z-Y)c^{2} + M(X,Y)c^{2}] > 0
 ```
 
 **Beta Decay Example**
+
 $$
 \bf
  _{83}^{210}Bi \rightarrow _{84}^{210}Po + e^- + \bar{\nu}_e 
@@ -22,6 +25,7 @@ $$
 
 
 **Q Value Beta- Decay**
+
 ```{math}
 :label: betamqvalue
 \begin{equation}
@@ -30,6 +34,7 @@ Q_{\beta^{-}} = [ M(A,Z) - M(A,Z-1) ]c^{2}
 ```
 
 **Q Value Beta+ Decay or EC**
+
 ```{math}
 :label: betapqvalue
 \begin{equation}
@@ -38,6 +43,7 @@ Q_{\beta^{+}} = [ M(A,Z) - M(A,Z-1) - 2m_{e}]c^{2}
 ```
 
 **Lambda and Matrix Element**
+
 ```{math}
 :label: lambdacalc
 \begin{equation}
@@ -53,6 +59,7 @@ Q_{\beta^{+}} = [ M(A,Z) - M(A,Z-1) - 2m_{e}]c^{2}
 ```
 
 **Beta Flux**
+
 ```{math}
 :label: densityfinal
 \begin{equation}
@@ -68,12 +75,14 @@ $$
  $$
 
 **Beta Allowed Transition**
+
 $$
  \Delta I = 0 \text{ or } \pm 1, \quad \Delta \pi = \textnormal{none}
  $$
  except for $0 \rightarrow 0$ transitions, which are forbidden.
 
 **Beta Forbidden Transitions**
+
 $$
  \Delta I = 0, \pm 1, \pm 2, \quad \Delta \pi = 1 
  $$
@@ -102,6 +111,7 @@ $$
 
 
 **Alpha Tunnelling Transmission Probability**
+
 ```{math}
 :label: transmissionprob
 \begin{equation}

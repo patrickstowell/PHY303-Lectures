@@ -4,22 +4,26 @@
 To aid with exam revision below is a list of all equations that you should learn for this unit in the course.
 
 **NUCLEAR SURFACE BASED ON BETA**
+
 $$
 R(\theta, \phi) = R_{av} [Y_{00}+\beta Y_{20} (\theta, \phi)]
 $$
 
 **BETA BASED ON ELONGATION**
+
 $$
 \beta = \frac{4}{3} \sqrt{\frac{\pi}{5}} \frac{\Delta R}{R_{av}}
 $$
 
 **INTRINSIC ELECTRIC QUADRUPOLE MOMENT**
+
 $$
 Q_{0} = \frac{3}{\sqrt{5\pi}} R_{av}^{2} Z \beta (1+0.16\beta)
 $$
 
 
 **ENERGY LEVELS ROTATIONAL SPIN J**
+
 $$
 \frac{\hat{L}^{2}}{2I} \psi = E_{J} \psi
 $$
@@ -33,16 +37,19 @@ $$
 Note that $I$ here is the moment of inertia of the perturbed nucleus.
 
 **ENERGY PREDICTION USING E2 State**
+
 $$
 E_{J} = \frac{1}{6} J(J+1)E_{2}~~~~~~~~~J=0,2,4,\ldots
 $$
 
 **VIBRATIONAL VARIATIONS**
+
 $$
 R(t, \theta,\phi) = R_{av} + \sum_{\lambda>1}^{\lambda=\infty} \sum_{\mu=-\lambda}^{\mu=+\lambda}  \alpha_{\lambda \mu}(t) Y_{\lambda \mu} (\theta, \phi)
 $$
 
 **VIBRATIONAL ENERGY LEVELS**
+
 $$
 E_{N} = \hbar \omega_{l} \left(\frac{2l+1}{2} +N \right)
 $$
@@ -61,6 +68,7 @@ $$
 
 
 **GAMMA TRANSITIONS**
+
 - **Electric Dipole (E1) Transitions:** These transitions involve $ΔL = 1$ and result in a parity change of π = $(-1)^1$ = -1 (parity-changing). Electric dipole transitions are more common than other multipole transitions and have relatively higher probabilities. 
 
  - **Magnetic Dipole (M1) Transitions:** These transitions involve $ΔL = 1$ and result in a parity change of π = $(-1)^{1+1}$ = 1 (parity-preserving). Magnetic dipole transitions are less common than E1 transitions but still occur in certain nuclear decays.
